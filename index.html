@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>tqdm by tqdm</title>
+    <title>tqdm</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
@@ -16,21 +16,18 @@
   <body>
     <div class="wrapper">
       <header>
+        <p><img src="https://raw.githubusercontent.com/tqdm/tqdm/master/logo.png" alt="Logo"></p>
         <h1 class="header">tqdm</h1>
         <p class="header">minimal overhead highly customisable progress bar</p>
-
-
-
         <ul>
           <li><a class="buttons github" href="https://github.com/tqdm">GitHub Profile</a></li>
         </ul>
-
+        <p>
+          <a href="https://pypi.python.org/pypi/tqdm"><img src="https://img.shields.io/pypi/v/tqdm.svg" alt="PyPi-Status"></a>
+          <a href="https://codecov.io/github/tqdm/tqdm?branch=master"><img src="https://codecov.io/github/tqdm/tqdm/coverage.svg?branch=master" alt="Branch-Coverage-Status"></a>
+        </p>
       </header>
       <section>
-        <p><img src="https://raw.githubusercontent.com/tqdm/tqdm/master/logo.png" alt="Logo"></p>
-
-<h1>
-<a id="tqdm" class="anchor" href="#tqdm" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>tqdm</h1>
 
 <p><a href="https://pypi.python.org/pypi/tqdm"><img src="https://img.shields.io/pypi/v/tqdm.svg" alt="PyPi-Status"></a>
 <a href="https://pypi.python.org/pypi/tqdm"><img src="https://img.shields.io/pypi/pyversions/tqdm.svg" alt="PyPi-Versions"></a></p>
@@ -47,7 +44,7 @@
 <p>Instantly make your loops show a smart progress meter - just wrap any
 iterable with "tqdm(iterable)", and you're done!</p>
 
-<pre lang="sourceCode"><code>from tqdm import tqdm
+<pre lang="python"><code>from tqdm import tqdm
 for i in tqdm(range(9)):
     ...
 </code></pre>
@@ -63,7 +60,7 @@ for i in tqdm(range(9)):
 
 <p>It can also be executed as a module with pipes:</p>
 
-<pre lang="sourceCode"><code>$ seq 9999999 | tqdm --unit_scale | wc -l
+<pre lang="sh"><code>$ seq 9999999 | tqdm --unit_scale | wc -l
 10.0Mit [00:02, 3.58Mit/s]
 9999999
 </code></pre>
@@ -96,7 +93,7 @@ vanilla Python interpreter will do and an environment supporting
 
 <p><a href="https://pypi.python.org/pypi/tqdm"><img src="https://img.shields.io/pypi/v/tqdm.svg" alt="PyPi-Status"></a></p>
 
-<pre lang="sourceCode"><code>pip install tqdm
+<pre lang="sh"><code>pip install tqdm
 </code></pre>
 
 <h3>
@@ -108,7 +105,7 @@ vanilla Python interpreter will do and an environment supporting
 
 <p>Pull and install in the current directory:</p>
 
-<pre lang="sourceCode"><code>pip install -e git+https://github.com/tqdm/tqdm.git@master#egg=tqdm
+<pre lang="sh"><code>pip install -e git+https://github.com/tqdm/tqdm.git@master#egg=tqdm
 </code></pre>
 
 <h2>
@@ -130,21 +127,21 @@ main ones are given below.</p>
 
 <p>Wrap <code>tqdm()</code> around any iterable:</p>
 
-<pre lang="sourceCode"><code>text = ""
+<pre lang="python"><code>text = ""
 for char in tqdm(["a", "b", "c", "d"]):
     text = text + char
 </code></pre>
 
 <p><code>trange(i)</code> is a special optimised instance of <code>tqdm(range(i))</code>:</p>
 
-<pre lang="sourceCode"><code>for i in trange(100):
+<pre lang="python"><code>for i in trange(100):
     pass
 </code></pre>
 
 <p>Instantiation outside of the loop allows for manual control over
 <code>tqdm()</code>:</p>
 
-<pre lang="sourceCode"><code>pbar = tqdm(["a", "b", "c", "d"])
+<pre lang="python"><code>pbar = tqdm(["a", "b", "c", "d"])
 for char in pbar:
     pbar.set_description("Processing %s" % char)
 </code></pre>
@@ -154,7 +151,7 @@ for char in pbar:
 
 <p>Manual control on <code>tqdm()</code> updates by using a <code>with</code> statement:</p>
 
-<pre lang="sourceCode"><code>with tqdm(total=100) as pbar:
+<pre lang="python"><code>with tqdm(total=100) as pbar:
     for i in range(10):
         pbar.update(10)
 </code></pre>
@@ -165,7 +162,7 @@ provided, predictive stats are displayed.</p>
 <p><code>with</code> is also optional (you can just assign <code>tqdm()</code> to a variable, but
 in this case don't forget to <code>del</code> or <code>close()</code> at the end:</p>
 
-<pre lang="sourceCode"><code>pbar = tqdm(total=100)
+<pre lang="python"><code>pbar = tqdm(total=100)
 for i in range(10):
     pbar.update(10)
 pbar.close()
@@ -182,7 +179,7 @@ to <code>stderr</code>.</p>
 <p>The example below demonstrated counting the number of lines in all
 python files in the current directory, with timing information included.</p>
 
-<pre lang="sourceCode"><code>$ time find . -name '*.py' -exec cat \{} \; | wc -l
+<pre lang="sh"><code>$ time find . -name '*.py' -exec cat \{} \; | wc -l
 857365
 
 real    0m3.458s
@@ -200,14 +197,14 @@ sys     0m3.358s
 
 <p>Note that the usual arguments for <code>tqdm</code> can also be specified.</p>
 
-<pre lang="sourceCode"><code>$ find . -name '*.py' -exec cat \{} \; |
+<pre lang="sh"><code>$ find . -name '*.py' -exec cat \{} \; |
     tqdm --unit loc --unit_scale --total 857366 &gt;&gt; /dev/null
 100%|███████████████████████████████████| 857K/857K [00:04&lt;00:00, 246Kloc/s]
 </code></pre>
 
 <p>Backing up a large directory?</p>
 
-<pre lang="sourceCode"><code>$ 7z a -bd -r backup.7z docs/ | grep Compressing |
+<pre lang="sh"><code>$ 7z a -bd -r backup.7z docs/ | grep Compressing |
     tqdm --total $(find docs/ -type f | wc -l) --unit files &gt;&gt; backup.log
 100%|███████████████████████████████▉| 8014/8014 [01:37&lt;00:00, 82.29files/s]
 </code></pre>
@@ -243,7 +240,7 @@ iterables. <code>tqdm</code> does not.</p></li>
 <img src="http://hitt.herokuapp.com/tqdm/tqdm.svg" alt="Readme-Hits"> (Since 19 May
 2016)</p>
 
-<pre lang="sourceCode"><code>class tqdm(object):
+<pre lang="python"><code>class tqdm(object):
   """
   Decorate an iterable object, returning an iterator which acts exactly
   like the original iterable, but prints a dynamically updating
@@ -349,7 +346,7 @@ iterables. <code>tqdm</code> does not.</p></li>
 <li>  out : decorated iterator.</li>
 </ul>
 
-<pre lang="sourceCode"><code>def update(self, n=1):
+<pre lang="python"><code>def update(self, n=1):
     """
     Manually update the progress bar, useful for streams
     such as reading files.
@@ -389,23 +386,25 @@ def write(cls, s, file=sys.stdout, end="\n"):
     """
     Print a message via tqdm (without overlap with bars)
     """
+
+def trange(*args, **kwargs):
+    """
+    A shortcut for tqdm(xrange(*args), **kwargs).
+    On Python3+ range is used instead of xrange.
+    """
+
+class tqdm_gui(tqdm):
+    """ Experimental GUI version of tqdm! """
+
+def tgrange(*args, **kwargs):
+    """ Experimental GUI version of trange! """
+
+class tqdm_notebook(tqdm):
+    """ Experimental IPython/Jupyter Notebook widget using tqdm! """
+
+def tnrange(*args, **kwargs):
+    """ Experimental IPython/Jupyter Notebook widget using tqdm! """
 </code></pre>
-
-<blockquote>
-<p>def trange(<em>args,kwargs): """ A shortcut for tqdm(xrange(</em>args), **kwargs).
-:   On Python3+ range is used instead of xrange. """</p>
-
-<p>class tqdm_gui(tqdm):
-:   """ Experimental GUI version of tqdm! """</p>
-
-<p>def tgrange(<em>args,</em>*kwargs):
-:   """ Experimental GUI version of trange! """</p>
-
-<p>class tqdm_notebook(tqdm):
-:   """ Experimental IPython/Jupyter Notebook widget using tqdm! """</p>
-
-<p>def tnrange(<em>args,</em>*kwargs):
-:   """ Experimental IPython/Jupyter Notebook widget using tqdm! """</p>
 
 <h2>
 <a id="examples-and-advanced-usage" class="anchor" href="#examples-and-advanced-usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Examples and Advanced Usage</h2>
@@ -419,7 +418,7 @@ folder or import the module and run <code>help()</code>.</p>
 
 <p><code>tqdm</code> supports nested progress bars. Here's an example:</p>
 
-<pre lang="sourceCode"><code>from tqdm import trange
+<pre lang="python"><code>from tqdm import trange
 from time import sleep
 
 for i in trange(10, desc='1st loop'):
@@ -455,7 +454,7 @@ file.\
 [...]</p>
 </blockquote>
 
-<pre lang="sourceCode"><code>import urllib
+<pre lang="python"><code>import urllib
 from tqdm import tqdm
 
 def my_hook(t):
@@ -506,7 +505,7 @@ connection).</p>
 example for <code>DataFrame.progress_apply</code> and
 <code>DataFrameGroupBy.progress_apply</code>:</p>
 
-<pre lang="sourceCode"><code>import pandas as pd
+<pre lang="python"><code>import pandas as pd
 import numpy as np
 from tqdm import tqdm
 
@@ -534,7 +533,7 @@ import the module and run <code>help()</code>.</p>
 
 <p>IPython/Jupyter is supported via the tqdm_notebook submodule:</p>
 
-<pre lang="sourceCode"><code>from tqdm import tnrange, tqdm_notebook
+<pre lang="python"><code>from tqdm import tnrange, tqdm_notebook
 from time import sleep
 
 for i in tnrange(10, desc='1st loop'):
@@ -560,7 +559,7 @@ you should not write any message in the terminal using <code>print()</code>.</p>
 <p>To write messages in the terminal without any collision with <code>tqdm</code> bar
 display, a <code>.write()</code> method is provided:</p>
 
-<pre lang="sourceCode"><code>from tqdm import tqdm, trange
+<pre lang="python"><code>from tqdm import tqdm, trange
 from time import sleep
 
 bar = trange(10)
@@ -590,7 +589,7 @@ input string to <code>tqdm.write()</code>, and supply the arguments
 
 <p>A reusable canonical example is given below:</p>
 
-<pre lang="sourceCode"><code>from time import sleep
+<pre lang="python"><code>from time import sleep
 
 import contextlib
 import sys
@@ -655,7 +654,7 @@ the total amount of work to do before beginning the real processing.</p>
 following example: you want to walk through all files of a directory and
 process their contents with some external function:</p>
 
-<pre lang="sourceCode"><code>import os
+<pre lang="python"><code>import os
 from tqdm import tqdm, trange
 from time import sleep
 
@@ -684,7 +683,7 @@ information about the current progress, nor how long it will take.</p>
 
 <p>To quickly fix that using <code>tqdm</code>, we can use this naive approach:</p>
 
-<pre lang="sourceCode"><code>def process_content_with_progress1(inputpath, blocksize=1024):
+<pre lang="python"><code>def process_content_with_progress1(inputpath, blocksize=1024):
     for filepath in tqdm(walkdir(inputpath)):
         with open(filepath, 'rb') as fh:
             buf = 1
@@ -704,7 +703,7 @@ indication of the current and past program state, no prediction:</p>
 work to be done. Since <code>os.walkdir()</code> cannot give us this information,
 we need to precompute this by ourselves:</p>
 
-<pre lang="sourceCode"><code>def process_content_with_progress2(inputpath, blocksize=1024):
+<pre lang="python"><code>def process_content_with_progress2(inputpath, blocksize=1024):
     # Preprocess the total files count
     filecounter = 0
     for dirpath, dirs, files in tqdm(os.walk(inputpath)):
@@ -740,7 +739,7 @@ between size and content.</p>
 where <code>tqdm</code> will work on size, while the <code>for</code> loop works on files
 paths:</p>
 
-<pre lang="sourceCode"><code>def process_content_with_progress3(inputpath, blocksize=1024):
+<pre lang="python"><code>def process_content_with_progress3(inputpath, blocksize=1024):
     # Preprocess the total files sizes
     sizecounter = 0
     for dirpath, dirs, files in tqdm(os.walk(inputpath)):
@@ -788,15 +787,13 @@ file for more information.</p>
 <h2>
 <a id="authors" class="anchor" href="#authors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors</h2>
 
-<p>Ranked by contributions.</p>
+<p>Ranked by contributions > 1%.</p>
 
 <ul>
-<li>  Casper da Costa-Luis (casperdcl)</li>
-<li>  Stephen Larroque (lrq3000)</li>
-<li>  Hadrien Mary (hadim)</li>
+<li>  <a href="https://github.com/casperdcl">Casper da Costa-Luis</a></li>
+<li>  <a href="https://github.com/lrq3000">Stephen Larroque</a></li>
+<li>  <a href="https://github.com/hadim">Hadrien Mary</a></li>
 <li>  Noam Yorav-Raphael (noamraph)*</li>
-<li>  Ivan Ivanov (obiwanus)</li>
-<li>  Mikhail Korobov (kmike)</li>
 </ul>
 
 <p>* Original author</p>
