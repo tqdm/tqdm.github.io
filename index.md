@@ -1,3 +1,6 @@
+---
+layout: default
+---
 ![Logo](https://raw.githubusercontent.com/tqdm/tqdm/master/images/logo.gif)
 
 tqdm
