@@ -52,15 +52,16 @@ pages:
   - tqdm.tqdm_gui: docs/tqdm_gui.md
   - tqdm.tqdm_notebook: docs/tqdm_notebook.md
   #- tqdm.autonotebook: docs/autonotebook.md
-  - tqdm.TMonitor: docs/TMonitor.md
   - Shortcuts: docs/shortcuts.md
+- Developer Documentation:
   - Warnings and Exceptions: docs/warnings.md
-- Contributing: contributing.md << ../CONTRIBUTING.md
+  - tqdm.TMonitor: docs/TMonitor.md
 - Release History: releases.md << ../wiki/Releases.md
+- Contributing: contributing.md << ../CONTRIBUTING.md
+- Ports to Other Languages: ports.md << ../wiki/tqdm-ports.md
 - External Links:
-  - GitHub:
-    - Source Code (ENTIRE DOCUMENTATION ON ONE PAGE): https://github.com/tqdm/tqdm
-    - wiki: https://github.com/tqdm/tqdm/wiki
+  - Source Code (ENTIRE DOCUMENTATION ON ONE PAGE): https://github.com/tqdm/tqdm
+  - wiki: https://github.com/tqdm/tqdm/wiki
   - Downloads:
     - GitHub: https://github.com/tqdm/tqdm/releases
     - PyPI: https://pypi.org/project/tqdm
