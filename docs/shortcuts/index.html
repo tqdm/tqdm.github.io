@@ -7,16 +7,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
-  <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>tqdm documentation</title>
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Shortcuts - tqdm documentation</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="./css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="./css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
   
-  <script src="./js/jquery-2.1.1.min.js" defer></script>
-  <script src="./js/modernizr-2.8.3.min.js" defer></script>
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Shortcuts";
+    var mkdocs_page_input_path = "docs/shortcuts.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
   
@@ -29,9 +36,9 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="./." class="icon icon-home"> tqdm documentation</a>
+        <a href="../.." class="icon icon-home"> tqdm documentation</a>
         <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
@@ -43,7 +50,7 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="./.">Home</a>
+    <a class="" href="../..">Home</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -52,19 +59,34 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="./docs/tqdm/">tqdm.tqdm</a>
+    <a class="" href="../tqdm/">tqdm.tqdm</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="./docs/tqdm_gui/">tqdm.tqdm_gui</a>
+    <a class="" href="../tqdm_gui/">tqdm.tqdm_gui</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="./docs/tqdm_notebook/">tqdm.tqdm_notebook</a>
+    <a class="" href="../tqdm_notebook/">tqdm.tqdm_notebook</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="./docs/shortcuts/">Shortcuts</a>
+    <a class="current" href="./">Shortcuts</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#trange">trange</a></li>
+    
+
+    <li class="toctree-l3"><a href="#tgrange">tgrange</a></li>
+    
+
+    <li class="toctree-l3"><a href="#tnrange">tnrange</a></li>
+    
+
+    <li class="toctree-l3"><a href="#tqdm_pandas">tqdm_pandas</a></li>
+    
+
+    </ul>
                 </li>
     </ul>
 	    </li>
@@ -75,28 +97,28 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="./docs/warnings/">Warnings and Exceptions</a>
+    <a class="" href="../warnings/">Warnings and Exceptions</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="./docs/TMonitor/">tqdm.TMonitor</a>
+    <a class="" href="../TMonitor/">tqdm.TMonitor</a>
                 </li>
     </ul>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="./releases/">Release History</a>
+    <a class="" href="../../releases/">Release History</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="./contributing/">Contributing</a>
+    <a class="" href="../../contributing/">Contributing</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="./ports/">Ports to Other Languages</a>
+    <a class="" href="../../ports/">Ports to Other Languages</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -174,7 +196,7 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="./licence/">Licence</a>
+    <a class="" href="../../licence/">Licence</a>
 	    </li>
           
         </ul>
@@ -187,7 +209,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="./.">tqdm documentation</a>
+        <a href="../..">tqdm documentation</a>
       </nav>
 
       
@@ -195,10 +217,19 @@
         <div class="rst-content">
           <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="./.">Docs</a> &raquo;</li>
+    <li><a href="../..">Docs</a> &raquo;</li>
     
+      
+        
+          <li>Documentation &raquo;</li>
+        
+      
     
+    <li>Shortcuts</li>
     <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/tqdm/tqdm/edit/master/docs/docs/shortcuts.md"
+          class="icon icon-github"> Edit on GitHub</a>
       
     </li>
   </ul>
@@ -207,22 +238,66 @@
           <div role="main">
             <div class="section">
               
+                <h1 id="trange">trange<h1 id="tqdm.trange"></h1></h1>
+<pre><code class="python">trange(*args, **kwargs)
+</code></pre>
 
-  <h1 id="search">Search Results</h1>
+<p>A shortcut for tqdm(xrange(<em>args), </em>*kwargs).
+On Python3+ range is used instead of xrange.</p>
+<h1 id="tgrange">tgrange<h1 id="tqdm.tgrange"></h1></h1>
+<pre><code class="python">tgrange(*args, **kwargs)
+</code></pre>
 
-  <form id="content_search" action="search.html">
-    <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
-    <input name="q" id="mkdocs-search-query" type="text" class="search_input search-query ui-autocomplete-input" placeholder="Search the Docs" autocomplete="off" autofocus title="Type search term here">
-  </form>
+<p>A shortcut for tqdm_gui(xrange(<em>args), </em>*kwargs).
+On Python3+ range is used instead of xrange.</p>
+<h1 id="tnrange">tnrange<h1 id="tqdm.tnrange"></h1></h1>
+<pre><code class="python">tnrange(*args, **kwargs)
+</code></pre>
 
-  <div id="mkdocs-search-results" class="search-results">
-    Searching...
-  </div>
+<p>A shortcut for tqdm_notebook(xrange(<em>args), </em>*kwargs).
+On Python3+ range is used instead of xrange.</p>
+<h1 id="tqdm_pandas">tqdm_pandas<h1 id="tqdm.tqdm_pandas"></h1></h1>
+<pre><code class="python">tqdm_pandas(tclass, *targs, **tkwargs)
+</code></pre>
 
+<p>Registers the given <code>tqdm</code> instance with
+<code>pandas.core.groupby.DataFrameGroupBy.progress_apply</code>.
+It will even close() the <code>tqdm</code> instance upon completion.</p>
+<h2>Parameters</h2>
 
+<ul>
+<li>tclass  : tqdm class you want to use (eg, tqdm, tqdm_notebook, etc)<br />
+targs and tkwargs  : arguments for the tqdm instance</li>
+</ul>
+<h2>Examples</h2>
+
+<pre><code class="python">&gt;&gt;&gt; import pandas as pd
+&gt;&gt;&gt; import numpy as np
+&gt;&gt;&gt; from tqdm import tqdm, tqdm_pandas
+&gt;&gt;&gt;
+&gt;&gt;&gt; df = pd.DataFrame(np.random.randint(0, 100, (100000, 6)))
+&gt;&gt;&gt; tqdm_pandas(tqdm, leave=True)  # can use tqdm_gui, optional kwargs, etc
+&gt;&gt;&gt; # Now you can use `progress_apply` instead of `apply`
+&gt;&gt;&gt; df.groupby(0).progress_apply(lambda x: x**2)
+</code></pre>
+
+<h2>References</h2>
+
+<p>https://stackoverflow.com/questions/18603270/
+progress-indicator-during-pandas-operations-python</p>
+              
             </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../warnings/" class="btn btn-neutral float-right" title="Warnings and Exceptions">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../tqdm_notebook/" class="btn btn-neutral" title="tqdm.tqdm_notebook"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -248,12 +323,16 @@
           <a href="https://github.com/tqdm/tqdm/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
+        <span><a href="../tqdm_notebook/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../warnings/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
-    <script>var base_url = '.';</script>
-    <script src="./js/theme.js" defer></script>
-      <script src="./search/main.js" defer></script>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
 
 </body>
 </html>

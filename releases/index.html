@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Release History - tqdm documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Release History";
+    var mkdocs_page_input_path = "releases.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> tqdm documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Documentation</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../docs/tqdm/">tqdm.tqdm</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../docs/tqdm_gui/">tqdm.tqdm_gui</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../docs/tqdm_notebook/">tqdm.tqdm_notebook</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../docs/shortcuts/">Shortcuts</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Developer Documentation</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../docs/warnings/">Warnings and Exceptions</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../docs/TMonitor/">tqdm.TMonitor</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Release History</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#tqdmtqdm-releases">tqdm/tqdm Releases</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#v4240">v4.24.0</a></li>
+        
+            <li><a class="toctree-l3" href="#v4234">v4.23.4</a></li>
+        
+            <li><a class="toctree-l3" href="#v4233">v4.23.3</a></li>
+        
+            <li><a class="toctree-l3" href="#v4232">v4.23.2</a></li>
+        
+            <li><a class="toctree-l3" href="#v4231">v4.23.1</a></li>
+        
+            <li><a class="toctree-l3" href="#v4230">v4.23.0</a></li>
+        
+            <li><a class="toctree-l3" href="#v4220">v4.22.0</a></li>
+        
+            <li><a class="toctree-l3" href="#v4210">v4.21.0</a></li>
+        
+            <li><a class="toctree-l3" href="#v4200">v4.20.0</a></li>
+        
+            <li><a class="toctree-l3" href="#v4199">v4.19.9</a></li>
+        
+            <li><a class="toctree-l3" href="#v4198">v4.19.8</a></li>
+        
+            <li><a class="toctree-l3" href="#v4196">v4.19.6</a></li>
+        
+            <li><a class="toctree-l3" href="#v4195">v4.19.5</a></li>
+        
+            <li><a class="toctree-l3" href="#v4194">v4.19.4</a></li>
+        
+            <li><a class="toctree-l3" href="#v4192">v4.19.2</a></li>
+        
+            <li><a class="toctree-l3" href="#v4191">v4.19.1</a></li>
+        
+            <li><a class="toctree-l3" href="#v4180">v4.18.0</a></li>
+        
+            <li><a class="toctree-l3" href="#v4171">v4.17.1</a></li>
+        
+            <li><a class="toctree-l3" href="#v4170">v4.17.0</a></li>
+        
+            <li><a class="toctree-l3" href="#v4160">v4.16.0</a></li>
+        
+            <li><a class="toctree-l3" href="#v4150">v4.15.0</a></li>
+        
+            <li><a class="toctree-l3" href="#v4140">v4.14.0</a></li>
+        
+            <li><a class="toctree-l3" href="#v4130">v4.13.0</a></li>
+        
+            <li><a class="toctree-l3" href="#v4120">v4.12.0</a></li>
+        
+            <li><a class="toctree-l3" href="#v4112">v4.11.2</a></li>
+        
+            <li><a class="toctree-l3" href="#v4111">v4.11.1</a></li>
+        
+            <li><a class="toctree-l3" href="#v4110">v4.11.0</a></li>
+        
+            <li><a class="toctree-l3" href="#v4100">v4.10.0</a></li>
+        
+            <li><a class="toctree-l3" href="#v490">v4.9.0</a></li>
+        
+            <li><a class="toctree-l3" href="#v484">v4.8.4</a></li>
+        
+            <li><a class="toctree-l3" href="#v481">v4.8.1</a></li>
+        
+            <li><a class="toctree-l3" href="#v480">v4.8.0</a></li>
+        
+            <li><a class="toctree-l3" href="#v476">v4.7.6</a></li>
+        
+            <li><a class="toctree-l3" href="#v474">v4.7.4</a></li>
+        
+            <li><a class="toctree-l3" href="#v470">v4.7.0</a></li>
+        
+            <li><a class="toctree-l3" href="#v462">v4.6.2</a></li>
+        
+            <li><a class="toctree-l3" href="#v461">v4.6.1</a></li>
+        
+            <li><a class="toctree-l3" href="#v450">v4.5.0</a></li>
+        
+            <li><a class="toctree-l3" href="#v443">v4.4.3</a></li>
+        
+            <li><a class="toctree-l3" href="#v441">v4.4.1</a></li>
+        
+            <li><a class="toctree-l3" href="#v420">v4.2.0</a></li>
+        
+            <li><a class="toctree-l3" href="#v400">v4.0.0</a></li>
+        
+            <li><a class="toctree-l3" href="#v380">v3.8.0</a></li>
+        
+            <li><a class="toctree-l3" href="#v371">v3.7.1</a></li>
+        
+            <li><a class="toctree-l3" href="#v360">v3.6.0</a></li>
+        
+            <li><a class="toctree-l3" href="#v350">v3.5.0</a></li>
+        
+            <li><a class="toctree-l3" href="#v330">v3.3.0</a></li>
+        
+            <li><a class="toctree-l3" href="#v314">v3.1.4</a></li>
+        
+            <li><a class="toctree-l3" href="#v224">v2.2.4</a></li>
+        
+            <li><a class="toctree-l3" href="#v200">v2.0.0</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../contributing/">Contributing</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ports/">Ports to Other Languages</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">External Links</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="https://github.com/tqdm/tqdm">Source Code (ENTIRE DOCUMENTATION ON ONE PAGE)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="https://github.com/tqdm/tqdm/wiki">wiki</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Downloads</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="https://github.com/tqdm/tqdm/releases">GitHub</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="https://pypi.org/project/tqdm">PyPI</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="https://anaconda.org/conda-forge/tqdm">Conda</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Tests</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="https://travis-ci.org/tqdm/tqdm">Travis CI</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="https://coveralls.io/github/tqdm/tqdm">Coveralls</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="https://codecov.io/gh/tqdm/tqdm">Codecov</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="https://www.codacy.com/app/tqdm/tqdm">Codacy</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="https://tqdm.github.io/tqdm">Performance Benchmarks (asv)</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Citations</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="https://zenodo.org/badge/latestdoi/21637/tqdm/tqdm">DOI (Zenodo)</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="https://www.openhub.net/p/tqdm">Metrics (Open Hub)</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../licence/">Licence</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">tqdm documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Release History</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/tqdm/tqdm/edit/master/docs/releases.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="tqdmtqdm-releases"><a href="https://github.com/tqdm/tqdm">tqdm/tqdm</a> Releases</h1>
+<h2 id="v4240"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.24.0">v4.24.0</a></h2>
+<ul>
+<li><code>autonotebook</code> submodule for automatic selection of notebook/CLI bar (<a href="https://github.com/tqdm/tqdm/issues/443">#443</a>, <a href="https://github.com/tqdm/tqdm/issues/508">#508</a>)<ul>
+<li>update/add <code>pandas()</code> example documentation (<a href="https://github.com/tqdm/tqdm/issues/474">#474</a>)</li>
+</ul>
+</li>
+<li><code>NameError:IntProgress</code> changed to a more helpful <code>ImportError</code> (<a href="https://github.com/tqdm/tqdm/issues/187">#187</a>, <a href="https://github.com/tqdm/tqdm/issues/451">#451</a>, <a href="https://github.com/tqdm/tqdm/issues/558">#558</a>)</li>
+<li>support <code>bool()</code> cast when <code>disable=True</code> (<a href="https://github.com/tqdm/tqdm/issues/574">#574</a>)</li>
+<li>fix <code>format_sizeof</code> hundreds rounding (<a href="https://github.com/tqdm/tqdm/issues/579">#579</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/581">#581</a>)</li>
+<li>ensure URLs in documentation are secure (<code>https</code>)</li>
+</ul>
+<h2 id="v4234"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.23.4">v4.23.4</a></h2>
+<ul>
+<li>Support pandas 0.23.0 <code>core.groupby</code> module layout (<a href="https://github.com/tqdm/tqdm/issues/555">#555</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/554">#554</a>)</li>
+<li>Add python_requires to help pip (<a href="https://github.com/tqdm/tqdm/issues/557">#557</a>)</li>
+<li>minor maintenance updates</li>
+<li>CI updates: drop travis py33 due to <code>tox</code> (<a href="https://github.com/tox-dev/tox/issues/648">tox-dev/tox#648</a>)</li>
+<li>minor code tidy</li>
+</ul>
+<h2 id="v4233"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.23.3">v4.23.3</a></h2>
+<ul>
+<li>suppress 10 second warning (refix <a href="https://github.com/tqdm/tqdm/issues/323">#323</a>)</li>
+</ul>
+<h2 id="v4232"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.23.2">v4.23.2</a></h2>
+<ul>
+<li>minor import syntax fix <a href="https://github.com/tqdm/tqdm/issues/496">#496</a></li>
+<li>re-fix nested overlaps <a href="https://github.com/tqdm/tqdm/issues/477">#477</a></li>
+<li>update documentation and examples</li>
+<li>code tidy and abstraction</li>
+</ul>
+<h2 id="v4231"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.23.1">v4.23.1</a></h2>
+<ul>
+<li>fix <code>AttributeError</code>s (<a href="https://github.com/tqdm/tqdm/issues/546">#546</a>)<ul>
+<li><code>pos</code>  on initialisation (<a href="https://github.com/tqdm/tqdm/issues/323">#323</a>, <a href="https://github.com/tqdm/tqdm/issues/510">#510</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/544">#544</a>)</li>
+<li><code>fp</code> on <code>write()</code> (<a href="https://github.com/tqdm/tqdm/issues/383">#383</a>)</li>
+</ul>
+</li>
+<li>fix py34 CI</li>
+<li>update documentation</li>
+</ul>
+<h2 id="v4230"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.23.0">v4.23.0</a></h2>
+<ul>
+<li>Fix <code>disable=True</code> where<code>iterable</code> has no <code>len()</code> and is not <code>None</code>  (<a href="https://github.com/tqdm/tqdm/issues/539">#539</a>)</li>
+<li>Add <code>ncols</code> to specify <code>tqdm_notebook</code> bar width (<a href="https://github.com/tqdm/tqdm/issues/276">#276</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/292">#292</a>)</li>
+<li>allow custom <code>pandas</code> <code>total</code> (<a href="https://github.com/tqdm/tqdm/issues/364">#364</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/535">#535</a>)</li>
+<li>Add <code>progress_apply</code> for <code>pandas.(Series|DataFrame).(rolling|expanding)</code> (<a href="https://github.com/tqdm/tqdm/issues/530">#530</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/537">#537</a>)</li>
+<li>unit tests, pep8 tidy</li>
+<li><code>postfix</code> non-<code>dict</code> documentation note</li>
+</ul>
+<h2 id="v4220"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.22.0">v4.22.0</a></h2>
+<ul>
+<li>allow direct non-string assignment to <code>postfix</code> member (lists, dicts, etc) (<a href="https://github.com/tqdm/tqdm/issues/382">#382</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/534">#534</a>)</li>
+<li>documentation updates</li>
+<li>unit tests</li>
+</ul>
+<h2 id="v4210"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.21.0">v4.21.0</a></h2>
+<ul>
+<li>fix <a href="https://github.com/tqdm/tqdm/issues/532">#532</a> <code>write()</code> with manual <code>position</code></li>
+<li>more robust free position finding</li>
+<li>add <code>TqdmWarning</code> base class</li>
+<li>fix GUI <code>__del__()</code></li>
+<li>add <code>TqdmExperimentalWarning</code></li>
+<li>add, tidy &amp; fix unit tests</li>
+<li>documentation</li>
+<li>wiki release notes</li>
+<li>update contributors</li>
+<li>fix <code>7zx</code> example</li>
+</ul>
+<h2 id="v4200"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.20.0">v4.20.0</a></h2>
+<ul>
+<li><code>pandas</code> wrapper: remove <code>*args</code> and add better <code>total</code> handling (<a href="https://github.com/tqdm/tqdm/issues/244">#244</a>, <a href="https://github.com/tqdm/tqdm/issues/299">#299</a>, <a href="https://github.com/tqdm/tqdm/issues/322">#322</a>, <a href="https://github.com/tqdm/tqdm/issues/366">#366</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/524">#524</a>)</li>
+<li>document windows unicode know issues (<a href="https://github.com/tqdm/tqdm/issues/454">#454</a>)</li>
+<li>suppress <code>RuntimeError: Set changed size during iteration</code> -&gt; <code>TqdmSynchronisationWarning</code> (<a href="https://github.com/tqdm/tqdm/issues/481">#481</a>)</li>
+</ul>
+<h2 id="v4199"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.19.9">v4.19.9</a></h2>
+<ul>
+<li>fix monitor thread termination and update tests (<a href="https://github.com/tqdm/tqdm/issues/527">#527</a>)</li>
+</ul>
+<h2 id="v4198"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.19.8">v4.19.8</a></h2>
+<ul>
+<li>fix monitoring thread issues</li>
+<li>avoid uninitialised instance manipulation (<a href="https://github.com/tqdm/tqdm/issues/493">#493</a>)</li>
+<li>fix thread starting <code>RuntimeError</code> (<a href="https://github.com/tqdm/tqdm/issues/522">#522</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/523">#523</a>)</li>
+<li>these release notes (<a href="https://github.com/tqdm/tqdm/issues/529">#529</a>)</li>
+</ul>
+<h2 id="v4196"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.19.6">v4.19.6</a></h2>
+<ul>
+<li>CLI improvements<ul>
+<li><code>--bytes</code> implies <code>--unit B --unit_scale --unit_divisor 1024</code> (<a href="https://github.com/tqdm/tqdm/issues/503">#503</a>)</li>
+<li>allow hyphens in CLI arguments (<a href="https://github.com/tqdm/tqdm/issues/511">#511</a>)</li>
+</ul>
+</li>
+<li>synchronisation: fix for <code>sem_open</code> on <code>aarch64</code> (<a href="https://github.com/tqdm/tqdm/issues/513">#513</a>)</li>
+<li>framework update<ul>
+<li>CI/tests, year 2018, py37, badges, documentation</li>
+</ul>
+</li>
+</ul>
+<h2 id="v4195"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.19.5">v4.19.5</a></h2>
+<ul>
+<li>multiprocess/lock fixes (<a href="https://github.com/tqdm/tqdm/issues/457">#457</a>)</li>
+<li><code>set_description</code> in notebook (<a href="https://github.com/tqdm/tqdm/issues/345">#345</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/475">#475</a>)</li>
+<li>minor tidy (<a href="https://github.com/tqdm/tqdm/issues/476">#476</a>)</li>
+<li>documentation updates</li>
+</ul>
+<h2 id="v4194"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.19.4">v4.19.4</a></h2>
+<ul>
+<li>fix <code>Lock:NotImplementedError</code> on certain systems (<a href="https://github.com/tqdm/tqdm/issues/466">#466</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/468">#468</a>)</li>
+<li>use recursive locks (<a href="https://github.com/tqdm/tqdm/issues/469">#469</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/468">#468</a>)<ul>
+<li>fix deadlocks</li>
+</ul>
+</li>
+<li>tidy (<a href="https://github.com/tqdm/tqdm/issues/448">#448</a>)</li>
+<li><code>flush()</code> on <code>moveto()</code> (<a href="https://github.com/tqdm/tqdm/issues/398">#398</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/399">#399</a>, <a href="https://github.com/tqdm/tqdm/issues/420">#420</a>, <a href="https://github.com/tqdm/tqdm/issues/467">#467</a>)</li>
+<li>update tests and benchmarks</li>
+</ul>
+<h2 id="v4192"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.19.2">v4.19.2</a></h2>
+<ul>
+<li><code>flush()</code> on <code>refresh()</code> (<a href="https://github.com/tqdm/tqdm/issues/459">#459</a> from <a href="https://github.com/tqdm/tqdm/issues/317">#317</a>)</li>
+<li>status printer updates (<a href="https://github.com/tqdm/tqdm/issues/331">#331</a>)<ul>
+<li>use <code>sp()</code> in <code>refresh()</code></li>
+<li>remove redundant <code>clear():nomove=False</code></li>
+</ul>
+</li>
+<li>misc minor documentation updates</li>
+<li>unit tests</li>
+</ul>
+<h2 id="v4191"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.19.1">v4.19.1</a></h2>
+<ul>
+<li><code>rate_(no)inv(_fmt)</code> (<a href="https://github.com/tqdm/tqdm/issues/72">#72</a>, b228bc3)</li>
+<li><code>__repr__()</code> tidy (<a href="https://github.com/tqdm/tqdm/issues/389">#389</a>)</li>
+<li>fix <code>write()</code> before initialisation <code>AttributeError: _lock</code> (<a href="https://github.com/tqdm/tqdm/issues/457">#457</a>)</li>
+<li><code>man</code> pages</li>
+<li>documentation updates</li>
+</ul>
+<h2 id="v4180"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.18.0">v4.18.0</a></h2>
+<ul>
+<li>Thread safety! (<a href="https://github.com/tqdm/tqdm/issues/285">#285</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/291">#291</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/329">#329</a>, <a href="https://github.com/tqdm/tqdm/issues/407">#407</a>, <a href="https://github.com/tqdm/tqdm/issues/417">#417</a>)</li>
+<li>Ease redirection of <code>sys.stdout</code>/<code>stderr</code> (<a href="https://github.com/tqdm/tqdm/issues/422">#422</a>)</li>
+<li>Minor internal stream bugfix (<a href="https://github.com/tqdm/tqdm/issues/439">#439</a>)</li>
+<li><code>AttributeError</code> fixes (<a href="https://github.com/tqdm/tqdm/issues/323">#323</a>, <a href="https://github.com/tqdm/tqdm/issues/324">#324</a>, <a href="https://github.com/tqdm/tqdm/issues/418">#418</a>)</li>
+</ul>
+<p>Related to:</p>
+<ul>
+<li>Misc bugs (<a href="https://github.com/tqdm/tqdm/issues/334">#334</a>)</li>
+<li><code>concurrent.futures</code> (<a href="https://github.com/tqdm/tqdm/issues/97">#97</a>)</li>
+<li>Multi-<code>tqdm</code> (<a href="https://github.com/tqdm/tqdm/issues/143">#143</a>)</li>
+<li><code>flush()</code> and <code>refresh()</code> (<a href="https://github.com/tqdm/tqdm/issues/331">#331</a>)</li>
+<li>Newline on <code>refresh()</code> (<a href="https://github.com/tqdm/tqdm/issues/361">#361</a>)</li>
+<li>Nested trees (<a href="https://github.com/tqdm/tqdm/issues/384">#384</a>)</li>
+<li>Manually positioned nested bars clearing (<a href="https://github.com/tqdm/tqdm/issues/385">#385</a>)</li>
+</ul>
+<h2 id="v4171"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.17.1">v4.17.1</a></h2>
+<ul>
+<li>initialise <code>n</code> even when disabled (<a href="https://github.com/tqdm/tqdm/issues/438">#438</a>)</li>
+<li>better unicode detection (<a href="https://github.com/tqdm/tqdm/issues/437">#437</a>)</li>
+<li><code>__repr__()</code> bugfix (<a href="https://github.com/tqdm/tqdm/issues/441">#441</a>)</li>
+</ul>
+<h2 id="v4170"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.17.0">v4.17.0</a></h2>
+<ul>
+<li>easier redirect of <code>stdout</code> (<a href="https://github.com/tqdm/tqdm/issues/426">#426</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/431">#431</a>)<ul>
+<li><code>cls.external_write_mode() @contextmanager</code></li>
+</ul>
+</li>
+<li><code>refresh=True</code> for <code>set_description</code>/<code>update</code>(<code>_str</code>) (<a href="https://github.com/tqdm/tqdm/issues/317">#317</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/377">#377</a>)</li>
+</ul>
+<h2 id="v4160"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.16.0">v4.16.0</a></h2>
+<ul>
+<li>more formatting control (<a href="https://github.com/tqdm/tqdm/issues/347">#347</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/362">#362</a>)<ul>
+<li><code>set_postfix_str()</code>, <code>set_description_str()</code></li>
+<li>move <code>": "</code> to <code>bar_format</code></li>
+<li>complements <a href="https://github.com/tqdm/tqdm/issues/266">#266</a>, <a href="https://github.com/tqdm/tqdm/issues/270">#270</a></li>
+</ul>
+</li>
+<li>better CLI support (e.g. hyphenated paths) (<a href="https://github.com/tqdm/tqdm/issues/423">#421</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/424">#424</a>)</li>
+<li>more unit tests (<a href="https://github.com/tqdm/tqdm/issues/411">#411</a>)<ul>
+<li>upgrade to pypy2/3-5.8.0</li>
+<li>add py37-dev</li>
+</ul>
+</li>
+<li>doc updates</li>
+</ul>
+<h2 id="v4150"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.15.0">v4.15.0</a></h2>
+<ul>
+<li>minor fixes (<a href="https://github.com/tqdm/tqdm/issues/395">#395</a>)</li>
+<li>minor documentation updates (<a href="https://github.com/tqdm/tqdm/issues/400">#400</a>, <a href="https://github.com/tqdm/tqdm/issues/401">#401</a>, <a href="https://github.com/tqdm/tqdm/issues/412">#412</a>)</li>
+<li>better <code>pandas</code> support (<a href="https://github.com/tqdm/tqdm/issues/351">#351</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/409">#409</a>)</li>
+<li>Jupyter notebook fix (<a href="https://github.com/tqdm/tqdm/issues/352">#352</a>, <a href="https://github.com/tqdm/tqdm/issues/369">#369</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/373">#373</a>, <a href="https://github.com/tqdm/tqdm/issues/405">#405</a>)</li>
+<li>optimise <code>setcheckinterval</code>/<code>setswitchinterval</code> (<a href="https://github.com/tqdm/tqdm/issues/376">#376</a>)</li>
+<li>add <code>unit_scale</code> (<a href="https://github.com/tqdm/tqdm/issues/273">#273</a>, <a href="https://github.com/tqdm/tqdm/issues/295">#295</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/378">#378</a>)</li>
+</ul>
+<h2 id="v4140"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.14.0">v4.14.0</a></h2>
+<ul>
+<li>add <code>unit_divisor</code> <a href="https://github.com/tqdm/tqdm/issues/354">#354</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/356">#356</a> </li>
+<li>update examples</li>
+</ul>
+<h2 id="v4130"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.13.0">v4.13.0</a></h2>
+<ul>
+<li>support unknown systems https://github.com/warner/magic-wormhole/issues/158, <a href="https://github.com/tqdm/tqdm/issues/76">#76</a>, <a href="https://github.com/tqdm/tqdm/issues/344">#344</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/390">#390</a></li>
+<li>support nested/multi-bars better <a href="https://github.com/tqdm/tqdm/issues/384">#384</a>, <a href="https://github.com/tqdm/tqdm/issues/285">#285</a>, <a href="https://github.com/tqdm/tqdm/issues/329">#329</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/385">#385</a></li>
+<li>ease redirection of output (default: <code>sys.stderr</code> -&gt; <code>None</code>) https://github.com/xonsh/xonsh/issues/2058, <a href="https://github.com/tqdm/tqdm/issues/329">#329</a>, <a href="https://github.com/tqdm/tqdm/issues/275">#275</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/293">#293</a><ul>
+<li>add <a href="https://github.com/tqdm/tqdm/blob/master/examples/redirect_print.py">examples/redirect_print.py</a></li>
+</ul>
+</li>
+<li>minor documentation updates</li>
+</ul>
+<h2 id="v4120"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.12.0">v4.12.0</a></h2>
+<ul>
+<li>fix monitor race condition <a href="https://github.com/tqdm/tqdm/issues/338">#338</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/339">#339</a></li>
+<li>add explicit NetBSD support <a href="https://github.com/tqdm/tqdm/issues/344">#344</a></li>
+<li>documentation tidy</li>
+</ul>
+<h2 id="v4112"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.11.2">v4.11.2</a></h2>
+<ul>
+<li>thread safety <a href="https://github.com/tqdm/tqdm/issues/332">#332</a></li>
+<li>address <code>DeprecationWarning</code> <a href="https://github.com/tqdm/tqdm/issues/319">#319</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/326">#326</a></li>
+<li>version extra <a href="https://github.com/tqdm/tqdm/issues/328">#328</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/330">#330</a></li>
+<li>security fix</li>
+<li>add non-master branch name</li>
+<li>minor safety</li>
+<li>minor documentation and comments</li>
+</ul>
+<h2 id="v4111"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.11.1">v4.11.1</a></h2>
+<p>Officially support Python 3.6, addressing <a href="https://github.com/tqdm/tqdm/issues/333">#333</a></p>
+<h2 id="v4110"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.11.0">v4.11.0</a></h2>
+<ul>
+<li><code>postfix</code> argument added <a href="https://github.com/tqdm/tqdm/issues/266">#266</a>-&gt;<a href="https://github.com/tqdm/tqdm/issues/270">#270</a> </li>
+<li>fix tests for</li>
+<li><code>numpy</code> <a href="https://github.com/tqdm/tqdm/issues/272">#272</a>-&gt;<a href="https://github.com/tqdm/tqdm/issues/302">#302</a></li>
+<li><code>PyPy3</code> <a href="https://github.com/tqdm/tqdm/issues/318">#318</a>-&gt;<a href="https://github.com/tqdm/tqdm/issues/325">#325</a></li>
+<li><code>7z</code> extraction example script</li>
+<li>new logo <a href="https://github.com/tqdm/tqdm/issues/315">#315</a> </li>
+<li>hit counter with logo colours and stats</li>
+<li>documentation updates</li>
+<li>safer <code>setup.py</code> <code>Makefile</code> emulation</li>
+<li>better github contributions integrations and Code of Conduct <a href="https://github.com/tqdm/tqdm/issues/310">#310</a></li>
+</ul>
+<h2 id="v4100"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.10.0">v4.10.0</a></h2>
+<ul>
+<li>fix maxinterval to adjust miniters to mininterval <a href="https://github.com/tqdm/tqdm/issues/249">#249</a></li>
+<li>minor bugfixes (eg <a href="https://github.com/tqdm/tqdm/issues/288">#288</a>)</li>
+<li>misc optimisations, unit tests, and benchmarks (eg <a href="https://github.com/tqdm/tqdm/issues/298">#298</a>)</li>
+<li>documentation updates</li>
+</ul>
+<h2 id="v490"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.9.0">v4.9.0</a></h2>
+<ul>
+<li>monitoring thread to automatically to adjust <code>miniters</code> and avoid exceeding <code>maxinterval</code></li>
+<li>test race conditions</li>
+<li>kill on KeyboardInterrupt + instant refresh</li>
+<li>low performance overhead, option to disable</li>
+<li>new CLI argument: <code>--bytes</code> to count chars</li>
+<li>disable automatically on non-TTY (<a href="https://github.com/tqdm/tqdm/issues/281">#281</a>)</li>
+<li>fixed <code>refresh()</code> and <code>clear()</code> if disabled (<a href="https://github.com/tqdm/tqdm/issues/286">#286</a>)</li>
+<li>misc fixes</li>
+<li>documentation</li>
+<li>unit tests</li>
+<li>optimisations, style fixes</li>
+<li>codacy badge</li>
+<li>safety and warning suppression</li>
+<li>ignore coverall failures (<a href="https://github.com/tqdm/tqdm/issues/283">#283</a>)</li>
+<li>fix broken link in README (<a href="https://github.com/tqdm/tqdm/issues/262">#262</a>)</li>
+<li>Fix <code>time()</code> in <code>refresh()</code> + avoid <code>write()</code> races (<a href="https://github.com/tqdm/tqdm/issues/264">#264</a>)</li>
+<li>Fix <code>__repr__()</code> <a href="https://github.com/tqdm/tqdm/issues/269">#269</a></li>
+<li>Fix <code>update(0)</code> causing <code>ZeroDivisionError</code> (on first call) <a href="https://github.com/tqdm/tqdm/issues/268">#268</a></li>
+<li>Faster simple bar for perf test (<a href="https://github.com/tqdm/tqdm/issues/257">#257</a>)</li>
+<li>cleaner <code>tqdm_notebook</code> exit when not run in a notebook (<a href="https://github.com/tqdm/tqdm/issues/267">#267</a>)</li>
+<li>Disable coveralls because of duplicate comments on github (<a href="https://github.com/tqdm/tqdm/issues/263">#263</a>)</li>
+<li>Migrate codecov config -&gt; codecov.yml</li>
+</ul>
+<h2 id="v484"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.8.4">v4.8.4</a></h2>
+<ul>
+<li>14% overhead reduction</li>
+<li>fix exception when closing <code>tqdm_notebook</code> without a <code>total</code></li>
+<li>support more pandas modules</li>
+<li>pandas.Series.progress_map</li>
+<li>pandas.DataFrame.progress_applymap</li>
+<li>Panel.progress_apply</li>
+<li>PanelGroupBy.progress_apply</li>
+<li>GroupBy.progress_aggregate</li>
+<li>GroupBy.progress_transform</li>
+<li>faster CI builds</li>
+<li>misc documentation update and link to wiki</li>
+</ul>
+<h2 id="v481"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.8.1">v4.8.1</a></h2>
+<ul>
+<li>custom tqdm warning/exceptions</li>
+<li>tests now multiprocessed and include pandas</li>
+</ul>
+<h2 id="v480"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.8.0">v4.8.0</a></h2>
+<ul>
+<li><code>tqdm.pandas</code> classmethod replaces <code>tqdm_pandas</code> function (deprecated)</li>
+<li><code>ipython</code> aliased imports fixes</li>
+<li><code>write</code> without any instances</li>
+<li>readme update</li>
+<li>examples update</li>
+<li>test fixes and updates</li>
+</ul>
+<h2 id="v476"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.7.6">v4.7.6</a></h2>
+<ul>
+<li>support for pandas series</li>
+<li>support for numpy arrays</li>
+<li>tidy &amp; coverage</li>
+</ul>
+<h2 id="v474"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.7.4">v4.7.4</a></h2>
+<ul>
+<li><code>pandas.DataFrame.apply</code> support</li>
+<li><code>tqdm_notebook.write()</code></li>
+<li><code>tqdm_gui.write()</code></li>
+<li>misc notebook fixes</li>
+<li>delay notebook imports (&gt;80% reduction in import time when unused)</li>
+<li>optional <code>colorama</code> only on windows</li>
+<li>documentation tidy</li>
+<li>more &amp; faster tests</li>
+</ul>
+<h2 id="v470"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.7.0">v4.7.0</a></h2>
+<ul>
+<li>CLI custom delimiter support</li>
+<li>More robust CLI argument parsing</li>
+<li>either one or two <code>-</code> preceding kwargs (eg <code>-ascii</code> or <code>--ascii</code>)</li>
+<li>no positional args (so no need to quote multi-word <code>-desc</code> for example)</li>
+<li><code>bool</code> kwargs with implicit value=<code>True</code> still supported</li>
+<li>optional <code>=</code> sign after kwargs</li>
+<li>tests</li>
+<li>doc updates, badges</li>
+<li>pyversions, doi, licence, github</li>
+</ul>
+<h2 id="v462"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.6.2">v4.6.2</a></h2>
+<ul>
+<li>Fix warnings due to IPython/Jupyter widget</li>
+</ul>
+<h2 id="v461"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.6.1">v4.6.1</a></h2>
+<ul>
+<li>add IPython/Jupyter support</li>
+<li>fix <code>{bar}</code> length breaking display when using custom <code>bar_format</code></li>
+<li>add a no inversion rate formatting for <code>bar_format</code> (i.e., always show <code>it/s</code> and never <code>s/it</code>)</li>
+</ul>
+<h2 id="v450"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.5.0">v4.5.0</a></h2>
+<ul>
+<li>print messages within (nested) loops using <code>tqdm.write(...)</code></li>
+</ul>
+<h2 id="v443"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.4.3">v4.4.3</a></h2>
+<ul>
+<li>remove <code>docopt</code> dependency for CLI</li>
+<li>re-added <code>update(0)</code> ability to trigger refresh</li>
+<li>minor fixes</li>
+<li>re-added (OSI approved) licence to source</li>
+<li>dev versioning auto-fallback</li>
+<li>slight speed optimisation</li>
+<li>tests</li>
+<li>documentation</li>
+</ul>
+<h2 id="v441"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.4.1">v4.4.1</a></h2>
+<ul>
+<li>Module execution in CLI pipes!</li>
+<li><code>tqdm</code> executable</li>
+<li>documentation</li>
+<li>tests</li>
+<li>MSYS aded to supported envs</li>
+<li>better VTE support</li>
+<li>dev versioning</li>
+<li>tests</li>
+</ul>
+<h2 id="v420"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.2.0">v4.2.0</a></h2>
+<ul>
+<li>MPL licence!</li>
+<li>slightly updated logo</li>
+<li>update examples</li>
+<li><code>update(0)</code> allowed</li>
+<li>better VTE support</li>
+<li>ascii fallback when unicode not available</li>
+</ul>
+<h2 id="v400"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.0.0">v4.0.0</a></h2>
+<ul>
+<li>automate <code>nested</code></li>
+<li>deprecate <code>nested</code></li>
+<li>add manual override control with <code>position</code></li>
+<li>documentation and example updates, coverage and tests</li>
+<li>make <code>leave==True</code> by default (was <code>False</code>)</li>
+</ul>
+<h2 id="v380"><a href="https://github.com/tqdm/tqdm/releases/tag/v3.8.0">v3.8.0</a></h2>
+<ul>
+<li>update(n&lt;1) raises error</li>
+<li>sanitise and update examples and README</li>
+<li>fix setup.py encoding error</li>
+<li>remove py32 from Travis</li>
+<li>changelog more accessible from README</li>
+</ul>
+<h2 id="v371"><a href="https://github.com/tqdm/tqdm/releases/tag/v3.7.1">v3.7.1</a></h2>
+<ul>
+<li>Added more OS support (FreeBSD, Solaris/SunOS)</li>
+<li>Added Python3.5 support and tests</li>
+<li>Added IronPython2.7 support</li>
+<li>Fix Makefile management for Python3</li>
+<li>Added relative timing for tests</li>
+<li>More stable smoothed ETA</li>
+<li>Refactoring <em>everything</em> into one big <code>tqdm</code> class for even more subclassing fun</li>
+</ul>
+<h2 id="v360"><a href="https://github.com/tqdm/tqdm/releases/tag/v3.6.0">v3.6.0</a></h2>
+<p>Added support for "restarting" a progressbar after a long pause without making the iteration rate go haywire. Simply call the <code>unpause()</code> method on the <code>tqdm</code> instance that is about to be restarted. Can also start <code>tqdm</code> skipping a number of steps specified by <code>initial</code> (without bias-ing ETA).</p>
+<h2 id="v350"><a href="https://github.com/tqdm/tqdm/releases/tag/v3.5.0">v3.5.0</a></h2>
+<ul>
+<li>Fully customisable output format using the <code>bar_format</code> keyword argument.</li>
+<li>Valid strings: bar, n, n_fmt, total, total_fmt, percentage, rate, rate_fmt, elapsed, remaining, l_bar, r_bar, desc</li>
+<li>Example: <code>bar_format='{desc}{bar}{rate:03.3d}'</code></li>
+<li>Default: '{l_bar}{bar}{r_bar}', where l_bar is '{desc}{percentage:3.0f}%|' and r_bar is '| {n_fmt}/{total_fmt} [{elapsed_str}&lt;{remaining_str}, {rate_fmt}]'.</li>
+<li>Solaris, FreeBSD support mentioned</li>
+<li>Link redirects circumvented</li>
+</ul>
+<h2 id="v330"><a href="https://github.com/tqdm/tqdm/releases/tag/v3.3.0">v3.3.0</a></h2>
+<ul>
+<li>Support added for pandas <code>apply</code> =&gt; <code>progress_apply</code></li>
+<li>80-char width when running interactive <code>help()</code></li>
+<li>update examples using <code>with</code> syntax</li>
+</ul>
+<h2 id="v314"><a href="https://github.com/tqdm/tqdm/releases/tag/v3.1.4">v3.1.4</a></h2>
+<p>Added <code>smoothing</code> and <code>maxinterval</code> features for smooth progress bar and rate for unconstant, variable changes in update times, and abstracted gui to its own class and file.</p>
+<p>Also added a performance test to prevent performance regressions.</p>
+<h2 id="v224"><a href="https://github.com/tqdm/tqdm/releases/tag/v2.2.4">v2.2.4</a></h2>
+<p>Added the dynamic management of the bar on window resize, plus a better internal testing/build workflow using <code>python setup.py make [alias]</code>.</p>
+<h2 id="v200"><a href="https://github.com/tqdm/tqdm/releases/tag/v2.0.0">v2.0.0</a></h2>
+<p>First public release of the next generation of tqdm, with lots of new features, more speed, more unit testing, more coverage (100% yeah!), more beer and coffee.</p>
+<p>This release can also be downloaded on <a href="https://pypi.python.org/pypi/tqdm/2.0.0">PyPi here</a>.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../contributing/" class="btn btn-neutral float-right" title="Contributing">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../docs/TMonitor/" class="btn btn-neutral" title="tqdm.TMonitor"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/tqdm/tqdm/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../docs/TMonitor/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../contributing/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
