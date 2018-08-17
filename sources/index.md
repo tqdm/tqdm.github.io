@@ -3,7 +3,7 @@
 tqdm
 ====
 
-[![PyPI-Status](https://img.shields.io/pypi/v/tqdm.svg)](https://pypi.python.org/pypi/tqdm) [![PyPI-Versions](https://img.shields.io/pypi/pyversions/tqdm.svg)](https://pypi.python.org/pypi/tqdm) [![Conda-Forge-Status](https://anaconda.org/conda-forge/tqdm/badges/version.svg)](https://anaconda.org/conda-forge/tqdm)
+[![PyPI-Status](https://img.shields.io/pypi/v/tqdm.svg)](https://pypi.org/project/tqdm) [![PyPI-Versions](https://img.shields.io/pypi/pyversions/tqdm.svg)](https://pypi.org/project/tqdm) [![Conda-Forge-Status](https://anaconda.org/conda-forge/tqdm/badges/version.svg)](https://anaconda.org/conda-forge/tqdm)
 
 [![Build-Status](https://travis-ci.org/tqdm/tqdm.svg?branch=master)](https://travis-ci.org/tqdm/tqdm) [![Coverage-Status](https://coveralls.io/repos/tqdm/tqdm/badge.svg?branch=master)](https://coveralls.io/github/tqdm/tqdm) [![Branch-Coverage-Status](https://codecov.io/gh/tqdm/tqdm/branch/master/graph/badge.svg)](https://codecov.io/gh/tqdm/tqdm) [![Codacy-Grade](https://api.codacy.com/project/badge/Grade/3f965571598f44549c7818f29cdcf177)](https://www.codacy.com/app/tqdm/tqdm?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tqdm/tqdm&amp;utm_campaign=Badge_Grade)
 
