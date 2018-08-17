@@ -28,7 +28,8 @@ for i in tqdm(range(10000)):
 `tqdm(xrange(N))`.
 
 ![Screenshot](https://raw.githubusercontent.com/tqdm/tqdm/master/images/tqdm.gif)
-    REPL: [ptpython](https://github.com/jonathanslenders/ptpython)
+
+REPL: [ptpython](https://github.com/jonathanslenders/ptpython)
 
 It can also be executed as a module with pipes:
 
