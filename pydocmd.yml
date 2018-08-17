@@ -1,0 +1,88 @@
+site_name: "tqdm documentation"
+repo_url: https://github.com/tqdm/tqdm
+generate:
+- tqdm/tqdm.md:
+  - tqdm.tqdm
+  - tqdm.tqdm.__init__
+  - tqdm.tqdm.update
+  - tqdm.tqdm.close
+  - tqdm.tqdm.refresh
+  - tqdm.tqdm.write
+  - tqdm.tqdm.set_description
+  - tqdm.tqdm.set_description_str
+  - tqdm.tqdm.set_postfix
+  - tqdm.tqdm.set_postfix_str
+  - tqdm.tqdm.clear
+  - tqdm.tqdm.unpause
+  - tqdm.tqdm.external_write_mode
+  - tqdm.tqdm.set_lock
+  - tqdm.tqdm.get_lock
+  - tqdm.tqdm.pandas
+  - tqdm.tqdm.format_interval
+  - tqdm.tqdm.format_sizeof
+  - tqdm.tqdm.format_meter
+  - tqdm.tqdm.status_printer
+  - tqdm._utils.Comparable+
+- tqdm/tqdm_notebook.md:
+  - tqdm._tqdm_notebook.tqdm_notebook+
+- tqdm/tqdm_gui.md:
+  - tqdm.tqdm_gui+
+#- tqdm/autonotebook.md:
+#  - tqdm.autonotebook
+- tqdm/shortcuts.md:
+  - tqdm.trange
+  - tqdm.tgrange
+  - tqdm.tnrange
+  - tqdm.tqdm_pandas
+- tqdm/TMonitor.md:
+  - tqdm.TMonitor+
+- tqdm/warnings.md:
+  - tqdm.TqdmTypeError
+  - tqdm.TqdmKeyError
+  - tqdm.TqdmWarning
+  - tqdm.TqdmSynchronisationWarning
+  - tqdm.TqdmDeprecationWarning
+  - tqdm.TqdmExperimentalWarning
+  - tqdm.TqdmMonitorWarning
+
+pages:
+- Home: index.md
+- Documentation:
+  - tqdm.tqdm: tqdm/tqdm.md
+  - tqdm.tqdm_gui: tqdm/tqdm_gui.md
+  - tqdm.tqdm_notebook: tqdm/tqdm_notebook.md
+  #- tqdm.autonotebook: tqdm/autonotebook.md
+  - tqdm.TMonitor: tqdm/TMonitor.md
+  - Shortcuts: tqdm/shortcuts.md
+  - Warnings and Exceptions: tqdm/warnings.md
+- Contributing: contributing.md << ../CONTRIBUTING.md
+- Release History: ../wiki/Releases.md
+- External Links:
+  - GitHub:
+    - Source Code (ENTIRE DOCUMENTATION ON ONE PAGE): https://github.com/tqdm/tqdm
+    - wiki: https://github.com/tqdm/tqdm/wiki
+  - Downloads:
+    - GitHub: https://github.com/tqdm/tqdm/releases
+    - PyPI: https://pypi.org/project/tqdm
+    - Conda: https://anaconda.org/conda-forge/tqdm
+  - Tests:
+    - Travis CI: https://travis-ci.org/tqdm/tqdm
+    - Coveralls: https://coveralls.io/github/tqdm/tqdm
+    - Codecov: https://codecov.io/gh/tqdm/tqdm
+    - Codacy: https://www.codacy.com/app/tqdm/tqdm
+    - Performance Benchmarks (asv): https://tqdm.github.io/tqdm
+  - Citations:
+    - DOI (Zenodo): https://zenodo.org/badge/latestdoi/21637/tqdm/tqdm
+    - Metrics (Open Hub): https://www.openhub.net/p/tqdm
+- Licence: licence.md << ../LICENCE
+
+#docs_dir: sources
+#gens_dir: _build/pydocmd     # This will end up as the MkDocs 'docs_dir'
+#site_dir: _build/site
+#theme:    readthedocs
+#loader:   pydocmd.loader.PythonLoader
+#preprocessor: pydocmd.preprocessor.Preprocessor
+preprocessor: docs.custom.Preprocessor
+
+additional_search_paths:
+- ..
