@@ -458,7 +458,14 @@ following:</p>
 <li><code>git tag vM.m.p &amp;&amp; git push --tags</code></li>
 <li><code>[python setup.py] make distclean</code></li>
 <li><code>[python setup.py] make build</code></li>
-<li><code>[python setup.py] make pypi</code></li>
+<li>upload to PyPI using one of the following:
+    a) <code>[python setup.py] make pypi</code>
+    b) <code>twine upload -s -i $(git config user.signingkey) dist/tqdm-*</code></li>
+<li>create new release on https://github.com/tqdm/tqdm/releases
+    a) add helpful release notes
+    b) attach dist/tqdm-<em> binaries (usually only </em>.whl*)</li>
+<li>run <code>make</code> in the <code>wiki</code> repository to update release notes</li>
+<li>run <code>make</code> in the <code>docs</code> repository to update website</li>
 </ol>
               
             </div>
