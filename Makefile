@@ -1,7 +1,8 @@
+PYDOCMD=PYTHONPATH=. pydocmd
 serve:
-	pydocmd serve
+	$(PYDOCMD) serve
 build:
-	pydocmd build
+	$(PYDOCMD) build
 	sed -ri 's/img\/favicon.ico/https:\/\/raw.githubusercontent.com\/tqdm\/tqdm\/master\/images\/logo.gif/' _build/site/index.html
 deploy: build
 	git checkout master

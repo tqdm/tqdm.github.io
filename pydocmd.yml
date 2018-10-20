@@ -83,6 +83,6 @@ pages:
 #theme:    readthedocs
 #loader:   pydocmd.loader.PythonLoader
 #preprocessor: pydocmd.preprocessor.Preprocessor
-preprocessor: docs.custom.Preprocessor
+preprocessor: custom.Preprocessor
 #additional_search_paths:
 #- ..
