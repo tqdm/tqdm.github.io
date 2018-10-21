@@ -56,7 +56,7 @@ pages:
 - Developer Documentation:
   - Warnings and Exceptions: docs/warnings.md
   - tqdm.TMonitor: docs/TMonitor.md
-- Release History: releases.md << ../wiki/Releases.md
+- Release History: releases.md
 - Contributing: contributing.md << ../CONTRIBUTING.md
 - Ports to Other Languages: ports.md << ../wiki/tqdm-ports.md
 - External Links:
