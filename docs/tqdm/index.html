@@ -310,8 +310,9 @@ progressbar every time a value is requested.</p>
     Prefix for the progressbar.</li>
 <li>total  : int, optional<br />
     The number of expected iterations. If unspecified,
-    len(iterable) is used if possible. As a last resort, only basic
-    progress statistics are displayed (no ETA, no progressbar).
+    len(iterable) is used if possible. If float("inf") or as a last
+    resort, only basic progress statistics are displayed
+    (no ETA, no progressbar).
     If <code>gui</code> is True and this parameter needs subsequent updating,
     specify an initial arbitrary large positive integer,
     e.g. int(9e9).</li>
