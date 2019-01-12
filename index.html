@@ -227,12 +227,20 @@
               
                 <p><img alt="Logo" src="https://raw.githubusercontent.com/tqdm/tqdm/master/images/logo.gif" /></p>
 <h1 id="tqdm">tqdm</h1>
-<p><a href="https://pypi.org/project/tqdm"><img alt="PyPI-Status" src="https://img.shields.io/pypi/v/tqdm.svg" /></a> <a href="https://pypi.org/project/tqdm"><img alt="PyPI-Versions" src="https://img.shields.io/pypi/pyversions/tqdm.svg" /></a> <a href="https://anaconda.org/conda-forge/tqdm"><img alt="Conda-Forge-Status" src="https://anaconda.org/conda-forge/tqdm/badges/version.svg" /></a></p>
-<p><a href="https://travis-ci.org/tqdm/tqdm"><img alt="Build-Status" src="https://travis-ci.org/tqdm/tqdm.svg?branch=master" /></a> <a href="https://coveralls.io/github/tqdm/tqdm"><img alt="Coverage-Status" src="https://coveralls.io/repos/tqdm/tqdm/badge.svg?branch=master" /></a> <a href="https://codecov.io/gh/tqdm/tqdm"><img alt="Branch-Coverage-Status" src="https://codecov.io/gh/tqdm/tqdm/branch/master/graph/badge.svg" /></a> <a href="https://www.codacy.com/app/tqdm/tqdm?utm_source=github.com&amp;amp;utm_medium=referral&amp;amp;utm_content=tqdm/tqdm&amp;amp;utm_campaign=Badge_Grade"><img alt="Codacy-Grade" src="https://api.codacy.com/project/badge/Grade/3f965571598f44549c7818f29cdcf177" /></a></p>
-<p><a href="https://zenodo.org/badge/latestdoi/21637/tqdm/tqdm"><img alt="DOI-URI" src="https://zenodo.org/badge/21637/tqdm/tqdm.svg" /></a> <a href="https://raw.githubusercontent.com/tqdm/tqdm/master/LICENCE"><img alt="LICENCE" src="https://img.shields.io/pypi/l/tqdm.svg" /></a> <a href="https://www.openhub.net/p/tqdm?ref=Thin+badge"><img alt="OpenHub-Status" src="https://www.openhub.net/p/tqdm/widgets/project_thin_badge?format=gif" /></a>
+<p><a href="https://pypi.org/project/tqdm"><img alt="PyPI-Versions" src="https://img.shields.io/pypi/pyversions/tqdm.svg?logo=python&amp;logoColor=white" /></a>
+<a href="https://pypi.org/project/tqdm"><img alt="PyPI-Status" src="https://img.shields.io/pypi/v/tqdm.svg" /></a>
+<a href="https://anaconda.org/conda-forge/tqdm"><img alt="Conda-Forge-Status" src="https://img.shields.io/conda/v/conda-forge/tqdm.svg?label=conda-forge" /></a></p>
+<p><a href="https://travis-ci.org/tqdm/tqdm"><img alt="Build-Status" src="https://img.shields.io/travis/tqdm/tqdm/master.svg?logo=travis" /></a>
+<a href="https://coveralls.io/github/tqdm/tqdm"><img alt="Coverage-Status" src="https://coveralls.io/repos/tqdm/tqdm/badge.svg?branch=master" /></a>
+<a href="https://codecov.io/gh/tqdm/tqdm"><img alt="Branch-Coverage-Status" src="https://codecov.io/gh/tqdm/tqdm/branch/master/graph/badge.svg" /></a>
+<a href="https://www.codacy.com/app/tqdm/tqdm?utm_source=github.com&amp;amp;utm_medium=referral&amp;amp;utm_content=tqdm/tqdm&amp;amp;utm_campaign=Badge_Grade"><img alt="Codacy-Grade" src="https://api.codacy.com/project/badge/Grade/3f965571598f44549c7818f29cdcf177" /></a>
+<a href="https://libraries.io/pypi/tqdm"><img alt="Libraries-Rank" src="https://img.shields.io/librariesio/sourcerank/pypi/tqdm.svg?logo=koding&amp;logoColor=white" /></a></p>
+<p><a href="https://zenodo.org/badge/latestdoi/21637/tqdm/tqdm"><img alt="DOI-URI" src="https://zenodo.org/badge/21637/tqdm/tqdm.svg" /></a>
+<a href="https://raw.githubusercontent.com/tqdm/tqdm/master/LICENCE"><img alt="LICENCE" src="https://img.shields.io/pypi/l/tqdm.svg" /></a>
+<a href="https://www.openhub.net/p/tqdm?ref=Thin+badge"><img alt="OpenHub-Status" src="https://www.openhub.net/p/tqdm/widgets/project_thin_badge?format=gif" /></a>
 <a href="https://caspersci.uk.to/cgi-bin/hits.cgi?q=tqdm&amp;a=plot&amp;r=https://github.com/tqdm/tqdm&amp;l=https://caspersci.uk.to/images/tqdm.png&amp;f=https://raw.githubusercontent.com/tqdm/tqdm/master/images/logo.gif&amp;style=social"><img alt="README-Hits" src="https://caspersci.uk.to/cgi-bin/hits.cgi?q=tqdm&amp;style=social&amp;r=https://github.com/tqdm/tqdm&amp;l=https://caspersci.uk.to/images/tqdm.png&amp;f=https://raw.githubusercontent.com/tqdm/tqdm/master/images/logo.gif" /></a></p>
-<p><code>tqdm</code> means "progress" in Arabic (taqadum, تقدّم)
-and is an abbreviation for "I love you so much" in Spanish (te quiero demasiado).</p>
+<p><code>tqdm</code> means "progress" in Arabic (taqadum, تقدّم) and is an
+abbreviation for "I love you so much" in Spanish (te quiero demasiado).</p>
 <p>Instantly make your loops show a smart progress meter - just wrap any
 iterable with <code>tqdm(iterable)</code>, and you're done!</p>
 <pre><code class="python">from tqdm import tqdm
@@ -254,17 +262,17 @@ $ 7z a -bd -r backup.7z docs/ | grep Compressing | \
 100%|███████████████████████████████▉| 8014/8014 [01:37&lt;00:00, 82.29files/s]
 </code></pre>
 
-<p>Overhead is low -- about 60ns per iteration (80ns with <code>tqdm_gui</code>), and is
-unit tested against performance regression.
-By comparison, the well-established
+<p>Overhead is low -- about 60ns per iteration (80ns with <code>tqdm_gui</code>), and
+is unit tested against performance regression. By comparison, the
+well-established
 <a href="https://github.com/niltonvolpato/python-progressbar">ProgressBar</a> has
 an 800ns/iter overhead.</p>
 <p>In addition to its low overhead, <code>tqdm</code> uses smart algorithms to predict
-the remaining time and to skip unnecessary iteration displays, which allows
-for a negligible overhead in most cases.</p>
-<p><code>tqdm</code> works on any platform
-(Linux, Windows, Mac, FreeBSD, NetBSD, Solaris/SunOS),
-in any console or in a GUI, and is also friendly with IPython/Jupyter notebooks.</p>
+the remaining time and to skip unnecessary iteration displays, which
+allows for a negligible overhead in most cases.</p>
+<p><code>tqdm</code> works on any platform (Linux, Windows, Mac, FreeBSD, NetBSD,
+Solaris/SunOS), in any console or in a GUI, and is also friendly with
+IPython/Jupyter notebooks.</p>
 <p><code>tqdm</code> does not require any dependencies (not even <code>curses</code>!), just
 Python and an environment supporting <code>carriage return \r</code> and
 <code>line feed \n</code> control characters.</p>
@@ -318,5 +326,5 @@ Python and an environment supporting <code>carriage return \r</code> and
 
 <!--
 MkDocs version : 1.0.1
-Build Date UTC : 2019-01-11 22:17:58
+Build Date UTC : 2019-01-12 01:24:56
 -->
