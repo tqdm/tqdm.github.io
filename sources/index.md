@@ -3,15 +3,23 @@
 tqdm
 ====
 
-[![PyPI-Status](https://img.shields.io/pypi/v/tqdm.svg)](https://pypi.org/project/tqdm) [![PyPI-Versions](https://img.shields.io/pypi/pyversions/tqdm.svg)](https://pypi.org/project/tqdm) [![Conda-Forge-Status](https://anaconda.org/conda-forge/tqdm/badges/version.svg)](https://anaconda.org/conda-forge/tqdm)
+[![PyPI-Versions](https://img.shields.io/pypi/pyversions/tqdm.svg?logo=python&logoColor=white)](https://pypi.org/project/tqdm)
+[![PyPI-Status](https://img.shields.io/pypi/v/tqdm.svg)](https://pypi.org/project/tqdm)
+[![Conda-Forge-Status](https://img.shields.io/conda/v/conda-forge/tqdm.svg?label=conda-forge)](https://anaconda.org/conda-forge/tqdm)
 
-[![Build-Status](https://travis-ci.org/tqdm/tqdm.svg?branch=master)](https://travis-ci.org/tqdm/tqdm) [![Coverage-Status](https://coveralls.io/repos/tqdm/tqdm/badge.svg?branch=master)](https://coveralls.io/github/tqdm/tqdm) [![Branch-Coverage-Status](https://codecov.io/gh/tqdm/tqdm/branch/master/graph/badge.svg)](https://codecov.io/gh/tqdm/tqdm) [![Codacy-Grade](https://api.codacy.com/project/badge/Grade/3f965571598f44549c7818f29cdcf177)](https://www.codacy.com/app/tqdm/tqdm?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tqdm/tqdm&amp;utm_campaign=Badge_Grade)
+[![Build-Status](https://img.shields.io/travis/tqdm/tqdm/master.svg?logo=travis)](https://travis-ci.org/tqdm/tqdm)
+[![Coverage-Status](https://coveralls.io/repos/tqdm/tqdm/badge.svg?branch=master)](https://coveralls.io/github/tqdm/tqdm)
+[![Branch-Coverage-Status](https://codecov.io/gh/tqdm/tqdm/branch/master/graph/badge.svg)](https://codecov.io/gh/tqdm/tqdm)
+[![Codacy-Grade](https://api.codacy.com/project/badge/Grade/3f965571598f44549c7818f29cdcf177)](https://www.codacy.com/app/tqdm/tqdm?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tqdm/tqdm&amp;utm_campaign=Badge_Grade)
+[![Libraries-Rank](https://img.shields.io/librariesio/sourcerank/pypi/tqdm.svg?logo=koding&logoColor=white)](https://libraries.io/pypi/tqdm)
 
-[![DOI-URI](https://zenodo.org/badge/21637/tqdm/tqdm.svg)](https://zenodo.org/badge/latestdoi/21637/tqdm/tqdm) [![LICENCE](https://img.shields.io/pypi/l/tqdm.svg)](https://raw.githubusercontent.com/tqdm/tqdm/master/LICENCE) [![OpenHub-Status](https://www.openhub.net/p/tqdm/widgets/project_thin_badge?format=gif)](https://www.openhub.net/p/tqdm?ref=Thin+badge)
+[![DOI-URI](https://zenodo.org/badge/21637/tqdm/tqdm.svg)](https://zenodo.org/badge/latestdoi/21637/tqdm/tqdm)
+[![LICENCE](https://img.shields.io/pypi/l/tqdm.svg)](https://raw.githubusercontent.com/tqdm/tqdm/master/LICENCE)
+[![OpenHub-Status](https://www.openhub.net/p/tqdm/widgets/project_thin_badge?format=gif)](https://www.openhub.net/p/tqdm?ref=Thin+badge)
 [![README-Hits](https://caspersci.uk.to/cgi-bin/hits.cgi?q=tqdm&style=social&r=https://github.com/tqdm/tqdm&l=https://caspersci.uk.to/images/tqdm.png&f=https://raw.githubusercontent.com/tqdm/tqdm/master/images/logo.gif)](https://caspersci.uk.to/cgi-bin/hits.cgi?q=tqdm&a=plot&r=https://github.com/tqdm/tqdm&l=https://caspersci.uk.to/images/tqdm.png&f=https://raw.githubusercontent.com/tqdm/tqdm/master/images/logo.gif&style=social)
 
-`tqdm` means "progress" in Arabic (taqadum, تقدّم)
-and is an abbreviation for "I love you so much" in Spanish (te quiero demasiado).
+`tqdm` means "progress" in Arabic (taqadum, تقدّم) and is an
+abbreviation for "I love you so much" in Spanish (te quiero demasiado).
 
 Instantly make your loops show a smart progress meter - just wrap any
 iterable with `tqdm(iterable)`, and you're done!
@@ -42,19 +50,19 @@ $ 7z a -bd -r backup.7z docs/ | grep Compressing | \
 100%|███████████████████████████████▉| 8014/8014 [01:37<00:00, 82.29files/s]
 ```
 
-Overhead is low -- about 60ns per iteration (80ns with `tqdm_gui`), and is
-unit tested against performance regression.
-By comparison, the well-established
+Overhead is low -- about 60ns per iteration (80ns with `tqdm_gui`), and
+is unit tested against performance regression. By comparison, the
+well-established
 [ProgressBar](https://github.com/niltonvolpato/python-progressbar) has
 an 800ns/iter overhead.
 
 In addition to its low overhead, `tqdm` uses smart algorithms to predict
-the remaining time and to skip unnecessary iteration displays, which allows
-for a negligible overhead in most cases.
+the remaining time and to skip unnecessary iteration displays, which
+allows for a negligible overhead in most cases.
 
-`tqdm` works on any platform
-(Linux, Windows, Mac, FreeBSD, NetBSD, Solaris/SunOS),
-in any console or in a GUI, and is also friendly with IPython/Jupyter notebooks.
+`tqdm` works on any platform (Linux, Windows, Mac, FreeBSD, NetBSD,
+Solaris/SunOS), in any console or in a GUI, and is also friendly with
+IPython/Jupyter notebooks.
 
 `tqdm` does not require any dependencies (not even `curses`!), just
 Python and an environment supporting `carriage return \r` and
