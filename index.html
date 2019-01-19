@@ -234,11 +234,14 @@
 <a href="https://coveralls.io/github/tqdm/tqdm"><img alt="Coverage-Status" src="https://coveralls.io/repos/tqdm/tqdm/badge.svg?branch=master" /></a>
 <a href="https://codecov.io/gh/tqdm/tqdm"><img alt="Branch-Coverage-Status" src="https://codecov.io/gh/tqdm/tqdm/branch/master/graph/badge.svg" /></a>
 <a href="https://www.codacy.com/app/tqdm/tqdm?utm_source=github.com&amp;amp;utm_medium=referral&amp;amp;utm_content=tqdm/tqdm&amp;amp;utm_campaign=Badge_Grade"><img alt="Codacy-Grade" src="https://api.codacy.com/project/badge/Grade/3f965571598f44549c7818f29cdcf177" /></a>
-<a href="https://libraries.io/pypi/tqdm"><img alt="Libraries-Rank" src="https://img.shields.io/librariesio/sourcerank/pypi/tqdm.svg?logo=koding&amp;logoColor=white" /></a></p>
+<a href="https://libraries.io/pypi/tqdm"><img alt="Libraries-Rank" src="https://img.shields.io/librariesio/sourcerank/pypi/tqdm.svg?logo=koding&amp;logoColor=white" /></a>
+<a href="https://pypi.org/project/tqdm"><img alt="PyPI-Downloads" src="https://img.shields.io/pypi/dm/tqdm.svg?label=pypi%20downloads&amp;logo=python&amp;logoColor=white" /></a>
+<a href="https://notebooks.rmotr.com/demo/gh/tqdm/tqdm"><img alt="interactive-demo" src="https://img.shields.io/badge/demo-interactive-orange.svg?logo=jupyter" /></a></p>
 <p><a href="https://zenodo.org/badge/latestdoi/21637/tqdm/tqdm"><img alt="DOI-URI" src="https://zenodo.org/badge/21637/tqdm/tqdm.svg" /></a>
 <a href="https://raw.githubusercontent.com/tqdm/tqdm/master/LICENCE"><img alt="LICENCE" src="https://img.shields.io/pypi/l/tqdm.svg" /></a>
 <a href="https://www.openhub.net/p/tqdm?ref=Thin+badge"><img alt="OpenHub-Status" src="https://www.openhub.net/p/tqdm/widgets/project_thin_badge?format=gif" /></a>
 <a href="https://caspersci.uk.to/cgi-bin/hits.cgi?q=tqdm&amp;a=plot&amp;r=https://github.com/tqdm/tqdm&amp;l=https://caspersci.uk.to/images/tqdm.png&amp;f=https://raw.githubusercontent.com/tqdm/tqdm/master/images/logo.gif&amp;style=social"><img alt="README-Hits" src="https://caspersci.uk.to/cgi-bin/hits.cgi?q=tqdm&amp;style=social&amp;r=https://github.com/tqdm/tqdm&amp;l=https://caspersci.uk.to/images/tqdm.png&amp;f=https://raw.githubusercontent.com/tqdm/tqdm/master/images/logo.gif" /></a></p>
+<hr />
 <p><code>tqdm</code> means "progress" in Arabic (taqadum, تقدّم) and is an
 abbreviation for "I love you so much" in Spanish (te quiero demasiado).</p>
 <p>Instantly make your loops show a smart progress meter - just wrap any
@@ -254,8 +257,8 @@ for i in tqdm(range(10000)):
 <p><img alt="Screenshot" src="https://raw.githubusercontent.com/tqdm/tqdm/master/images/tqdm.gif" /></p>
 <p>REPL: <a href="https://github.com/jonathanslenders/ptpython">ptpython</a></p>
 <p>It can also be executed as a module with pipes:</p>
-<pre><code class="sh">$ seq 9999999 | tqdm --unit_scale | wc -l
-10.0Mit [00:02, 3.58Mit/s]
+<pre><code class="sh">$ seq 9999999 | tqdm --bytes | wc -l
+75.2MB [00:00, 217MB/s]
 9999999
 $ 7z a -bd -r backup.7z docs/ | grep Compressing | \
     tqdm --total $(find docs/ -type f | wc -l) --unit files &gt;&gt; backup.log
@@ -326,5 +329,5 @@ Python and an environment supporting <code>carriage return \r</code> and
 
 <!--
 MkDocs version : 1.0.1
-Build Date UTC : 2019-01-12 01:24:56
+Build Date UTC : 2019-01-19 00:17:06
 -->
