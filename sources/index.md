@@ -12,11 +12,14 @@ tqdm
 [![Branch-Coverage-Status](https://codecov.io/gh/tqdm/tqdm/branch/master/graph/badge.svg)](https://codecov.io/gh/tqdm/tqdm)
 [![Codacy-Grade](https://api.codacy.com/project/badge/Grade/3f965571598f44549c7818f29cdcf177)](https://www.codacy.com/app/tqdm/tqdm?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tqdm/tqdm&amp;utm_campaign=Badge_Grade)
 [![Libraries-Rank](https://img.shields.io/librariesio/sourcerank/pypi/tqdm.svg?logo=koding&logoColor=white)](https://libraries.io/pypi/tqdm)
+[![PyPI-Downloads](https://img.shields.io/pypi/dm/tqdm.svg?label=pypi%20downloads&logo=python&logoColor=white)](https://pypi.org/project/tqdm)
+[![interactive-demo](https://img.shields.io/badge/demo-interactive-orange.svg?logo=jupyter)](https://notebooks.rmotr.com/demo/gh/tqdm/tqdm)
 
 [![DOI-URI](https://zenodo.org/badge/21637/tqdm/tqdm.svg)](https://zenodo.org/badge/latestdoi/21637/tqdm/tqdm)
 [![LICENCE](https://img.shields.io/pypi/l/tqdm.svg)](https://raw.githubusercontent.com/tqdm/tqdm/master/LICENCE)
 [![OpenHub-Status](https://www.openhub.net/p/tqdm/widgets/project_thin_badge?format=gif)](https://www.openhub.net/p/tqdm?ref=Thin+badge)
 [![README-Hits](https://caspersci.uk.to/cgi-bin/hits.cgi?q=tqdm&style=social&r=https://github.com/tqdm/tqdm&l=https://caspersci.uk.to/images/tqdm.png&f=https://raw.githubusercontent.com/tqdm/tqdm/master/images/logo.gif)](https://caspersci.uk.to/cgi-bin/hits.cgi?q=tqdm&a=plot&r=https://github.com/tqdm/tqdm&l=https://caspersci.uk.to/images/tqdm.png&f=https://raw.githubusercontent.com/tqdm/tqdm/master/images/logo.gif&style=social)
+---
 
 `tqdm` means "progress" in Arabic (taqadum, تقدّم) and is an
 abbreviation for "I love you so much" in Spanish (te quiero demasiado).
@@ -42,8 +45,8 @@ REPL: [ptpython](https://github.com/jonathanslenders/ptpython)
 It can also be executed as a module with pipes:
 
 ```sh
-$ seq 9999999 | tqdm --unit_scale | wc -l
-10.0Mit [00:02, 3.58Mit/s]
+$ seq 9999999 | tqdm --bytes | wc -l
+75.2MB [00:00, 217MB/s]
 9999999
 $ 7z a -bd -r backup.7z docs/ | grep Compressing | \
     tqdm --total $(find docs/ -type f | wc -l) --unit files >> backup.log
