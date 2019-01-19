@@ -1,4 +1,4 @@
-![Logo](https://raw.githubusercontent.com/tqdm/tqdm/master/images/logo.gif)
+<img align="right" src="https://raw.githubusercontent.com/tqdm/tqdm/master/images/logo.gif" />
 
 tqdm
 ====
