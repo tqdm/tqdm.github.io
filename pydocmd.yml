@@ -20,7 +20,9 @@ generate:
   - tqdm.tqdm.pandas
   - tqdm.tqdm.format_interval
   - tqdm.tqdm.format_sizeof
+  - tqdm.tqdm.format_num
   - tqdm.tqdm.format_meter
+  - tqdm.tqdm.format_dict
   - tqdm.tqdm.status_printer
   - tqdm._utils.Comparable+
 - docs/tqdm_notebook.md:
