@@ -100,6 +100,8 @@
     
         <ul>
         
+            <li><a class="toctree-l3" href="#v4300-2019-01-26">v4.30.0 (2019-01-26)</a></li>
+        
             <li><a class="toctree-l3" href="#v4291-2019-01-11">v4.29.1 (2019-01-11)</a></li>
         
             <li><a class="toctree-l3" href="#v4290-2019-01-06">v4.29.0 (2019-01-06)</a></li>
@@ -344,6 +346,43 @@
             <div class="section">
               
                 <h1 id="tqdmtqdm-releases"><a href="https://github.com/tqdm/tqdm">tqdm/tqdm</a> Releases</h1>
+<h2 id="v4300-2019-01-26"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.30.0">v4.30.0</a> <small><small>(2019-01-26)</small></small></h2>
+<p><a href="https://github.com/tqdm/tqdm/releases/download/v4.30.0/tqdm-4.30.0-py2.py3-none-any.whl">whl</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.30.0/tqdm-4.30.0-py2.py3-none-any.whl.asc">asc</a></p>
+<ul>
+<li>avoid moving when <code>leave=False</code></li>
+<li>generalise nested bar tests</li>
+<li>add <code>display()</code> helper function</li>
+<li>add and expose <code>format_dict</code> (<a href="https://github.com/tqdm/tqdm/issues/562">#562</a>, <a href="https://github.com/tqdm/tqdm/issues/482">#482</a>, <a href="https://github.com/tqdm/tqdm/issues/494">#494</a>, <a href="https://github.com/tqdm/tqdm/issues/656">#656</a>)<ul>
+<li>allow arbitrary keyword arguments for <code>format_meter</code></li>
+<li>document <code>format_dict</code> overriding</li>
+<li>add tests for overriding</li>
+<li>related: <a href="https://github.com/tqdm/tqdm/issues/172">#660</a> <a href="https://github.com/tqdm/tqdm/issues/587">#587</a></li>
+</ul>
+</li>
+<li>add and tidy developer documentation</li>
+<li>fix py3 CLI pipe decoding error (<a href="https://github.com/tqdm/tqdm/issues/663">#663</a>)</li>
+<li>framework overhaul (developing, testing, Travis CI updates)</li>
+<li>tidy code and style (flake8)</li>
+<li><code>setup.py</code> refactor<ul>
+<li><code>setup.py make</code><ul>
+<li>add support for multi-line commands</li>
+<li>tidy and efficiency</li>
+</ul>
+</li>
+<li>replace <code>setup.py</code>'s built-in <code>make</code> -&gt; <code>py-make&gt;=0.1.9</code> (<a href="https://github.com/tqdm/tqdm/issues/290">#290</a>)</li>
+<li>add <code>requirements-dev.txt</code> and <code>extras_require[dev]</code></li>
+</ul>
+</li>
+<li>add, update and tidy tests</li>
+<li>include interactive Jupyter demonstration (<a href="https://github.com/tqdm/tqdm/issues/652">#652</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/659">#659</a>)</li>
+<li>update documentation<ul>
+<li>add FAQ about py2 pipes (<a href="https://github.com/tqdm/tqdm/issues/359">#359</a>)</li>
+<li>add badges</li>
+<li>update examples</li>
+<li>update authors</li>
+</ul>
+</li>
+</ul>
 <h2 id="v4291-2019-01-11"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.29.1">v4.29.1</a> <small><small>(2019-01-11)</small></small></h2>
 <p><a href="https://github.com/tqdm/tqdm/releases/download/v4.29.1/tqdm-4.29.1-py2.py3-none-any.whl">whl</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.29.1/tqdm-4.29.1-py2.py3-none-any.whl.asc">asc</a></p>
 <ul>

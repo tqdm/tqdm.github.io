@@ -116,7 +116,13 @@
     <li class="toctree-l3"><a href="#format_sizeof">format_sizeof</a></li>
     
 
+    <li class="toctree-l3"><a href="#format_num">format_num</a></li>
+    
+
     <li class="toctree-l3"><a href="#format_meter">format_meter</a></li>
+    
+
+    <li class="toctree-l3"><a href="#format_dict">format_dict</a></li>
     
 
     <li class="toctree-l3"><a href="#status_printer">status_printer</a></li>
@@ -494,10 +500,12 @@ Useful when writing to standard output stream</p>
 <pre><code class="python">tqdm.set_lock(cls, lock)
 </code></pre>
 
+<p>Set the global lock.</p>
 <h1 id="get_lock">get_lock<h1 id="tqdm.tqdm.get_lock"></h1></h1>
 <pre><code class="python">tqdm.get_lock(cls)
 </code></pre>
 
+<p>Get the global lock. Construct it if it does not exist.</p>
 <h1 id="pandas">pandas<h1 id="tqdm.tqdm.pandas"></h1></h1>
 <pre><code class="python">tqdm.pandas(tclass, *targs, **tkwargs)
 </code></pre>
@@ -569,8 +577,25 @@ prefixes.</p>
 <li>out  : str<br />
     Number with Order of Magnitude SI unit postfix.</li>
 </ul>
+<h1 id="format_num">format_num<h1 id="tqdm.tqdm.format_num"></h1></h1>
+<pre><code class="python">tqdm.format_num(n)
+</code></pre>
+
+<p>Intelligent scientific notation (.3g).</p>
+<h2>Parameters</h2>
+
+<ul>
+<li>n  : int or float or Numeric<br />
+    A Number.</li>
+</ul>
+<h2>Returns</h2>
+
+<ul>
+<li>out  : str<br />
+    Formatted number.</li>
+</ul>
 <h1 id="format_meter">format_meter<h1 id="tqdm.tqdm.format_meter"></h1></h1>
-<pre><code class="python">tqdm.format_meter(n, total, elapsed, ncols=None, prefix='', ascii=False, unit='it', unit_scale=False, rate=None, bar_format=None, postfix=None, unit_divisor=1000)
+<pre><code class="python">tqdm.format_meter(n, total, elapsed, ncols=None, prefix='', ascii=False, unit='it', unit_scale=False, rate=None, bar_format=None, postfix=None, unit_divisor=1000, **extra_kwargs)
 </code></pre>
 
 <p>Return a string-based progress bar given some parameters</p>
@@ -632,6 +657,8 @@ prefixes.</p>
 <ul>
 <li>out  : Formatted meter and stats, ready to display.  </li>
 </ul>
+<h1 id="format_dict">format_dict<h1 id="tqdm.tqdm.format_dict"></h1></h1>
+<p>Public API for read-only member access</p>
 <h1 id="status_printer">status_printer<h1 id="tqdm.tqdm.status_printer"></h1></h1>
 <pre><code class="python">tqdm.status_printer(file)
 </code></pre>

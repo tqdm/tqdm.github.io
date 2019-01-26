@@ -116,15 +116,15 @@
     
         <ul>
         
-            <li><a class="toctree-l3" href="#semantic-versioning">SEMANTIC VERSIONING</a></li>
+            <li><a class="toctree-l3" href="#semantic-versioning">Semantic Versioning</a></li>
         
-            <li><a class="toctree-l3" href="#checking-setuppy">CHECKING SETUP.PY</a></li>
+            <li><a class="toctree-l3" href="#checking-setuppy">Checking setup.py</a></li>
         
-            <li><a class="toctree-l3" href="#merging-pull-requests">MERGING PULL REQUESTS</a></li>
+            <li><a class="toctree-l3" href="#merging-pull-requests">Merging Pull Requests</a></li>
         
-            <li><a class="toctree-l3" href="#building-a-release-and-uploading-to-pypi">BUILDING A RELEASE AND UPLOADING TO PYPI</a></li>
+            <li><a class="toctree-l3" href="#building-a-release-and-uploading-to-pypi">Building a Release and Uploading to PyPI</a></li>
         
-            <li><a class="toctree-l3" href="#updating-gh-pages">UPDATING GH-PAGES</a></li>
+            <li><a class="toctree-l3" href="#updating-websites">Updating Websites</a></li>
         
             <li><a class="toctree-l3" href="#quick-dev-summary">QUICK DEV SUMMARY</a></li>
         
@@ -264,6 +264,7 @@ Makefile:</p>
 python setup.py make [&lt;alias&gt;]  # if make is unavailable
 </code></pre>
 
+<p>The latter depends on <a href="https://github.com/tqdm/py-make"><code>py-make&gt;=0.1.0</code></a>.</p>
 <p>Use the alias <code>help</code> (or leave blank) to list all available aliases.</p>
 <h2 id="how-to-commit-contributions">HOW TO COMMIT CONTRIBUTIONS</h2>
 <p>Contributions to the project are made using the "Fork &amp; Pull" model. The
@@ -315,8 +316,10 @@ that each distribution has an alias to call the Python interpreter:
 <h1 id="manage-a-new-release">MANAGE A NEW RELEASE</h1>
 <p>This section is intended for the project's maintainers and describes
 how to build and upload a new release. Once again,
-<code>[python setup.py] make [&lt;alias&gt;]</code> will help.</p>
-<h2 id="semantic-versioning">SEMANTIC VERSIONING</h2>
+<code>[python setup.py] make [&lt;alias&gt;]</code> will help.
+Also consider <code>pip install</code>ing development utilities:
+<code>-r requirements-dev.txt</code> or <code>tqdm[dev]</code>.</p>
+<h2 id="semantic-versioning">Semantic Versioning</h2>
 <p>The tqdm repository managers should:</p>
 <ul>
 <li>regularly bump the version number in the file
@@ -328,7 +331,7 @@ solely due to the version file bumping</li>
 <p>Note: tools can be used to automate this process, such as
 <a href="https://github.com/peritus/bumpversion">bumpversion</a> or
 <a href="https://github.com/rbarrois/python-semanticversion/">python-semanticversion</a>.</p>
-<h2 id="checking-setuppy">CHECKING SETUP.PY</h2>
+<h2 id="checking-setuppy">Checking setup.py</h2>
 <p>To check that the <code>setup.py</code> file is compliant with PyPi requirements (e.g.
 version number; reStructuredText in README.rst) use:</p>
 <pre><code>[python setup.py] make testsetup
@@ -339,7 +342,7 @@ to PyPi, use:</p>
 <pre><code>[python setup.py] make pypimeta
 </code></pre>
 
-<h2 id="merging-pull-requests">MERGING PULL REQUESTS</h2>
+<h2 id="merging-pull-requests">Merging Pull Requests</h2>
 <p>This section describes how to cleanly merge PRs.</p>
 <h3 id="1-rebase">1 Rebase</h3>
 <p>From your project repository, merge and test
@@ -372,7 +375,7 @@ git merge --no-ff pr-branch-name
 </code></pre>
 
 <h3 id="5-version">5 Version</h3>
-<p>Modify tqdm/_version.py and amend the last (merge) commit:</p>
+<p>Modify <code>tqdm/_version.py</code> and amend the last (merge) commit:</p>
 <pre><code>git add tqdm/_version.py
 git commit --amend  # Add &quot;+ bump version&quot; in the commit message
 </code></pre>
@@ -381,7 +384,7 @@ git commit --amend  # Add &quot;+ bump version&quot; in the commit message
 <pre><code>git push origin master
 </code></pre>
 
-<h2 id="building-a-release-and-uploading-to-pypi">BUILDING A RELEASE AND UPLOADING TO PYPI</h2>
+<h2 id="building-a-release-and-uploading-to-pypi">Building a Release and Uploading to PyPI</h2>
 <p>Formally publishing requires additional steps: testing and tagging.</p>
 <h3 id="test">Test</h3>
 <ul>
@@ -399,7 +402,7 @@ If the current commit is not tagged appropriately, the version will
 display as <code>v{major}.{minor}.{patch}-{commit_hash}</code>.</li>
 </ul>
 <h3 id="upload">Upload</h3>
-<p>Build tqdm into a distributable python package:</p>
+<p>Build <code>tqdm</code> into a distributable python package:</p>
 <pre><code>[python setup.py] make build
 </code></pre>
 
@@ -424,16 +427,16 @@ cannot re-upload another with the same version number</li>
 <li>in case of a mistake in the metadata on pypi (e.g. bad README),
 updating just the metadata is possible: <code>[python setup.py] make pypimeta</code></li>
 </ul>
-<h2 id="updating-gh-pages">UPDATING GH-PAGES</h2>
-<p>The most important file is README.rst, which sould always be kept up-to-date
+<h2 id="updating-websites">Updating Websites</h2>
+<p>The most important file is <code>README.rst</code>, which sould always be kept up-to-date
 and in sync with the in-line source documentation. This will affect all of the
 following:</p>
 <ul>
 <li>The <a href="https://github.com/tqdm/tqdm">main repository site</a> which automatically
-  serves the latest README.rst as well as links to all of github's features.
-  This is the preferred online referral link for tqdm.</li>
+  serves the latest <code>README.rst</code> as well as links to all of github's features.
+  This is the preferred online referral link for <code>tqdm</code>.</li>
 <li>The <a href="https://pypi.org/project/tqdm">PyPi mirror</a> which automatically
-  serves the latest release built from README.rst as well as links to past
+  serves the latest release built from <code>README.rst</code> as well as links to past
   releases.</li>
 <li>Many external web crawlers.</li>
 </ul>
@@ -461,9 +464,9 @@ following:</p>
 <li>upload to PyPI using one of the following:
     a) <code>[python setup.py] make pypi</code>
     b) <code>twine upload -s -i $(git config user.signingkey) dist/tqdm-*</code></li>
-<li>create new release on https://github.com/tqdm/tqdm/releases
+<li>create new release on <a href="https://github.com/tqdm/tqdm/releases">https://github.com/tqdm/tqdm/releases</a>
     a) add helpful release notes
-    b) attach dist/tqdm-<em> binaries (usually only </em>.whl*)</li>
+    b) attach <code>dist/tqdm-*</code> binaries (usually only <code>*.whl*</code>)</li>
 <li>run <code>make</code> in the <code>wiki</code> submodule to update release notes</li>
 <li>run <code>make deploy</code> in the <code>docs</code> submodule to update website</li>
 <li>accept the automated PR in the <code>feedstock</code> submodule to update conda</li>
