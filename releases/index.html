@@ -100,6 +100,8 @@
     
         <ul>
         
+            <li><a class="toctree-l3" href="#v4310-2019-02-09">v4.31.0 (2019-02-09)</a></li>
+        
             <li><a class="toctree-l3" href="#v4300-2019-01-26">v4.30.0 (2019-01-26)</a></li>
         
             <li><a class="toctree-l3" href="#v4291-2019-01-11">v4.29.1 (2019-01-11)</a></li>
@@ -346,6 +348,24 @@
             <div class="section">
               
                 <h1 id="tqdmtqdm-releases"><a href="https://github.com/tqdm/tqdm">tqdm/tqdm</a> Releases</h1>
+<h2 id="v4310-2019-02-09"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.31.0">v4.31.0</a> <small><small>(2019-02-09)</small></small></h2>
+<p><a href="https://github.com/tqdm/tqdm/releases/download/v4.31.0/tqdm-4.31.0-py2.py3-none-any.whl">whl</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.31.0/tqdm-4.31.0-py2.py3-none-any.whl.asc">asc</a></p>
+<ul>
+<li>Write bytes to <code>stdout</code>/<code>stderr</code> in py2 (https://bugs.python.org/issue21363, <a href="https://github.com/tqdm/tqdm/issues/589">#589</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/598">#598</a>)</li>
+<li>Add <code>write_bytes</code> parameter for py2/3 default override</li>
+<li>support custom bar characters vias <code>ascii</code> parameter (<a href="https://github.com/tqdm/tqdm/issues/223">#223</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/227">#227</a>)</li>
+<li>implement, document and test custom bar spinners</li>
+<li>support custom <code>bar_format</code> with unknown <code>total</code> (<a href="https://github.com/tqdm/tqdm/issues/282">#282</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/284">#284</a>)</li>
+<li>fix <code>TypeError</code> when <code>unit_scale</code> and unknown <code>total</code></li>
+<li>document <code>format_dict</code></li>
+<li>expose <code>elapsed_s</code>, <code>remaining_s</code> to <code>bar_format</code></li>
+<li>add <code>unit</code> option to <code>bar_format</code> (<a href="https://github.com/tqdm/tqdm/issues/368">#368</a>)</li>
+<li>auto <code>README.rst</code> generation framework</li>
+<li>add notes in <code>CONTRIBUTING.md</code></li>
+<li>update tests</li>
+<li>update documentation</li>
+<li>misc code tidy</li>
+</ul>
 <h2 id="v4300-2019-01-26"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.30.0">v4.30.0</a> <small><small>(2019-01-26)</small></small></h2>
 <p><a href="https://github.com/tqdm/tqdm/releases/download/v4.30.0/tqdm-4.30.0-py2.py3-none-any.whl">whl</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.30.0/tqdm-4.30.0-py2.py3-none-any.whl.asc">asc</a></p>
 <ul>
