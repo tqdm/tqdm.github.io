@@ -50,7 +50,7 @@ class Preprocessor(pydocmd.preprocessor.Preprocessor):
         section.content = RE_H2.sub(r"<h2>\1</h2>", section.content)
         # escape underscores in special methods
         if section.title[:2] == "__" == section.title[-2:]:
-            section.title = '\_\_' + section.title[2:-2] + '\_\_'
+            section.title = r'\_\_' + section.title[2:-2] + r'\_\_'
         # expose <h1> in `nav`
         # section.content = RE_H1.sub(r"# `\2` \1\3", section.content)
         overloadSection(section)
