@@ -7,6 +7,7 @@ tqdm
 [![PyPI-Status](https://img.shields.io/pypi/v/tqdm.svg)](https://pypi.org/project/tqdm)
 [![Conda-Forge-Status](https://img.shields.io/conda/v/conda-forge/tqdm.svg?label=conda-forge&logo=conda-forge)](https://anaconda.org/conda-forge/tqdm)
 <br/>
+[![Docker](https://img.shields.io/badge/docker-pull-blue.svg?logo=docker)](https://hub.docker.com/r/tqdm/tqdm)
 [![Snapcraft](https://img.shields.io/badge/snap-install-82BEA0.svg?logo=snapcraft)](https://snapcraft.io/tqdm)
 [![binder-demo](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tqdm/tqdm/master?filepath=DEMO.ipynb)
 [![notebook-demo](https://img.shields.io/badge/launch-notebook-orange.svg?logo=jupyter)](https://notebooks.ai/demo/gh/tqdm/tqdm)
