@@ -64,6 +64,8 @@ pages:
 - External Links:
   - Source Code (ENTIRE DOCUMENTATION ON ONE PAGE): https://github.com/tqdm/tqdm
   - wiki: https://github.com/tqdm/tqdm/wiki
+  - FAQs: https://github.com/tqdm/tqdm#faq-and-known-issues
+  - Issues: https://github.com/tqdm/tqdm/issues?q=
   - Downloads:
     - GitHub: https://github.com/tqdm/tqdm/releases
     - PyPI: https://pypi.org/project/tqdm
