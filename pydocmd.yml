@@ -61,6 +61,7 @@ pages:
 - Release History: releases.md
 - Contributing: contributing.md << ../CONTRIBUTING.md
 - Ports to Other Languages: ports.md << ../wiki/tqdm-ports.md
+- Slides (PyData): PyData2019/slides.html
 - External Links:
   - Source Code (ENTIRE DOCUMENTATION ON ONE PAGE): https://github.com/tqdm/tqdm
   - wiki: https://github.com/tqdm/tqdm/wiki
