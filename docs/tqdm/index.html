@@ -74,10 +74,16 @@
     <li class="toctree-l3"><a href="#close">close</a></li>
     
 
+    <li class="toctree-l3"><a href="#clear">clear</a></li>
+    
+
     <li class="toctree-l3"><a href="#refresh">refresh</a></li>
     
 
-    <li class="toctree-l3"><a href="#write">write</a></li>
+    <li class="toctree-l3"><a href="#unpause">unpause</a></li>
+    
+
+    <li class="toctree-l3"><a href="#reset">reset</a></li>
     
 
     <li class="toctree-l3"><a href="#set_description">set_description</a></li>
@@ -92,40 +98,40 @@
     <li class="toctree-l3"><a href="#set_postfix_str">set_postfix_str</a></li>
     
 
-    <li class="toctree-l3"><a href="#clear">clear</a></li>
-    
-
-    <li class="toctree-l3"><a href="#unpause">unpause</a></li>
-    
-
-    <li class="toctree-l3"><a href="#external_write_mode">external_write_mode</a></li>
-    
-
-    <li class="toctree-l3"><a href="#set_lock">set_lock</a></li>
-    
-
-    <li class="toctree-l3"><a href="#get_lock">get_lock</a></li>
-    
-
-    <li class="toctree-l3"><a href="#pandas">pandas</a></li>
-    
-
-    <li class="toctree-l3"><a href="#format_interval">format_interval</a></li>
-    
-
-    <li class="toctree-l3"><a href="#format_sizeof">format_sizeof</a></li>
-    
-
-    <li class="toctree-l3"><a href="#format_num">format_num</a></li>
-    
-
-    <li class="toctree-l3"><a href="#format_meter">format_meter</a></li>
+    <li class="toctree-l3"><a href="#write">write</a></li>
     
 
     <li class="toctree-l3"><a href="#format_dict">format_dict</a></li>
     
 
+    <li class="toctree-l3"><a href="#pandas">pandas</a></li>
+    
+
+    <li class="toctree-l3"><a href="#get_lock">get_lock</a></li>
+    
+
+    <li class="toctree-l3"><a href="#set_lock">set_lock</a></li>
+    
+
+    <li class="toctree-l3"><a href="#display">display</a></li>
+    
+
     <li class="toctree-l3"><a href="#status_printer">status_printer</a></li>
+    
+
+    <li class="toctree-l3"><a href="#external_write_mode">external_write_mode</a></li>
+    
+
+    <li class="toctree-l3"><a href="#format_interval">format_interval</a></li>
+    
+
+    <li class="toctree-l3"><a href="#format_meter">format_meter</a></li>
+    
+
+    <li class="toctree-l3"><a href="#format_num">format_num</a></li>
+    
+
+    <li class="toctree-l3"><a href="#format_sizeof">format_sizeof</a></li>
     
 
     <li class="toctree-l3"><a href="#comparable">Comparable</a></li>
@@ -253,7 +259,7 @@
     <ul class="subnav">
                 <li class="toctree-l3">
                     
-    <a class="" href="https://zenodo.org/badge/latestdoi/21637/tqdm/tqdm">DOI (Zenodo)</a>
+    <a class="" href="https://doi.org/10.5281/zenodo.595120">DOI (Zenodo)</a>
                 </li>
                 <li class="toctree-l3">
                     
@@ -452,16 +458,32 @@ exactly reached and printed.</p>
 </code></pre>
 
 <p>Cleanup and (if leave=False) close the progressbar.</p>
+<h1 id="clear">clear<h1 id="tqdm.tqdm.clear"></h1></h1>
+<pre><code class="python">tqdm.clear(self, nolock=False)
+</code></pre>
+
+<p>Clear current bar display.</p>
 <h1 id="refresh">refresh<h1 id="tqdm.tqdm.refresh"></h1></h1>
 <pre><code class="python">tqdm.refresh(self, nolock=False)
 </code></pre>
 
-<p>Force refresh the display of this bar</p>
-<h1 id="write">write<h1 id="tqdm.tqdm.write"></h1></h1>
-<pre><code class="python">tqdm.write(cls, s, file=None, end='\n', nolock=False)
+<p>Force refresh the display of this bar.</p>
+<h1 id="unpause">unpause<h1 id="tqdm.tqdm.unpause"></h1></h1>
+<pre><code class="python">tqdm.unpause(self)
 </code></pre>
 
-<p>Print a message via tqdm (without overlap with bars)</p>
+<p>Restart tqdm timer from last print time.</p>
+<h1 id="reset">reset<h1 id="tqdm.tqdm.reset"></h1></h1>
+<pre><code class="python">tqdm.reset(self, total=None)
+</code></pre>
+
+<p>Resets to 0 iterations for repeated use.</p>
+<p>Consider combining with <code>leave=True</code>.</p>
+<h2>Parameters</h2>
+
+<ul>
+<li>total  : int, optional. Total to use for the new bar.  </li>
+</ul>
 <h1 id="set_description">set_description<h1 id="tqdm.tqdm.set_description"></h1></h1>
 <pre><code class="python">tqdm.set_description(self, desc=None, refresh=True)
 </code></pre>
@@ -498,32 +520,13 @@ with automatic formatting based on datatype.</p>
 </code></pre>
 
 <p>Postfix without dictionary expansion, similar to prefix handling.</p>
-<h1 id="clear">clear<h1 id="tqdm.tqdm.clear"></h1></h1>
-<pre><code class="python">tqdm.clear(self, nolock=False)
+<h1 id="write">write<h1 id="tqdm.tqdm.write"></h1></h1>
+<pre><code class="python">tqdm.write(cls, s, file=None, end='\n', nolock=False)
 </code></pre>
 
-<p>Clear current bar display</p>
-<h1 id="unpause">unpause<h1 id="tqdm.tqdm.unpause"></h1></h1>
-<pre><code class="python">tqdm.unpause(self)
-</code></pre>
-
-<p>Restart tqdm timer from last print time.</p>
-<h1 id="external_write_mode">external_write_mode<h1 id="tqdm.tqdm.external_write_mode"></h1></h1>
-<pre><code class="python">tqdm.external_write_mode(*args, **kwds)
-</code></pre>
-
-<p>Disable tqdm within context and refresh tqdm when exits.
-Useful when writing to standard output stream</p>
-<h1 id="set_lock">set_lock<h1 id="tqdm.tqdm.set_lock"></h1></h1>
-<pre><code class="python">tqdm.set_lock(cls, lock)
-</code></pre>
-
-<p>Set the global lock.</p>
-<h1 id="get_lock">get_lock<h1 id="tqdm.tqdm.get_lock"></h1></h1>
-<pre><code class="python">tqdm.get_lock(cls)
-</code></pre>
-
-<p>Get the global lock. Construct it if it does not exist.</p>
+<p>Print a message via tqdm (without overlap with bars).</p>
+<h1 id="format_dict">format_dict<h1 id="tqdm.tqdm.format_dict"></h1></h1>
+<p>Public API for read-only member access.</p>
 <h1 id="pandas">pandas<h1 id="tqdm.tqdm.pandas"></h1></h1>
 <pre><code class="python">tqdm.pandas(tclass, *targs, **tkwargs)
 </code></pre>
@@ -556,6 +559,43 @@ and each instance will automatically close() upon completion.</p>
 
 <p>https://stackoverflow.com/questions/18603270/
 progress-indicator-during-pandas-operations-python</p>
+<h1 id="get_lock">get_lock<h1 id="tqdm.tqdm.get_lock"></h1></h1>
+<pre><code class="python">tqdm.get_lock(cls)
+</code></pre>
+
+<p>Get the global lock. Construct it if it does not exist.</p>
+<h1 id="set_lock">set_lock<h1 id="tqdm.tqdm.set_lock"></h1></h1>
+<pre><code class="python">tqdm.set_lock(cls, lock)
+</code></pre>
+
+<p>Set the global lock.</p>
+<h1 id="display">display<h1 id="tqdm.tqdm.display"></h1></h1>
+<pre><code class="python">tqdm.display(self, msg=None, pos=None)
+</code></pre>
+
+<p>Use <code>self.sp</code> to display <code>msg</code> in the specified <code>pos</code>.</p>
+<p>Consider overloading this function when inheriting to use e.g.:
+<code>self.some_frontend(**self.format_dict)</code> instead of <code>self.sp</code>.</p>
+<h2>Parameters</h2>
+
+<ul>
+<li>msg  : str, optional. What to display (default: <code>repr(self)</code>).  </li>
+<li>pos  : int, optional. Position to <code>moveto</code><br />
+  (default: <code>abs(self.pos)</code>).</li>
+</ul>
+<h1 id="status_printer">status_printer<h1 id="tqdm.tqdm.status_printer"></h1></h1>
+<pre><code class="python">tqdm.status_printer(file)
+</code></pre>
+
+<p>Manage the printing and in-place updating of a line of characters.
+Note that if the string is longer than a line, then in-place
+updating may not work (it will print a new line at each refresh).</p>
+<h1 id="external_write_mode">external_write_mode<h1 id="tqdm.tqdm.external_write_mode"></h1></h1>
+<pre><code class="python">tqdm.external_write_mode(*args, **kwds)
+</code></pre>
+
+<p>Disable tqdm within context and refresh tqdm when exits.
+Useful when writing to standard output stream</p>
 <h1 id="format_interval">format_interval<h1 id="tqdm.tqdm.format_interval"></h1></h1>
 <pre><code class="python">tqdm.format_interval(t)
 </code></pre>
@@ -572,45 +612,6 @@ progress-indicator-during-pandas-operations-python</p>
 <ul>
 <li>out  : str<br />
     [H:]MM:SS</li>
-</ul>
-<h1 id="format_sizeof">format_sizeof<h1 id="tqdm.tqdm.format_sizeof"></h1></h1>
-<pre><code class="python">tqdm.format_sizeof(num, suffix='', divisor=1000)
-</code></pre>
-
-<p>Formats a number (greater than unity) with SI Order of Magnitude
-prefixes.</p>
-<h2>Parameters</h2>
-
-<ul>
-<li>num  : float<br />
-    Number ( &gt;= 1) to format.</li>
-<li>suffix  : str, optional<br />
-    Post-postfix [default: ''].</li>
-<li>divisor  : float, optionl<br />
-    Divisor between prefixes [default: 1000].</li>
-</ul>
-<h2>Returns</h2>
-
-<ul>
-<li>out  : str<br />
-    Number with Order of Magnitude SI unit postfix.</li>
-</ul>
-<h1 id="format_num">format_num<h1 id="tqdm.tqdm.format_num"></h1></h1>
-<pre><code class="python">tqdm.format_num(n)
-</code></pre>
-
-<p>Intelligent scientific notation (.3g).</p>
-<h2>Parameters</h2>
-
-<ul>
-<li>n  : int or float or Numeric<br />
-    A Number.</li>
-</ul>
-<h2>Returns</h2>
-
-<ul>
-<li>out  : str<br />
-    Formatted number.</li>
 </ul>
 <h1 id="format_meter">format_meter<h1 id="tqdm.tqdm.format_meter"></h1></h1>
 <pre><code class="python">tqdm.format_meter(n, total, elapsed, ncols=None, prefix='', ascii=False, unit='it', unit_scale=False, rate=None, bar_format=None, postfix=None, unit_divisor=1000, **extra_kwargs)
@@ -676,15 +677,45 @@ prefixes.</p>
 <ul>
 <li>out  : Formatted meter and stats, ready to display.  </li>
 </ul>
-<h1 id="format_dict">format_dict<h1 id="tqdm.tqdm.format_dict"></h1></h1>
-<p>Public API for read-only member access</p>
-<h1 id="status_printer">status_printer<h1 id="tqdm.tqdm.status_printer"></h1></h1>
-<pre><code class="python">tqdm.status_printer(file)
+<h1 id="format_num">format_num<h1 id="tqdm.tqdm.format_num"></h1></h1>
+<pre><code class="python">tqdm.format_num(n)
 </code></pre>
 
-<p>Manage the printing and in-place updating of a line of characters.
-Note that if the string is longer than a line, then in-place
-updating may not work (it will print a new line at each refresh).</p>
+<p>Intelligent scientific notation (.3g).</p>
+<h2>Parameters</h2>
+
+<ul>
+<li>n  : int or float or Numeric<br />
+    A Number.</li>
+</ul>
+<h2>Returns</h2>
+
+<ul>
+<li>out  : str<br />
+    Formatted number.</li>
+</ul>
+<h1 id="format_sizeof">format_sizeof<h1 id="tqdm.tqdm.format_sizeof"></h1></h1>
+<pre><code class="python">tqdm.format_sizeof(num, suffix='', divisor=1000)
+</code></pre>
+
+<p>Formats a number (greater than unity) with SI Order of Magnitude
+prefixes.</p>
+<h2>Parameters</h2>
+
+<ul>
+<li>num  : float<br />
+    Number ( &gt;= 1) to format.</li>
+<li>suffix  : str, optional<br />
+    Post-postfix [default: ''].</li>
+<li>divisor  : float, optionl<br />
+    Divisor between prefixes [default: 1000].</li>
+</ul>
+<h2>Returns</h2>
+
+<ul>
+<li>out  : str<br />
+    Number with Order of Magnitude SI unit postfix.</li>
+</ul>
 <h1 id="comparable">Comparable<h1 id="tqdm._utils.Comparable"></h1></h1>
 <pre><code class="python">Comparable(self)
 </code></pre>
