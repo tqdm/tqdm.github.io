@@ -6,24 +6,26 @@ generate:
   - tqdm.tqdm.__init__
   - tqdm.tqdm.update
   - tqdm.tqdm.close
+  - tqdm.tqdm.clear
   - tqdm.tqdm.refresh
-  - tqdm.tqdm.write
+  - tqdm.tqdm.unpause
+  - tqdm.tqdm.reset
   - tqdm.tqdm.set_description
   - tqdm.tqdm.set_description_str
   - tqdm.tqdm.set_postfix
   - tqdm.tqdm.set_postfix_str
-  - tqdm.tqdm.clear
-  - tqdm.tqdm.unpause
-  - tqdm.tqdm.external_write_mode
-  - tqdm.tqdm.set_lock
-  - tqdm.tqdm.get_lock
-  - tqdm.tqdm.pandas
-  - tqdm.tqdm.format_interval
-  - tqdm.tqdm.format_sizeof
-  - tqdm.tqdm.format_num
-  - tqdm.tqdm.format_meter
+  - tqdm.tqdm.write
   - tqdm.tqdm.format_dict
+  - tqdm.tqdm.pandas
+  - tqdm.tqdm.get_lock
+  - tqdm.tqdm.set_lock
+  - tqdm.tqdm.display
   - tqdm.tqdm.status_printer
+  - tqdm.tqdm.external_write_mode
+  - tqdm.tqdm.format_interval
+  - tqdm.tqdm.format_meter
+  - tqdm.tqdm.format_num
+  - tqdm.tqdm.format_sizeof
   - tqdm._utils.Comparable+
 - docs/tqdm_notebook.md:
   - tqdm._tqdm_notebook.tqdm_notebook+
@@ -46,7 +48,6 @@ generate:
   - tqdm.TqdmDeprecationWarning
   - tqdm.TqdmExperimentalWarning
   - tqdm.TqdmMonitorWarning
-
 pages:
 - Home: index.md
 - Documentation:
@@ -78,7 +79,7 @@ pages:
     - Codacy: https://www.codacy.com/app/tqdm/tqdm
     - Performance Benchmarks (asv): https://tqdm.github.io/tqdm
   - Citations:
-    - DOI (Zenodo): https://zenodo.org/badge/latestdoi/21637/tqdm/tqdm
+    - DOI (Zenodo): https://doi.org/10.5281/zenodo.595120
     - Metrics (Open Hub): https://www.openhub.net/p/tqdm
 - Licence: licence.md << ../LICENCE
 
