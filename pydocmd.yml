@@ -79,7 +79,8 @@ pages:
     - Codacy: https://www.codacy.com/app/tqdm/tqdm
     - Performance Benchmarks (asv): https://tqdm.github.io/tqdm
   - Citations:
-    - DOI (Zenodo): https://doi.org/10.5281/zenodo.595120
+    - DOI (publication): https://doi.org/10.21105/joss.01277
+    - DOI (code): https://doi.org/10.5281/zenodo.595120
     - Metrics (Open Hub): https://www.openhub.net/p/tqdm
 - Licence: licence.md << ../LICENCE
 
