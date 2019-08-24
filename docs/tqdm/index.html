@@ -137,6 +137,9 @@
     <li class="toctree-l3"><a href="#comparable">Comparable</a></li>
     
 
+    <li class="toctree-l3"><a href="#bar">Bar</a></li>
+    
+
     </ul>
                 </li>
                 <li class="">
@@ -635,10 +638,9 @@ Useful when writing to standard output stream</p>
     Number of seconds passed since start.</li>
 <li>ncols  : int, optional<br />
     The width of the entire output message. If specified,
-    dynamically resizes the progress meter to stay within this bound
-    [default: None]. The fallback meter width is 10 for the progress
-    bar + no limit for the iterations counter and statistics. If 0,
-    will not print any meter (only stats).</li>
+    dynamically resizes <code>{bar}</code> to stay within this bound
+    [default: None]. If <code>0</code>, will not print any bar (only stats).
+    The fallback is <code>{bar:10}</code>.</li>
 <li>prefix  : str, optional<br />
     Prefix message (included in total width) [default: ''].
     Use as {desc} in bar_format string.</li>
@@ -726,6 +728,21 @@ prefixes.</p>
 </code></pre>
 
 <p>Assumes child has self._comparable attr/@property</p>
+<h1 id="bar">Bar<h1 id="tqdm._tqdm.Bar"></h1></h1>
+<pre><code class="python">Bar(self, frac, default_len=10, charset=' ▏▎▍▌▋▊▉█')
+</code></pre>
+
+<p><code>str.format</code>-able bar with format specifiers: <code>[width][type]</code></p>
+<ul>
+<li><code>width</code></li>
+<li>unspecified (default): use <code>self.default_len</code></li>
+<li><code>int &gt;= 0</code>: overrides <code>self.default_len</code></li>
+<li><code>int &lt; 0</code>: subtract from <code>self.default_len</code></li>
+<li><code>type</code></li>
+<li><code>a</code>: ascii (<code>charset=self.ASCII</code> override)</li>
+<li><code>u</code>: unicode (<code>charset=self.UTF</code> override)</li>
+<li><code>b</code>: blank (<code>charset="  "</code> override)</li>
+</ul>
               
             </div>
           </div>
