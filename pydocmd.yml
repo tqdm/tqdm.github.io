@@ -27,6 +27,7 @@ generate:
   - tqdm.tqdm.format_num
   - tqdm.tqdm.format_sizeof
   - tqdm._utils.Comparable+
+  - tqdm._tqdm.Bar
 - docs/tqdm_notebook.md:
   - tqdm._tqdm_notebook.tqdm_notebook+
 - docs/tqdm_gui.md:
