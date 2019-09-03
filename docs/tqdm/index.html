@@ -189,7 +189,17 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../../PyData2019/slides.html">Slides (PyData)</a>
+    <span class="caption-text">Presentation (PyData)</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../PyData2019/slides.html">Slides</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="https://www.youtube.com/watch?v=kM3G35yhyDw&list=PLGVZCDnMOq0qv-D5QN8gvfSyOLjrGMu9F">Video</a>
+                </li>
+    </ul>
 	    </li>
           
             <li class="toctree-l1">
@@ -529,14 +539,14 @@ with automatic formatting based on datatype.</p>
 
 <p>Postfix without dictionary expansion, similar to prefix handling.</p>
 <h1 id="write">write<h1 id="tqdm.tqdm.write"></h1></h1>
-<pre><code class="python">tqdm.write(s, file=None, end='\n', nolock=False)
+<pre><code class="python">tqdm.write(cls, s, file=None, end='\n', nolock=False)
 </code></pre>
 
 <p>Print a message via tqdm (without overlap with bars).</p>
 <h1 id="format_dict">format_dict<h1 id="tqdm.tqdm.format_dict"></h1></h1>
 <p>Public API for read-only member access.</p>
 <h1 id="pandas">pandas<h1 id="tqdm.tqdm.pandas"></h1></h1>
-<pre><code class="python">tqdm.pandas(*targs, **tkwargs)
+<pre><code class="python">tqdm.pandas(tclass, *targs, **tkwargs)
 </code></pre>
 
 <p>Registers the given <code>tqdm</code> class with
@@ -568,12 +578,12 @@ and each instance will automatically close() upon completion.</p>
 <p>https://stackoverflow.com/questions/18603270/
 progress-indicator-during-pandas-operations-python</p>
 <h1 id="get_lock">get_lock<h1 id="tqdm.tqdm.get_lock"></h1></h1>
-<pre><code class="python">tqdm.get_lock()
+<pre><code class="python">tqdm.get_lock(cls)
 </code></pre>
 
 <p>Get the global lock. Construct it if it does not exist.</p>
 <h1 id="set_lock">set_lock<h1 id="tqdm.tqdm.set_lock"></h1></h1>
-<pre><code class="python">tqdm.set_lock(lock)
+<pre><code class="python">tqdm.set_lock(cls, lock)
 </code></pre>
 
 <p>Set the global lock.</p>
@@ -599,7 +609,7 @@ progress-indicator-during-pandas-operations-python</p>
 Note that if the string is longer than a line, then in-place
 updating may not work (it will print a new line at each refresh).</p>
 <h1 id="external_write_mode">external_write_mode<h1 id="tqdm.tqdm.external_write_mode"></h1></h1>
-<pre><code class="python">tqdm.external_write_mode(file=None, nolock=False)
+<pre><code class="python">tqdm.external_write_mode(*args, **kwds)
 </code></pre>
 
 <p>Disable tqdm within context and refresh tqdm when exits.
@@ -724,12 +734,12 @@ prefixes.</p>
     Number with Order of Magnitude SI unit postfix.</li>
 </ul>
 <h1 id="comparable">Comparable<h1 id="tqdm._utils.Comparable"></h1></h1>
-<pre><code class="python">Comparable(self, /, *args, **kwargs)
+<pre><code class="python">Comparable(self)
 </code></pre>
 
 <p>Assumes child has self._comparable attr/@property</p>
 <h1 id="bar">Bar<h1 id="tqdm._tqdm.Bar"></h1></h1>
-<pre><code class="python">Bar(self, frac, default_len=10, charset=' ▏▎▍▌▋▊▉█')
+<pre><code class="python">Bar(self, frac, default_len=10, charset=u' \u258f\u258e\u258d\u258c\u258b\u258a\u2589\u2588')
 </code></pre>
 
 <p><code>str.format</code>-able bar with format specifiers: <code>[width][type]</code></p>

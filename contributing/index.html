@@ -107,6 +107,8 @@
         
             <li><a class="toctree-l3" href="#how-to-commit-contributions">HOW TO COMMIT CONTRIBUTIONS</a></li>
         
+            <li><a class="toctree-l3" href="#what-code-layout-should-i-follow">WHAT CODE LAYOUT SHOULD I FOLLOW?</a></li>
+        
             <li><a class="toctree-l3" href="#testing">TESTING</a></li>
         
         </ul>
@@ -141,7 +143,17 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../PyData2019/slides.html">Slides (PyData)</a>
+    <span class="caption-text">Presentation (PyData)</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../PyData2019/slides.html">Slides</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="https://www.youtube.com/watch?v=kM3G35yhyDw&list=PLGVZCDnMOq0qv-D5QN8gvfSyOLjrGMu9F">Video</a>
+                </li>
+    </ul>
 	    </li>
           
             <li class="toctree-l1">
@@ -297,7 +309,42 @@ typical steps would be:</p>
 (go to your fork's webpage and click on "Pull Request."
 You can then add a message to describe your proposal.)</li>
 </ol>
+<h2 id="what-code-layout-should-i-follow">WHAT CODE LAYOUT SHOULD I FOLLOW?</h2>
+<p>Don't worry too much - maintainers can help reorganise contributions.
+However it would be helpful to bear in mind:</p>
+<ul>
+<li>The standard core of <code>tqdm</code>, i.e. <a href="tqdm/std.py"><code>tqdm.std.tqdm</code></a><ul>
+<li>must have no dependencies apart from pure python built-in standard libraries</li>
+<li>must have negligible impact on performance</li>
+<li>should have 100% coverage by unit tests</li>
+<li>should be appropriately commented</li>
+<li>will not break backward compatibility unless there is a very good reason<ul>
+<li>e.g. breaking py26 compatibility purely in favour of readability (such as converting <code>dict(a=1)</code> to <code>{'a': 1}</code>) is not a good enough reason</li>
+</ul>
+</li>
+<li>API changes should be discussed carefully</li>
+<li>remember, with millions of downloads per month, <code>tqdm</code> must be extremely fast and reliable</li>
+</ul>
+</li>
+<li>Any other kind of change may be included in a (possibly new) submodule<ul>
+<li>submodules are likely single python files under the main <a href="tqdm/">tqdm/</a> directory<ul>
+<li>large submodules requiring a sub-folder should be included in <a href="MANIFEST.in"><code>MANIFEST.in</code></a></li>
+</ul>
+</li>
+<li>submodules extending <code>tqdm.std.tqdm</code> or any other module (e.g. <a href="tqdm/notebook.py"><code>tqdm.notebook.tqdm</code></a>, <a href="tqdm/gui.py"><code>tqdm.gui.tqdm</code></a>)</li>
+<li>can implement anything from experimental new features to support for third-party libraries such as <code>pandas</code>, <code>numpy</code>, etc.</li>
+<li>submodule maturity<ul>
+<li>alpha: experimental; missing unit tests, comments, and/or feedback; raises <code>tqdm.TqdmExperimentalWarning</code></li>
+<li>beta: well-used; commented, perhaps still missing tests</li>
+<li>stable: &gt;10 users; commented, 80% coverage</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <h2 id="testing">TESTING</h2>
+<p>Once again, don't worry too much - tests are automated online, and maintainers
+can also help.</p>
 <p>To test functionality (such as before submitting a Pull
 Request), there are a number of unit tests.</p>
 <h3 id="standard-unit-tests">Standard unit tests</h3>
