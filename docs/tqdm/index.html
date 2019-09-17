@@ -144,11 +144,11 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../tqdm_gui/">tqdm.tqdm_gui</a>
+    <a class="" href="../gui/">tqdm.gui</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../tqdm_notebook/">tqdm.tqdm_notebook</a>
+    <a class="" href="../notebook/">tqdm.notebook</a>
                 </li>
                 <li class="">
                     
@@ -416,9 +416,10 @@ progressbar every time a value is requested.</p>
     r_bar='| {n_fmt}/{total_fmt} [{elapsed}&lt;{remaining}, '
       '{rate_fmt}{postfix}]'
     Possible vars: l_bar, bar, r_bar, n, n_fmt, total, total_fmt,
-      percentage, rate, rate_fmt, rate_noinv, rate_noinv_fmt,
-      rate_inv, rate_inv_fmt, elapsed, elapsed_s, remaining,
-      remaining_s, desc, postfix, unit.
+      percentage, elapsed, elapsed_s, ncols, desc, unit,
+      rate, rate_fmt, rate_noinv, rate_noinv_fmt,
+      rate_inv, rate_inv_fmt, postfix, unit_divisor,
+      remaining, remaining_s.
     Note that a trailing ": " is automatically removed after {desc}
     if the latter is empty.</li>
 <li>initial  : int, optional<br />
@@ -439,7 +440,7 @@ progressbar every time a value is requested.</p>
     bytes. In all other cases will default to unicode.</li>
 <li>gui  : bool, optional<br />
     WARNING: internal parameter - do not use.
-    Use tqdm_gui(...) instead. If set, will attempt to use
+    Use tqdm.gui.tqdm(...) instead. If set, will attempt to use
     matplotlib animations for a graphical output [default: False].</li>
 </ul>
 <h2>Returns</h2>
@@ -565,7 +566,8 @@ and each instance will automatically close() upon completion.</p>
 
 <pre><code class="python">&gt;&gt;&gt; import pandas as pd
 &gt;&gt;&gt; import numpy as np
-&gt;&gt;&gt; from tqdm import tqdm, tqdm_gui
+&gt;&gt;&gt; from tqdm import tqdm
+&gt;&gt;&gt; from tqdm.gui import tqdm as tqdm_gui
 &gt;&gt;&gt;
 &gt;&gt;&gt; df = pd.DataFrame(np.random.randint(0, 100, (100000, 6)))
 &gt;&gt;&gt; tqdm.pandas(ncols=50)  # can use tqdm_gui, optional kwargs, etc
@@ -675,9 +677,10 @@ Useful when writing to standard output stream</p>
     r_bar='| {n_fmt}/{total_fmt} [{elapsed}&lt;{remaining}, '
       '{rate_fmt}{postfix}]'
     Possible vars: l_bar, bar, r_bar, n, n_fmt, total, total_fmt,
-      percentage, rate, rate_fmt, rate_noinv, rate_noinv_fmt,
-      rate_inv, rate_inv_fmt, elapsed, elapsed_s,
-      remaining, remaining_s, desc, postfix, unit.
+      percentage, elapsed, elapsed_s, ncols, desc, unit,
+      rate, rate_fmt, rate_noinv, rate_noinv_fmt,
+      rate_inv, rate_inv_fmt, postfix, unit_divisor,
+      remaining, remaining_s.
     Note that a trailing ": " is automatically removed after {desc}
     if the latter is empty.</li>
 <li>postfix  : *, optional<br />
@@ -733,12 +736,12 @@ prefixes.</p>
 <li>out  : str<br />
     Number with Order of Magnitude SI unit postfix.</li>
 </ul>
-<h1 id="comparable">Comparable<h1 id="tqdm._utils.Comparable"></h1></h1>
+<h1 id="comparable">Comparable<h1 id="tqdm.utils.Comparable"></h1></h1>
 <pre><code class="python">Comparable(self)
 </code></pre>
 
 <p>Assumes child has self._comparable attr/@property</p>
-<h1 id="bar">Bar<h1 id="tqdm._tqdm.Bar"></h1></h1>
+<h1 id="bar">Bar<h1 id="tqdm.std.Bar"></h1></h1>
 <pre><code class="python">Bar(self, frac, default_len=10, charset=u' \u258f\u258e\u258d\u258c\u258b\u258a\u2589\u2588')
 </code></pre>
 
@@ -760,7 +763,7 @@ prefixes.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../tqdm_gui/" class="btn btn-neutral float-right" title="tqdm.tqdm_gui">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../gui/" class="btn btn-neutral float-right" title="tqdm.gui">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../.." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -794,7 +797,7 @@ prefixes.</p>
         <span><a href="../.." style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../tqdm_gui/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../gui/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

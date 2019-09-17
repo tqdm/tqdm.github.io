@@ -63,11 +63,11 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../docs/tqdm_gui/">tqdm.tqdm_gui</a>
+    <a class="" href="../docs/gui/">tqdm.gui</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../docs/tqdm_notebook/">tqdm.tqdm_notebook</a>
+    <a class="" href="../docs/notebook/">tqdm.notebook</a>
                 </li>
                 <li class="">
                     
@@ -99,6 +99,8 @@
     <li class="toctree-l2"><a href="#tqdmtqdm-releases">tqdm/tqdm Releases</a></li>
     
         <ul>
+        
+            <li><a class="toctree-l3" href="#v4360-2019-09-17">v4.36.0 (2019-09-17)</a></li>
         
             <li><a class="toctree-l3" href="#v4350-2019-08-24">v4.35.0 (2019-08-24)</a></li>
         
@@ -389,6 +391,38 @@
             <div class="section">
               
                 <h1 id="tqdmtqdm-releases"><a href="https://github.com/tqdm/tqdm">tqdm/tqdm</a> Releases</h1>
+<h2 id="v4360-2019-09-17"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.36.0">v4.36.0</a> <small><small>(2019-09-17)</small></small></h2>
+<p><a href="https://github.com/tqdm/tqdm/releases/download/v4.36.0/tqdm-4.36.0-py2.py3-none-any.whl">whl</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.36.0/tqdm-4.36.0-py2.py3-none-any.whl.asc">asc</a></p>
+<ul>
+<li>expose more custom format params</li>
+<li>potential thread safety fix (<a href="https://github.com/tqdm/tqdm/issues/548">#548</a>)</li>
+<li>update submodule architecture (<a href="https://github.com/tqdm/tqdm/issues/198">#198</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/800">#800</a>)</li>
+<li>backward-compatibility</li>
+<li>expose <code>utils</code></li>
+<li>rename <code>main</code> -&gt; <code>cli</code></li>
+<li>add/fix tests</li>
+<li>fix minor cached var optimisation</li>
+<li><code>gui</code> partial upgrade (<a href="https://github.com/tqdm/tqdm/issues/790">#790</a>)</li>
+<li><code>notebook</code> upgrade (<a href="https://github.com/tqdm/tqdm/issues/790">#790</a>)<ul>
+<li>support <code>{bar}</code> in <code>bar_format</code> (<a href="https://github.com/tqdm/tqdm/issues/594">#594</a>)</li>
+<li>inherit methods including <code>set_*(refresh)</code> (<a href="https://github.com/tqdm/tqdm/issues/740">#740</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/741">#741</a>)</li>
+</ul>
+</li>
+<li>ready for <code>contrib</code> releases (<a href="https://github.com/tqdm/tqdm/issues/252">#252</a>)</li>
+<li>support custom <code>bar_format</code> with unknown <code>total</code></li>
+<li>fix <code>tqdm_notebook</code> red block on explicit <code>file=None</code> (<a href="https://github.com/tqdm/tqdm/issues/791">#791</a>)</li>
+<li>update notebook to fully support custom <code>bar_format</code> (<a href="https://github.com/tqdm/tqdm/issues/594">#594</a>, <a href="https://github.com/tqdm/tqdm/issues/649">#649</a>)</li>
+<li>misc tidy</li>
+<li>warnings</li>
+<li>linting</li>
+<li>update submodule contribution guide (<a href="https://github.com/tqdm/tqdm/issues/252">#252</a>)</li>
+<li>parallel <code>(py)make test</code></li>
+<li>fix Zenodo metadata</li>
+<li>update documentation</li>
+<li><code>pandas</code>, <code>notebook</code>, <code>gui</code> (<a href="https://github.com/tqdm/tqdm/issues/245">#245</a>)</li>
+<li>indentation</li>
+<li>update multiprocessing and multithreading examples (<a href="https://github.com/tqdm/tqdm/issues/796">#796</a>)</li>
+</ul>
 <h2 id="v4350-2019-08-24"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.35.0">v4.35.0</a> <small><small>(2019-08-24)</small></small></h2>
 <p><a href="https://github.com/tqdm/tqdm/releases/download/v4.35.0/tqdm-4.35.0-py2.py3-none-any.whl">whl</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.35.0/tqdm-4.35.0-py2.py3-none-any.whl.asc">asc</a></p>
 <ul>
