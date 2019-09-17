@@ -42,6 +42,7 @@ for i in tqdm(range(10000)):
 ![Screenshot](https://raw.githubusercontent.com/tqdm/tqdm/master/images/tqdm.gif)
 
 REPL: [ptpython](https://github.com/jonathanslenders/ptpython)
+| PyData London: [video](/video) / [slides](/PyData2019/slides.html)
 
 It can also be executed as a module with pipes:
 
