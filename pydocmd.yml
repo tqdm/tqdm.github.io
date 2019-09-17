@@ -26,12 +26,12 @@ generate:
   - tqdm.tqdm.format_meter
   - tqdm.tqdm.format_num
   - tqdm.tqdm.format_sizeof
-  - tqdm._utils.Comparable+
-  - tqdm._tqdm.Bar
-- docs/tqdm_notebook.md:
-  - tqdm._tqdm_notebook.tqdm_notebook+
-- docs/tqdm_gui.md:
-  - tqdm.tqdm_gui+
+  - tqdm.utils.Comparable+
+  - tqdm.std.Bar
+- docs/notebook.md:
+  - tqdm.notebook.tqdm+
+- docs/gui.md:
+  - tqdm.gui.tqdm+
 #- docs/autonotebook.md:
 #  - tqdm.autonotebook
 - docs/shortcuts.md:
@@ -53,8 +53,8 @@ pages:
 - Home: index.md
 - Documentation:
   - tqdm.tqdm: docs/tqdm.md
-  - tqdm.tqdm_gui: docs/tqdm_gui.md
-  - tqdm.tqdm_notebook: docs/tqdm_notebook.md
+  - tqdm.gui: docs/gui.md
+  - tqdm.notebook: docs/notebook.md
   #- tqdm.autonotebook: docs/autonotebook.md
   - Shortcuts: docs/shortcuts.md
 - Developer Documentation:
