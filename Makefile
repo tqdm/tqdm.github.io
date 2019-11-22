@@ -13,5 +13,6 @@ deploy: build
 	git commit -m "update static site"
 	git push
 	git checkout src
+	git branch -d master
 clean:
 	rm -rf *.pyc sources/releases.md _build/
