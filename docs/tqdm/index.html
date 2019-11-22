@@ -332,14 +332,14 @@
             <div class="section">
               
                 <h1 id="tqdm">tqdm<h1 id="tqdm.tqdm"></h1></h1>
-<pre><code class="python">tqdm(self, iterable=None, desc=None, total=None, leave=True, file=None, ncols=None, mininterval=0.1, maxinterval=10.0, miniters=None, ascii=None, disable=False, unit='it', unit_scale=False, dynamic_ncols=False, smoothing=0.3, bar_format=None, initial=0, position=None, postfix=None, unit_divisor=1000, write_bytes=None, gui=False, **kwargs)
+<pre><code class="python">tqdm(self, iterable=None, desc=None, total=None, leave=True, file=None, ncols=None, mininterval=0.1, maxinterval=10.0, miniters=None, ascii=None, disable=False, unit='it', unit_scale=False, dynamic_ncols=False, smoothing=0.3, bar_format=None, initial=0, position=None, postfix=None, unit_divisor=1000, write_bytes=None, lock_args=None, gui=False, **kwargs)
 </code></pre>
 
 <p>Decorate an iterable object, returning an iterator which acts exactly
 like the original iterable, but prints a dynamically updating
 progressbar every time a value is requested.</p>
 <h1 id="9595init9595">__init__<h1 id="tqdm.tqdm.__init__"></h1></h1>
-<pre><code class="python">tqdm.__init__(self, iterable=None, desc=None, total=None, leave=True, file=None, ncols=None, mininterval=0.1, maxinterval=10.0, miniters=None, ascii=None, disable=False, unit='it', unit_scale=False, dynamic_ncols=False, smoothing=0.3, bar_format=None, initial=0, position=None, postfix=None, unit_divisor=1000, write_bytes=None, gui=False, **kwargs)
+<pre><code class="python">tqdm.__init__(self, iterable=None, desc=None, total=None, leave=True, file=None, ncols=None, mininterval=0.1, maxinterval=10.0, miniters=None, ascii=None, disable=False, unit='it', unit_scale=False, dynamic_ncols=False, smoothing=0.3, bar_format=None, initial=0, position=None, postfix=None, unit_divisor=1000, write_bytes=None, lock_args=None, gui=False, **kwargs)
 </code></pre>
 
 <h2>Parameters</h2>
@@ -438,6 +438,9 @@ progressbar every time a value is requested.</p>
     If (default: None) and <code>file</code> is unspecified,
     bytes will be written in Python 2. If <code>True</code> will also write
     bytes. In all other cases will default to unicode.</li>
+<li>lock_args  : tuple, optional<br />
+    Passed to <code>refresh</code> for intermediate output
+    (initialisation, iterating, and updating).</li>
 <li>gui  : bool, optional<br />
     WARNING: internal parameter - do not use.
     Use tqdm.gui.tqdm(...) instead. If set, will attempt to use
@@ -483,10 +486,20 @@ exactly reached and printed.</p>
 
 <p>Clear current bar display.</p>
 <h1 id="refresh">refresh<h1 id="tqdm.tqdm.refresh"></h1></h1>
-<pre><code class="python">tqdm.refresh(self, nolock=False)
+<pre><code class="python">tqdm.refresh(self, nolock=False, lock_args=None)
 </code></pre>
 
 <p>Force refresh the display of this bar.</p>
+<h2>Parameters</h2>
+
+<ul>
+<li>nolock  : bool, optional<br />
+    If <code>True</code>, does not lock.
+    If [default: <code>False</code>]: calls <code>acquire()</code> on internal lock.</li>
+<li>lock_args  : tuple, optional<br />
+    Passed to internal lock's <code>acquire()</code>.
+    If specified, will only <code>display()</code> if <code>acquire()</code> returns <code>True</code>.</li>
+</ul>
 <h1 id="unpause">unpause<h1 id="tqdm.tqdm.unpause"></h1></h1>
 <pre><code class="python">tqdm.unpause(self)
 </code></pre>
