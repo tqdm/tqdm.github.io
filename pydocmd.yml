@@ -16,6 +16,7 @@ generate:
   - tqdm.tqdm.set_postfix_str
   - tqdm.tqdm.write
   - tqdm.tqdm.format_dict
+  - tqdm.tqdm.wrapattr
   - tqdm.tqdm.pandas
   - tqdm.tqdm.get_lock
   - tqdm.tqdm.set_lock
@@ -32,13 +33,15 @@ generate:
   - tqdm.notebook.tqdm+
 - docs/gui.md:
   - tqdm.gui.tqdm+
+- docs/contrib.md:
+  - tqdm.contrib+
 #- docs/autonotebook.md:
 #  - tqdm.autonotebook
 - docs/shortcuts.md:
   - tqdm.trange
   - tqdm.tgrange
-  - tqdm.tnrange
-  - tqdm.tqdm_pandas
+  - tqdm.notebook.tnrange
+  - tqdm.gui.tgrange
 - docs/TMonitor.md:
   - tqdm.TMonitor+
 - docs/warnings.md:
@@ -53,8 +56,9 @@ pages:
 - Home: index.md
 - Documentation:
   - tqdm.tqdm: docs/tqdm.md
-  - tqdm.gui: docs/gui.md
   - tqdm.notebook: docs/notebook.md
+  - tqdm.gui: docs/gui.md
+  - tqdm.contrib: docs/contrib.md
   #- tqdm.autonotebook: docs/autonotebook.md
   - Shortcuts: docs/shortcuts.md
 - Developer Documentation:
