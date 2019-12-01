@@ -63,11 +63,15 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../notebook/">tqdm.notebook</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../gui/">tqdm.gui</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../notebook/">tqdm.notebook</a>
+    <a class="" href="../contrib/">tqdm.contrib</a>
                 </li>
                 <li class=" current">
                     
@@ -83,7 +87,7 @@
     <li class="toctree-l3"><a href="#tnrange">tnrange</a></li>
     
 
-    <li class="toctree-l3"><a href="#tqdm_pandas">tqdm_pandas</a></li>
+    <li class="toctree-l3"><a href="#tgrange_1">tgrange</a></li>
     
 
     </ul>
@@ -277,41 +281,18 @@ On Python3+ range is used instead of xrange.</p>
 
 <p>A shortcut for <code>tqdm.gui.tqdm(xrange(*args), **kwargs)</code>.
 On Python3+, <code>range</code> is used instead of <code>xrange</code>.</p>
-<h1 id="tnrange">tnrange<h1 id="tqdm.tnrange"></h1></h1>
+<h1 id="tnrange">tnrange<h1 id="tqdm.notebook.tnrange"></h1></h1>
 <pre><code class="python">tnrange(*args, **kwargs)
 </code></pre>
 
 <p>A shortcut for <code>tqdm.notebook.tqdm(xrange(*args), **kwargs)</code>.
 On Python3+, <code>range</code> is used instead of <code>xrange</code>.</p>
-<h1 id="tqdm_pandas">tqdm_pandas<h1 id="tqdm.tqdm_pandas"></h1></h1>
-<pre><code class="python">tqdm_pandas(tclass, *targs, **tkwargs)
+<h1 id="tgrange_1">tgrange<h1 id="tqdm.gui.tgrange"></h1></h1>
+<pre><code class="python">tgrange(*args, **kwargs)
 </code></pre>
 
-<p>Registers the given <code>tqdm</code> instance with
-<code>pandas.core.groupby.DataFrameGroupBy.progress_apply</code>.
-It will even close() the <code>tqdm</code> instance upon completion.</p>
-<h2>Parameters</h2>
-
-<ul>
-<li>tclass  : tqdm class you want to use (eg, tqdm, tqdm_notebook, etc)<br />
-targs and tkwargs  : arguments for the tqdm instance</li>
-</ul>
-<h2>Examples</h2>
-
-<pre><code class="python">&gt;&gt;&gt; import pandas as pd
-&gt;&gt;&gt; import numpy as np
-&gt;&gt;&gt; from tqdm import tqdm, tqdm_pandas
-&gt;&gt;&gt;
-&gt;&gt;&gt; df = pd.DataFrame(np.random.randint(0, 100, (100000, 6)))
-&gt;&gt;&gt; tqdm_pandas(tqdm, leave=True)  # can use tqdm_gui, optional kwargs, etc
-&gt;&gt;&gt; # Now you can use `progress_apply` instead of `apply`
-&gt;&gt;&gt; df.groupby(0).progress_apply(lambda x: x**2)
-</code></pre>
-
-<h2>References</h2>
-
-<p>https://stackoverflow.com/questions/18603270/
-progress-indicator-during-pandas-operations-python</p>
+<p>A shortcut for <code>tqdm.gui.tqdm(xrange(*args), **kwargs)</code>.
+On Python3+, <code>range</code> is used instead of <code>xrange</code>.</p>
               
             </div>
           </div>
@@ -322,7 +303,7 @@ progress-indicator-during-pandas-operations-python</p>
         <a href="../warnings/" class="btn btn-neutral float-right" title="Warnings and Exceptions">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../notebook/" class="btn btn-neutral" title="tqdm.notebook"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../contrib/" class="btn btn-neutral" title="tqdm.contrib"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -350,7 +331,7 @@ progress-indicator-during-pandas-operations-python</p>
           <a href="https://github.com/tqdm/tqdm/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../notebook/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../contrib/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../warnings/" style="color: #fcfcfc">Next &raquo;</a></span>

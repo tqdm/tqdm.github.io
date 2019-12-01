@@ -104,6 +104,9 @@
     <li class="toctree-l3"><a href="#format_dict">format_dict</a></li>
     
 
+    <li class="toctree-l3"><a href="#wrapattr">wrapattr</a></li>
+    
+
     <li class="toctree-l3"><a href="#pandas">pandas</a></li>
     
 
@@ -144,11 +147,15 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../notebook/">tqdm.notebook</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../gui/">tqdm.gui</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../notebook/">tqdm.notebook</a>
+    <a class="" href="../contrib/">tqdm.contrib</a>
                 </li>
                 <li class="">
                     
@@ -350,14 +357,14 @@ progressbar every time a value is requested.</p>
     Leave blank to manually manage the updates.</li>
 <li>desc  : str, optional<br />
     Prefix for the progressbar.</li>
-<li>total  : int, optional<br />
+<li>total  : int or float, optional<br />
     The number of expected iterations. If unspecified,
     len(iterable) is used if possible. If float("inf") or as a last
     resort, only basic progress statistics are displayed
     (no ETA, no progressbar).
     If <code>gui</code> is True and this parameter needs subsequent updating,
-    specify an initial arbitrary large positive integer,
-    e.g. int(9e9).</li>
+    specify an initial arbitrary large positive number,
+    e.g. 9e9.</li>
 <li>leave  : bool, optional<br />
     If [default: True], keeps all traces of the progressbar
     upon termination of iteration.
@@ -379,7 +386,7 @@ progressbar every time a value is requested.</p>
     Automatically adjusts <code>miniters</code> to correspond to <code>mininterval</code>
     after long display update lag. Only works if <code>dynamic_miniters</code>
     or monitor thread is enabled.</li>
-<li>miniters  : int, optional<br />
+<li>miniters  : int or float, optional<br />
     Minimum progress display update interval, in iterations.
     If 0 and <code>dynamic_miniters</code>, will automatically adjust to equal
     <code>mininterval</code> (more CPU efficient, good for tight loops).
@@ -422,9 +429,10 @@ progressbar every time a value is requested.</p>
       remaining, remaining_s.
     Note that a trailing ": " is automatically removed after {desc}
     if the latter is empty.</li>
-<li>initial  : int, optional<br />
+<li>initial  : int or float, optional<br />
     The initial counter value. Useful when restarting a progress
-    bar [default: 0].</li>
+    bar [default: 0]. If using float, consider specifying <code>{n:.3f}</code>
+    or similar in <code>bar_format</code>, or specifying <code>unit_scale</code>.</li>
 <li>position  : int, optional<br />
     Specify the line offset to print this bar (starting from 0)
     Automatic if unspecified.
@@ -471,9 +479,10 @@ exactly reached and printed.</p>
 <h2>Parameters</h2>
 
 <ul>
-<li>n  : int, optional<br />
+<li>n  : int or float, optional<br />
     Increment to add to the internal counter of iterations
-    [default: 1].</li>
+    [default: 1]. If using float, consider specifying <code>{n:.3f}</code>
+    or similar in <code>bar_format</code>, or specifying <code>unit_scale</code>.</li>
 </ul>
 <h1 id="close">close<h1 id="tqdm.tqdm.close"></h1></h1>
 <pre><code class="python">tqdm.close(self)
@@ -514,7 +523,7 @@ exactly reached and printed.</p>
 <h2>Parameters</h2>
 
 <ul>
-<li>total  : int, optional. Total to use for the new bar.  </li>
+<li>total  : int or float, optional. Total to use for the new bar.  </li>
 </ul>
 <h1 id="set_description">set_description<h1 id="tqdm.tqdm.set_description"></h1></h1>
 <pre><code class="python">tqdm.set_description(self, desc=None, refresh=True)
@@ -559,6 +568,22 @@ with automatic formatting based on datatype.</p>
 <p>Print a message via tqdm (without overlap with bars).</p>
 <h1 id="format_dict">format_dict<h1 id="tqdm.tqdm.format_dict"></h1></h1>
 <p>Public API for read-only member access.</p>
+<h1 id="wrapattr">wrapattr<h1 id="tqdm.tqdm.wrapattr"></h1></h1>
+<pre><code class="python">tqdm.wrapattr(*args, **kwds)
+</code></pre>
+
+<ul>
+<li>stream  : file-like object.  </li>
+<li>method  : str, "read" or "write". The result of <code>read()</code> and<br />
+    the first argument of <code>write()</code> should have a <code>len()</code>.</li>
+</ul>
+<pre><code class="python">&gt;&gt;&gt; with tqdm.wrapattr(file_obj, &quot;read&quot;, total=file_obj.size) as fobj:
+...     while True:
+...         chunk = fobj.read(chunk_size)
+...         if not chunk:
+...             break
+</code></pre>
+
 <h1 id="pandas">pandas<h1 id="tqdm.tqdm.pandas"></h1></h1>
 <pre><code class="python">tqdm.pandas(tclass, *targs, **tkwargs)
 </code></pre>
@@ -654,11 +679,11 @@ Useful when writing to standard output stream</p>
 <h2>Parameters</h2>
 
 <ul>
-<li>n  : int<br />
+<li>n  : int or float<br />
     Number of finished iterations.</li>
-<li>total  : int<br />
-    The expected total number of iterations. If meaningless (), only
-    basic progress statistics are displayed (no ETA).</li>
+<li>total  : int or float<br />
+    The expected total number of iterations. If meaningless (None),
+    only basic progress statistics are displayed (no ETA).</li>
 <li>elapsed  : float<br />
     Number of seconds passed since start.</li>
 <li>ncols  : int, optional<br />
@@ -776,7 +801,7 @@ prefixes.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../gui/" class="btn btn-neutral float-right" title="tqdm.gui">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../notebook/" class="btn btn-neutral float-right" title="tqdm.notebook">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../.." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -810,7 +835,7 @@ prefixes.</p>
         <span><a href="../.." style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../gui/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../notebook/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

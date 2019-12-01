@@ -63,11 +63,15 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../docs/notebook/">tqdm.notebook</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../docs/gui/">tqdm.gui</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../docs/notebook/">tqdm.notebook</a>
+    <a class="" href="../docs/contrib/">tqdm.contrib</a>
                 </li>
                 <li class="">
                     
@@ -99,6 +103,8 @@
     <li class="toctree-l2"><a href="#tqdmtqdm-releases">tqdm/tqdm Releases</a></li>
     
         <ul>
+        
+            <li><a class="toctree-l3" href="#v4400-2019-12-01">v4.40.0 (2019-12-01)</a></li>
         
             <li><a class="toctree-l3" href="#v4390-2019-11-22">v4.39.0 (2019-11-22)</a></li>
         
@@ -399,6 +405,20 @@
             <div class="section">
               
                 <h1 id="tqdmtqdm-releases"><a href="https://github.com/tqdm/tqdm">tqdm/tqdm</a> Releases</h1>
+<h2 id="v4400-2019-12-01"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.40.0">v4.40.0</a> <small><small>(2019-12-01)</small></small></h2>
+<p><a href="https://github.com/tqdm/tqdm/releases/download/v4.40.0/tqdm-4.40.0-py2.py3-none-any.whl">whl</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.40.0/tqdm-4.40.0-py2.py3-none-any.whl.asc">asc</a></p>
+<ul>
+<li>officially support <code>float</code> for <code>n</code> and <code>total</code> (<a href="https://github.com/tqdm/tqdm/issues/802">#802</a>)</li>
+<li><code>notebook</code>: use <code>FloatProgress</code> &lt;= <code>IntProgress</code> (<a href="https://github.com/tqdm/tqdm/issues/471">#471</a>, <a href="https://github.com/tqdm/tqdm/issues/456">#456</a>)</li>
+<li>allow imprecision (<code>n &lt;= total + epsilon</code>) (<a href="https://github.com/tqdm/tqdm/issues/849">#849</a>)</li>
+<li>fix unicode bar format arguments (<a href="https://github.com/tqdm/tqdm/issues/803">#803</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/851">#851</a>)</li>
+<li>add <code>contrib</code> submodule (<a href="https://github.com/tqdm/tqdm/issues/815">#815</a>)</li>
+<li>add <code>wrapattr</code>, <code>utils.CallbackIOWrapper</code>, <code>contrib.DummyTqdmFile</code> (<a href="https://github.com/tqdm/tqdm/issues/84">#84</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/844">#844</a>)</li>
+<li>update tests</li>
+<li>update documentation</li>
+<li>tidy automatic <code>snap</code> deployments</li>
+<li>minor doc update (<a href="https://github.com/tqdm/tqdm/issues/854">#854</a>)</li>
+</ul>
 <h2 id="v4390-2019-11-22"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.39.0">v4.39.0</a> <small><small>(2019-11-22)</small></small></h2>
 <p><a href="https://github.com/tqdm/tqdm/releases/download/v4.39.0/tqdm-4.39.0-py2.py3-none-any.whl">whl</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.39.0/tqdm-4.39.0-py2.py3-none-any.whl.asc">asc</a></p>
 <ul>

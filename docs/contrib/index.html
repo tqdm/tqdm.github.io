@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>tqdm.TMonitor - tqdm documentation</title>
+  <title>tqdm.contrib - tqdm documentation</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -17,8 +17,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "tqdm.TMonitor";
-    var mkdocs_page_input_path = "docs/TMonitor.md";
+    var mkdocs_page_name = "tqdm.contrib";
+    var mkdocs_page_input_path = "docs/contrib.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -69,9 +69,15 @@
                     
     <a class="" href="../gui/">tqdm.gui</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../contrib/">tqdm.contrib</a>
+    <a class="current" href="./">tqdm.contrib</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#tqdmcontrib">tqdm.contrib</a></li>
+    
+
+    </ul>
                 </li>
                 <li class="">
                     
@@ -88,15 +94,9 @@
                     
     <a class="" href="../warnings/">Warnings and Exceptions</a>
                 </li>
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href="./">tqdm.TMonitor</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#tmonitor">TMonitor</a></li>
-    
-
-    </ul>
+    <a class="" href="../TMonitor/">tqdm.TMonitor</a>
                 </li>
     </ul>
 	    </li>
@@ -243,14 +243,14 @@
     
       
         
-          <li>Developer Documentation &raquo;</li>
+          <li>Documentation &raquo;</li>
         
       
     
-    <li>tqdm.TMonitor</li>
+    <li>tqdm.contrib</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/tqdm/tqdm/edit/master/docs/docs/TMonitor.md"
+        <a href="https://github.com/tqdm/tqdm/edit/master/docs/docs/contrib.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -260,21 +260,13 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="tmonitor">TMonitor<h1 id="tqdm.TMonitor"></h1></h1>
-<pre><code class="python">TMonitor(self, tqdm_cls, sleep_interval)
+                <h1 id="tqdmcontrib">tqdm.contrib<h1 id="tqdm.contrib"></h1></h1>
+<h2 id="tqdm.contrib.DummyTqdmFile">DummyTqdmFile</h2>
+
+<pre><code class="python">DummyTqdmFile(self, wrapped)
 </code></pre>
 
-<p>Monitoring thread for tqdm bars.
-Monitors if tqdm bars are taking too much time to display
-and readjusts miniters automatically if necessary.</p>
-<h2>Parameters</h2>
-
-<ul>
-<li>tqdm_cls  : class<br />
-    tqdm class to use (can be core tqdm or a submodule).</li>
-<li>sleep_interval  : fload<br />
-    Time to sleep between monitoring checks.</li>
-</ul>
+<p>Dummy file-like that will write to tqdm</p>
               
             </div>
           </div>
@@ -282,10 +274,10 @@ and readjusts miniters automatically if necessary.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../releases/" class="btn btn-neutral float-right" title="Release History">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../shortcuts/" class="btn btn-neutral float-right" title="Shortcuts">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../warnings/" class="btn btn-neutral" title="Warnings and Exceptions"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../gui/" class="btn btn-neutral" title="tqdm.gui"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -313,10 +305,10 @@ and readjusts miniters automatically if necessary.</p>
           <a href="https://github.com/tqdm/tqdm/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../warnings/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../gui/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../../releases/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../shortcuts/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
