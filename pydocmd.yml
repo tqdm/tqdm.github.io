@@ -33,6 +33,9 @@ generate:
   - tqdm.notebook.tqdm+
 - docs/gui.md:
   - tqdm.gui.tqdm+
+- docs/keras.md:
+  - tqdm.keras.TqdmCallback+
+  - tqdm.keras.TqdmCallback.__init__
 - docs/contrib.md:
   - tqdm.contrib+
 #- docs/autonotebook.md:
@@ -58,6 +61,7 @@ pages:
   - tqdm.tqdm: docs/tqdm.md
   - tqdm.notebook: docs/notebook.md
   - tqdm.gui: docs/gui.md
+  - tqdm.keras: docs/keras.md
   - tqdm.contrib: docs/contrib.md
   #- tqdm.autonotebook: docs/autonotebook.md
   - Shortcuts: docs/shortcuts.md
