@@ -71,6 +71,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../docs/keras/">tqdm.keras</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../docs/contrib/">tqdm.contrib</a>
                 </li>
                 <li class="">
@@ -103,6 +107,14 @@
     <li class="toctree-l2"><a href="#tqdmtqdm-releases">tqdm/tqdm Releases</a></li>
     
         <ul>
+        
+            <li><a class="toctree-l3" href="#v4411-2020-01-05">v4.41.1 (2020-01-05)</a></li>
+        
+            <li><a class="toctree-l3" href="#v4410-2019-12-20">v4.41.0 (2019-12-20)</a></li>
+        
+            <li><a class="toctree-l3" href="#v4402-2019-12-11">v4.40.2 (2019-12-11)</a></li>
+        
+            <li><a class="toctree-l3" href="#v4401-2019-12-11">v4.40.1 (2019-12-11)</a></li>
         
             <li><a class="toctree-l3" href="#v4400-2019-12-01">v4.40.0 (2019-12-01)</a></li>
         
@@ -405,6 +417,40 @@
             <div class="section">
               
                 <h1 id="tqdmtqdm-releases"><a href="https://github.com/tqdm/tqdm">tqdm/tqdm</a> Releases</h1>
+<h2 id="v4411-2020-01-05"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.41.1">v4.41.1</a> <small><small>(2020-01-05)</small></small></h2>
+<p><a href="https://github.com/tqdm/tqdm/releases/download/v4.41.1/tqdm-4.41.1-py2.py3-none-any.whl">whl</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.41.1/tqdm-4.41.1-py2.py3-none-any.whl.asc">asc</a></p>
+<ul>
+<li><code>keras</code> module tidy and fixes</li>
+<li>fix <code>batch_size=None</code> (<a href="https://github.com/tqdm/tqdm/issues/869">#869</a>)</li>
+<li>add missing <code>pop('size')</code></li>
+</ul>
+<h2 id="v4410-2019-12-20"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.41.0">v4.41.0</a> <small><small>(2019-12-20)</small></small></h2>
+<p><a href="https://github.com/tqdm/tqdm/releases/download/v4.41.0/tqdm-4.41.0-py2.py3-none-any.whl">whl</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.41.0/tqdm-4.41.0-py2.py3-none-any.whl.asc">asc</a></p>
+<ul>
+<li>trim on <code>ncols</code> overflow with ANSI handling (<a href="https://github.com/tqdm/tqdm/issues/850">#850</a>, <a href="https://github.com/tqdm/tqdm/issues/716">#716</a> &lt;- <a href="https://github.com/tqdm/tqdm/issues/690">#690</a>)</li>
+<li>add <code>notebook.reset()</code> (<a href="https://github.com/tqdm/tqdm/issues/864">#864</a>)</li>
+<li>add <code>keras.TqdmCallback</code> (<a href="https://github.com/tqdm/tqdm/issues/867">#867</a> &lt;- <a href="https://github.com/tqdm/tqdm/issues/835">#835</a>)</li>
+<li>documentation updates</li>
+<li>document newly added features (above)</li>
+<li>notebook <code>ncols</code> percentage/pixels (<a href="https://github.com/tqdm/tqdm/issues/276">#276</a>)</li>
+<li>test updates</li>
+<li>test newly added features (above)</li>
+<li>add CI for <code>win</code> and <code>osx</code> (<a href="https://github.com/tqdm/tqdm/issues/841">#841</a>)</li>
+<li><code>py2</code> threading</li>
+</ul>
+<h2 id="v4402-2019-12-11"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.40.2">v4.40.2</a> <small><small>(2019-12-11)</small></small></h2>
+<p><a href="https://github.com/tqdm/tqdm/releases/download/v4.40.2/tqdm-4.40.2-py2.py3-none-any.whl">whl</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.40.2/tqdm-4.40.2-py2.py3-none-any.whl.asc">asc</a></p>
+<ul>
+<li>fix <code>pandas</code> unhashable func (<a href="https://github.com/tqdm/tqdm/issues/862">#862</a> -&gt; <a href="https://github.com/tqdm/tqdm/issues/863">#863</a>)</li>
+<li>add tests</li>
+</ul>
+<h2 id="v4401-2019-12-11"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.40.1">v4.40.1</a> <small><small>(2019-12-11)</small></small></h2>
+<p><a href="https://github.com/tqdm/tqdm/releases/download/v4.40.1/tqdm-4.40.1-py2.py3-none-any.whl">whl</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.40.1/tqdm-4.40.1-py2.py3-none-any.whl.asc">asc</a></p>
+<ul>
+<li>fix floating point imprecision raising errors (<a href="https://github.com/tqdm/tqdm/issues/859">#859</a>)</li>
+<li>fix auto gh releases (<a href="https://github.com/travis-ci/dpl/issues/914">travis-ci/dpl#914</a>)</li>
+<li>update CONTRIBUTING (<a href="https://github.com/tqdm/tqdm/issues/84#issuecomment-167516992">#84 (comment)</a>)</li>
+</ul>
 <h2 id="v4400-2019-12-01"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.40.0">v4.40.0</a> <small><small>(2019-12-01)</small></small></h2>
 <p><a href="https://github.com/tqdm/tqdm/releases/download/v4.40.0/tqdm-4.40.0-py2.py3-none-any.whl">whl</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.40.0/tqdm-4.40.0-py2.py3-none-any.whl.asc">asc</a></p>
 <ul>

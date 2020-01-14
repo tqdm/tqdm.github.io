@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>tqdm_notebook<h1 id="tqdm._tqdm_notebook.tqdm_notebook"></h1> - tqdm documentation</title>
+  <title>tqdm.keras - tqdm documentation</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -17,8 +17,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "tqdm_notebook<h1 id=\"tqdm._tqdm_notebook.tqdm_notebook\"></h1>";
-    var mkdocs_page_input_path = "docs/tqdm_notebook.md";
+    var mkdocs_page_name = "tqdm.keras";
+    var mkdocs_page_input_path = "docs/keras.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -69,9 +69,18 @@
                     
     <a class="" href="../gui/">tqdm.gui</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../keras/">tqdm.keras</a>
+    <a class="current" href="./">tqdm.keras</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#tqdmcallback">TqdmCallback</a></li>
+    
+
+    <li class="toctree-l3"><a href="#9595init9595">__init__</a></li>
+    
+
+    </ul>
                 </li>
                 <li class="">
                     
@@ -240,11 +249,15 @@
     <li><a href="../..">Docs</a> &raquo;</li>
     
       
+        
+          <li>Documentation &raquo;</li>
+        
+      
     
-    <li>tqdm_notebook<h1 id="tqdm._tqdm_notebook.tqdm_notebook"></h1></li>
+    <li>tqdm.keras</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/tqdm/tqdm/edit/master/docs/docs/tqdm_notebook.md"
+        <a href="https://github.com/tqdm/tqdm/edit/master/docs/docs/keras.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -254,32 +267,43 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="tqdm_notebook">tqdm_notebook<h1 id="tqdm._tqdm_notebook.tqdm_notebook"></h1></h1>
-<pre><code class="python">tqdm_notebook(self, *args, **kwargs)
+                <h1 id="tqdmcallback">TqdmCallback<h1 id="tqdm.keras.TqdmCallback"></h1></h1>
+<pre><code class="python">TqdmCallback(self, epochs=None, data_size=None, batch_size=None, verbose=1, tqdm_class=&lt;class 'tqdm.std.tqdm'&gt;)
 </code></pre>
 
-<p>Experimental IPython/Jupyter Notebook widget using tqdm!</p>
-<h2 id="tqdm._tqdm_notebook.tqdm_notebook.status_printer">status_printer</h2>
-
-<pre><code class="python">tqdm_notebook.status_printer(_, total=None, desc=None, ncols=None)
+<p><code>keras</code> callback for epoch and batch progress</p>
+<h1 id="9595init9595">__init__<h1 id="tqdm.keras.TqdmCallback.__init__"></h1></h1>
+<pre><code class="python">TqdmCallback.__init__(self, epochs=None, data_size=None, batch_size=None, verbose=1, tqdm_class=&lt;class 'tqdm.std.tqdm'&gt;)
 </code></pre>
 
-<p>Manage the printing of an IPython/Jupyter Notebook progress bar widget.</p>
-<h2 id="tqdm._tqdm_notebook.tqdm_notebook.set_description">set_description</h2>
-
-<pre><code class="python">tqdm_notebook.set_description(self, desc=None, **_)
-</code></pre>
-
-<p>Set/modify description of the progress bar.</p>
 <h2>Parameters</h2>
 
 <ul>
-<li>desc  : str, optional  </li>
+<li>epochs  : int, optional  </li>
+<li>data_size  : int, optional<br />
+    Number of training pairs.</li>
+<li>batch_size  : int, optional<br />
+    Number of training pairs per batch.</li>
+<li>verbose  : int<br />
+    0: epoch, 1: batch (transient), 2: batch. [default: 1].
+    Will be set to <code>0</code> unless both <code>data_size</code> and <code>batch_size</code>
+    are given.
+tqdm_class : optional
+    <code>tqdm</code> class to use for bars [default: <code>tqdm.auto.tqdm</code>].</li>
 </ul>
               
             </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../contrib/" class="btn btn-neutral float-right" title="tqdm.contrib">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../gui/" class="btn btn-neutral" title="tqdm.gui"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -305,6 +329,10 @@
           <a href="https://github.com/tqdm/tqdm/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
+        <span><a href="../gui/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../contrib/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
