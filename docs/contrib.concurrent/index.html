@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Warnings and Exceptions - tqdm documentation</title>
+  <title>tqdm.contrib.concurrent - tqdm documentation</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -17,8 +17,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Warnings and Exceptions";
-    var mkdocs_page_input_path = "docs/warnings.md";
+    var mkdocs_page_name = "tqdm.contrib.concurrent";
+    var mkdocs_page_input_path = "docs/contrib.concurrent.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -77,9 +77,15 @@
                     
     <a class="" href="../contrib/">tqdm.contrib</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../contrib.concurrent/">tqdm.contrib.concurrent</a>
+    <a class="current" href="./">tqdm.contrib.concurrent</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#tqdmcontribconcurrent">tqdm.contrib.concurrent</a></li>
+    
+
+    </ul>
                 </li>
                 <li class="">
                     
@@ -96,33 +102,9 @@
 		
     <span class="caption-text">Developer Documentation</span>
     <ul class="subnav">
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href="./">Warnings and Exceptions</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#tqdmtypeerror">TqdmTypeError</a></li>
-    
-
-    <li class="toctree-l3"><a href="#tqdmkeyerror">TqdmKeyError</a></li>
-    
-
-    <li class="toctree-l3"><a href="#tqdmwarning">TqdmWarning</a></li>
-    
-
-    <li class="toctree-l3"><a href="#tqdmsynchronisationwarning">TqdmSynchronisationWarning</a></li>
-    
-
-    <li class="toctree-l3"><a href="#tqdmdeprecationwarning">TqdmDeprecationWarning</a></li>
-    
-
-    <li class="toctree-l3"><a href="#tqdmexperimentalwarning">TqdmExperimentalWarning</a></li>
-    
-
-    <li class="toctree-l3"><a href="#tqdmmonitorwarning">TqdmMonitorWarning</a></li>
-    
-
-    </ul>
+    <a class="" href="../warnings/">Warnings and Exceptions</a>
                 </li>
                 <li class="">
                     
@@ -273,14 +255,14 @@
     
       
         
-          <li>Developer Documentation &raquo;</li>
+          <li>Documentation &raquo;</li>
         
       
     
-    <li>Warnings and Exceptions</li>
+    <li>tqdm.contrib.concurrent</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/tqdm/tqdm/edit/master/docs/docs/warnings.md"
+        <a href="https://github.com/tqdm/tqdm/edit/master/docs/docs/contrib.concurrent.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -290,40 +272,32 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="tqdmtypeerror">TqdmTypeError<h1 id="tqdm.TqdmTypeError"></h1></h1>
-<pre><code class="python">TqdmTypeError(self, /, *args, **kwargs)
+                <h1 id="tqdmcontribconcurrent">tqdm.contrib.concurrent<h1 id="tqdm.contrib.concurrent"></h1></h1>
+<p>Thin wrappers around <code>concurrent.futures</code>.</p>
+<h2 id="tqdm.contrib.concurrent.thread_map">thread_map</h2>
+
+<pre><code class="python">thread_map(fn, *iterables, **tqdm_kwargs)
 </code></pre>
 
-<h1 id="tqdmkeyerror">TqdmKeyError<h1 id="tqdm.TqdmKeyError"></h1></h1>
-<pre><code class="python">TqdmKeyError(self, /, *args, **kwargs)
+<p>Equivalent of <code>list(map(fn, *iterables))</code>
+driven by <code>concurrent.futures.ThreadPoolExecutor</code>.</p>
+<h2>Parameters</h2>
+
+<ul>
+<li>tqdm_class  : [default: tqdm.auto.tqdm].  </li>
+</ul>
+<h2 id="tqdm.contrib.concurrent.process_map">process_map</h2>
+
+<pre><code class="python">process_map(fn, *iterables, **tqdm_kwargs)
 </code></pre>
 
-<h1 id="tqdmwarning">TqdmWarning<h1 id="tqdm.TqdmWarning"></h1></h1>
-<pre><code class="python">TqdmWarning(self, msg, fp_write=None, *a, **k)
-</code></pre>
+<p>Equivalent of <code>list(map(fn, *iterables))</code>
+driven by <code>concurrent.futures.ProcessPoolExecutor</code>.</p>
+<h2>Parameters</h2>
 
-<p>base class for all tqdm warnings.</p>
-<p>Used for non-external-code-breaking errors, such as garbled printing.</p>
-<h1 id="tqdmsynchronisationwarning">TqdmSynchronisationWarning<h1 id="tqdm.TqdmSynchronisationWarning"></h1></h1>
-<pre><code class="python">TqdmSynchronisationWarning(self, /, *args, **kwargs)
-</code></pre>
-
-<p>tqdm multi-thread/-process errors which may cause incorrect nesting
-but otherwise no adverse effects</p>
-<h1 id="tqdmdeprecationwarning">TqdmDeprecationWarning<h1 id="tqdm.TqdmDeprecationWarning"></h1></h1>
-<pre><code class="python">TqdmDeprecationWarning(self, msg, fp_write=None, *a, **k)
-</code></pre>
-
-<h1 id="tqdmexperimentalwarning">TqdmExperimentalWarning<h1 id="tqdm.TqdmExperimentalWarning"></h1></h1>
-<pre><code class="python">TqdmExperimentalWarning(self, msg, fp_write=None, *a, **k)
-</code></pre>
-
-<p>beta feature, unstable API and behaviour</p>
-<h1 id="tqdmmonitorwarning">TqdmMonitorWarning<h1 id="tqdm.TqdmMonitorWarning"></h1></h1>
-<pre><code class="python">TqdmMonitorWarning(self, msg, fp_write=None, *a, **k)
-</code></pre>
-
-<p>tqdm monitor errors which do not affect external functionality</p>
+<ul>
+<li>tqdm_class  : [default: tqdm.auto.tqdm].  </li>
+</ul>
               
             </div>
           </div>
@@ -331,10 +305,10 @@ but otherwise no adverse effects</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../TMonitor/" class="btn btn-neutral float-right" title="tqdm.TMonitor">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../contrib.itertools/" class="btn btn-neutral float-right" title="tqdm.contrib.itertools">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../shortcuts/" class="btn btn-neutral" title="Shortcuts"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../contrib/" class="btn btn-neutral" title="tqdm.contrib"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -362,10 +336,10 @@ but otherwise no adverse effects</p>
           <a href="https://github.com/tqdm/tqdm/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../shortcuts/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../contrib/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../TMonitor/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../contrib.itertools/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

@@ -81,7 +81,24 @@
     <li class="toctree-l3"><a href="#tqdmcontrib">tqdm.contrib</a></li>
     
 
+    <li class="toctree-l3"><a href="#tenumerate">tenumerate</a></li>
+    
+
+    <li class="toctree-l3"><a href="#_tzip">_tzip</a></li>
+    
+
+    <li class="toctree-l3"><a href="#_tmap">_tmap</a></li>
+    
+
     </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../contrib.concurrent/">tqdm.contrib.concurrent</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../contrib.itertools/">tqdm.contrib.itertools</a>
                 </li>
                 <li class="">
                     
@@ -265,12 +282,38 @@
             <div class="section">
               
                 <h1 id="tqdmcontrib">tqdm.contrib<h1 id="tqdm.contrib"></h1></h1>
-<h2 id="tqdm.contrib.DummyTqdmFile">DummyTqdmFile</h2>
-
-<pre><code class="python">DummyTqdmFile(self, wrapped)
+<p>Thin wrappers around common functions.</p>
+<p>Subpackages contain potentially unstable extensions.</p>
+<h1 id="tenumerate">tenumerate<h1 id="tqdm.contrib.tenumerate"></h1></h1>
+<pre><code class="python">tenumerate(iterable, start=0, total=None, tqdm_class=&lt;class 'tqdm.std.tqdm'&gt;, **tqdm_kwargs)
 </code></pre>
 
-<p>Dummy file-like that will write to tqdm</p>
+<p>Equivalent of <code>numpy.ndenumerate</code> or builtin <code>enumerate</code>.</p>
+<h2>Parameters</h2>
+
+<ul>
+<li>tqdm_class  : [default: tqdm.auto.tqdm].  </li>
+</ul>
+<h1 id="_tzip">_tzip<h1 id="tqdm.contrib.tzip"></h1></h1>
+<pre><code class="python">_tzip(iter1, *iter2plus, **tqdm_kwargs)
+</code></pre>
+
+<p>Equivalent of builtin <code>zip</code>.</p>
+<h2>Parameters</h2>
+
+<ul>
+<li>tqdm_class  : [default: tqdm.auto.tqdm].  </li>
+</ul>
+<h1 id="_tmap">_tmap<h1 id="tqdm.contrib.tmap"></h1></h1>
+<pre><code class="python">_tmap(function, *sequences, **tqdm_kwargs)
+</code></pre>
+
+<p>Equivalent of builtin <code>map</code>.</p>
+<h2>Parameters</h2>
+
+<ul>
+<li>tqdm_class  : [default: tqdm.auto.tqdm].  </li>
+</ul>
               
             </div>
           </div>
@@ -278,7 +321,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../shortcuts/" class="btn btn-neutral float-right" title="Shortcuts">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../contrib.concurrent/" class="btn btn-neutral float-right" title="tqdm.contrib.concurrent">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../keras/" class="btn btn-neutral" title="tqdm.keras"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -312,7 +355,7 @@
         <span><a href="../keras/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../shortcuts/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../contrib.concurrent/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
