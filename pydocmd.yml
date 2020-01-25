@@ -37,7 +37,14 @@ generate:
   - tqdm.keras.TqdmCallback+
   - tqdm.keras.TqdmCallback.__init__
 - docs/contrib.md:
-  - tqdm.contrib+
+  - tqdm.contrib
+  - tqdm.contrib.tenumerate
+  - tqdm.contrib.tzip
+  - tqdm.contrib.tmap
+- docs/contrib.concurrent.md:
+  - tqdm.contrib.concurrent+
+- docs/contrib.itertools.md:
+  - tqdm.contrib.itertools+
 #- docs/autonotebook.md:
 #  - tqdm.autonotebook
 - docs/shortcuts.md:
@@ -63,6 +70,8 @@ pages:
   - tqdm.gui: docs/gui.md
   - tqdm.keras: docs/keras.md
   - tqdm.contrib: docs/contrib.md
+  - tqdm.contrib.concurrent: docs/contrib.concurrent.md
+  - tqdm.contrib.itertools: docs/contrib.itertools.md
   #- tqdm.autonotebook: docs/autonotebook.md
   - Shortcuts: docs/shortcuts.md
 - Developer Documentation:
