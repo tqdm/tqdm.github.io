@@ -65,7 +65,7 @@
     <li class="toctree-l3"><a href="#tqdm">tqdm</a></li>
     
 
-    <li class="toctree-l3"><a href="#9595init9595">__init__</a></li>
+    <li class="toctree-l3"><a href="#__init__">__init__</a></li>
     
 
     <li class="toctree-l3"><a href="#update">update</a></li>
@@ -351,14 +351,37 @@
             <div class="section">
               
                 <h1 id="tqdm">tqdm<h1 id="tqdm.tqdm"></h1></h1>
-<pre><code class="python">tqdm(self, iterable=None, desc=None, total=None, leave=True, file=None, ncols=None, mininterval=0.1, maxinterval=10.0, miniters=None, ascii=None, disable=False, unit='it', unit_scale=False, dynamic_ncols=False, smoothing=0.3, bar_format=None, initial=0, position=None, postfix=None, unit_divisor=1000, write_bytes=None, lock_args=None, gui=False, **kwargs)
+<pre><code class="python">tqdm(cls, *args, **kwargs)
 </code></pre>
 
 <p>Decorate an iterable object, returning an iterator which acts exactly
 like the original iterable, but prints a dynamically updating
 progressbar every time a value is requested.</p>
-<h1 id="9595init9595">__init__<h1 id="tqdm.tqdm.__init__"></h1></h1>
-<pre><code class="python">tqdm.__init__(self, iterable=None, desc=None, total=None, leave=True, file=None, ncols=None, mininterval=0.1, maxinterval=10.0, miniters=None, ascii=None, disable=False, unit='it', unit_scale=False, dynamic_ncols=False, smoothing=0.3, bar_format=None, initial=0, position=None, postfix=None, unit_divisor=1000, write_bytes=None, lock_args=None, gui=False, **kwargs)
+<h1 id="__init__">__init__<h1 id="tqdm.tqdm.__init__"></h1></h1>
+<pre><code class="python">tqdm.__init__(iterable=None,
+              desc=None,
+              total=None,
+              leave=True,
+              file=None,
+              ncols=None,
+              mininterval=0.1,
+              maxinterval=10.0,
+              miniters=None,
+              ascii=None,
+              disable=False,
+              unit='it',
+              unit_scale=False,
+              dynamic_ncols=False,
+              smoothing=0.3,
+              bar_format=None,
+              initial=0,
+              position=None,
+              postfix=None,
+              unit_divisor=1000,
+              write_bytes=None,
+              lock_args=None,
+              gui=False,
+              **kwargs)
 </code></pre>
 
 <h2>Parameters</h2>
@@ -472,7 +495,7 @@ progressbar every time a value is requested.</p>
 <li>out  : decorated iterator.  </li>
 </ul>
 <h1 id="update">update<h1 id="tqdm.tqdm.update"></h1></h1>
-<pre><code class="python">tqdm.update(self, n=1)
+<pre><code class="python">tqdm.update(n=1)
 </code></pre>
 
 <p>Manually update the progress bar, useful for streams
@@ -497,17 +520,17 @@ exactly reached and printed.</p>
     or similar in <code>bar_format</code>, or specifying <code>unit_scale</code>.</li>
 </ul>
 <h1 id="close">close<h1 id="tqdm.tqdm.close"></h1></h1>
-<pre><code class="python">tqdm.close(self)
+<pre><code class="python">tqdm.close()
 </code></pre>
 
 <p>Cleanup and (if leave=False) close the progressbar.</p>
 <h1 id="clear">clear<h1 id="tqdm.tqdm.clear"></h1></h1>
-<pre><code class="python">tqdm.clear(self, nolock=False)
+<pre><code class="python">tqdm.clear(nolock=False)
 </code></pre>
 
 <p>Clear current bar display.</p>
 <h1 id="refresh">refresh<h1 id="tqdm.tqdm.refresh"></h1></h1>
-<pre><code class="python">tqdm.refresh(self, nolock=False, lock_args=None)
+<pre><code class="python">tqdm.refresh(nolock=False, lock_args=None)
 </code></pre>
 
 <p>Force refresh the display of this bar.</p>
@@ -522,12 +545,12 @@ exactly reached and printed.</p>
     If specified, will only <code>display()</code> if <code>acquire()</code> returns <code>True</code>.</li>
 </ul>
 <h1 id="unpause">unpause<h1 id="tqdm.tqdm.unpause"></h1></h1>
-<pre><code class="python">tqdm.unpause(self)
+<pre><code class="python">tqdm.unpause()
 </code></pre>
 
 <p>Restart tqdm timer from last print time.</p>
 <h1 id="reset">reset<h1 id="tqdm.tqdm.reset"></h1></h1>
-<pre><code class="python">tqdm.reset(self, total=None)
+<pre><code class="python">tqdm.reset(total=None)
 </code></pre>
 
 <p>Resets to 0 iterations for repeated use.</p>
@@ -538,7 +561,7 @@ exactly reached and printed.</p>
 <li>total  : int or float, optional. Total to use for the new bar.  </li>
 </ul>
 <h1 id="set_description">set_description<h1 id="tqdm.tqdm.set_description"></h1></h1>
-<pre><code class="python">tqdm.set_description(self, desc=None, refresh=True)
+<pre><code class="python">tqdm.set_description(desc=None, refresh=True)
 </code></pre>
 
 <p>Set/modify description of the progress bar.</p>
@@ -550,12 +573,12 @@ exactly reached and printed.</p>
     Forces refresh [default: True].</li>
 </ul>
 <h1 id="set_description_str">set_description_str<h1 id="tqdm.tqdm.set_description_str"></h1></h1>
-<pre><code class="python">tqdm.set_description_str(self, desc=None, refresh=True)
+<pre><code class="python">tqdm.set_description_str(desc=None, refresh=True)
 </code></pre>
 
 <p>Set/modify description without ': ' appended.</p>
 <h1 id="set_postfix">set_postfix<h1 id="tqdm.tqdm.set_postfix"></h1></h1>
-<pre><code class="python">tqdm.set_postfix(self, ordered_dict=None, refresh=True, **kwargs)
+<pre><code class="python">tqdm.set_postfix(ordered_dict=None, refresh=True, **kwargs)
 </code></pre>
 
 <p>Set/modify postfix (additional stats)
@@ -569,21 +592,15 @@ with automatic formatting based on datatype.</p>
 <li>kwargs  : dict, optional  </li>
 </ul>
 <h1 id="set_postfix_str">set_postfix_str<h1 id="tqdm.tqdm.set_postfix_str"></h1></h1>
-<pre><code class="python">tqdm.set_postfix_str(self, s='', refresh=True)
+<pre><code class="python">tqdm.set_postfix_str(s='', refresh=True)
 </code></pre>
 
 <p>Postfix without dictionary expansion, similar to prefix handling.</p>
 <h1 id="write">write<h1 id="tqdm.tqdm.write"></h1></h1>
-<pre><code class="python">tqdm.write(s, file=None, end='\n', nolock=False)
-</code></pre>
-
 <p>Print a message via tqdm (without overlap with bars).</p>
 <h1 id="format_dict">format_dict<h1 id="tqdm.tqdm.format_dict"></h1></h1>
 <p>Public API for read-only member access.</p>
 <h1 id="wrapattr">wrapattr<h1 id="tqdm.tqdm.wrapattr"></h1></h1>
-<pre><code class="python">tqdm.wrapattr(stream, method, total=None, bytes=True, **tkwargs)
-</code></pre>
-
 <ul>
 <li>stream  : file-like object.  </li>
 <li>method  : str, "read" or "write". The result of <code>read()</code> and<br />
@@ -597,9 +614,6 @@ with automatic formatting based on datatype.</p>
 </code></pre>
 
 <h1 id="pandas">pandas<h1 id="tqdm.tqdm.pandas"></h1></h1>
-<pre><code class="python">tqdm.pandas(*targs, **tkwargs)
-</code></pre>
-
 <p>Registers the given <code>tqdm</code> class with
     pandas.core.
     ( frame.DataFrame
@@ -630,17 +644,11 @@ and each instance will automatically close() upon completion.</p>
 <p>https://stackoverflow.com/questions/18603270/
 progress-indicator-during-pandas-operations-python</p>
 <h1 id="get_lock">get_lock<h1 id="tqdm.tqdm.get_lock"></h1></h1>
-<pre><code class="python">tqdm.get_lock()
-</code></pre>
-
 <p>Get the global lock. Construct it if it does not exist.</p>
 <h1 id="set_lock">set_lock<h1 id="tqdm.tqdm.set_lock"></h1></h1>
-<pre><code class="python">tqdm.set_lock(lock)
-</code></pre>
-
 <p>Set the global lock.</p>
 <h1 id="display">display<h1 id="tqdm.tqdm.display"></h1></h1>
-<pre><code class="python">tqdm.display(self, msg=None, pos=None)
+<pre><code class="python">tqdm.display(msg=None, pos=None)
 </code></pre>
 
 <p>Use <code>self.sp</code> to display <code>msg</code> in the specified <code>pos</code>.</p>
@@ -654,22 +662,13 @@ progress-indicator-during-pandas-operations-python</p>
   (default: <code>abs(self.pos)</code>).</li>
 </ul>
 <h1 id="status_printer">status_printer<h1 id="tqdm.tqdm.status_printer"></h1></h1>
-<pre><code class="python">tqdm.status_printer(file)
-</code></pre>
-
 <p>Manage the printing and in-place updating of a line of characters.
 Note that if the string is longer than a line, then in-place
 updating may not work (it will print a new line at each refresh).</p>
 <h1 id="external_write_mode">external_write_mode<h1 id="tqdm.tqdm.external_write_mode"></h1></h1>
-<pre><code class="python">tqdm.external_write_mode(file=None, nolock=False)
-</code></pre>
-
 <p>Disable tqdm within context and refresh tqdm when exits.
 Useful when writing to standard output stream</p>
 <h1 id="format_interval">format_interval<h1 id="tqdm.tqdm.format_interval"></h1></h1>
-<pre><code class="python">tqdm.format_interval(t)
-</code></pre>
-
 <p>Formats a number of seconds as a clock time, [H:]MM:SS</p>
 <h2>Parameters</h2>
 
@@ -684,9 +683,6 @@ Useful when writing to standard output stream</p>
     [H:]MM:SS</li>
 </ul>
 <h1 id="format_meter">format_meter<h1 id="tqdm.tqdm.format_meter"></h1></h1>
-<pre><code class="python">tqdm.format_meter(n, total, elapsed, ncols=None, prefix='', ascii=False, unit='it', unit_scale=False, rate=None, bar_format=None, postfix=None, unit_divisor=1000, **extra_kwargs)
-</code></pre>
-
 <p>Return a string-based progress bar given some parameters</p>
 <h2>Parameters</h2>
 
@@ -748,9 +744,6 @@ Useful when writing to standard output stream</p>
 <li>out  : Formatted meter and stats, ready to display.  </li>
 </ul>
 <h1 id="format_num">format_num<h1 id="tqdm.tqdm.format_num"></h1></h1>
-<pre><code class="python">tqdm.format_num(n)
-</code></pre>
-
 <p>Intelligent scientific notation (.3g).</p>
 <h2>Parameters</h2>
 
@@ -765,9 +758,6 @@ Useful when writing to standard output stream</p>
     Formatted number.</li>
 </ul>
 <h1 id="format_sizeof">format_sizeof<h1 id="tqdm.tqdm.format_sizeof"></h1></h1>
-<pre><code class="python">tqdm.format_sizeof(num, suffix='', divisor=1000)
-</code></pre>
-
 <p>Formats a number (greater than unity) with SI Order of Magnitude
 prefixes.</p>
 <h2>Parameters</h2>
@@ -787,7 +777,7 @@ prefixes.</p>
     Number with Order of Magnitude SI unit postfix.</li>
 </ul>
 <h1 id="comparable">Comparable<h1 id="tqdm.utils.Comparable"></h1></h1>
-<pre><code class="python">Comparable(self, /, *args, **kwargs)
+<pre><code class="python">Comparable()
 </code></pre>
 
 <p>Assumes child has self._comparable attr/@property</p>

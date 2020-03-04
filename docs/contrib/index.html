@@ -285,7 +285,11 @@
 <p>Thin wrappers around common functions.</p>
 <p>Subpackages contain potentially unstable extensions.</p>
 <h1 id="tenumerate">tenumerate<h1 id="tqdm.contrib.tenumerate"></h1></h1>
-<pre><code class="python">tenumerate(iterable, start=0, total=None, tqdm_class=&lt;class 'tqdm.std.tqdm'&gt;, **tqdm_kwargs)
+<pre><code class="python">tenumerate(iterable,
+           start=0,
+           total=None,
+           tqdm_class=tqdm,
+           **tqdm_kwargs)
 </code></pre>
 
 <p>Equivalent of <code>numpy.ndenumerate</code> or builtin <code>enumerate</code>.</p>
