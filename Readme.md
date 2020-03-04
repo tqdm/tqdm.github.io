@@ -1,6 +1,6 @@
 # tqdm documentation
 
-Requires [pydoc-markdown](https://github.com/NiklasRosenstein/pydoc-markdown).
+Requires `pip install -r requirements.txt`
 Assumes the following directory structure:
 
 - tqdm: https://github.com/tqdm/tqdm.git

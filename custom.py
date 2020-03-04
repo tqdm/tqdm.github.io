@@ -1,6 +1,5 @@
 from __future__ import print_function
-import pydocmd.preprocessor
-import pydocmd.loader
+from pydocmd.preprocessors.simple import Preprocessor as SimplePreprocessor
 import re
 
 RE_PARAM = re.compile(r"^(\w+\s{2,}:.*?)$", flags=re.M)
@@ -36,7 +35,7 @@ def overloadSection(section):
     section.render = render
 
 
-class Preprocessor(pydocmd.preprocessor.Preprocessor):
+class Preprocessor(SimplePreprocessor):
     def preprocess_section(self, section):
         super(Preprocessor, self).preprocess_section(section)
         # convert parameter lists to markdown list
