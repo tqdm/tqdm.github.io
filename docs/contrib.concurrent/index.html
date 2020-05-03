@@ -283,9 +283,12 @@
 driven by <code>concurrent.futures.ThreadPoolExecutor</code>.</p>
 <h2>Parameters</h2>
 
-<ul>
-<li>tqdm_class  : [default: tqdm.auto.tqdm].  </li>
-</ul>
+<p>tqdm_class : optional
+    <code>tqdm</code> class to use for bars [default: tqdm.auto.tqdm].
+max_workers : int, optional
+    Maximum number of workers to spawn; passed to
+    <code>concurrent.futures.ThreadPoolExecutor.__init__</code>.
+    [default: max(32, cpu_count() + 4)].</p>
 <h2 id="tqdm.contrib.concurrent.process_map">process_map</h2>
 
 <pre><code class="python">process_map(fn, *iterables, **tqdm_kwargs)
@@ -296,7 +299,15 @@ driven by <code>concurrent.futures.ProcessPoolExecutor</code>.</p>
 <h2>Parameters</h2>
 
 <ul>
-<li>tqdm_class  : [default: tqdm.auto.tqdm].  </li>
+<li>tqdm_class  : optional<br />
+<code>tqdm</code> class to use for bars [default: tqdm.auto.tqdm].
+max_workers : int, optional
+    Maximum number of workers to spawn; passed to
+    <code>concurrent.futures.ProcessPoolExecutor.__init__</code>.
+    [default: max(32, cpu_count() + 4)].
+chunksize : int, optional
+    Size of chunks sent to worker processes; passed to
+    <code>concurrent.futures.ProcessPoolExecutor.map</code>. [default: 1].</li>
 </ul>
               
             </div>

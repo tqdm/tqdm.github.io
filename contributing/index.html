@@ -134,6 +134,8 @@
     
         <ul>
         
+            <li><a class="toctree-l3" href="#pre-commit-hook">Pre-commit Hook</a></li>
+        
             <li><a class="toctree-l3" href="#semantic-versioning">Semantic Versioning</a></li>
         
             <li><a class="toctree-l3" href="#checking-setuppy">Checking setup.py</a></li>
@@ -336,7 +338,7 @@ However it would be helpful to bear in mind:</p>
 <li>should be appropriately commented</li>
 <li>should have well-formatted docstrings for functions<ul>
 <li>under 76 chars (incl. initial spaces) to avoid linebreaks in terminal pagers</li>
-<li>use two spaces between variable name and colon</li>
+<li>use two spaces between variable name and colon, specify a type, and most likely state that it's optional: <code>VAR&lt;space&gt;&lt;space&gt;:&lt;space&gt;TYPE[, optional]</code></li>
 <li>use [default: ...] for default values of keyword arguments</li>
 </ul>
 </li>
@@ -354,6 +356,10 @@ However it would be helpful to bear in mind:</p>
 </ul>
 </li>
 <li>submodules extending <code>tqdm.std.tqdm</code> or any other module (e.g. <a href="tqdm/notebook.py"><code>tqdm.notebook.tqdm</code></a>, <a href="tqdm/gui.py"><code>tqdm.gui.tqdm</code></a>)</li>
+<li>CLI wrapper <code>tqdm.cli</code><ul>
+<li>if a newly added <code>tqdm.std.tqdm</code> option is not supported by the CLI, append to <code>tqdm.cli.UNSUPPORTED_OPTS</code></li>
+</ul>
+</li>
 <li>can implement anything from experimental new features to support for third-party libraries such as <code>pandas</code>, <code>numpy</code>, etc.</li>
 <li>submodule maturity<ul>
 <li>alpha: experimental; missing unit tests, comments, and/or feedback; raises <code>tqdm.TqdmExperimentalWarning</code></li>
@@ -361,6 +367,10 @@ However it would be helpful to bear in mind:</p>
 <li>stable: &gt;10 users; commented, 80% coverage</li>
 </ul>
 </li>
+</ul>
+</li>
+<li><code>.meta/</code><ul>
+<li>A "hidden" folder containing helper utilities not strictly part of <code>tqdm</code> distribution itself</li>
 </ul>
 </li>
 </ul>
@@ -405,6 +415,9 @@ how to build and upload a new release. Once again,
 <code>[python setup.py] make [&lt;alias&gt;]</code> will help.
 Also consider <code>pip install</code>ing development utilities:
 <code>-r requirements-dev.txt</code> or <code>tqdm[dev]</code>.</p>
+<h2 id="pre-commit-hook">Pre-commit Hook</h2>
+<p>It's probably a good idea to add <code>[python setup.py] make pre-commit</code> to
+<code>.git/hooks/pre-commit</code> for convenient local sanity-checking.</p>
 <h2 id="semantic-versioning">Semantic Versioning</h2>
 <p>The tqdm repository managers should:</p>
 <ul>
