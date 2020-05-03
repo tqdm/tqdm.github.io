@@ -45,6 +45,8 @@ generate:
   - tqdm.contrib.concurrent+
 - docs/contrib.itertools.md:
   - tqdm.contrib.itertools+
+- docs/contrib.telegram.md:
+  - tqdm.contrib.telegram.tqdm+
 #- docs/autonotebook.md:
 #  - tqdm.autonotebook
 - docs/shortcuts.md:
@@ -52,6 +54,7 @@ generate:
   - tqdm.tgrange
   - tqdm.notebook.tnrange
   - tqdm.gui.tgrange
+  - tqdm.contrib.telegram.ttgrange
 - docs/TMonitor.md:
   - tqdm.TMonitor+
 - docs/warnings.md:
@@ -72,6 +75,7 @@ pages:
   - tqdm.contrib: docs/contrib.md
   - tqdm.contrib.concurrent: docs/contrib.concurrent.md
   - tqdm.contrib.itertools: docs/contrib.itertools.md
+  - tqdm.contrib.telegram: docs/contrib.telegram.md
   #- tqdm.autonotebook: docs/autonotebook.md
   - Shortcuts: docs/shortcuts.md
 - Developer Documentation:
