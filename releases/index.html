@@ -7,13 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
+  
   <link rel="shortcut icon" href="../img/favicon.ico">
   <title>Release History - tqdm documentation</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
   
   <script>
     // Current page data
@@ -24,7 +25,7 @@
   
   <script src="../js/jquery-2.1.1.min.js" defer></script>
   <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
   
 </head>
@@ -35,6 +36,7 @@
 
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
         <a href=".." class="icon icon-home"> tqdm documentation</a>
         <div role="search">
@@ -45,371 +47,278 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="..">Home</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Documentation</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../docs/tqdm/">tqdm.tqdm</a>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Documentation</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../docs/tqdm/">tqdm.tqdm</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../docs/notebook/">tqdm.notebook</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../docs/gui/">tqdm.gui</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../docs/keras/">tqdm.keras</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../docs/contrib/">tqdm.contrib</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../docs/contrib.concurrent/">tqdm.contrib.concurrent</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../docs/contrib.itertools/">tqdm.contrib.itertools</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../docs/contrib.telegram/">tqdm.contrib.telegram</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../docs/shortcuts/">Shortcuts</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Developer Documentation</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../docs/warnings/">Warnings and Exceptions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../docs/TMonitor/">tqdm.TMonitor</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Release History</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#v4461-2020-06-03">v4.46.1 (2020-06-03)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4460-2020-05-03">v4.46.0 (2020-05-03)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4450-2020-04-02">v4.45.0 (2020-04-02)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4441-2020-03-29">v4.44.1 (2020-03-29)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4440-2020-03-28">v4.44.0 (2020-03-28)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4430-2020-02-19">v4.43.0 (2020-02-19)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4421-2020-02-03">v4.42.1 (2020-02-03)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4420-2020-01-25">v4.42.0 (2020-01-25)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4411-2020-01-05">v4.41.1 (2020-01-05)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4410-2019-12-20">v4.41.0 (2019-12-20)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4402-2019-12-11">v4.40.2 (2019-12-11)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4401-2019-12-11">v4.40.1 (2019-12-11)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4400-2019-12-01">v4.40.0 (2019-12-01)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4390-2019-11-22">v4.39.0 (2019-11-22)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4380-2019-11-09">v4.38.0 (2019-11-09)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4370-2019-10-31">v4.37.0 (2019-10-31)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4361-2019-09-20">v4.36.1 (2019-09-20)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4360-2019-09-17">v4.36.0 (2019-09-17)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4350-2019-08-24">v4.35.0 (2019-08-24)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4340-2019-08-18">v4.34.0 (2019-08-18)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4330-2019-08-08">v4.33.0 (2019-08-08)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4322-2019-06-18">v4.32.2 (2019-06-18)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4321-2019-05-13">v4.32.1 (2019-05-13)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4320-2019-05-13">v4.32.0 (2019-05-13)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4311-2019-02-10">v4.31.1 (2019-02-10)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4310-2019-02-09">v4.31.0 (2019-02-09)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4300-2019-01-26">v4.30.0 (2019-01-26)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4291-2019-01-11">v4.29.1 (2019-01-11)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4290-2019-01-06">v4.29.0 (2019-01-06)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4281-2018-10-21">v4.28.1 (2018-10-21)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4280-2018-10-20">v4.28.0 (2018-10-20)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4270-2018-10-15">v4.27.0 (2018-10-15)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4260-2018-09-11">v4.26.0 (2018-09-11)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4250-2018-08-20">v4.25.0 (2018-08-20)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4240-2018-07-26">v4.24.0 (2018-07-26)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4234-2018-05-22">v4.23.4 (2018-05-22)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4233-2018-05-22">v4.23.3 (2018-05-22)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4232-2018-05-02">v4.23.2 (2018-05-02)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4231-2018-04-25">v4.23.1 (2018-04-25)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4230-2018-04-15">v4.23.0 (2018-04-15)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4220-2018-04-11">v4.22.0 (2018-04-11)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4210-2018-04-08">v4.21.0 (2018-04-08)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4200-2018-04-03">v4.20.0 (2018-04-03)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4199-2018-03-27">v4.19.9 (2018-03-27)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4198-2018-03-27">v4.19.8 (2018-03-27)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4196-2018-02-27">v4.19.6 (2018-02-27)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4195-2017-12-10">v4.19.5 (2017-12-10)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4194-2017-10-15">v4.19.4 (2017-10-15)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4192-2017-10-08">v4.19.2 (2017-10-08)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4191-2017-10-03">v4.19.1 (2017-10-03)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4180-2017-09-30">v4.18.0 (2017-09-30)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4171-2017-09-26">v4.17.1 (2017-09-26)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4170-2017-09-20">v4.17.0 (2017-09-20)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4160-2017-09-20">v4.16.0 (2017-09-20)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4150-2017-07-29">v4.15.0 (2017-07-29)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4140-2017-07-29">v4.14.0 (2017-07-29)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4130-2017-05-29">v4.13.0 (2017-05-29)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4120-2017-05-29">v4.12.0 (2017-05-29)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4112-2017-01-24">v4.11.2 (2017-01-24)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4111-2017-01-23">v4.11.1 (2017-01-23)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4110-2017-01-12">v4.11.0 (2017-01-12)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v4100-2016-11-12">v4.10.0 (2016-11-12)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v490-2016-10-31">v4.9.0 (2016-10-31)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v484-2016-08-17">v4.8.4 (2016-08-17)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v481-2016-07-25">v4.8.1 (2016-07-25)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v480-2016-07-25">v4.8.0 (2016-07-25)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v476-2016-06-30">v4.7.6 (2016-06-30)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v474-2016-06-04">v4.7.4 (2016-06-04)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v470-2016-05-15">v4.7.0 (2016-05-15)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v462-2016-05-15">v4.6.2 (2016-05-15)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v461-2016-05-15">v4.6.1 (2016-05-15)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v450-2016-04-25">v4.5.0 (2016-04-25)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v443-2016-04-24">v4.4.3 (2016-04-24)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v441-2016-04-22">v4.4.1 (2016-04-22)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v420-2016-04-22">v4.2.0 (2016-04-22)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v400-2016-02-04">v4.0.0 (2016-02-04)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v380-2016-01-31">v3.8.0 (2016-01-31)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v371-2016-01-13">v3.7.1 (2016-01-13)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v360-2015-12-31">v3.6.0 (2015-12-31)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v350-2015-12-31">v3.5.0 (2015-12-31)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v330-2015-12-31">v3.3.0 (2015-12-31)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v314-2015-11-28">v3.1.4 (2015-11-28)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v224-2015-11-08">v2.2.4 (2015-11-08)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#v200-2015-10-11">v2.0.0 (2015-10-11)</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../contributing/">Contributing</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../ports/">Ports to Other Languages</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Presentation (PyData)</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../video/">Video</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="../PyData2019/slides.html">Slides</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">External Links</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="" href="https://github.com/tqdm/tqdm">Source Code (ENTIRE DOCUMENTATION ON ONE PAGE)</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="https://github.com/tqdm/tqdm/wiki">wiki</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="https://github.com/tqdm/tqdm#faq-and-known-issues">FAQs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="https://github.com/tqdm/tqdm/issues?q=">Issues</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Downloads</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="https://github.com/tqdm/tqdm/releases">GitHub</a>
                 </li>
-                <li class="">
-                    
-    <a class="" href="../docs/notebook/">tqdm.notebook</a>
+                <li class="toctree-l2"><a class="" href="https://pypi.org/project/tqdm">PyPI</a>
                 </li>
-                <li class="">
-                    
-    <a class="" href="../docs/gui/">tqdm.gui</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../docs/keras/">tqdm.keras</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../docs/contrib/">tqdm.contrib</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../docs/contrib.concurrent/">tqdm.contrib.concurrent</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../docs/contrib.itertools/">tqdm.contrib.itertools</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../docs/contrib.telegram/">tqdm.contrib.telegram</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../docs/shortcuts/">Shortcuts</a>
+                <li class="toctree-l2"><a class="" href="https://anaconda.org/conda-forge/tqdm">Conda</a>
                 </li>
     </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Developer Documentation</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../docs/warnings/">Warnings and Exceptions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Tests</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="https://travis-ci.org/tqdm/tqdm">Travis CI</a>
                 </li>
-                <li class="">
-                    
-    <a class="" href="../docs/TMonitor/">tqdm.TMonitor</a>
+                <li class="toctree-l2"><a class="" href="https://coveralls.io/github/tqdm/tqdm">Coveralls</a>
                 </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1 current">
-		
-    <a class="current" href="./">Release History</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l2"><a href="#tqdmtqdm-releases">tqdm/tqdm Releases</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l3" href="#v4460-2020-05-03">v4.46.0 (2020-05-03)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4450-2020-04-02">v4.45.0 (2020-04-02)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4441-2020-03-29">v4.44.1 (2020-03-29)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4440-2020-03-28">v4.44.0 (2020-03-28)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4430-2020-02-19">v4.43.0 (2020-02-19)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4421-2020-02-03">v4.42.1 (2020-02-03)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4420-2020-01-25">v4.42.0 (2020-01-25)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4411-2020-01-05">v4.41.1 (2020-01-05)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4410-2019-12-20">v4.41.0 (2019-12-20)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4402-2019-12-11">v4.40.2 (2019-12-11)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4401-2019-12-11">v4.40.1 (2019-12-11)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4400-2019-12-01">v4.40.0 (2019-12-01)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4390-2019-11-22">v4.39.0 (2019-11-22)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4380-2019-11-09">v4.38.0 (2019-11-09)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4370-2019-10-31">v4.37.0 (2019-10-31)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4361-2019-09-20">v4.36.1 (2019-09-20)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4360-2019-09-17">v4.36.0 (2019-09-17)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4350-2019-08-24">v4.35.0 (2019-08-24)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4340-2019-08-18">v4.34.0 (2019-08-18)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4330-2019-08-08">v4.33.0 (2019-08-08)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4322-2019-06-18">v4.32.2 (2019-06-18)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4321-2019-05-13">v4.32.1 (2019-05-13)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4320-2019-05-13">v4.32.0 (2019-05-13)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4311-2019-02-10">v4.31.1 (2019-02-10)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4310-2019-02-09">v4.31.0 (2019-02-09)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4300-2019-01-26">v4.30.0 (2019-01-26)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4291-2019-01-11">v4.29.1 (2019-01-11)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4290-2019-01-06">v4.29.0 (2019-01-06)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4281-2018-10-21">v4.28.1 (2018-10-21)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4280-2018-10-20">v4.28.0 (2018-10-20)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4270-2018-10-15">v4.27.0 (2018-10-15)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4260-2018-09-11">v4.26.0 (2018-09-11)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4250-2018-08-20">v4.25.0 (2018-08-20)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4240-2018-07-26">v4.24.0 (2018-07-26)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4234-2018-05-22">v4.23.4 (2018-05-22)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4233-2018-05-22">v4.23.3 (2018-05-22)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4232-2018-05-02">v4.23.2 (2018-05-02)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4231-2018-04-25">v4.23.1 (2018-04-25)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4230-2018-04-15">v4.23.0 (2018-04-15)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4220-2018-04-11">v4.22.0 (2018-04-11)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4210-2018-04-08">v4.21.0 (2018-04-08)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4200-2018-04-03">v4.20.0 (2018-04-03)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4199-2018-03-27">v4.19.9 (2018-03-27)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4198-2018-03-27">v4.19.8 (2018-03-27)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4196-2018-02-27">v4.19.6 (2018-02-27)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4195-2017-12-10">v4.19.5 (2017-12-10)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4194-2017-10-15">v4.19.4 (2017-10-15)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4192-2017-10-08">v4.19.2 (2017-10-08)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4191-2017-10-03">v4.19.1 (2017-10-03)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4180-2017-09-30">v4.18.0 (2017-09-30)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4171-2017-09-26">v4.17.1 (2017-09-26)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4170-2017-09-20">v4.17.0 (2017-09-20)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4160-2017-09-20">v4.16.0 (2017-09-20)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4150-2017-07-29">v4.15.0 (2017-07-29)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4140-2017-07-29">v4.14.0 (2017-07-29)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4130-2017-05-29">v4.13.0 (2017-05-29)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4120-2017-05-29">v4.12.0 (2017-05-29)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4112-2017-01-24">v4.11.2 (2017-01-24)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4111-2017-01-23">v4.11.1 (2017-01-23)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4110-2017-01-12">v4.11.0 (2017-01-12)</a></li>
-        
-            <li><a class="toctree-l3" href="#v4100-2016-11-12">v4.10.0 (2016-11-12)</a></li>
-        
-            <li><a class="toctree-l3" href="#v490-2016-10-31">v4.9.0 (2016-10-31)</a></li>
-        
-            <li><a class="toctree-l3" href="#v484-2016-08-17">v4.8.4 (2016-08-17)</a></li>
-        
-            <li><a class="toctree-l3" href="#v481-2016-07-25">v4.8.1 (2016-07-25)</a></li>
-        
-            <li><a class="toctree-l3" href="#v480-2016-07-25">v4.8.0 (2016-07-25)</a></li>
-        
-            <li><a class="toctree-l3" href="#v476-2016-06-30">v4.7.6 (2016-06-30)</a></li>
-        
-            <li><a class="toctree-l3" href="#v474-2016-06-04">v4.7.4 (2016-06-04)</a></li>
-        
-            <li><a class="toctree-l3" href="#v470-2016-05-15">v4.7.0 (2016-05-15)</a></li>
-        
-            <li><a class="toctree-l3" href="#v462-2016-05-15">v4.6.2 (2016-05-15)</a></li>
-        
-            <li><a class="toctree-l3" href="#v461-2016-05-15">v4.6.1 (2016-05-15)</a></li>
-        
-            <li><a class="toctree-l3" href="#v450-2016-04-25">v4.5.0 (2016-04-25)</a></li>
-        
-            <li><a class="toctree-l3" href="#v443-2016-04-24">v4.4.3 (2016-04-24)</a></li>
-        
-            <li><a class="toctree-l3" href="#v441-2016-04-22">v4.4.1 (2016-04-22)</a></li>
-        
-            <li><a class="toctree-l3" href="#v420-2016-04-22">v4.2.0 (2016-04-22)</a></li>
-        
-            <li><a class="toctree-l3" href="#v400-2016-02-04">v4.0.0 (2016-02-04)</a></li>
-        
-            <li><a class="toctree-l3" href="#v380-2016-01-31">v3.8.0 (2016-01-31)</a></li>
-        
-            <li><a class="toctree-l3" href="#v371-2016-01-13">v3.7.1 (2016-01-13)</a></li>
-        
-            <li><a class="toctree-l3" href="#v360-2015-12-31">v3.6.0 (2015-12-31)</a></li>
-        
-            <li><a class="toctree-l3" href="#v350-2015-12-31">v3.5.0 (2015-12-31)</a></li>
-        
-            <li><a class="toctree-l3" href="#v330-2015-12-31">v3.3.0 (2015-12-31)</a></li>
-        
-            <li><a class="toctree-l3" href="#v314-2015-11-28">v3.1.4 (2015-11-28)</a></li>
-        
-            <li><a class="toctree-l3" href="#v224-2015-11-08">v2.2.4 (2015-11-08)</a></li>
-        
-            <li><a class="toctree-l3" href="#v200-2015-10-11">v2.0.0 (2015-10-11)</a></li>
-        
-        </ul>
-    
-
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../contributing/">Contributing</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../ports/">Ports to Other Languages</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Presentation (PyData)</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../video/">Video</a>
+                <li class="toctree-l2"><a class="" href="https://codecov.io/gh/tqdm/tqdm">Codecov</a>
                 </li>
-                <li class="">
-                    
-    <a class="" href="../PyData2019/slides.html">Slides</a>
+                <li class="toctree-l2"><a class="" href="https://www.codacy.com/app/tqdm/tqdm">Codacy</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="https://tqdm.github.io/tqdm">Performance Benchmarks (asv)</a>
                 </li>
     </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">External Links</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="https://github.com/tqdm/tqdm">Source Code (ENTIRE DOCUMENTATION ON ONE PAGE)</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Citations</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="https://doi.org/10.21105/joss.01277">DOI (publication)</a>
                 </li>
-                <li class="">
-                    
-    <a class="" href="https://github.com/tqdm/tqdm/wiki">wiki</a>
+                <li class="toctree-l2"><a class="" href="https://doi.org/10.5281/zenodo.595120">DOI (code)</a>
                 </li>
-                <li class="">
-                    
-    <a class="" href="https://github.com/tqdm/tqdm#faq-and-known-issues">FAQs</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="https://github.com/tqdm/tqdm/issues?q=">Issues</a>
-                </li>
-                <li class="">
-                    
-    <span class="caption-text">Downloads</span>
-    <ul class="subnav">
-                <li class="toctree-l3">
-                    
-    <a class="" href="https://github.com/tqdm/tqdm/releases">GitHub</a>
-                </li>
-                <li class="toctree-l3">
-                    
-    <a class="" href="https://pypi.org/project/tqdm">PyPI</a>
-                </li>
-                <li class="toctree-l3">
-                    
-    <a class="" href="https://anaconda.org/conda-forge/tqdm">Conda</a>
+                <li class="toctree-l2"><a class="" href="https://www.openhub.net/p/tqdm">Metrics (Open Hub)</a>
                 </li>
     </ul>
-                </li>
-                <li class="">
-                    
-    <span class="caption-text">Tests</span>
-    <ul class="subnav">
-                <li class="toctree-l3">
-                    
-    <a class="" href="https://travis-ci.org/tqdm/tqdm">Travis CI</a>
-                </li>
-                <li class="toctree-l3">
-                    
-    <a class="" href="https://coveralls.io/github/tqdm/tqdm">Coveralls</a>
-                </li>
-                <li class="toctree-l3">
-                    
-    <a class="" href="https://codecov.io/gh/tqdm/tqdm">Codecov</a>
-                </li>
-                <li class="toctree-l3">
-                    
-    <a class="" href="https://www.codacy.com/app/tqdm/tqdm">Codacy</a>
-                </li>
-                <li class="toctree-l3">
-                    
-    <a class="" href="https://tqdm.github.io/tqdm">Performance Benchmarks (asv)</a>
-                </li>
-    </ul>
-                </li>
-                <li class="">
-                    
-    <span class="caption-text">Citations</span>
-    <ul class="subnav">
-                <li class="toctree-l3">
-                    
-    <a class="" href="https://doi.org/10.21105/joss.01277">DOI (publication)</a>
-                </li>
-                <li class="toctree-l3">
-                    
-    <a class="" href="https://doi.org/10.5281/zenodo.595120">DOI (code)</a>
-                </li>
-                <li class="toctree-l3">
-                    
-    <a class="" href="https://www.openhub.net/p/tqdm">Metrics (Open Hub)</a>
-                </li>
-    </ul>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../licence/">Licence</a>
-	    </li>
-          
-        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../licence/">Licence</a>
+                    </li>
+                </ul>
       </div>
-      &nbsp;
+    </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
@@ -437,12 +346,23 @@
       
     </li>
   </ul>
+  
   <hr/>
 </div>
           <div role="main">
             <div class="section">
               
                 <h1 id="tqdmtqdm-releases"><a href="https://github.com/tqdm/tqdm">tqdm/tqdm</a> Releases</h1>
+<h2 id="v4461-2020-06-03"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.46.1">v4.46.1</a> <small><small>(2020-06-03)</small></small></h2>
+<p><a href="https://github.com/tqdm/tqdm/releases/download/v4.46.1/tqdm-4.46.1-py2.py3-none-any.whl">whl</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.46.1/tqdm-4.46.1-py2.py3-none-any.whl.asc">asc</a></p>
+<ul>
+<li>fix missing <code>sys.setcheckinterval</code> in py3.9 (<a href="https://github.com/tqdm/tqdm/issues/978">#978</a>)</li>
+<li>fix <code>keras.TqdmCallback</code> compatibility with <code>tensorflow==2.2.0</code> (<a href="https://github.com/tqdm/tqdm/issues/979">#979</a>)</li>
+<li>update documentation</li>
+<li>correct <code>contrib.concurrent</code> correct <code>max_workers</code> (<a href="https://github.com/tqdm/tqdm/issues/977">#977</a>)</li>
+<li>drop prominent mention of <code>xrange</code> (<a href="https://github.com/tqdm/tqdm/issues/965">#965</a>)</li>
+<li>minor linting</li>
+</ul>
 <h2 id="v4460-2020-05-03"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.46.0">v4.46.0</a> <small><small>(2020-05-03)</small></small></h2>
 <p><a href="https://github.com/tqdm/tqdm/releases/download/v4.46.0/tqdm-4.46.0-py2.py3-none-any.whl">whl</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.46.0/tqdm-4.46.0-py2.py3-none-any.whl.asc">asc</a></p>
 <ul>
@@ -1379,7 +1299,7 @@
     
   </div>
 
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
       
         </div>
@@ -1389,7 +1309,7 @@
 
   </div>
 
-  <div class="rst-versions" role="note" style="cursor: pointer">
+  <div class="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
           <a href="https://github.com/tqdm/tqdm/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
@@ -1405,6 +1325,11 @@
     <script>var base_url = '..';</script>
     <script src="../js/theme.js" defer></script>
       <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
 
 </body>
 </html>
