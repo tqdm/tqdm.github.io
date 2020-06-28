@@ -45,6 +45,10 @@ generate:
   - tqdm.contrib.concurrent+
 - docs/contrib.itertools.md:
   - tqdm.contrib.itertools+
+- docs/contrib.bells.md:
+  - tqdm.contrib.bells.tqdm+
+- docs/contrib.discord.md:
+  - tqdm.contrib.discord.tqdm+
 - docs/contrib.telegram.md:
   - tqdm.contrib.telegram.tqdm+
 #- docs/autonotebook.md:
