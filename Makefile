@@ -9,6 +9,7 @@ build:
 	cp .README.md build/docs/_site/README.md
 deploy: build
 	git checkout master
+	git ls-files | xargs git rm
 	cp -a build/docs/_site/* .
 	echo '/build/' > .gitignore
 	echo '/sources/' >> .gitignore
