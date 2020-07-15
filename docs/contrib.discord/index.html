@@ -85,10 +85,6 @@
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#__init__">__init__</a>
     </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#parameters">Parameters</a>
-        <ul>
     <li class="toctree-l3"><a class="reference internal" href="#__new__">__new__</a>
     </li>
         </ul>
@@ -232,27 +228,26 @@ May take a few seconds to create (<code>__init__</code>).</p>
   https://discordpy.readthedocs.io/en/latest/discord.html</li>
 <li>copy the bot <code>{token}</code> &amp; <code>{channel_id}</code> and paste below</li>
 </ul>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>from tqdm.contrib.discord import tqdm, trange
-for i in tqdm(iterable, token='{token}', channel_id='{channel_id}'):
-...     ...</p>
-</blockquote>
-</blockquote>
-</blockquote>
+<pre><code class="python">&gt;&gt;&gt; from tqdm.contrib.discord import tqdm, trange
+&gt;&gt;&gt; for i in tqdm(iterable, token='{token}', channel_id='{channel_id}'):
+...     ...
+</code></pre>
+
 <p><a name="tqdm.contrib.discord.tqdm_discord.__init__"></a></p>
 <h4 id="__init__">__init__<a class="headerlink" href="#__init__" title="Permanent link">#</a></h4>
 <pre><code class="python"> | __init__(*args, **kwargs)
 </code></pre>
 
-<h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">#</a></h2>
-<p>token  : str, required. Discord token
-    [default: ${TQDM_DISCORD_TOKEN}].
-channel_id  : int, required. Discord channel ID
-    [default: ${TQDM_DISCORD_CHANNEL_ID}].
-mininterval  : float, optional.
-  Minimum of [default: 1.5] to avoid rate limit.</p>
+<h2>Parameters</h2>
+
+<ul>
+<li>token  : str, required. Discord token<br />
+    [default: ${TQDM_DISCORD_TOKEN}].</li>
+<li>channel_id  : int, required. Discord channel ID<br />
+    [default: ${TQDM_DISCORD_CHANNEL_ID}].</li>
+<li>mininterval  : float, optional.<br />
+  Minimum of [default: 1.5] to avoid rate limit.</li>
+</ul>
 <p>See <code>tqdm.auto.tqdm.__init__</code> for other parameters.</p>
 <p><a name="tqdm.contrib.discord.tqdm_discord.__new__"></a></p>
 <h4 id="__new__">__new__<a class="headerlink" href="#__new__" title="Permanent link">#</a></h4>

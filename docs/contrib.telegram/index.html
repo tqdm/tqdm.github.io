@@ -87,10 +87,6 @@
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#__init__">__init__</a>
     </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#parameters">Parameters</a>
-        <ul>
     <li class="toctree-l3"><a class="reference internal" href="#__new__">__new__</a>
     </li>
         </ul>
@@ -234,25 +230,24 @@ May take a few seconds to create (<code>__init__</code>).</p>
   the <code>{chat_id}</code></li>
 <li>paste the <code>{token}</code> &amp; <code>{chat_id}</code> below</li>
 </ul>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>from tqdm.contrib.telegram import tqdm, trange
-for i in tqdm(iterable, token='{token}', chat_id='{chat_id}'):
-...     ...</p>
-</blockquote>
-</blockquote>
-</blockquote>
+<pre><code class="python">&gt;&gt;&gt; from tqdm.contrib.telegram import tqdm, trange
+&gt;&gt;&gt; for i in tqdm(iterable, token='{token}', chat_id='{chat_id}'):
+...     ...
+</code></pre>
+
 <p><a name="tqdm.contrib.telegram.tqdm_telegram.__init__"></a></p>
 <h4 id="__init__">__init__<a class="headerlink" href="#__init__" title="Permanent link">#</a></h4>
 <pre><code class="python"> | __init__(*args, **kwargs)
 </code></pre>
 
-<h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">#</a></h2>
-<p>token  : str, required. Telegram token
-    [default: ${TQDM_TELEGRAM_TOKEN}].
-chat_id  : str, required. Telegram chat ID
-    [default: ${TQDM_TELEGRAM_CHAT_ID}].</p>
+<h2>Parameters</h2>
+
+<ul>
+<li>token  : str, required. Telegram token<br />
+    [default: ${TQDM_TELEGRAM_TOKEN}].</li>
+<li>chat_id  : str, required. Telegram chat ID<br />
+    [default: ${TQDM_TELEGRAM_CHAT_ID}].</li>
+</ul>
 <p>See <code>tqdm.auto.tqdm.__init__</code> for other parameters.</p>
 <p><a name="tqdm.contrib.telegram.tqdm_telegram.__new__"></a></p>
 <h4 id="__new__">__new__<a class="headerlink" href="#__new__" title="Permanent link">#</a></h4>

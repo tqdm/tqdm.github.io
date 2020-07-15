@@ -69,44 +69,16 @@
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#format_sizeof">format_sizeof</a>
     </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#parameters">Parameters</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#returns">Returns</a>
-        <ul>
     <li class="toctree-l3"><a class="reference internal" href="#format_interval">format_interval</a>
     </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#parameters_1">Parameters</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#returns_1">Returns</a>
-        <ul>
     <li class="toctree-l3"><a class="reference internal" href="#format_num">format_num</a>
     </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#parameters_2">Parameters</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#returns_2">Returns</a>
-        <ul>
     <li class="toctree-l3"><a class="reference internal" href="#ema">ema</a>
     </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#parameters_3">Parameters</a>
-        <ul>
     <li class="toctree-l3"><a class="reference internal" href="#status_printer">status_printer</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#format_meter">format_meter</a>
     </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#parameters_4">Parameters</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#returns_3">Returns</a>
-        <ul>
     <li class="toctree-l3"><a class="reference internal" href="#write">write</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#external_write_mode">external_write_mode</a>
@@ -117,11 +89,37 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#pandas">pandas</a>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#__init__">__init__</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#__iter__">__iter__</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#update">update</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#close">close</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#clear">clear</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#refresh">refresh</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#unpause">unpause</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#reset">reset</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#set_description">set_description</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#set_description_str">set_description_str</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#set_postfix">set_postfix</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#set_postfix_str">set_postfix_str</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#format_dict">format_dict</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#display">display</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#wrapattr">wrapattr</a>
+    </li>
         </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#parameters_5">Parameters</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#examples">Examples</a>
     </li>
     </ul>
                     </li>
@@ -292,16 +290,22 @@ progressbar every time a value is requested.</p>
 
 <p>Formats a number (greater than unity) with SI Order of Magnitude
 prefixes.</p>
-<h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">#</a></h2>
-<p>num  : float
-    Number ( &gt;= 1) to format.
-suffix  : str, optional
-    Post-postfix [default: ''].
-divisor  : float, optional
-    Divisor between prefixes [default: 1000].</p>
-<h2 id="returns">Returns<a class="headerlink" href="#returns" title="Permanent link">#</a></h2>
-<p>out  : str
-    Number with Order of Magnitude SI unit postfix.</p>
+<h2>Parameters</h2>
+
+<ul>
+<li>num  : float<br />
+    Number ( &gt;= 1) to format.</li>
+<li>suffix  : str, optional<br />
+    Post-postfix [default: ''].</li>
+<li>divisor  : float, optional<br />
+    Divisor between prefixes [default: 1000].</li>
+</ul>
+<h2>Returns</h2>
+
+<ul>
+<li>out  : str<br />
+    Number with Order of Magnitude SI unit postfix.</li>
+</ul>
 <p><a name="tqdm.std.tqdm.format_interval"></a></p>
 <h4 id="format_interval">format_interval<a class="headerlink" href="#format_interval" title="Permanent link">#</a></h4>
 <pre><code class="python"> | @staticmethod
@@ -309,12 +313,18 @@ divisor  : float, optional
 </code></pre>
 
 <p>Formats a number of seconds as a clock time, [H:]MM:SS</p>
-<h2 id="parameters_1">Parameters<a class="headerlink" href="#parameters_1" title="Permanent link">#</a></h2>
-<p>t  : int
-    Number of seconds.</p>
-<h2 id="returns_1">Returns<a class="headerlink" href="#returns_1" title="Permanent link">#</a></h2>
-<p>out  : str
-    [H:]MM:SS</p>
+<h2>Parameters</h2>
+
+<ul>
+<li>t  : int<br />
+    Number of seconds.</li>
+</ul>
+<h2>Returns</h2>
+
+<ul>
+<li>out  : str<br />
+    [H:]MM:SS</li>
+</ul>
 <p><a name="tqdm.std.tqdm.format_num"></a></p>
 <h4 id="format_num">format_num<a class="headerlink" href="#format_num" title="Permanent link">#</a></h4>
 <pre><code class="python"> | @staticmethod
@@ -322,12 +332,18 @@ divisor  : float, optional
 </code></pre>
 
 <p>Intelligent scientific notation (.3g).</p>
-<h2 id="parameters_2">Parameters<a class="headerlink" href="#parameters_2" title="Permanent link">#</a></h2>
-<p>n  : int or float or Numeric
-    A Number.</p>
-<h2 id="returns_2">Returns<a class="headerlink" href="#returns_2" title="Permanent link">#</a></h2>
-<p>out  : str
-    Formatted number.</p>
+<h2>Parameters</h2>
+
+<ul>
+<li>n  : int or float or Numeric<br />
+    A Number.</li>
+</ul>
+<h2>Returns</h2>
+
+<ul>
+<li>out  : str<br />
+    Formatted number.</li>
+</ul>
 <p><a name="tqdm.std.tqdm.ema"></a></p>
 <h4 id="ema">ema<a class="headerlink" href="#ema" title="Permanent link">#</a></h4>
 <pre><code class="python"> | @staticmethod
@@ -336,15 +352,18 @@ divisor  : float, optional
 
 <p>Exponential moving average: smoothing to give progressively lower
 weights to older values.</p>
-<h2 id="parameters_3">Parameters<a class="headerlink" href="#parameters_3" title="Permanent link">#</a></h2>
-<p>x  : float
-    New value to include in EMA.
-mu  : float, optional
-    Previous EMA value.
-alpha  : float, optional
+<h2>Parameters</h2>
+
+<ul>
+<li>x  : float<br />
+    New value to include in EMA.</li>
+<li>mu  : float, optional<br />
+    Previous EMA value.</li>
+<li>alpha  : float, optional<br />
     Smoothing factor in range [0, 1], [default: 0.3].
     Increase to give more weight to recent values.
-    Ranges from 0 (yields mu) to 1 (yields x).</p>
+    Ranges from 0 (yields mu) to 1 (yields x).</li>
+</ul>
 <p><a name="tqdm.std.tqdm.status_printer"></a></p>
 <h4 id="status_printer">status_printer<a class="headerlink" href="#status_printer" title="Permanent link">#</a></h4>
 <pre><code class="python"> | @staticmethod
@@ -361,59 +380,65 @@ updating may not work (it will print a new line at each refresh).</p>
 </code></pre>
 
 <p>Return a string-based progress bar given some parameters</p>
-<h2 id="parameters_4">Parameters<a class="headerlink" href="#parameters_4" title="Permanent link">#</a></h2>
-<p>n  : int or float
-Number of finished iterations.
-total  : int or float
-The expected total number of iterations. If meaningless (None),
-only basic progress statistics are displayed (no ETA).
-elapsed  : float
-Number of seconds passed since start.
-ncols  : int, optional
-The width of the entire output message. If specified,
-dynamically resizes <code>{bar}</code> to stay within this bound
-[default: None]. If <code>0</code>, will not print any bar (only stats).
-The fallback is <code>{bar:10}</code>.
-prefix  : str, optional
-Prefix message (included in total width) [default: ''].
-Use as {desc} in bar_format string.
-ascii  : bool, optional or str, optional
-If not set, use unicode (smooth blocks) to fill the meter
-[default: False]. The fallback is to use ASCII characters
-" 123456789#".
-unit  : str, optional
-The iteration unit [default: 'it'].
-unit_scale  : bool or int or float, optional
-If 1 or True, the number of iterations will be printed with an
-appropriate SI metric prefix (k = 10^3, M = 10^6, etc.)
-[default: False]. If any other non-zero number, will scale
-<code>total</code> and <code>n</code>.
-rate  : float, optional
-Manual override for iteration rate.
-If [default: None], uses n/elapsed.
-bar_format  : str, optional
-Specify a custom bar string formatting. May impact performance.
-[default: '{l_bar}{bar}{r_bar}'], where
-l_bar='{desc}: {percentage:3.0f}%|' and
-r_bar='| {n_fmt}/{total_fmt} [{elapsed}&lt;{remaining}, '
-'{rate_fmt}{postfix}]'
-Possible vars: l_bar, bar, r_bar, n, n_fmt, total, total_fmt,
-percentage, elapsed, elapsed_s, ncols, nrows, desc, unit,
-rate, rate_fmt, rate_noinv, rate_noinv_fmt,
-rate_inv, rate_inv_fmt, postfix, unit_divisor,
-remaining, remaining_s.
-Note that a trailing ": " is automatically removed after {desc}
-if the latter is empty.
-postfix  : *, optional
-Similar to <code>prefix</code>, but placed at the end
-(e.g. for additional stats).
-Note: postfix is usually a string (not a dict) for this method,
-and will if possible be set to postfix = ', ' + postfix.
-However other types are supported (<code>382</code>).
-unit_divisor  : float, optional
-[default: 1000], ignored unless <code>unit_scale</code> is True.</p>
-<h2 id="returns_3">Returns<a class="headerlink" href="#returns_3" title="Permanent link">#</a></h2>
-<p>out  : Formatted meter and stats, ready to display.</p>
+<h2>Parameters</h2>
+
+<ul>
+<li>n  : int or float<br />
+    Number of finished iterations.</li>
+<li>total  : int or float<br />
+    The expected total number of iterations. If meaningless (None),
+    only basic progress statistics are displayed (no ETA).</li>
+<li>elapsed  : float<br />
+    Number of seconds passed since start.</li>
+<li>ncols  : int, optional<br />
+    The width of the entire output message. If specified,
+    dynamically resizes <code>{bar}</code> to stay within this bound
+    [default: None]. If <code>0</code>, will not print any bar (only stats).
+    The fallback is <code>{bar:10}</code>.</li>
+<li>prefix  : str, optional<br />
+    Prefix message (included in total width) [default: ''].
+    Use as {desc} in bar_format string.</li>
+<li>ascii  : bool, optional or str, optional<br />
+    If not set, use unicode (smooth blocks) to fill the meter
+    [default: False]. The fallback is to use ASCII characters
+    " 123456789#".</li>
+<li>unit  : str, optional<br />
+    The iteration unit [default: 'it'].</li>
+<li>unit_scale  : bool or int or float, optional<br />
+    If 1 or True, the number of iterations will be printed with an
+    appropriate SI metric prefix (k = 10^3, M = 10^6, etc.)
+    [default: False]. If any other non-zero number, will scale
+    <code>total</code> and <code>n</code>.</li>
+<li>rate  : float, optional<br />
+    Manual override for iteration rate.
+    If [default: None], uses n/elapsed.</li>
+<li>bar_format  : str, optional<br />
+    Specify a custom bar string formatting. May impact performance.
+    [default: '{l_bar}{bar}{r_bar}'], where
+    l_bar='{desc}: {percentage:3.0f}%|' and
+    r_bar='| {n_fmt}/{total_fmt} [{elapsed}&lt;{remaining}, '
+      '{rate_fmt}{postfix}]'
+    Possible vars: l_bar, bar, r_bar, n, n_fmt, total, total_fmt,
+      percentage, elapsed, elapsed_s, ncols, nrows, desc, unit,
+      rate, rate_fmt, rate_noinv, rate_noinv_fmt,
+      rate_inv, rate_inv_fmt, postfix, unit_divisor,
+      remaining, remaining_s.
+    Note that a trailing ": " is automatically removed after {desc}
+    if the latter is empty.</li>
+<li>postfix  : *, optional<br />
+    Similar to <code>prefix</code>, but placed at the end
+    (e.g. for additional stats).
+    Note: postfix is usually a string (not a dict) for this method,
+    and will if possible be set to postfix = ', ' + postfix.
+    However other types are supported (<code>382</code>).</li>
+<li>unit_divisor  : float, optional<br />
+    [default: 1000], ignored unless <code>unit_scale</code> is True.</li>
+</ul>
+<h2>Returns</h2>
+
+<ul>
+<li>out  : Formatted meter and stats, ready to display.  </li>
+</ul>
 <p><a name="tqdm.std.tqdm.write"></a></p>
 <h4 id="write">write<a class="headerlink" href="#write" title="Permanent link">#</a></h4>
 <pre><code class="python"> | @classmethod
@@ -459,24 +484,24 @@ Useful when writing to standard output stream</p>
     ).progress_apply</p>
 <p>A new instance will be create every time <code>progress_apply</code> is called,
 and each instance will automatically close() upon completion.</p>
-<h2 id="parameters_5">Parameters<a class="headerlink" href="#parameters_5" title="Permanent link">#</a></h2>
+<h2>Parameters</h2>
+
 <p>targs, tkwargs  : arguments for the tqdm instance</p>
-<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">#</a></h2>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>import pandas as pd
-import numpy as np
-from tqdm import tqdm
-from tqdm.gui import tqdm as tqdm_gui</p>
-<p>df = pd.DataFrame(np.random.randint(0, 100, (100000, 6)))
-tqdm.pandas(ncols=50)  # can use tqdm_gui, optional kwargs, etc</p>
-<h1 id="now-you-can-use-progress_apply-instead-of-apply">Now you can use <code>progress_apply</code> instead of <code>apply</code><a class="headerlink" href="#now-you-can-use-progress_apply-instead-of-apply" title="Permanent link">#</a></h1>
-<p>df.groupby(0).progress_apply(lambda x: x**2)</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">#</a></h2>
+<h2>Examples</h2>
+
+<pre><code class="python">&gt;&gt;&gt; import pandas as pd
+&gt;&gt;&gt; import numpy as np
+&gt;&gt;&gt; from tqdm import tqdm
+&gt;&gt;&gt; from tqdm.gui import tqdm as tqdm_gui
+&gt;&gt;&gt;
+&gt;&gt;&gt; df = pd.DataFrame(np.random.randint(0, 100, (100000, 6)))
+&gt;&gt;&gt; tqdm.pandas(ncols=50)  # can use tqdm_gui, optional kwargs, etc
+&gt;&gt;&gt; # Now you can use `progress_apply` instead of `apply`
+&gt;&gt;&gt; df.groupby(0).progress_apply(lambda x: x**2)
+</code></pre>
+
+<h2>References</h2>
+
 <p>https://stackoverflow.com/questions/18603270/
 progress-indicator-during-pandas-operations-python</p>
 <p><a name="tqdm.std.tqdm.__init__"></a></p>
@@ -484,72 +509,74 @@ progress-indicator-during-pandas-operations-python</p>
 <pre><code class="python"> | __init__(iterable=None, desc=None, total=None, leave=True, file=None, ncols=None, mininterval=0.1, maxinterval=10.0, miniters=None, ascii=None, disable=False, unit='it', unit_scale=False, dynamic_ncols=False, smoothing=0.3, bar_format=None, initial=0, position=None, postfix=None, unit_divisor=1000, write_bytes=None, lock_args=None, nrows=None, gui=False, **kwargs)
 </code></pre>
 
-<h2 id="parameters_6">Parameters<a class="headerlink" href="#parameters_6" title="Permanent link">#</a></h2>
-<p>iterable  : iterable, optional
+<h2>Parameters</h2>
+
+<ul>
+<li>iterable  : iterable, optional<br />
     Iterable to decorate with a progressbar.
-    Leave blank to manually manage the updates.
-desc  : str, optional
-    Prefix for the progressbar.
-total  : int or float, optional
+    Leave blank to manually manage the updates.</li>
+<li>desc  : str, optional<br />
+    Prefix for the progressbar.</li>
+<li>total  : int or float, optional<br />
     The number of expected iterations. If unspecified,
     len(iterable) is used if possible. If float("inf") or as a last
     resort, only basic progress statistics are displayed
     (no ETA, no progressbar).
     If <code>gui</code> is True and this parameter needs subsequent updating,
     specify an initial arbitrary large positive number,
-    e.g. 9e9.
-leave  : bool, optional
+    e.g. 9e9.</li>
+<li>leave  : bool, optional<br />
     If [default: True], keeps all traces of the progressbar
     upon termination of iteration.
-    If <code>None</code>, will leave only if <code>position</code> is <code>0</code>.
-file  : <code>io.TextIOWrapper</code> or <code>io.StringIO</code>, optional
+    If <code>None</code>, will leave only if <code>position</code> is <code>0</code>.</li>
+<li>file  : <code>io.TextIOWrapper</code> or <code>io.StringIO</code>, optional<br />
     Specifies where to output the progress messages
     (default: sys.stderr). Uses <code>file.write(str)</code> and <code>file.flush()</code>
-    methods.  For encoding, see <code>write_bytes</code>.
-ncols  : int, optional
+    methods.  For encoding, see <code>write_bytes</code>.</li>
+<li>ncols  : int, optional<br />
     The width of the entire output message. If specified,
     dynamically resizes the progressbar to stay within this bound.
     If unspecified, attempts to use environment width. The
     fallback is a meter width of 10 and no limit for the counter and
-    statistics. If 0, will not print any meter (only stats).
-mininterval  : float, optional
-    Minimum progress display update interval [default: 0.1] seconds.
-maxinterval  : float, optional
+    statistics. If 0, will not print any meter (only stats).</li>
+<li>mininterval  : float, optional<br />
+    Minimum progress display update interval [default: 0.1] seconds.</li>
+<li>maxinterval  : float, optional<br />
     Maximum progress display update interval [default: 10] seconds.
     Automatically adjusts <code>miniters</code> to correspond to <code>mininterval</code>
     after long display update lag. Only works if <code>dynamic_miniters</code>
-    or monitor thread is enabled.
-miniters  : int or float, optional
+    or monitor thread is enabled.</li>
+<li>miniters  : int or float, optional<br />
     Minimum progress display update interval, in iterations.
     If 0 and <code>dynamic_miniters</code>, will automatically adjust to equal
     <code>mininterval</code> (more CPU efficient, good for tight loops).
     If &gt; 0, will skip display of specified number of iterations.
     Tweak this and <code>mininterval</code> to get very efficient loops.
     If your progress is erratic with both fast and slow iterations
-    (network, skipping items, etc) you should set miniters=1.
-ascii  : bool or str, optional
+    (network, skipping items, etc) you should set miniters=1.</li>
+<li>ascii  : bool or str, optional<br />
     If unspecified or False, use unicode (smooth blocks) to fill
-    the meter. The fallback is to use ASCII characters " 123456789#".
-disable  : bool, optional
+    the meter. The fallback is to use ASCII characters " 123456789#".</li>
+<li>disable  : bool, optional<br />
     Whether to disable the entire progressbar wrapper
-    [default: False]. If set to None, disable on non-TTY.
-unit  : str, optional
+    [default: False]. If set to None, disable on non-TTY.</li>
+<li>unit  : str, optional<br />
     String that will be used to define the unit of each iteration
-    [default: it].
-unit_scale  : bool or int or float, optional
+    [default: it].</li>
+<li>unit_scale  : bool or int or float, optional<br />
     If 1 or True, the number of iterations will be reduced/scaled
     automatically and a metric prefix following the
     International System of Units standard will be added
     (kilo, mega, etc.) [default: False]. If any other non-zero
-    number, will scale <code>total</code> and <code>n</code>.
-dynamic_ncols  : bool, optional
+    number, will scale <code>total</code> and <code>n</code>.</li>
+<li>dynamic_ncols  : bool, optional<br />
     If set, constantly alters <code>ncols</code> and <code>nrows</code> to the
-    environment (allowing for window resizes) [default: False].
-smoothing  : float, optional
+    environment (allowing for window resizes) [default: False].</li>
+<li>smoothing  : float, optional<br />
     Exponential moving average smoothing factor for speed estimates
     (ignored in GUI mode). Ranges from 0 (average speed) to 1
-    (current/instantaneous speed) [default: 0.3].
-bar_format  : str, optional
+    (current/instantaneous speed) [default: 0.3].</li>
+<li>bar_format  : str, optional<br />
     Specify a custom bar string formatting. May impact performance.
     [default: '{l_bar}{bar}{r_bar}'], where
     l_bar='{desc}: {percentage:3.0f}%|' and
@@ -561,37 +588,41 @@ bar_format  : str, optional
       rate_inv, rate_inv_fmt, postfix, unit_divisor,
       remaining, remaining_s.
     Note that a trailing ": " is automatically removed after {desc}
-    if the latter is empty.
-initial  : int or float, optional
+    if the latter is empty.</li>
+<li>initial  : int or float, optional<br />
     The initial counter value. Useful when restarting a progress
     bar [default: 0]. If using float, consider specifying <code>{n:.3f}</code>
-    or similar in <code>bar_format</code>, or specifying <code>unit_scale</code>.
-position  : int, optional
+    or similar in <code>bar_format</code>, or specifying <code>unit_scale</code>.</li>
+<li>position  : int, optional<br />
     Specify the line offset to print this bar (starting from 0)
     Automatic if unspecified.
-    Useful to manage multiple bars at once (eg, from threads).
-postfix  : dict or *, optional
+    Useful to manage multiple bars at once (eg, from threads).</li>
+<li>postfix  : dict or *, optional<br />
     Specify additional stats to display at the end of the bar.
-    Calls <code>set_postfix(**postfix)</code> if possible (dict).
-unit_divisor  : float, optional
-    [default: 1000], ignored unless <code>unit_scale</code> is True.
-write_bytes  : bool, optional
+    Calls <code>set_postfix(**postfix)</code> if possible (dict).</li>
+<li>unit_divisor  : float, optional<br />
+    [default: 1000], ignored unless <code>unit_scale</code> is True.</li>
+<li>write_bytes  : bool, optional<br />
     If (default: None) and <code>file</code> is unspecified,
     bytes will be written in Python 2. If <code>True</code> will also write
-    bytes. In all other cases will default to unicode.
-lock_args  : tuple, optional
+    bytes. In all other cases will default to unicode.</li>
+<li>lock_args  : tuple, optional<br />
     Passed to <code>refresh</code> for intermediate output
-    (initialisation, iterating, and updating).
-nrows  : int, optional
+    (initialisation, iterating, and updating).</li>
+<li>nrows  : int, optional<br />
     The screen height. If specified, hides nested bars outside this
     bound. If unspecified, attempts to use environment height.
-    The fallback is 20.
-gui  : bool, optional
+    The fallback is 20.</li>
+<li>gui  : bool, optional<br />
     WARNING: internal parameter - do not use.
     Use tqdm.gui.tqdm(...) instead. If set, will attempt to use
-    matplotlib animations for a graphical output [default: False].</p>
-<h2 id="returns_4">Returns<a class="headerlink" href="#returns_4" title="Permanent link">#</a></h2>
-<p>out  : decorated iterator.</p>
+    matplotlib animations for a graphical output [default: False].</li>
+</ul>
+<h2>Returns</h2>
+
+<ul>
+<li>out  : decorated iterator.  </li>
+</ul>
 <p><a name="tqdm.std.tqdm.__iter__"></a></p>
 <h4 id="__iter__">__iter__<a class="headerlink" href="#__iter__" title="Permanent link">#</a></h4>
 <pre><code class="python"> | __iter__()
@@ -606,25 +637,24 @@ gui  : bool, optional
 <p>Manually update the progress bar, useful for streams
 such as reading files.
 E.g.:</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>t = tqdm(total=filesize) # Initialise
-for current_buffer in stream:
+<pre><code class="python">&gt;&gt;&gt; t = tqdm(total=filesize) # Initialise
+&gt;&gt;&gt; for current_buffer in stream:
 ...    ...
 ...    t.update(len(current_buffer))
-t.close()
-The last line is highly recommended, but possibly not necessary if
+&gt;&gt;&gt; t.close()
+</code></pre>
+
+<p>The last line is highly recommended, but possibly not necessary if
 <code>t.update()</code> will be called in such a way that <code>filesize</code> will be
 exactly reached and printed.</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2 id="parameters_7">Parameters<a class="headerlink" href="#parameters_7" title="Permanent link">#</a></h2>
-<p>n  : int or float, optional
+<h2>Parameters</h2>
+
+<ul>
+<li>n  : int or float, optional<br />
     Increment to add to the internal counter of iterations
     [default: 1]. If using float, consider specifying <code>{n:.3f}</code>
-    or similar in <code>bar_format</code>, or specifying <code>unit_scale</code>.</p>
+    or similar in <code>bar_format</code>, or specifying <code>unit_scale</code>.</li>
+</ul>
 <p><a name="tqdm.std.tqdm.close"></a></p>
 <h4 id="close">close<a class="headerlink" href="#close" title="Permanent link">#</a></h4>
 <pre><code class="python"> | close()
@@ -643,13 +673,16 @@ exactly reached and printed.</p>
 </code></pre>
 
 <p>Force refresh the display of this bar.</p>
-<h2 id="parameters_8">Parameters<a class="headerlink" href="#parameters_8" title="Permanent link">#</a></h2>
-<p>nolock  : bool, optional
+<h2>Parameters</h2>
+
+<ul>
+<li>nolock  : bool, optional<br />
     If <code>True</code>, does not lock.
-    If [default: <code>False</code>]: calls <code>acquire()</code> on internal lock.
-lock_args  : tuple, optional
+    If [default: <code>False</code>]: calls <code>acquire()</code> on internal lock.</li>
+<li>lock_args  : tuple, optional<br />
     Passed to internal lock's <code>acquire()</code>.
-    If specified, will only <code>display()</code> if <code>acquire()</code> returns <code>True</code>.</p>
+    If specified, will only <code>display()</code> if <code>acquire()</code> returns <code>True</code>.</li>
+</ul>
 <p><a name="tqdm.std.tqdm.unpause"></a></p>
 <h4 id="unpause">unpause<a class="headerlink" href="#unpause" title="Permanent link">#</a></h4>
 <pre><code class="python"> | unpause()
@@ -663,18 +696,24 @@ lock_args  : tuple, optional
 
 <p>Resets to 0 iterations for repeated use.</p>
 <p>Consider combining with <code>leave=True</code>.</p>
-<h2 id="parameters_9">Parameters<a class="headerlink" href="#parameters_9" title="Permanent link">#</a></h2>
-<p>total  : int or float, optional. Total to use for the new bar.</p>
+<h2>Parameters</h2>
+
+<ul>
+<li>total  : int or float, optional. Total to use for the new bar.  </li>
+</ul>
 <p><a name="tqdm.std.tqdm.set_description"></a></p>
 <h4 id="set_description">set_description<a class="headerlink" href="#set_description" title="Permanent link">#</a></h4>
 <pre><code class="python"> | set_description(desc=None, refresh=True)
 </code></pre>
 
 <p>Set/modify description of the progress bar.</p>
-<h2 id="parameters_10">Parameters<a class="headerlink" href="#parameters_10" title="Permanent link">#</a></h2>
-<p>desc  : str, optional
-refresh  : bool, optional
-    Forces refresh [default: True].</p>
+<h2>Parameters</h2>
+
+<ul>
+<li>desc  : str, optional  </li>
+<li>refresh  : bool, optional<br />
+    Forces refresh [default: True].</li>
+</ul>
 <p><a name="tqdm.std.tqdm.set_description_str"></a></p>
 <h4 id="set_description_str">set_description_str<a class="headerlink" href="#set_description_str" title="Permanent link">#</a></h4>
 <pre><code class="python"> | set_description_str(desc=None, refresh=True)
@@ -688,11 +727,14 @@ refresh  : bool, optional
 
 <p>Set/modify postfix (additional stats)
 with automatic formatting based on datatype.</p>
-<h2 id="parameters_11">Parameters<a class="headerlink" href="#parameters_11" title="Permanent link">#</a></h2>
-<p>ordered_dict  : dict or OrderedDict, optional
-refresh  : bool, optional
-    Forces refresh [default: True].
-kwargs  : dict, optional</p>
+<h2>Parameters</h2>
+
+<ul>
+<li>ordered_dict  : dict or OrderedDict, optional  </li>
+<li>refresh  : bool, optional<br />
+    Forces refresh [default: True].</li>
+<li>kwargs  : dict, optional  </li>
+</ul>
 <p><a name="tqdm.std.tqdm.set_postfix_str"></a></p>
 <h4 id="set_postfix_str">set_postfix_str<a class="headerlink" href="#set_postfix_str" title="Permanent link">#</a></h4>
 <pre><code class="python"> | set_postfix_str(s='', refresh=True)
@@ -714,10 +756,13 @@ kwargs  : dict, optional</p>
 <p>Use <code>self.sp</code> to display <code>msg</code> in the specified <code>pos</code>.</p>
 <p>Consider overloading this function when inheriting to use e.g.:
 <code>self.some_frontend(**self.format_dict)</code> instead of <code>self.sp</code>.</p>
-<h2 id="parameters_12">Parameters<a class="headerlink" href="#parameters_12" title="Permanent link">#</a></h2>
-<p>msg  : str, optional. What to display (default: <code>repr(self)</code>).
-pos  : int, optional. Position to <code>moveto</code>
-  (default: <code>abs(self.pos)</code>).</p>
+<h2>Parameters</h2>
+
+<ul>
+<li>msg  : str, optional. What to display (default: <code>repr(self)</code>).  </li>
+<li>pos  : int, optional. Position to <code>moveto</code><br />
+  (default: <code>abs(self.pos)</code>).</li>
+</ul>
 <p><a name="tqdm.std.tqdm.wrapattr"></a></p>
 <h4 id="wrapattr">wrapattr<a class="headerlink" href="#wrapattr" title="Permanent link">#</a></h4>
 <pre><code class="python"> | @classmethod
@@ -725,20 +770,17 @@ pos  : int, optional. Position to <code>moveto</code>
  | wrapattr(tclass, stream, method, total=None, bytes=True, **tkwargs)
 </code></pre>
 
-<p>stream  : file-like object.
-method  : str, "read" or "write". The result of <code>read()</code> and
-    the first argument of <code>write()</code> should have a <code>len()</code>.</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>with tqdm.wrapattr(file_obj, "read", total=file_obj.size) as fobj:
+<ul>
+<li>stream  : file-like object.  </li>
+<li>method  : str, "read" or "write". The result of <code>read()</code> and<br />
+    the first argument of <code>write()</code> should have a <code>len()</code>.</li>
+</ul>
+<pre><code class="python">&gt;&gt;&gt; with tqdm.wrapattr(file_obj, &quot;read&quot;, total=file_obj.size) as fobj:
 ...     while True:
 ...         chunk = fobj.read(chunk_size)
 ...         if not chunk:
-...             break</p>
-</blockquote>
-</blockquote>
-</blockquote>
+...             break
+</code></pre>
               
             </div>
           </div>

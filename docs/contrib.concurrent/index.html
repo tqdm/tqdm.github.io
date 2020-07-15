@@ -77,13 +77,7 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#thread_map">thread_map</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#parameters">Parameters</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#process_map">process_map</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#parameters_1">Parameters</a>
+    <li class="toctree-l2"><a class="reference internal" href="#process_map">process_map</a>
     </li>
     </ul>
                     </li>
@@ -224,7 +218,8 @@
 
 <p>Equivalent of <code>list(map(fn, *iterables))</code>
 driven by <code>concurrent.futures.ThreadPoolExecutor</code>.</p>
-<h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">#</a></h2>
+<h2>Parameters</h2>
+
 <p>tqdm_class : optional
     <code>tqdm</code> class to use for bars [default: tqdm.auto.tqdm].
 max_workers : int, optional
@@ -238,16 +233,19 @@ max_workers : int, optional
 
 <p>Equivalent of <code>list(map(fn, *iterables))</code>
 driven by <code>concurrent.futures.ProcessPoolExecutor</code>.</p>
-<h2 id="parameters_1">Parameters<a class="headerlink" href="#parameters_1" title="Permanent link">#</a></h2>
-<p>tqdm_class  : optional
-    <code>tqdm</code> class to use for bars [default: tqdm.auto.tqdm].
+<h2>Parameters</h2>
+
+<ul>
+<li>tqdm_class  : optional<br />
+<code>tqdm</code> class to use for bars [default: tqdm.auto.tqdm].
 max_workers : int, optional
     Maximum number of workers to spawn; passed to
     <code>concurrent.futures.ProcessPoolExecutor.__init__</code>.
     [default: min(32, cpu_count() + 4)].
 chunksize : int, optional
     Size of chunks sent to worker processes; passed to
-    <code>concurrent.futures.ProcessPoolExecutor.map</code>. [default: 1].</p>
+    <code>concurrent.futures.ProcessPoolExecutor.map</code>. [default: 1].</li>
+</ul>
               
             </div>
           </div>

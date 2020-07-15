@@ -77,8 +77,6 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#parameters">Parameters</a>
-    </li>
     </ul>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../contrib/">tqdm.contrib</a>
@@ -225,18 +223,21 @@
 <pre><code class="python"> | __init__(epochs=None, data_size=None, batch_size=None, verbose=1, tqdm_class=tqdm_auto)
 </code></pre>
 
-<h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">#</a></h2>
-<p>epochs  : int, optional
-data_size  : int, optional
-    Number of training pairs.
-batch_size  : int, optional
-    Number of training pairs per batch.
-verbose  : int
+<h2>Parameters</h2>
+
+<ul>
+<li>epochs  : int, optional  </li>
+<li>data_size  : int, optional<br />
+    Number of training pairs.</li>
+<li>batch_size  : int, optional<br />
+    Number of training pairs per batch.</li>
+<li>verbose  : int<br />
     0: epoch, 1: batch (transient), 2: batch. [default: 1].
     Will be set to <code>0</code> unless both <code>data_size</code> and <code>batch_size</code>
     are given.
 tqdm_class : optional
-    <code>tqdm</code> class to use for bars [default: <code>tqdm.auto.tqdm</code>].</p>
+    <code>tqdm</code> class to use for bars [default: <code>tqdm.auto.tqdm</code>].</li>
+</ul>
               
             </div>
           </div>
