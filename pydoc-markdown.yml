@@ -15,26 +15,37 @@ renderer:
     name: docs
     children:
     - title: tqdm.tqdm
+      name: tqdm
       contents: [tqdm.std.tqdm*]
     - title: tqdm.notebook
+      name: notebook
       contents: [tqdm.notebook.tqdm*]
     - title: tqdm.gui
+      name: gui
       contents: [tqdm.gui.tqdm*]
     - title: tqdm.keras
+      name: keras
       contents: [tqdm.keras*]
     - title: tqdm.contrib
+      name: contrib
       contents: [tqdm.contrib.tenumerate*, tqdm.contrib.tzip*, tqdm.contrib.tmap*]
     - title: tqdm.contrib.concurrent
+      name: contrib.concurrent
       contents: [tqdm.contrib.concurrent*]
     - title: tqdm.contrib.itertools
+      name: contrib.itertools
       contents: [tqdm.contrib.itertools*]
     - title: tqdm.contrib.bells
+      name: contrib.bells
       contents: [tqdm.contrib.bells.tqdm*]
     - title: tqdm.contrib.discord
+      name: contrib.discord
       contents: [tqdm.contrib.discord.tqdm*]
     - title: tqdm.contrib.telegram
+      name: contrib.telegram
       contents: [tqdm.contrib.telegram.tqdm*]
     #- title: tqdm.autonotebook
+    #  name: autonotebook
     #  contents: [tqdm.autonotebook*]
     #- title: Shortcuts
     #  contents:
@@ -46,8 +57,10 @@ renderer:
     name: dev
     children:
     - title: Warnings and Exceptions
+      name: warnings
       contents: [tqdm.std.Tqdm*]
     - title: tqdm.TMonitor
+      name: TMonitor
       contents: [tqdm._monitor.TMonitor*]
   - title: Release History
     name: releases
