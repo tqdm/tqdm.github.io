@@ -17,7 +17,7 @@ renderer:
     children:
     - title: tqdm.tqdm
       name: tqdm
-      contents: [tqdm.std.tqdm*]
+      contents: [tqdm.std.t*]
     - title: tqdm.notebook
       name: notebook
       contents: [tqdm.notebook.t*]
