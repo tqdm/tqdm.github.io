@@ -1,6 +1,6 @@
 # tqdm documentation
 
-Requires `pip install -r requirements.txt`
+Requires `pip install .`
 Assumes the following directory structure:
 
 - tqdm: https://github.com/tqdm/tqdm.git

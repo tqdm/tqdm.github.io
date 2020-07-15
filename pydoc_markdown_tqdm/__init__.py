@@ -1,5 +1,5 @@
 from __future__ import print_function
-from pydoc_markdown.contrib.processors.pydocmd import PydocmdProcessor as SimplePreprocessor
+from pydoc_markdown.contrib.processors.pydocmd import PydocmdProcessor
 import re
 
 RE_PARAM = re.compile(r"^(\w+\s{2,}:.*?)$", flags=re.M)
@@ -11,31 +11,7 @@ RE_REPL_BLOCK = re.compile(r"^(```)(\n>>>)", flags=re.M)
 # RE_H1 = re.compile(r'^(<h1 id=".*?">)(.*?)(</h1>)$', flags=re.M)
 
 
-"""
-class Section(pydocmd.document.Section)
-    def render(self, stream):
-        if self.depth != 1:
-            super(Section, self).render(stream)
-            return
-        print('# {title}<h{depth} id="{id}"></h{depth}>\n'
-            .format(depth=self.depth, id=self.identifier, title=self.title),
-            file=stream)
-        print(self.content, file=stream)
-"""
-def overloadSection(section):
-    """Make section.render() show up in `nav` for h1"""
-    if section.depth != 1:
-        return
-
-    def render(stream):
-        print('# {title}<h{depth} id="{id}"></h{depth}>\n'.format(
-            depth=section.depth, id=section.identifier, title=section.title),
-            file=stream)
-        print(section.content, file=stream)
-    section.render = render
-
-
-class TqdmProcessor(SimplePreprocessor):
+class TqdmProcessor(PydocmdProcessor):
     def _process(self, node):
         if not getattr(node, 'docstring', None):
             return
