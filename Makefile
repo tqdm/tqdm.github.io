@@ -10,7 +10,9 @@ build:
 deploy: build
 	git checkout master
 	cp -a build/docs/_site/* .
-	echo -e '/build/\n/sources/' > .gitignore
+	echo '/build/' > .gitignore
+	echo '/sources/' >> .gitignore
+	echo '*.pyc' >> .gitignore
 	git add --all
 	git commit -m "update static site"
 	git push
