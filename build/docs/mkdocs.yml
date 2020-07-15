@@ -1,0 +1,58 @@
+copyright: 2015-2020
+docs_dir: content
+edit_uri: ../tqdm.github.io/tree/src/sources
+google_analytics:
+- UA-56320088-7
+- tqdm.github.io
+markdown_extensions:
+- toc:
+    permalink: '#'
+nav:
+- Home: index.md
+- Documentation:
+  - tqdm.tqdm: docs/tqdm.md
+  - tqdm.notebook: docs/notebook.md
+  - tqdm.gui: docs/gui.md
+  - tqdm.keras: docs/keras.md
+  - tqdm.contrib: docs/contrib.md
+  - tqdm.contrib.concurrent: docs/contrib.concurrent.md
+  - tqdm.contrib.itertools: docs/contrib.itertools.md
+  - tqdm.contrib.bells: docs/contrib.bells.md
+  - tqdm.contrib.discord: docs/contrib.discord.md
+  - tqdm.contrib.telegram: docs/contrib.telegram.md
+- Developer Documentation:
+  - Warnings and Exceptions: dev/warnings.md
+  - tqdm.TMonitor: dev/TMonitor.md
+- Release History: releases.md
+- Contributing: contributing.md
+- Ports to Other Languages: ports.md
+- Presentation (PyData):
+  - Video: presentation-(pydata)/video.md
+  - Slides: PyData2019/slides.html
+- External Links:
+  - Source Code (ENTIRE DOCUMENTATION ON ONE PAGE): https://github.com/tqdm/tqdm
+  - wiki: https://github.com/tqdm/tqdm/wiki
+  - FAQs: https://github.com/tqdm/tqdm#faq-and-known-issues
+  - Issues: https://github.com/tqdm/tqdm/issues?q=
+  - Downloads:
+    - GitHub: https://github.com/tqdm/tqdm/releases
+    - PyPI: https://pypi.org/project/tqdm
+    - Conda: https://anaconda.org/conda-forge/tqdm
+  - Tests:
+    - Travis CI: https://travis-ci.org/tqdm/tqdm
+    - Coveralls: https://coveralls.io/github/tqdm/tqdm
+    - Codecov: https://codecov.io/gh/tqdm/tqdm
+    - Codacy: https://www.codacy.com/app/tqdm/tqdm
+    - Performance Benchmarks (asv): https://tqdm.github.io/tqdm
+  - Citations:
+    - DOI (publication): https://doi.org/10.21105/joss.01277
+    - DOI (code): https://doi.org/10.5281/zenodo.595120
+    - Metrics (Open Hub): https://www.openhub.net/p/tqdm
+- Licence: licence.md
+- Video: video.md
+remote_branch: master
+repo_url: https://github.com/tqdm/tqdm
+site_author: Casper da Costa-Luis
+site_description: A Fast, Extensible Progress Meter
+site_name: tqdm documentation
+theme: readthedocs
