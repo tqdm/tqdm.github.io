@@ -28,7 +28,7 @@ renderer:
       contents: [tqdm.keras*]
     - title: tqdm.contrib
       name: contrib
-      contents: [tqdm.contrib.tenumerate*, tqdm.contrib.tzip*, tqdm.contrib.tmap*]
+      contents: [tqdm.contrib.tenumerate*, tqdm.contrib._tzip*, tqdm.contrib._tmap*]
     - title: tqdm.contrib.concurrent
       name: contrib.concurrent
       contents: [tqdm.contrib.concurrent*]
