@@ -12,7 +12,7 @@ setuptools.setup(
     author_email="tqdm@caspersci.uk.to",
     packages=setuptools.find_packages(this),
     license="MPL-2.0",
-    install_requires=["pydoc-markdown>=3,<4"],
+    install_requires=["argopt", "tqdm", "pydoc-markdown>=3,<4"],
     entry_points={
         "pydoc_markdown.interfaces.Processor": [
             "custom = pydoc_markdown_tqdm:TqdmProcessor"
