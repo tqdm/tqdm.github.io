@@ -123,6 +123,8 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#wrapattr">wrapattr</a>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#trange">trange</a>
+    </li>
         </ul>
     </li>
     </ul>
@@ -778,6 +780,14 @@ with automatic formatting based on datatype.</p>
 ...         if not chunk:
 ...             break
 </code></pre>
+
+<p><a name="tqdm.std.trange"></a></p>
+<h4 id="trange">trange<a class="headerlink" href="#trange" title="Permanent link">#</a></h4>
+<pre><code class="python">trange(*args, **kwargs)
+</code></pre>
+
+<p>A shortcut for tqdm(xrange(<em>args), </em>*kwargs).
+On Python3+ range is used instead of xrange.</p>
               
             </div>
           </div>
