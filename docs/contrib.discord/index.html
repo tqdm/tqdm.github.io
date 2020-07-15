@@ -223,6 +223,7 @@
 ...     ...
 </code></pre>
 
+<p><img alt="screenshot" src="https://raw.githubusercontent.com/tqdm/img/src/screenshot-discord.png" /></p>
 <p><a name="tqdm.contrib.discord.tqdm_discord"></a></p>
 <h2 id="tqdm_discord-objects">tqdm_discord Objects<a class="headerlink" href="#tqdm_discord-objects" title="Permanent link">#</a></h2>
 <pre><code class="python">class tqdm_discord(tqdm_auto)
@@ -233,7 +234,7 @@ May take a few seconds to create (<code>__init__</code>).</p>
 <ul>
 <li>create a discord bot (not public, no requirement of OAuth2 code
   grant, only send message permissions) &amp; invite it to a channel:
-  https://discordpy.readthedocs.io/en/latest/discord.html</li>
+  <a href="https://discordpy.readthedocs.io/en/latest/discord.html">https://discordpy.readthedocs.io/en/latest/discord.html</a></li>
 <li>copy the bot <code>{token}</code> &amp; <code>{channel_id}</code> and paste below</li>
 </ul>
 <pre><code class="python">&gt;&gt;&gt; from tqdm.contrib.discord import tqdm, trange
@@ -246,14 +247,13 @@ May take a few seconds to create (<code>__init__</code>).</p>
 <pre><code class="python"> | __init__(*args, **kwargs)
 </code></pre>
 
-<h2>Parameters</h2>
-
+<p><strong>Parameters</strong></p>
 <ul>
-<li>token  : str, required. Discord token<br />
+<li><strong>token</strong><em>: str, required. Discord token</em><br />
     [default: ${TQDM_DISCORD_TOKEN}].</li>
-<li>channel_id  : int, required. Discord channel ID<br />
+<li><strong>channel_id</strong><em>: int, required. Discord channel ID</em><br />
     [default: ${TQDM_DISCORD_CHANNEL_ID}].</li>
-<li>mininterval  : float, optional.<br />
+<li><strong>mininterval</strong><em>: float, optional.</em><br />
   Minimum of [default: 1.5] to avoid rate limit.</li>
 </ul>
 <p>See <code>tqdm.auto.tqdm.__init__</code> for other parameters.</p>
@@ -291,7 +291,8 @@ On Python3+, <code>range</code> is used instead of <code>xrange</code>.</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>2015-2020</p>
+      <p>&copy; Casper da Costa-Luis <a href="https://github.com/casperdcl">@casperdcl</a> 2015-2020
+</p>
     
   </div>
 

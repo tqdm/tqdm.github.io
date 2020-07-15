@@ -219,12 +219,11 @@
 </code></pre>
 
 <p>Implementation of <code>thread_map</code> and <code>process_map</code>.</p>
-<h2>Parameters</h2>
-
+<p><strong>Parameters</strong></p>
 <ul>
-<li>tqdm_class  : [default: tqdm.auto.tqdm].  </li>
-<li>max_workers  : [default: min(32, cpu_count() + 4)].  </li>
-<li>chunksize  : [default: 1].  </li>
+<li><strong>tqdm_class</strong><em>: [default: tqdm.auto.tqdm].</em>  </li>
+<li><strong>max_workers</strong><em>: [default: min(32, cpu_count() + 4)].</em>  </li>
+<li><strong>chunksize</strong><em>: [default: 1].</em>  </li>
 </ul>
 <p><a name="tqdm.contrib.concurrent.thread_map"></a></p>
 <h4 id="thread_map">thread_map<a class="headerlink" href="#thread_map" title="Permanent link">#</a></h4>
@@ -233,8 +232,7 @@
 
 <p>Equivalent of <code>list(map(fn, *iterables))</code>
 driven by <code>concurrent.futures.ThreadPoolExecutor</code>.</p>
-<h2>Parameters</h2>
-
+<p><strong>Parameters</strong></p>
 <p>tqdm_class : optional
     <code>tqdm</code> class to use for bars [default: tqdm.auto.tqdm].
 max_workers : int, optional
@@ -248,10 +246,9 @@ max_workers : int, optional
 
 <p>Equivalent of <code>list(map(fn, *iterables))</code>
 driven by <code>concurrent.futures.ProcessPoolExecutor</code>.</p>
-<h2>Parameters</h2>
-
+<p><strong>Parameters</strong></p>
 <ul>
-<li>tqdm_class  : optional<br />
+<li><strong>tqdm_class</strong><em>: optional</em><br />
 <code>tqdm</code> class to use for bars [default: tqdm.auto.tqdm].
 max_workers : int, optional
     Maximum number of workers to spawn; passed to
@@ -281,7 +278,8 @@ chunksize : int, optional
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>2015-2020</p>
+      <p>&copy; Casper da Costa-Luis <a href="https://github.com/casperdcl">@casperdcl</a> 2015-2020
+</p>
     
   </div>
 

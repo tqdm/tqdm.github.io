@@ -223,6 +223,7 @@
 ...     ...
 </code></pre>
 
+<p><img alt="screenshot" src="https://raw.githubusercontent.com/tqdm/img/src/screenshot-telegram.gif" /></p>
 <p><a name="tqdm.contrib.telegram.tqdm_telegram"></a></p>
 <h2 id="tqdm_telegram-objects">tqdm_telegram Objects<a class="headerlink" href="#tqdm_telegram-objects" title="Permanent link">#</a></h2>
 <pre><code class="python">class tqdm_telegram(tqdm_auto)
@@ -231,10 +232,10 @@
 <p>Standard <code>tqdm.auto.tqdm</code> but also sends updates to a Telegram Bot.
 May take a few seconds to create (<code>__init__</code>).</p>
 <ul>
-<li>create a bot https://core.telegram.org/bots#6-botfather</li>
+<li>create a bot <a href="https://core.telegram.org/bots#6-botfather">https://core.telegram.org/bots#6-botfather</a></li>
 <li>copy its <code>{token}</code></li>
 <li>add the bot to a chat and send it a message such as <code>/start</code></li>
-<li>go to https://api.telegram.org/bot<code>{token}</code>/getUpdates to find out
+<li>go to <a href="https://api.telegram.org/bot{token}/getUpdates">https://api.telegram.org/bot<code>{token}</code>/getUpdates</a> to find out
   the <code>{chat_id}</code></li>
 <li>paste the <code>{token}</code> &amp; <code>{chat_id}</code> below</li>
 </ul>
@@ -248,12 +249,11 @@ May take a few seconds to create (<code>__init__</code>).</p>
 <pre><code class="python"> | __init__(*args, **kwargs)
 </code></pre>
 
-<h2>Parameters</h2>
-
+<p><strong>Parameters</strong></p>
 <ul>
-<li>token  : str, required. Telegram token<br />
+<li><strong>token</strong><em>: str, required. Telegram token</em><br />
     [default: ${TQDM_TELEGRAM_TOKEN}].</li>
-<li>chat_id  : str, required. Telegram chat ID<br />
+<li><strong>chat_id</strong><em>: str, required. Telegram chat ID</em><br />
     [default: ${TQDM_TELEGRAM_CHAT_ID}].</li>
 </ul>
 <p>See <code>tqdm.auto.tqdm.__init__</code> for other parameters.</p>
@@ -291,7 +291,8 @@ On Python3+, <code>range</code> is used instead of <code>xrange</code>.</p>
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>2015-2020</p>
+      <p>&copy; Casper da Costa-Luis <a href="https://github.com/casperdcl">@casperdcl</a> 2015-2020
+</p>
     
   </div>
 
