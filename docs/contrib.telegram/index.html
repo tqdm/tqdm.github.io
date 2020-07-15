@@ -77,8 +77,6 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../contrib.itertools/">tqdm.contrib.itertools</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../contrib.bells/">tqdm.contrib.bells</a>
-                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="../contrib.discord/">tqdm.contrib.discord</a>
                     </li>
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">tqdm.contrib.telegram</a>
@@ -89,9 +87,13 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#__new__">__new__</a>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ttgrange">ttgrange</a>
+    </li>
         </ul>
     </li>
     </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../shortcuts/">Shortcuts</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Developer Documentation</span></p>
@@ -215,6 +217,12 @@
                 <p><a name="tqdm.contrib.telegram"></a></p>
 <h1 id="tqdmcontribtelegram">tqdm.contrib.telegram<a class="headerlink" href="#tqdmcontribtelegram" title="Permanent link">#</a></h1>
 <p>Sends updates to a Telegram bot.</p>
+<p>Usage:</p>
+<pre><code class="python">&gt;&gt;&gt; from tqdm.contrib.telegram import tqdm, trange
+&gt;&gt;&gt; for i in trange(10, token='{token}', chat_id='{chat_id}'):
+...     ...
+</code></pre>
+
 <p><a name="tqdm.contrib.telegram.tqdm_telegram"></a></p>
 <h2 id="tqdm_telegram-objects">tqdm_telegram Objects<a class="headerlink" href="#tqdm_telegram-objects" title="Permanent link">#</a></h2>
 <pre><code class="python">class tqdm_telegram(tqdm_auto)
@@ -256,6 +264,13 @@ May take a few seconds to create (<code>__init__</code>).</p>
 
 <p>Workaround for mixed-class same-stream nested progressbars.
 See <a href="https://github.com/tqdm/tqdm/issues/509"><code>509</code></a></p>
+<p><a name="tqdm.contrib.telegram.ttgrange"></a></p>
+<h4 id="ttgrange">ttgrange<a class="headerlink" href="#ttgrange" title="Permanent link">#</a></h4>
+<pre><code class="python">ttgrange(*args, **kwargs)
+</code></pre>
+
+<p>A shortcut for <code>tqdm.contrib.telegram.tqdm(xrange(*args), **kwargs)</code>.
+On Python3+, <code>range</code> is used instead of <code>xrange</code>.</p>
               
             </div>
           </div>
@@ -263,7 +278,7 @@ See <a href="https://github.com/tqdm/tqdm/issues/509"><code>509</code></a></p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../dev/warnings/" class="btn btn-neutral float-right" title="Warnings and Exceptions">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../shortcuts/" class="btn btn-neutral float-right" title="Shortcuts">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../contrib.discord/" class="btn btn-neutral" title="tqdm.contrib.discord"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -299,7 +314,7 @@ See <a href="https://github.com/tqdm/tqdm/issues/509"><code>509</code></a></p>
         <span><a href="../contrib.discord/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../../dev/warnings/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../shortcuts/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

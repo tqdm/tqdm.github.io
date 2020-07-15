@@ -79,6 +79,10 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#format_meter">format_meter</a>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_get_free_pos">_get_free_pos</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_decr_instances">_decr_instances</a>
+    </li>
     <li class="toctree-l3"><a class="reference internal" href="#write">write</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#external_write_mode">external_write_mode</a>
@@ -135,11 +139,11 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../contrib.itertools/">tqdm.contrib.itertools</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../contrib.bells/">tqdm.contrib.bells</a>
-                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="../contrib.discord/">tqdm.contrib.discord</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../contrib.telegram/">tqdm.contrib.telegram</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../shortcuts/">Shortcuts</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Developer Documentation</span></p>
@@ -263,17 +267,13 @@
                 <p><a name="tqdm.std"></a></p>
 <h1 id="tqdmstd">tqdm.std<a class="headerlink" href="#tqdmstd" title="Permanent link">#</a></h1>
 <p>Customisable progressbar decorator for iterators.
-Includes a default (x)range iterator printing to stderr.</p>
+Includes a default <code>range</code> iterator printing to <code>stderr</code>.</p>
 <p>Usage:</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>from tqdm import trange[, tqdm]
-for i in trange(10): <code>same</code> as: for i in tqdm(xrange(10))
-  ...     ...</p>
-</blockquote>
-</blockquote>
-</blockquote>
+<pre><code class="python">&gt;&gt;&gt; from tqdm import trange, tqdm
+&gt;&gt;&gt; for i in trange(10):
+...     ...
+</code></pre>
+
 <p><a name="tqdm.std.tqdm"></a></p>
 <h2 id="tqdm-objects">tqdm Objects<a class="headerlink" href="#tqdm-objects" title="Permanent link">#</a></h2>
 <pre><code class="python">class tqdm(Comparable)
@@ -439,6 +439,24 @@ updating may not work (it will print a new line at each refresh).</p>
 <ul>
 <li>out  : Formatted meter and stats, ready to display.  </li>
 </ul>
+<p><a name="tqdm.std.tqdm._get_free_pos"></a></p>
+<h4 id="_get_free_pos">_get_free_pos<a class="headerlink" href="#_get_free_pos" title="Permanent link">#</a></h4>
+<pre><code class="python"> | @classmethod
+ | _get_free_pos(cls, instance=None)
+</code></pre>
+
+<p>Skips specified instance.</p>
+<p><a name="tqdm.std.tqdm._decr_instances"></a></p>
+<h4 id="_decr_instances">_decr_instances<a class="headerlink" href="#_decr_instances" title="Permanent link">#</a></h4>
+<pre><code class="python"> | @classmethod
+ | _decr_instances(cls, instance)
+</code></pre>
+
+<p>Remove from list and reposition another unfixed bar
+to fill the new gap.</p>
+<p>This means that by default (where all nested bars are unfixed),
+order is not maintained but screen flicker/blank space is minimised.
+(tqdm&lt;=4.44.1 moved ALL subsequent unfixed bars up.)</p>
 <p><a name="tqdm.std.tqdm.write"></a></p>
 <h4 id="write">write<a class="headerlink" href="#write" title="Permanent link">#</a></h4>
 <pre><code class="python"> | @classmethod

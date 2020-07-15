@@ -77,11 +77,11 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../docs/contrib.itertools/">tqdm.contrib.itertools</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../docs/contrib.bells/">tqdm.contrib.bells</a>
-                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../docs/contrib.discord/">tqdm.contrib.discord</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../docs/contrib.telegram/">tqdm.contrib.telegram</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../docs/shortcuts/">Shortcuts</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Developer Documentation</span></p>
@@ -215,17 +215,13 @@
                 <p><a name="tqdm.std"></a></p>
 <h1 id="tqdmstd">tqdm.std<a class="headerlink" href="#tqdmstd" title="Permanent link">#</a></h1>
 <p>Customisable progressbar decorator for iterators.
-Includes a default (x)range iterator printing to stderr.</p>
+Includes a default <code>range</code> iterator printing to <code>stderr</code>.</p>
 <p>Usage:</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>from tqdm import trange[, tqdm]
-for i in trange(10): <code>same</code> as: for i in tqdm(xrange(10))
-  ...     ...</p>
-</blockquote>
-</blockquote>
-</blockquote>
+<pre><code class="python">&gt;&gt;&gt; from tqdm import trange, tqdm
+&gt;&gt;&gt; for i in trange(10):
+...     ...
+</code></pre>
+
 <p><a name="tqdm.std.TqdmWarning"></a></p>
 <h2 id="tqdmwarning-objects">TqdmWarning Objects<a class="headerlink" href="#tqdmwarning-objects" title="Permanent link">#</a></h2>
 <pre><code class="python">class TqdmWarning(Warning)
@@ -266,7 +262,7 @@ an argument to joblib or the parallelism lib you use.</p>
         <a href="../TMonitor/" class="btn btn-neutral float-right" title="tqdm.TMonitor">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../docs/contrib.telegram/" class="btn btn-neutral" title="tqdm.contrib.telegram"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../docs/shortcuts/" class="btn btn-neutral" title="Shortcuts"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -296,7 +292,7 @@ an argument to joblib or the parallelism lib you use.</p>
           <a href="https://github.com/tqdm/tqdm/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../../docs/contrib.telegram/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../../docs/shortcuts/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../TMonitor/" style="color: #fcfcfc">Next &raquo;</a></span>
