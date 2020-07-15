@@ -1,5 +1,5 @@
 from __future__ import print_function
-from pydocmd.preprocessors.simple import Preprocessor as SimplePreprocessor
+from pydoc_markdown.contrib.processors.pydocmd import PydocmdProcessor as SimplePreprocessor
 import re
 
 RE_PARAM = re.compile(r"^(\w+\s{2,}:.*?)$", flags=re.M)
@@ -35,21 +35,19 @@ def overloadSection(section):
     section.render = render
 
 
-class Preprocessor(SimplePreprocessor):
-    def preprocess_section(self, section):
-        super(Preprocessor, self).preprocess_section(section)
+class TqdmProcessor(SimplePreprocessor):
+    def _process(self, node):
+        if not getattr(node, 'docstring', None):
+            return
+
         # convert parameter lists to markdown list
-        section.content = RE_PARAM.sub(r"* \1  ", section.content)
+        node.docstring = RE_PARAM.sub(r"* \1  ", node.docstring)
         # convert REPL code blocks to code
-        section.content = RE_REPL.sub(r"```\n\1\2\n```", section.content)
-        section.content = RE_REPL_MLINE.sub(r"\1\2\n\3", section.content)
-        section.content = RE_REPL_MLINE.sub(r"\1\2\n\3", section.content)
-        section.content = RE_REPL_BLOCK.sub(r"\1python\2", section.content)
+        node.docstring = RE_REPL.sub(r"```\n\1\2\n```", node.docstring)
+        node.docstring = RE_REPL_MLINE.sub(r"\1\2\n\3", node.docstring)
+        node.docstring = RE_REPL_MLINE.sub(r"\1\2\n\3", node.docstring)
+        node.docstring = RE_REPL_BLOCK.sub(r"\1python\2", node.docstring)
         # hide <h2> from `nav`
-        section.content = RE_H2.sub(r"<h2>\1</h2>", section.content)
-        # escape underscores in special methods
-        if section.title[:2] == "__" == section.title[-2:]:
-            section.title = r'\_\_' + section.title[2:-2] + r'\_\_'
-        # expose <h1> in `nav`
-        # section.content = RE_H1.sub(r"# `\2` \1\3", section.content)
-        overloadSection(section)
+        node.docstring = RE_H2.sub(r"<h2>\1</h2>", node.docstring)
+
+        return super()._process(node)

@@ -3,7 +3,8 @@ loaders:
   search_path: [..]
 processors:
 - type: filter
-- type: smart
+  exclude_private: false
+- type: custom
 - type: crossref
 renderer:
   type: mkdocs
@@ -19,10 +20,10 @@ renderer:
       contents: [tqdm.std.tqdm*]
     - title: tqdm.notebook
       name: notebook
-      contents: [tqdm.notebook.tqdm*]
+      contents: [tqdm.notebook.t*]
     - title: tqdm.gui
       name: gui
-      contents: [tqdm.gui.tqdm*]
+      contents: [tqdm.gui.t*]
     - title: tqdm.keras
       name: keras
       contents: [tqdm.keras*]
@@ -35,15 +36,12 @@ renderer:
     - title: tqdm.contrib.itertools
       name: contrib.itertools
       contents: [tqdm.contrib.itertools*]
-    - title: tqdm.contrib.bells
-      name: contrib.bells
-      contents: [tqdm.contrib.bells.tqdm*]
     - title: tqdm.contrib.discord
       name: contrib.discord
-      contents: [tqdm.contrib.discord.tqdm*]
+      contents: [tqdm.contrib.discord.t*]
     - title: tqdm.contrib.telegram
       name: contrib.telegram
-      contents: [tqdm.contrib.telegram.tqdm*]
+      contents: [tqdm.contrib.telegram.t*]
     #- title: tqdm.autonotebook
     #  name: autonotebook
     #  contents: [tqdm.autonotebook*]
@@ -53,6 +51,10 @@ renderer:
     #  - tqdm.gui.tgrange
     #  - tqdm.notebook.tnrange
     #  - tqdm.contrib.telegram.ttgrange
+    - title: Shortcuts
+      contents:
+      - tqdm.auto*  # includes autonotebook
+      - tqdm.contrib.bells*
   - title: Developer Documentation
     name: dev
     children:
