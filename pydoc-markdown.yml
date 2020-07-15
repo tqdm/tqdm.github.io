@@ -137,4 +137,5 @@ renderer:
     remote_branch: master
     site_description: A Fast, Extensible Progress Meter
     site_author: Casper da Costa-Luis
-    copyright: 2015-2020
+    copyright: |
+      &copy; Casper da Costa-Luis <a href="https://github.com/casperdcl">@casperdcl</a> 2015-2020
