@@ -10,6 +10,7 @@ build:
 deploy: build
 	git checkout master
 	cp -a build/docs/_site/* .
+	echo '/build/' > .gitignore
 	git add --all
 	git commit -m "update static site"
 	git push
