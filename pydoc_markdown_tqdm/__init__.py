@@ -5,15 +5,14 @@ import re
 RE_PARAM = re.compile(r"^(\w+\s{2,}:.*?)$", flags=re.M)
 RE_H2 = re.compile(r"^(.+?)\n[-]{4,}$", flags=re.M)
 RE_REPL = re.compile(r"^(>>>|\.\.\.)(.*?)$", flags=re.M)
-RE_REPL_MLINE = re.compile(
-    r"^(>>>|\.\.\.)(.*?)\n```\n```\n(>>>|\.\.\.)", flags=re.M)
+RE_REPL_MLINE = re.compile(r"^(>>>|\.\.\.)(.*?)\n```\n```\n(>>>|\.\.\.)", flags=re.M)
 RE_REPL_BLOCK = re.compile(r"^(```)(\n>>>)", flags=re.M)
 # RE_H1 = re.compile(r'^(<h1 id=".*?">)(.*?)(</h1>)$', flags=re.M)
 
 
 class TqdmProcessor(PydocmdProcessor):
     def _process(self, node):
-        if not getattr(node, 'docstring', None):
+        if not getattr(node, "docstring", None):
             return
 
         # convert parameter lists to markdown list
