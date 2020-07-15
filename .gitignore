@@ -1,4 +1,3 @@
-/_build/
-/mkdocs.yml
+/build/
 /*.pyc
 /sources/releases.md

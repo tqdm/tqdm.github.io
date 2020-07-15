@@ -1,0 +1,125 @@
+loaders:
+- type: python
+  search_path: [..]
+processors:
+- type: filter
+- type: smart
+- type: crossref
+renderer:
+  type: mkdocs
+  pages:
+  - title: Home
+    name: index
+    source: sources/index.md
+  - title: Documentation
+    name: docs
+    children:
+    - title: tqdm.tqdm
+      contents: [tqdm.std.tqdm*]
+    - title: tqdm.notebook
+      contents: [tqdm.notebook.tqdm*]
+    - title: tqdm.gui
+      contents: [tqdm.gui.tqdm*]
+    - title: tqdm.keras
+      contents: [tqdm.keras*]
+    - title: tqdm.contrib
+      contents: [tqdm.contrib.tenumerate*, tqdm.contrib.tzip*, tqdm.contrib.tmap*]
+    - title: tqdm.contrib.concurrent
+      contents: [tqdm.contrib.concurrent*]
+    - title: tqdm.contrib.itertools
+      contents: [tqdm.contrib.itertools*]
+    - title: tqdm.contrib.bells
+      contents: [tqdm.contrib.bells.tqdm*]
+    - title: tqdm.contrib.discord
+      contents: [tqdm.contrib.discord.tqdm*]
+    - title: tqdm.contrib.telegram
+      contents: [tqdm.contrib.telegram.tqdm*]
+    #- title: tqdm.autonotebook
+    #  contents: [tqdm.autonotebook*]
+    #- title: Shortcuts
+    #  contents:
+    #  - tqdm.trange
+    #  - tqdm.gui.tgrange
+    #  - tqdm.notebook.tnrange
+    #  - tqdm.contrib.telegram.ttgrange
+  - title: Developer Documentation
+    name: dev
+    children:
+    - title: Warnings and Exceptions
+      contents: [tqdm.std.Tqdm*]
+    - title: tqdm.TMonitor
+      contents: [tqdm._monitor.TMonitor*]
+  - title: Release History
+    name: releases
+    source: sources/releases.md
+  - title: Contributing
+    name: contributing
+    source: ../CONTRIBUTING.md
+  - title: Ports to Other Languages
+    name: ports
+    source: ../wiki/tqdm-ports.md
+  - title: Presentation (PyData)
+    children:
+    - title: Video
+      name: video
+      directory: '..'
+      source: sources/video.md
+    - title: Slides
+      href: PyData2019/slides.html
+  - title: External Links
+    children:
+    - title: Source Code (ENTIRE DOCUMENTATION ON ONE PAGE)
+      href: https://github.com/tqdm/tqdm
+    - title: wiki
+      href: https://github.com/tqdm/tqdm/wiki
+    - title: FAQs
+      href: https://github.com/tqdm/tqdm#faq-and-known-issues
+    - title: Issues
+      href: https://github.com/tqdm/tqdm/issues?q=
+    - title: Downloads
+      children:
+      - title: GitHub
+        href: https://github.com/tqdm/tqdm/releases
+      - title: PyPI
+        href: https://pypi.org/project/tqdm
+      - title: Conda
+        href: https://anaconda.org/conda-forge/tqdm
+    - title: Tests
+      children:
+      - title: Travis CI
+        href: https://travis-ci.org/tqdm/tqdm
+      - title: Coveralls
+        href: https://coveralls.io/github/tqdm/tqdm
+      - title: Codecov
+        href: https://codecov.io/gh/tqdm/tqdm
+      - title: Codacy
+        href: https://www.codacy.com/app/tqdm/tqdm
+      - title: Performance Benchmarks (asv)
+        href: https://tqdm.github.io/tqdm
+    - title: Citations
+      children:
+      - title: DOI (publication)
+        href: https://doi.org/10.21105/joss.01277
+      - title: DOI (code)
+        href: https://doi.org/10.5281/zenodo.595120
+      - title: Metrics (Open Hub)
+        href: https://www.openhub.net/p/tqdm
+  - title: Licence
+    name: licence
+    source: ../LICENCE
+  - title: Video
+    name: video
+    source: sources/video.md
+  mkdocs_config:
+    site_name: "tqdm documentation"
+    repo_url: https://github.com/tqdm/tqdm
+    edit_uri: ../tqdm.github.io/tree/src/sources
+    theme: readthedocs
+    markdown_extensions:
+    - toc:
+        permalink: '#'
+    google_analytics: ['UA-56320088-7', 'tqdm.github.io']
+    remote_branch: master
+    site_description: A Fast, Extensible Progress Meter
+    site_author: Casper da Costa-Luis
+    copyright: 2015-2020
