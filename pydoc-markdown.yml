@@ -8,6 +8,10 @@ processors:
 - type: crossref
 renderer:
   type: mkdocs
+  markdown:
+    source_linker:
+      type: github
+      repo: tqdm/tqdm
   pages:
   - title: Home
     name: index
