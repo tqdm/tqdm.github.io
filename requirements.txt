@@ -1,0 +1,3 @@
+argopt
+tqdm
+git+https://github.com/NiklasRosenstein/pydoc-markdown@develop#egg=pydoc-markdown&subdirectory=pydoc-markdown

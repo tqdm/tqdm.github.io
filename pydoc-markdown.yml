@@ -4,7 +4,7 @@ loaders:
 processors:
 - type: filter
   exclude_private: false
-- type: custom
+- type: pydoc_markdown_tqdm.TqdmProcessor
 - type: crossref
 renderer:
   type: mkdocs
