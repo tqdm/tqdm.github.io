@@ -1,5 +1,5 @@
 .PHONY: serve build deploy clean
-PYDOCMD=pydoc-markdown
+PYDOCMD=PYTHONPATH=. pydoc-markdown
 serve:
 	$(PYDOCMD) -s -o
 build:
