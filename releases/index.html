@@ -94,6 +94,8 @@
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Release History</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#v4480-2020-07-16">v4.48.0 (2020-07-16)</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#v4470-2020-06-28">v4.47.0 (2020-06-28)</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#v4461-2020-06-03">v4.46.1 (2020-06-03)</a>
@@ -371,6 +373,43 @@
             <div class="section">
               
                 <h1 id="tqdmtqdm-releases"><a href="https://github.com/tqdm/tqdm">tqdm/tqdm</a> Releases<a class="headerlink" href="#tqdmtqdm-releases" title="Permanent link">#</a></h1>
+<h2 id="v4480-2020-07-16"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.48.0">v4.48.0</a> <small><small>(2020-07-16)</small></small><a class="headerlink" href="#v4480-2020-07-16" title="Permanent link">#</a></h2>
+<p><a href="https://github.com/tqdm/tqdm/releases/download/v4.48.0/tqdm-4.48.0-py2.py3-none-any.whl">whl</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.48.0/tqdm-4.48.0-py2.py3-none-any.whl.asc">asc</a></p>
+<ul>
+<li>add <code>tqdm.asyncio</code> (<a href="https://github.com/tqdm/tqdm/issues/1004">#1004</a>, <a href="https://github.com/tqdm/tqdm/issues/772">#772</a>, <a href="https://github.com/tqdm/tqdm/issues/91">#91</a> &lt;- <a href="https://github.com/tqdm/tqdm/issues/65">#65</a>)</li>
+<li>supports async iterables (<code>async for row in tqdm(iterable)</code>)</li>
+<li>supports iterables</li>
+<li>supports <code>coroutine.send</code> (<code>tqdm(coroutine).send</code>)</li>
+<li>add <code>as_completed</code> wrapper (<code>for f in tqdm.as_completed(fs)</code>)</li>
+<li>reduce <code>contrib.discord</code> logging verbosity</li>
+<li>fix potential <code>pandas()</code> modifying <code>**kwargs</code> bug</li>
+<li>update documentation</li>
+<li>add missing inline docstrings</li>
+<li>update contributing notes</li>
+<li>update readme</li>
+<li>add to <code>examples/</code> folder<ul>
+<li>async_coroutines</li>
+<li>coroutine_pipe</li>
+</ul>
+</li>
+<li>standardise variable naming</li>
+<li>add tests</li>
+<li>add benchmark tests against popular alternative libraries</li>
+<li>test new functionality</li>
+<li>more thorough <code>miniters</code> test (<a href="https://github.com/tqdm/tqdm/issues/1003">#1003</a>)</li>
+<li>misc framework updates</li>
+<li>tidy changelog helper</li>
+<li>add helper bots<ul>
+<li>comment-bot <code>/tag</code></li>
+<li>post-release-bot</li>
+<li>wiki updater</li>
+<li>website updater</li>
+<li>benchmark regressions</li>
+<li>full/thorough test on schedule &amp; release</li>
+<li>quick test on PR</li>
+</ul>
+</li>
+</ul>
 <h2 id="v4470-2020-06-28"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.47.0">v4.47.0</a> <small><small>(2020-06-28)</small></small><a class="headerlink" href="#v4470-2020-06-28" title="Permanent link">#</a></h2>
 <p><a href="https://github.com/tqdm/tqdm/releases/download/v4.47.0/tqdm-4.47.0-py2.py3-none-any.whl">whl</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.47.0/tqdm-4.47.0-py2.py3-none-any.whl.asc">asc</a></p>
 <ul>
