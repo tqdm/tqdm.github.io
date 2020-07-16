@@ -212,12 +212,14 @@
               
                 <p><a name="tqdm.contrib.concurrent"></a></p>
 <h1 id="tqdmcontribconcurrent">tqdm.contrib.concurrent<a class="headerlink" href="#tqdmcontribconcurrent" title="Permanent link">#</a></h1>
+<p><a href="https://github.com/tqdm/tqdm/blob/72c34809135ff6effd76e8c2c7c6be10ad960fcd/tqdm/contrib/concurrent.py#L1">[view source]</a></p>
 <p>Thin wrappers around <code>concurrent.futures</code>.</p>
 <p><a name="tqdm.contrib.concurrent._executor_map"></a></p>
 <h4 id="_executor_map">_executor_map<a class="headerlink" href="#_executor_map" title="Permanent link">#</a></h4>
 <pre><code class="python">_executor_map(PoolExecutor, fn, *iterables, **tqdm_kwargs)
 </code></pre>
 
+<p><a href="https://github.com/tqdm/tqdm/blob/72c34809135ff6effd76e8c2c7c6be10ad960fcd/tqdm/contrib/concurrent.py#L30">[view source]</a></p>
 <p>Implementation of <code>thread_map</code> and <code>process_map</code>.</p>
 <p><strong>Parameters</strong></p>
 <ul>
@@ -230,6 +232,7 @@
 <pre><code class="python">thread_map(fn, *iterables, **tqdm_kwargs)
 </code></pre>
 
+<p><a href="https://github.com/tqdm/tqdm/blob/72c34809135ff6effd76e8c2c7c6be10ad960fcd/tqdm/contrib/concurrent.py#L60">[view source]</a></p>
 <p>Equivalent of <code>list(map(fn, *iterables))</code>
 driven by <code>concurrent.futures.ThreadPoolExecutor</code>.</p>
 <p><strong>Parameters</strong></p>
@@ -244,6 +247,7 @@ max_workers : int, optional
 <pre><code class="python">process_map(fn, *iterables, **tqdm_kwargs)
 </code></pre>
 
+<p><a href="https://github.com/tqdm/tqdm/blob/72c34809135ff6effd76e8c2c7c6be10ad960fcd/tqdm/contrib/concurrent.py#L78">[view source]</a></p>
 <p>Equivalent of <code>list(map(fn, *iterables))</code>
 driven by <code>concurrent.futures.ProcessPoolExecutor</code>.</p>
 <p><strong>Parameters</strong></p>
