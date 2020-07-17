@@ -12,6 +12,11 @@ renderer:
       type: github
       repo: tqdm/tqdm
       root: ..
+    source_position: before signature
+    source_format: |
+      <span style="float: right; font-size: 75%;">
+      [[view source]]({url})
+      </span>
   pages:
   - title: Home
     name: index

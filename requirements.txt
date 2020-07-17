@@ -1,4 +1,4 @@
 argopt
 tqdm
 mkdocs
-git+https://github.com/tqdm/pydoc-markdown@develop#egg=pydoc-markdown&subdirectory=pydoc-markdown
+pydoc-markdown>=3.3.0,<4
