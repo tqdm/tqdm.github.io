@@ -49,19 +49,9 @@ renderer:
     - title: tqdm.contrib.telegram
       name: contrib.telegram
       contents: [tqdm.contrib.telegram.t*]
-    #- title: tqdm.autonotebook
-    #  name: autonotebook
-    #  contents: [tqdm.autonotebook*]
-    #- title: Shortcuts
-    #  contents:
-    #  - tqdm.trange
-    #  - tqdm.gui.tgrange
-    #  - tqdm.notebook.tnrange
-    #  - tqdm.contrib.telegram.ttgrange
     - title: Shortcuts
-      contents:
-      - tqdm.auto*  # includes autonotebook
-      - tqdm.contrib.bells*
+      # tqdm.trange tqdm.gui.tgrange, tqdm.notebook.tnrange, tqdm.contrib.telegram.ttgrange
+      contents: [tqdm.autonotebook, tqdm.auto, tqdm.contrib.bells]
   - title: Developer Documentation
     name: dev
     children:
