@@ -3,7 +3,6 @@ loaders:
   search_path: [..]
 processors:
 - type: filter
-  exclude_private: false
 - type: pydoc_markdown_tqdm.TqdmProcessor
 - type: crossref
 renderer:
@@ -37,7 +36,7 @@ renderer:
       contents: [tqdm.gui.t*]
     - title: tqdm.contrib
       name: contrib
-      contents: [tqdm.contrib.tenumerate*, tqdm.contrib._tzip*, tqdm.contrib._tmap*]
+      contents: [tqdm.contrib.tenumerate*, tqdm.contrib.tzip*, tqdm.contrib.tmap*]
     - title: tqdm.contrib.concurrent
       name: contrib.concurrent
       contents: [tqdm.contrib.concurrent*]
