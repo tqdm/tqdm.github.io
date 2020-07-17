@@ -26,12 +26,15 @@ renderer:
     - title: tqdm.notebook
       name: notebook
       contents: [tqdm.notebook.t*]
-    - title: tqdm.gui
-      name: gui
-      contents: [tqdm.gui.t*]
+    - title: tqdm.asyncio
+      name: asyncio
+      contents: [tqdm.asyncio*]
     - title: tqdm.keras
       name: keras
       contents: [tqdm.keras*]
+    - title: tqdm.gui
+      name: gui
+      contents: [tqdm.gui.t*]
     - title: tqdm.contrib
       name: contrib
       contents: [tqdm.contrib.tenumerate*, tqdm.contrib._tzip*, tqdm.contrib._tmap*]
