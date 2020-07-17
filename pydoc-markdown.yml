@@ -12,6 +12,7 @@ renderer:
     source_linker:
       type: github
       repo: tqdm/tqdm
+      root: ..
   pages:
   - title: Home
     name: index
