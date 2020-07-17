@@ -216,7 +216,9 @@
               
                 <p><a name="tqdm.contrib.telegram"></a></p>
 <h1 id="tqdmcontribtelegram">tqdm.contrib.telegram<a class="headerlink" href="#tqdmcontribtelegram" title="Permanent link">#</a></h1>
-<p><a href="https://github.com/tqdm/tqdm/blob/b1df116845cf4eff72d7f6b762a11940b4bbfe3b/tqdm/contrib/telegram.py#L1">[view source]</a></p>
+<p><span style="float: right; font-size: 75%;">
+<a href="https://github.com/tqdm/tqdm/blob/54a95bd5f99152bfec74736c127957536b8b10cd/tqdm/contrib/telegram.py#L1">[view source]</a>
+</span></p>
 <p>Sends updates to a Telegram bot.</p>
 <p>Usage:</p>
 <pre><code class="python">&gt;&gt;&gt; from tqdm.contrib.telegram import tqdm, trange
@@ -227,10 +229,12 @@
 <p><img alt="screenshot" src="https://raw.githubusercontent.com/tqdm/img/src/screenshot-telegram.gif" /></p>
 <p><a name="tqdm.contrib.telegram.tqdm_telegram"></a></p>
 <h2 id="tqdm_telegram-objects">tqdm_telegram Objects<a class="headerlink" href="#tqdm_telegram-objects" title="Permanent link">#</a></h2>
+<p><span style="float: right; font-size: 75%;">
+<a href="https://github.com/tqdm/tqdm/blob/54a95bd5f99152bfec74736c127957536b8b10cd/tqdm/contrib/telegram.py#L67">[view source]</a>
+</span></p>
 <pre><code class="python">class tqdm_telegram(tqdm_auto)
 </code></pre>
 
-<p><a href="https://github.com/tqdm/tqdm/blob/b1df116845cf4eff72d7f6b762a11940b4bbfe3b/tqdm/contrib/telegram.py#L67">[view source]</a></p>
 <p>Standard <code>tqdm.auto.tqdm</code> but also sends updates to a Telegram Bot.
 May take a few seconds to create (<code>__init__</code>).</p>
 <ul>
@@ -248,10 +252,12 @@ May take a few seconds to create (<code>__init__</code>).</p>
 
 <p><a name="tqdm.contrib.telegram.tqdm_telegram.__init__"></a></p>
 <h4 id="__init__">__init__<a class="headerlink" href="#__init__" title="Permanent link">#</a></h4>
+<p><span style="float: right; font-size: 75%;">
+<a href="https://github.com/tqdm/tqdm/blob/54a95bd5f99152bfec74736c127957536b8b10cd/tqdm/contrib/telegram.py#L83">[view source]</a>
+</span></p>
 <pre><code class="python"> | __init__(*args, **kwargs)
 </code></pre>
 
-<p><a href="https://github.com/tqdm/tqdm/blob/b1df116845cf4eff72d7f6b762a11940b4bbfe3b/tqdm/contrib/telegram.py#L83">[view source]</a></p>
 <p><strong>Parameters</strong></p>
 <ul>
 <li><strong>token</strong><em>: str, required. Telegram token</em><br />
@@ -262,18 +268,22 @@ May take a few seconds to create (<code>__init__</code>).</p>
 <p>See <code>tqdm.auto.tqdm.__init__</code> for other parameters.</p>
 <p><a name="tqdm.contrib.telegram.tqdm_telegram.__new__"></a></p>
 <h4 id="__new__">__new__<a class="headerlink" href="#__new__" title="Permanent link">#</a></h4>
+<p><span style="float: right; font-size: 75%;">
+<a href="https://github.com/tqdm/tqdm/blob/54a95bd5f99152bfec74736c127957536b8b10cd/tqdm/contrib/telegram.py#L110">[view source]</a>
+</span></p>
 <pre><code class="python"> | __new__(cls, *args, **kwargs)
 </code></pre>
 
-<p><a href="https://github.com/tqdm/tqdm/blob/b1df116845cf4eff72d7f6b762a11940b4bbfe3b/tqdm/contrib/telegram.py#L110">[view source]</a></p>
 <p>Workaround for mixed-class same-stream nested progressbars.
 See <a href="https://github.com/tqdm/tqdm/issues/509"><code>509</code></a></p>
 <p><a name="tqdm.contrib.telegram.ttgrange"></a></p>
 <h4 id="ttgrange">ttgrange<a class="headerlink" href="#ttgrange" title="Permanent link">#</a></h4>
+<p><span style="float: right; font-size: 75%;">
+<a href="https://github.com/tqdm/tqdm/blob/54a95bd5f99152bfec74736c127957536b8b10cd/tqdm/contrib/telegram.py#L131">[view source]</a>
+</span></p>
 <pre><code class="python">ttgrange(*args, **kwargs)
 </code></pre>
 
-<p><a href="https://github.com/tqdm/tqdm/blob/b1df116845cf4eff72d7f6b762a11940b4bbfe3b/tqdm/contrib/telegram.py#L131">[view source]</a></p>
 <p>A shortcut for <code>tqdm.contrib.telegram.tqdm(xrange(*args), **kwargs)</code>.
 On Python3+, <code>range</code> is used instead of <code>xrange</code>.</p>
               
