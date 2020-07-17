@@ -209,9 +209,9 @@
                 <p><a name="tqdm.contrib.bells"></a></p>
 <h1 id="tqdmcontribbells">tqdm.contrib.bells<a class="headerlink" href="#tqdmcontribbells" title="Permanent link">#</a></h1>
 <p><span style="float: right; font-size: 75%;">
-<a href="https://github.com/tqdm/tqdm/blob/54a95bd5f99152bfec74736c127957536b8b10cd/tqdm/contrib/bells.py#L1">[view source]</a>
+<a href="https://github.com/tqdm/tqdm/blob/e243ca7db223d71d0edddd53dfcfa6e605d54b42/tqdm/contrib/bells.py#L1">[view source]</a>
 </span></p>
-<p>All the bells &amp; whistles:</p>
+<p>Even more features than <code>tqdm.auto</code> (all the bells &amp; whistles):</p>
 <ul>
 <li><code>tqdm.auto</code></li>
 <li><code>tqdm.tqdm.pandas</code></li>
@@ -227,9 +227,15 @@
 <p><a name="tqdm.auto"></a></p>
 <h1 id="tqdmauto">tqdm.auto<a class="headerlink" href="#tqdmauto" title="Permanent link">#</a></h1>
 <p><span style="float: right; font-size: 75%;">
-<a href="https://github.com/tqdm/tqdm/blob/54a95bd5f99152bfec74736c127957536b8b10cd/tqdm/auto.py#L1">[view source]</a>
+<a href="https://github.com/tqdm/tqdm/blob/e243ca7db223d71d0edddd53dfcfa6e605d54b42/tqdm/auto.py#L1">[view source]</a>
 </span></p>
-<p><code>tqdm.autonotebook</code> but without import warnings.</p>
+<p>Enables multiple commonly used features.</p>
+<p>Method resolution order:</p>
+<ul>
+<li><code>tqdm.autonotebook</code> without import warnings</li>
+<li><code>tqdm.asyncio</code> on Python3.5+</li>
+<li><code>tqdm.std</code> base class</li>
+</ul>
 <p>Usage:</p>
 <pre><code class="python">&gt;&gt;&gt; from tqdm.auto import trange, tqdm
 &gt;&gt;&gt; for i in trange(10):
@@ -239,7 +245,7 @@
 <p><a name="tqdm.autonotebook"></a></p>
 <h1 id="tqdmautonotebook">tqdm.autonotebook<a class="headerlink" href="#tqdmautonotebook" title="Permanent link">#</a></h1>
 <p><span style="float: right; font-size: 75%;">
-<a href="https://github.com/tqdm/tqdm/blob/54a95bd5f99152bfec74736c127957536b8b10cd/tqdm/autonotebook.py#L1">[view source]</a>
+<a href="https://github.com/tqdm/tqdm/blob/e243ca7db223d71d0edddd53dfcfa6e605d54b42/tqdm/autonotebook.py#L1">[view source]</a>
 </span></p>
 <p>Automatically choose between <code>tqdm.notebook</code> and <code>tqdm.std</code>.</p>
 <p>Usage:</p>
