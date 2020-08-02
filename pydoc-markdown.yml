@@ -115,9 +115,7 @@ renderer:
         href: https://tqdm.github.io/tqdm
     - title: Citations
       children:
-      - title: DOI (publication)
-        href: https://doi.org/10.21105/joss.01277
-      - title: DOI (code)
+      - title: DOI
         href: https://doi.org/10.5281/zenodo.595120
       - title: Metrics (Open Hub)
         href: https://www.openhub.net/p/tqdm
