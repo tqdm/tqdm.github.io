@@ -96,6 +96,8 @@
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Release History</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#v4481-2020-08-03">v4.48.1 (2020-08-03)</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#v4480-2020-07-16">v4.48.0 (2020-07-16)</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#v4470-2020-06-28">v4.47.0 (2020-06-28)</a>
@@ -373,6 +375,24 @@
             <div class="section">
               
                 <h1 id="tqdmtqdm-releases"><a href="https://github.com/tqdm/tqdm">tqdm/tqdm</a> Releases<a class="headerlink" href="#tqdmtqdm-releases" title="Permanent link">#</a></h1>
+<h2 id="v4481-2020-08-03"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.48.1">v4.48.1</a> <small><small>(2020-08-03)</small></small><a class="headerlink" href="#v4481-2020-08-03" title="Permanent link">#</a></h2>
+<p><a href="https://github.com/tqdm/tqdm/releases/download/v4.48.1/tqdm-4.48.1-py2.py3-none-any.whl">whl</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.48.1/tqdm-4.48.1-py2.py3-none-any.whl.asc">asc</a></p>
+<ul>
+<li>fix ANSI escape codes breaking <code>tqdm.write</code> (<a href="https://github.com/tqdm/tqdm/issues/692">#692</a>, <a href="https://github.com/tqdm/tqdm/issues/777">#777</a>)</li>
+<li>fix long-lived strongref (<a href="https://github.com/tqdm/tqdm/issues/1007">#1007</a>, https://bugs.python.org/issue39093)</li>
+<li>fix cli <code>--version</code> crash on missing <code>git/refs/heads</code> (<a href="https://github.com/tqdm/tqdm/issues/635">#635</a>)</li>
+<li>fix <code>contrib.tenumerate</code> ignoring <code>total</code> (<a href="https://github.com/tqdm/tqdm/issues/1017">#1017</a>)</li>
+<li>fix potential deep =&gt; shallow <code>kwargs</code> copy issues</li>
+<li>improve <code>notebook</code> display for unknown <code>total</code> (<a href="https://github.com/tqdm/tqdm/issues/1015">#1015</a>)</li>
+<li>make <code>asyncio</code> inherit from <code>std</code> rather than <code>auto</code></li>
+<li>make <code>auto</code> multi-inherit from <code>autonotebook</code>, <code>asyncio</code> on Python3.5+</li>
+<li>misc documentation &amp; examples updates<ul>
+<li>mention <code>docker-compose</code> requirements (<a href="https://github.com/tqdm/tqdm/issues/771">#771</a>)</li>
+</ul>
+</li>
+<li>misc linting &amp; tidy</li>
+<li>misc minor testing framework updates</li>
+</ul>
 <h2 id="v4480-2020-07-16"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.48.0">v4.48.0</a> <small><small>(2020-07-16)</small></small><a class="headerlink" href="#v4480-2020-07-16" title="Permanent link">#</a></h2>
 <p><a href="https://github.com/tqdm/tqdm/releases/download/v4.48.0/tqdm-4.48.0-py2.py3-none-any.whl">whl</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.48.0/tqdm-4.48.0-py2.py3-none-any.whl.asc">asc</a></p>
 <ul>

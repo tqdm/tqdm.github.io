@@ -77,6 +77,10 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#tenumerate">tenumerate</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tzip">tzip</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tmap">tmap</a>
+    </li>
     </ul>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../contrib.concurrent/">tqdm.contrib.concurrent</a>
@@ -209,19 +213,47 @@
                 <p><a name="tqdm.contrib"></a></p>
 <h1 id="tqdmcontrib">tqdm.contrib<a class="headerlink" href="#tqdmcontrib" title="Permanent link">#</a></h1>
 <p><span style="float: right; font-size: 75%;">
-<a href="https://github.com/tqdm/tqdm/blob/51509746a5e9de3c6e267340d5e88630d0f41b7d/tqdm/contrib/__init__.py#L1">[view source]</a>
+<a href="https://github.com/tqdm/tqdm/blob/84923d7152e88f60527092b569008326b6901246/tqdm/contrib/__init__.py#L1">[view source]</a>
 </span></p>
 <p>Thin wrappers around common functions.</p>
 <p>Subpackages contain potentially unstable extensions.</p>
 <p><a name="tqdm.contrib.tenumerate"></a></p>
 <h4 id="tenumerate">tenumerate<a class="headerlink" href="#tenumerate" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
-<a href="https://github.com/tqdm/tqdm/blob/51509746a5e9de3c6e267340d5e88630d0f41b7d/tqdm/contrib/__init__.py#L24">[view source]</a>
+<a href="https://github.com/tqdm/tqdm/blob/84923d7152e88f60527092b569008326b6901246/tqdm/contrib/__init__.py#L33">[view source]</a>
 </span></p>
 <pre><code class="python">tenumerate(iterable, start=0, total=None, tqdm_class=tqdm_auto, **tqdm_kwargs)
 </code></pre>
 
 <p>Equivalent of <code>numpy.ndenumerate</code> or builtin <code>enumerate</code>.</p>
+<p><strong>Parameters</strong></p>
+<ul>
+<li><strong>tqdm_class</strong><em>: [default: tqdm.auto.tqdm].</em>  </li>
+</ul>
+<p><a name="tqdm.contrib.tzip"></a></p>
+<h4 id="tzip">tzip<a class="headerlink" href="#tzip" title="Permanent link">#</a></h4>
+<p><span style="float: right; font-size: 75%;">
+<a href="https://github.com/tqdm/tqdm/blob/84923d7152e88f60527092b569008326b6901246/tqdm/contrib/__init__.py#L54">[view source]</a>
+</span></p>
+<pre><code class="python">@builtin_iterable
+tzip(iter1, *iter2plus, **tqdm_kwargs)
+</code></pre>
+
+<p>Equivalent of builtin <code>zip</code>.</p>
+<p><strong>Parameters</strong></p>
+<ul>
+<li><strong>tqdm_class</strong><em>: [default: tqdm.auto.tqdm].</em>  </li>
+</ul>
+<p><a name="tqdm.contrib.tmap"></a></p>
+<h4 id="tmap">tmap<a class="headerlink" href="#tmap" title="Permanent link">#</a></h4>
+<p><span style="float: right; font-size: 75%;">
+<a href="https://github.com/tqdm/tqdm/blob/84923d7152e88f60527092b569008326b6901246/tqdm/contrib/__init__.py#L69">[view source]</a>
+</span></p>
+<pre><code class="python">@builtin_iterable
+tmap(function, *sequences, **tqdm_kwargs)
+</code></pre>
+
+<p>Equivalent of builtin <code>map</code>.</p>
 <p><strong>Parameters</strong></p>
 <ul>
 <li><strong>tqdm_class</strong><em>: [default: tqdm.auto.tqdm].</em>  </li>
