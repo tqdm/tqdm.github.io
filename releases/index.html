@@ -96,6 +96,8 @@
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Release History</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#v4490-2020-09-12">v4.49.0 (2020-09-12)</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#v4482-2020-08-03">v4.48.2 (2020-08-03)</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#v4481-2020-08-03">v4.48.1 (2020-08-03)</a>
@@ -377,6 +379,24 @@
             <div class="section">
               
                 <h1 id="tqdmtqdm-releases"><a href="https://github.com/tqdm/tqdm">tqdm/tqdm</a> Releases<a class="headerlink" href="#tqdmtqdm-releases" title="Permanent link">#</a></h1>
+<h2 id="v4490-2020-09-12"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.49.0">v4.49.0</a> <small><small>(2020-09-12)</small></small><a class="headerlink" href="#v4490-2020-09-12" title="Permanent link">#</a></h2>
+<p><a href="https://github.com/tqdm/tqdm/releases/download/v4.49.0/tqdm-4.49.0-py2.py3-none-any.whl">whl</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.49.0/tqdm-4.49.0-py2.py3-none-any.whl.asc">asc</a></p>
+<ul>
+<li>🎉 CLI: add <code>--tee</code> (<a href="https://github.com/tqdm/tqdm/issues/1014">#1014</a> &lt;- <a href="https://github.com/tqdm/tqdm/issues/1013">#1013</a>)</li>
+<li>🎉 CLI: add <code>--update</code> and <code>--update_to</code> (<a href="https://github.com/tqdm/tqdm/issues/996">#996</a> &lt;- <a href="https://github.com/tqdm/tqdm/issues/975">#975</a>)</li>
+<li>🎉 CLI: add <code>--null</code> (<a href="https://github.com/tqdm/tqdm/issues/996">#996</a>)</li>
+<li>🔨 CLI: accept <code>-</code> instead of <code>_</code> in options (e.g. <code>--update-to</code>)</li>
+<li>🔨 make <code>update()</code> return <code>True</code> on <code>display</code> to ease efficient use of custom callbacks (<a href="https://github.com/tqdm/tqdm/issues/845">#845</a>)</li>
+<li>🧯 fix <code>py&gt;=3</code> CLI <code>--delim</code> encoding error</li>
+<li>🧯 fix <code>py&gt;=3.5</code> version detection in <code>tqdm.auto</code> (<a href="https://github.com/tqdm/tqdm/issues/1029">#1029</a> &lt;- <a href="https://github.com/tqdm/tqdm/issues/1028">#1028</a>)</li>
+<li>🧯 fix final ETA when using <code>initial</code> (<a href="https://github.com/tqdm/tqdm/issues/1021">#1021</a> &lt;- <a href="https://github.com/tqdm/tqdm/issues/689">#689</a>)</li>
+<li>📘 update documentation<ul>
+<li>add &amp; update custom callback examples</li>
+<li>improve help formatting of boolean CLI options</li>
+</ul>
+</li>
+<li>🔍 add &amp; update tests</li>
+</ul>
 <h2 id="v4482-2020-08-03"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.48.2">v4.48.2</a> <small><small>(2020-08-03)</small></small><a class="headerlink" href="#v4482-2020-08-03" title="Permanent link">#</a></h2>
 <p><a href="https://github.com/tqdm/tqdm/releases/download/v4.48.2/tqdm-4.48.2-py2.py3-none-any.whl">whl</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.48.2/tqdm-4.48.2-py2.py3-none-any.whl.asc">asc</a></p>
 <ul>
