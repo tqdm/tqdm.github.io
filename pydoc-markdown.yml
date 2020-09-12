@@ -39,6 +39,9 @@ renderer:
     - title: tqdm.gui
       name: gui
       contents: [tqdm.gui.t*]
+    - title: CLI
+      name: cli
+      source: sources/cli.md
     - title: tqdm.contrib
       name: contrib
       contents: [tqdm.contrib.tenumerate*, tqdm.contrib.tzip*, tqdm.contrib.tmap*]
