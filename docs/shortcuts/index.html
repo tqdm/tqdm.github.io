@@ -73,6 +73,8 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../gui/">tqdm.gui</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../cli/">CLI</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="../contrib/">tqdm.contrib</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../contrib.concurrent/">tqdm.contrib.concurrent</a>
@@ -204,7 +206,25 @@
           <div role="main">
             <div class="section">
               
-                <p><a name="tqdm.auto"></a></p>
+                <p><a name="tqdm.contrib.bells"></a></p>
+<h1 id="tqdmcontribbells">tqdm.contrib.bells<a class="headerlink" href="#tqdmcontribbells" title="Permanent link">#</a></h1>
+<p><span style="float: right; font-size: 75%;">
+<a href="https://github.com/tqdm/tqdm/blob/f4b172f7ec7598d75df094eb713c5be5370033bc/tqdm/contrib/bells.py#L1">[view source]</a>
+</span></p>
+<p>Even more features than <code>tqdm.auto</code> (all the bells &amp; whistles):</p>
+<ul>
+<li><code>tqdm.auto</code></li>
+<li><code>tqdm.tqdm.pandas</code></li>
+<li><code>tqdm.contrib.telegram</code><ul>
+<li>uses <code>${TQDM_TELEGRAM_TOKEN}</code> and <code>${TQDM_TELEGRAM_CHAT_ID}</code></li>
+</ul>
+</li>
+<li><code>tqdm.contrib.discord</code><ul>
+<li>uses <code>${TQDM_DISCORD_TOKEN}</code> and <code>${TQDM_DISCORD_CHANNEL_ID}</code></li>
+</ul>
+</li>
+</ul>
+<p><a name="tqdm.auto"></a></p>
 <h1 id="tqdmauto">tqdm.auto<a class="headerlink" href="#tqdmauto" title="Permanent link">#</a></h1>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/f4b172f7ec7598d75df094eb713c5be5370033bc/tqdm/auto.py#L1">[view source]</a>
@@ -233,25 +253,6 @@
 &gt;&gt;&gt; for i in trange(10):
 ...     ...
 </code></pre>
-
-<p><a name="tqdm.contrib.bells"></a></p>
-<h1 id="tqdmcontribbells">tqdm.contrib.bells<a class="headerlink" href="#tqdmcontribbells" title="Permanent link">#</a></h1>
-<p><span style="float: right; font-size: 75%;">
-<a href="https://github.com/tqdm/tqdm/blob/f4b172f7ec7598d75df094eb713c5be5370033bc/tqdm/contrib/bells.py#L1">[view source]</a>
-</span></p>
-<p>Even more features than <code>tqdm.auto</code> (all the bells &amp; whistles):</p>
-<ul>
-<li><code>tqdm.auto</code></li>
-<li><code>tqdm.tqdm.pandas</code></li>
-<li><code>tqdm.contrib.telegram</code><ul>
-<li>uses <code>${TQDM_TELEGRAM_TOKEN}</code> and <code>${TQDM_TELEGRAM_CHAT_ID}</code></li>
-</ul>
-</li>
-<li><code>tqdm.contrib.discord</code><ul>
-<li>uses <code>${TQDM_DISCORD_TOKEN}</code> and <code>${TQDM_DISCORD_CHANNEL_ID}</code></li>
-</ul>
-</li>
-</ul>
               
             </div>
           </div>
