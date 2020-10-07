@@ -226,25 +226,23 @@
 abbreviation for "I love you so much" in Spanish (<em>te quiero demasiado</em>).</p>
 <p>Instantly make your loops show a smart progress meter - just wrap any
 iterable with <code>tqdm(iterable)</code>, and you're done!</p>
-<pre><code class="python">from tqdm import tqdm
+<pre><code class="language-python">from tqdm import tqdm
 for i in tqdm(range(10000)):
     ...
 </code></pre>
-
 <p><code>76%|████████████████████████████         | 7568/10000 [00:33&lt;00:10, 229.00it/s]</code></p>
 <p><code>trange(N)</code> can be also used as a convenient shortcut for
 <code>tqdm(xrange(N))</code>.</p>
 <p><img alt="Screenshot" src="https://raw.githubusercontent.com/tqdm/tqdm/master/images/tqdm.gif" /></p>
 <p><a href="/video"><img alt="Video" src="https://raw.githubusercontent.com/tqdm/tqdm/master/images/video.jpg" /></a> <a href="/PyData2019/slides.html"><img alt="Slides" src="https://raw.githubusercontent.com/tqdm/tqdm/master/images/slides.jpg" /></a></p>
 <p>It can also be executed as a module with pipes:</p>
-<pre><code class="sh">$ seq 9999999 | tqdm --bytes | wc -l
+<pre><code class="language-sh">$ seq 9999999 | tqdm --bytes | wc -l
 75.2MB [00:00, 217MB/s]
 9999999
 $ 7z a -bd -r backup.7z docs/ | grep Compressing | \
     tqdm --total $(find docs/ -type f | wc -l) --unit files &gt;&gt; backup.log
 100%|███████████████████████████████▉| 8014/8014 [01:37&lt;00:00, 82.29files/s]
 </code></pre>
-
 <p>Overhead is low -- about 60ns per iteration (80ns with <code>tqdm_gui</code>), and
 is unit tested against performance regression. By comparison, the
 well-established
@@ -321,5 +319,5 @@ Python and an environment supporting <code>carriage return \r</code> and
 
 <!--
 MkDocs version : 1.1.2
-Build Date UTC : 2020-09-28 01:20:19.523668+00:00
+Build Date UTC : 2020-10-07 12:12:26.452229+00:00
 -->
