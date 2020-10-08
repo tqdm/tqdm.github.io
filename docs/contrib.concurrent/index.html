@@ -79,6 +79,8 @@
                     </li>
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">tqdm.contrib.concurrent</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#ensure_lock">ensure_lock</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#thread_map">thread_map</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#process_map">process_map</a>
@@ -213,29 +215,40 @@
                 <p><a name="tqdm.contrib.concurrent"></a></p>
 <h1 id="tqdmcontribconcurrent">tqdm.contrib.concurrent<a class="headerlink" href="#tqdmcontribconcurrent" title="Permanent link">#</a></h1>
 <p><span style="float: right; font-size: 75%;">
-<a href="https://github.com/tqdm/tqdm/blob/03a5d6c2fca86e8f71ab8e6cab07c261bc143ea8/tqdm/contrib/concurrent.py#L1">[view source]</a>
+<a href="https://github.com/tqdm/tqdm/blob/8f9e03d1cf03db41ff9790091831d9583c7f229f/tqdm/contrib/concurrent.py#L1">[view source]</a>
 </span></p>
 <p>Thin wrappers around <code>concurrent.futures</code>.</p>
+<p><a name="tqdm.contrib.concurrent.ensure_lock"></a></p>
+<h4 id="ensure_lock">ensure_lock<a class="headerlink" href="#ensure_lock" title="Permanent link">#</a></h4>
+<p><span style="float: right; font-size: 75%;">
+<a href="https://github.com/tqdm/tqdm/blob/8f9e03d1cf03db41ff9790091831d9583c7f229f/tqdm/contrib/concurrent.py#L31">[view source]</a>
+</span></p>
+<pre><code class="language-python">@contextmanager
+ensure_lock(tqdm_class, lock_name=&quot;&quot;)
+</code></pre>
+<p>get (create if necessary) and then restore <code>tqdm_class</code>'s lock</p>
 <p><a name="tqdm.contrib.concurrent.thread_map"></a></p>
 <h4 id="thread_map">thread_map<a class="headerlink" href="#thread_map" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
-<a href="https://github.com/tqdm/tqdm/blob/03a5d6c2fca86e8f71ab8e6cab07c261bc143ea8/tqdm/contrib/concurrent.py#L59">[view source]</a>
+<a href="https://github.com/tqdm/tqdm/blob/8f9e03d1cf03db41ff9790091831d9583c7f229f/tqdm/contrib/concurrent.py#L76">[view source]</a>
 </span></p>
 <pre><code class="language-python">thread_map(fn, *iterables, **tqdm_kwargs)
 </code></pre>
 <p>Equivalent of <code>list(map(fn, *iterables))</code>
 driven by <code>concurrent.futures.ThreadPoolExecutor</code>.</p>
 <p><strong>Parameters</strong></p>
-<p>tqdm_class : optional
-    <code>tqdm</code> class to use for bars [default: tqdm.auto.tqdm].
-max_workers : int, optional
+<ul>
+<li><strong>tqdm_class</strong><em>: optional</em><br />
+<code>tqdm</code> class to use for bars [default: tqdm.auto.tqdm].</li>
+<li><strong>max_workers</strong><em>: int, optional</em><br />
     Maximum number of workers to spawn; passed to
     <code>concurrent.futures.ThreadPoolExecutor.__init__</code>.
-    [default: max(32, cpu_count() + 4)].</p>
+    [default: max(32, cpu_count() + 4)].</li>
+</ul>
 <p><a name="tqdm.contrib.concurrent.process_map"></a></p>
 <h4 id="process_map">process_map<a class="headerlink" href="#process_map" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
-<a href="https://github.com/tqdm/tqdm/blob/03a5d6c2fca86e8f71ab8e6cab07c261bc143ea8/tqdm/contrib/concurrent.py#L77">[view source]</a>
+<a href="https://github.com/tqdm/tqdm/blob/8f9e03d1cf03db41ff9790091831d9583c7f229f/tqdm/contrib/concurrent.py#L94">[view source]</a>
 </span></p>
 <pre><code class="language-python">process_map(fn, *iterables, **tqdm_kwargs)
 </code></pre>
@@ -244,14 +257,16 @@ driven by <code>concurrent.futures.ProcessPoolExecutor</code>.</p>
 <p><strong>Parameters</strong></p>
 <ul>
 <li><strong>tqdm_class</strong><em>: optional</em><br />
-<code>tqdm</code> class to use for bars [default: tqdm.auto.tqdm].
-max_workers : int, optional
+<code>tqdm</code> class to use for bars [default: tqdm.auto.tqdm].</li>
+<li><strong>max_workers</strong><em>: int, optional</em><br />
     Maximum number of workers to spawn; passed to
     <code>concurrent.futures.ProcessPoolExecutor.__init__</code>.
-    [default: min(32, cpu_count() + 4)].
-chunksize : int, optional
+    [default: min(32, cpu_count() + 4)].</li>
+<li><strong>chunksize</strong><em>: int, optional</em><br />
     Size of chunks sent to worker processes; passed to
     <code>concurrent.futures.ProcessPoolExecutor.map</code>. [default: 1].</li>
+<li><strong>lock_name</strong><em>: str, optional</em><br />
+    Member of <code>tqdm_class.get_lock()</code> to use [default: mp_lock].</li>
 </ul>
               
             </div>
