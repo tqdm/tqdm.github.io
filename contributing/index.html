@@ -110,7 +110,7 @@
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#standard-unit-tests">Standard unit tests</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#alternative-unit-tests-with-nose">Alternative unit tests with Nose</a>
+    <li class="toctree-l3"><a class="reference internal" href="#alternative-unit-tests-with-pytest">Alternative unit tests with pytest</a>
     </li>
         </ul>
     </li>
@@ -313,10 +313,10 @@ in <a href="https://raw.githubusercontent.com/tqdm/tqdm/master/tox.ini">tox.ini<
 you can use <code>MiniConda</code> to install a minimal setup. You must also make sure
 that each distribution has an alias to call the Python interpreter:
 <code>python27</code> for Python 2.7's interpreter, <code>python32</code> for Python 3.2's, etc.</p>
-<h3 id="alternative-unit-tests-with-nose">Alternative unit tests with Nose<a class="headerlink" href="#alternative-unit-tests-with-nose" title="Permanent link">#</a></h3>
-<p>Alternatively, use <code>nose</code> to run the tests just for the current Python version:</p>
+<h3 id="alternative-unit-tests-with-pytest">Alternative unit tests with pytest<a class="headerlink" href="#alternative-unit-tests-with-pytest" title="Permanent link">#</a></h3>
+<p>Alternatively, use <code>pytest</code> to run the tests just for the current Python version:</p>
 <ul>
-<li>install <code>nose</code> and <code>flake8</code></li>
+<li>install <code>pytest</code> and <code>flake8</code></li>
 <li>run the following command:</li>
 </ul>
 <pre><code>[python setup.py] make alltests
