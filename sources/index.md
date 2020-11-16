@@ -12,14 +12,15 @@ tqdm
 [![binder-demo](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tqdm/tqdm/master?filepath=DEMO.ipynb)
 [![notebook-demo](https://img.shields.io/badge/launch-notebook-orange.svg?logo=jupyter)](https://notebooks.ai/demo/gh/tqdm/tqdm)
 
-[![Build-Status](https://img.shields.io/travis/tqdm/tqdm/master.svg?logo=travis)](https://travis-ci.org/tqdm/tqdm)
-[![Coverage-Status](https://coveralls.io/repos/tqdm/tqdm/badge.svg?branch=master)](https://coveralls.io/github/tqdm/tqdm)
+[![Build-Status](https://img.shields.io/github/workflow/status/tqdm/tqdm/Test/master?logo=GitHub)](https://github.com/tqdm/tqdm/actions?query=workflow%3ATest)
+[![Coverage-Status](https://img.shields.io/coveralls/github/tqdm/tqdm/master?logo=coveralls)](https://coveralls.io/github/tqdm/tqdm)
 [![Branch-Coverage-Status](https://codecov.io/gh/tqdm/tqdm/branch/master/graph/badge.svg)](https://codecov.io/gh/tqdm/tqdm)
 [![Codacy-Grade](https://api.codacy.com/project/badge/Grade/3f965571598f44549c7818f29cdcf177)](https://www.codacy.com/app/tqdm/tqdm/dashboard)
 <br/>
 [![PyPI-Downloads](https://img.shields.io/pypi/dm/tqdm.svg?label=pypi%20downloads&logo=python&logoColor=white)](https://pypi.org/project/tqdm)
 [![Libraries-Rank](https://img.shields.io/librariesio/sourcerank/pypi/tqdm.svg?logo=koding&logoColor=white)](https://libraries.io/pypi/tqdm)
 [![Repology](https://repology.org/badge/tiny-repos/python:tqdm.svg)](https://repology.org/project/python:tqdm/versions)
+[![awesome-python](https://awesome.re/mentioned-badge.svg)](https://github.com/vinta/awesome-python)
 [![README-Hits](https://caspersci.uk.to/cgi-bin/hits.cgi?q=tqdm&style=social&r=https://github.com/tqdm/tqdm&l=https://caspersci.uk.to/images/tqdm.png&f=https://raw.githubusercontent.com/tqdm/tqdm/master/images/logo.gif)](https://caspersci.uk.to/cgi-bin/hits.cgi?q=tqdm&a=plot&r=https://github.com/tqdm/tqdm&l=https://caspersci.uk.to/images/tqdm.png&f=https://raw.githubusercontent.com/tqdm/tqdm/master/images/logo.gif&style=social)
 ---
 
