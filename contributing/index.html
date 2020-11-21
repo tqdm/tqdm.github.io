@@ -333,8 +333,6 @@ Also consider <code>pip install</code>ing development utilities:
 <h2 id="semantic-versioning">Semantic Versioning<a class="headerlink" href="#semantic-versioning" title="Permanent link">#</a></h2>
 <p>The tqdm repository managers should:</p>
 <ul>
-<li>regularly bump the version number in the file
-<a href="https://raw.githubusercontent.com/tqdm/tqdm/master/tqdm/_version.py">_version.py</a></li>
 <li>follow the <a href="https://semver.org/">Semantic Versioning</a> convention</li>
 <li>take care of this (instead of users) to avoid PR conflicts
 solely due to the version file bumping</li>
@@ -378,12 +376,7 @@ git merge --no-ff pr-branch-name
 <h3 id="4-test">4 Test<a class="headerlink" href="#4-test" title="Permanent link">#</a></h3>
 <pre><code>[python setup.py] make alltests
 </code></pre>
-<h3 id="5-version">5 Version<a class="headerlink" href="#5-version" title="Permanent link">#</a></h3>
-<p>Modify <code>tqdm/_version.py</code> and amend the last (merge) commit:</p>
-<pre><code>git add tqdm/_version.py
-git commit --amend  # Add &quot;+ bump version&quot; in the commit message
-</code></pre>
-<h3 id="6-push-to-master">6 Push to master<a class="headerlink" href="#6-push-to-master" title="Permanent link">#</a></h3>
+<h3 id="5-push-to-master">5 Push to master<a class="headerlink" href="#5-push-to-master" title="Permanent link">#</a></h3>
 <pre><code>git push origin master
 </code></pre>
 <h2 id="building-a-release-and-uploading-to-pypi">Building a Release and Uploading to PyPI<a class="headerlink" href="#building-a-release-and-uploading-to-pypi" title="Permanent link">#</a></h2>
@@ -488,14 +481,13 @@ to assist with maintenance.</p>
 </ul>
 <h2 id="quick-dev-summary">QUICK DEV SUMMARY<a class="headerlink" href="#quick-dev-summary" title="Permanent link">#</a></h2>
 <p>For experienced devs, once happy with local master, follow the steps below.
-Much is automated so really it's steps 1-6, then 12(a).</p>
+Much is automated so really it's steps 1-5, then 11(a).</p>
 <ol>
-<li>bump version in <code>tqdm/_version.py</code></li>
 <li>test (<code>[python setup.py] make alltests</code>)</li>
 <li><code>git commit [--amend]  # -m "bump version"</code></li>
 <li><code>git push</code></li>
 <li>wait for tests to pass
-    a) in case of failure, fix and go back to (2)</li>
+    a) in case of failure, fix and go back to (1)</li>
 <li><code>git tag vM.m.p &amp;&amp; git push --tags</code> or comment <code>/tag vM.m.p commit_hash</code></li>
 <li><strong><code>[AUTO:GHA]</code></strong> <code>[python setup.py] make distclean</code></li>
 <li><strong><code>[AUTO:GHA]</code></strong> <code>[python setup.py] make build</code></li>

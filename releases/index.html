@@ -98,6 +98,8 @@
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Release History</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#v4530-2020-11-21">v4.53.0 (2020-11-21)</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#v4520-2020-11-16">v4.52.0 (2020-11-16)</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#v4510-2020-10-25">v4.51.0 (2020-10-25)</a>
@@ -391,6 +393,33 @@
             <div class="section">
               
                 <h1 id="tqdmtqdm-releases"><a href="https://github.com/tqdm/tqdm">tqdm/tqdm</a> Releases<a class="headerlink" href="#tqdmtqdm-releases" title="Permanent link">#</a></h1>
+<h2 id="v4530-2020-11-21"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.53.0">v4.53.0</a> <small><small>(2020-11-21)</small></small><a class="headerlink" href="#v4530-2020-11-21" title="Permanent link">#</a></h2>
+<p><a href="https://github.com/tqdm/tqdm/releases/download/v4.53.0/tqdm-4.53.0-py2.py3-none-any.whl">whl</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.53.0/tqdm-4.53.0-py2.py3-none-any.whl.asc">asc</a></p>
+<ul>
+<li>🔨 provide <code>get_new()</code> helper for mixed subclasses in nested mode (<a href="https://github.com/tqdm/tqdm/issues/509">#509</a>)</li>
+<li>🧯 fix nested <code>asyncio</code> (<a href="https://github.com/tqdm/tqdm/issues/1074">#1074</a>)<ul>
+<li>document async <code>break</code> hazard</li>
+</ul>
+</li>
+<li>🔍 add tests</li>
+<li>🔨 drop py2.6/3.2/3.3 and distutils (no longer tested)<ul>
+<li>drop py2.6 (<a href="https://github.com/tqdm/tqdm/issues/502">#502</a> &lt;- <a href="https://github.com/tqdm/tqdm/issues/620">#620</a>, <a href="https://github.com/tqdm/tqdm/issues/127">#127</a>)</li>
+<li>drop <code>distutils</code> in favour of <code>setuptools</code>/<code>setup.cfg</code> (<a href="https://github.com/tqdm/tqdm/issues/723">#723</a>, <a href="https://github.com/tqdm/tqdm/issues/721">#721</a>)</li>
+</ul>
+</li>
+<li>🛠 CI framework overhaul<ul>
+<li>drop appveyor (Windows already tested by GHA)</li>
+<li>skip <code>devel</code> PRs</li>
+<li>automate linting comments on failure</li>
+</ul>
+</li>
+<li>🔨 use <code>setuptools_scm</code> (<a href="https://github.com/tqdm/tqdm/issues/722">#722</a>)<ul>
+<li>fix &amp; update tests</li>
+<li>fix &amp; upgrade snap build</li>
+<li>update CONTRIBUTING docs</li>
+</ul>
+</li>
+</ul>
 <h2 id="v4520-2020-11-16"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.52.0">v4.52.0</a> <small><small>(2020-11-16)</small></small><a class="headerlink" href="#v4520-2020-11-16" title="Permanent link">#</a></h2>
 <p><a href="https://github.com/tqdm/tqdm/releases/download/v4.52.0/tqdm-4.52.0-py2.py3-none-any.whl">whl</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.52.0/tqdm-4.52.0-py2.py3-none-any.whl.asc">asc</a></p>
 <ul>
