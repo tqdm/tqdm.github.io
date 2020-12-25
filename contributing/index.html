@@ -326,7 +326,7 @@ that each distribution has an alias to call the Python interpreter:
 how to build and upload a new release. Once again,
 <code>[python setup.py] make [&lt;alias&gt;]</code> will help.
 Also consider <code>pip install</code>ing development utilities:
-<code>-r requirements-dev.txt</code> or <code>tqdm[dev]</code>.</p>
+<code>pip install tqdm[dev]</code> at a minimum, or a more thorough <code>conda env create</code>.</p>
 <h2 id="pre-commit-hook">Pre-commit Hook<a class="headerlink" href="#pre-commit-hook" title="Permanent link">#</a></h2>
 <p>It's probably a good idea to add <code>[python setup.py] make pre-commit</code> to
 <code>.git/hooks/pre-commit</code> for convenient local sanity-checking.</p>
