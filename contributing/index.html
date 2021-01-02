@@ -265,10 +265,7 @@ However it would be helpful to bear in mind:</p>
 </ul>
 </li>
 <li>Any other kind of change may be included in a (possibly new) submodule<ul>
-<li>submodules are likely single python files under the main <a href="tqdm/">tqdm/</a> directory<ul>
-<li>large submodules requiring a sub-folder should be included in <a href="MANIFEST.in"><code>MANIFEST.in</code></a></li>
-</ul>
-</li>
+<li>submodules are likely single python files under the main <a href="tqdm/">tqdm/</a> directory</li>
 <li>submodules extending <code>tqdm.std.tqdm</code> or any other module (e.g. <a href="tqdm/notebook.py"><code>tqdm.notebook.tqdm</code></a>, <a href="tqdm/gui.py"><code>tqdm.gui.tqdm</code></a>)</li>
 <li>CLI wrapper <code>tqdm.cli</code><ul>
 <li>if a newly added <code>tqdm.std.tqdm</code> option is not supported by the CLI, append to <code>tqdm.cli.UNSUPPORTED_OPTS</code></li>
@@ -284,7 +281,7 @@ However it would be helpful to bear in mind:</p>
 </ul>
 </li>
 <li><code>.meta/</code><ul>
-<li>A "hidden" folder containing helper utilities not strictly part of <code>tqdm</code> distribution itself</li>
+<li>A "hidden" folder containing helper utilities not strictly part of the <code>tqdm</code> distribution itself</li>
 </ul>
 </li>
 </ul>
@@ -341,8 +338,8 @@ solely due to the version file bumping</li>
 <a href="https://github.com/peritus/bumpversion">bumpversion</a> or
 <a href="https://github.com/rbarrois/python-semanticversion/">python-semanticversion</a>.</p>
 <h2 id="checking-setuppy">Checking setup.py<a class="headerlink" href="#checking-setuppy" title="Permanent link">#</a></h2>
-<p>To check that the <code>setup.py</code> file is compliant with PyPI requirements (e.g.
-version number; reStructuredText in <code>README.rst</code>) use:</p>
+<p>To check that the <code>setup.py</code>/<code>setup.cfg</code> file is compliant with PyPI
+requirements (e.g. version number; reStructuredText in <code>README.rst</code>) use:</p>
 <pre><code>[python setup.py] make testsetup
 </code></pre>
 <p>To upload just metadata (including overwriting mistakenly uploaded metadata)
@@ -384,7 +381,7 @@ git merge --no-ff pr-branch-name
 <h3 id="test">Test<a class="headerlink" href="#test" title="Permanent link">#</a></h3>
 <ul>
 <li>ensure that all online CI tests have passed</li>
-<li>check <code>setup.py</code> and <code>MANIFEST.in</code> - which define the packaging
+<li>check <code>setup.py</code> and <code>setup.cfg</code> - which define the packaging
 process and info that will be uploaded to <a href="https://pypi.org">PyPI</a> -
 using <code>[python setup.py] make installdev</code></li>
 </ul>
@@ -514,8 +511,8 @@ Much is automated so really it's steps 1-5, then 11(a).</p>
 </ol>
 <p>Key:</p>
 <ul>
-<li><strong><code>[AUTO:GHA]</code></strong>: GitHub Actions CI should automatically do this after <code>git push --tags</code> (6)</li>
-<li><strong><code>[AUTO:GHA-rel]</code></strong>: GitHub Actions CI should automatically do this after release (12a)</li>
+<li><strong><code>[AUTO:GHA]</code></strong>: GitHub Actions CI should automatically do this after <code>git push --tags</code> (5)</li>
+<li><strong><code>[AUTO:GHA-rel]</code></strong>: GitHub Actions CI should automatically do this after release (11a)</li>
 <li><strong><code>[SUB]</code></strong>:  Requires one-time <code>make submodules</code> to clone <code>docs</code>, <code>wiki</code>, and <code>feedstock</code></li>
 </ul>
               

@@ -98,6 +98,8 @@
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Release History</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#v4551-2021-01-02">v4.55.1 (2021-01-02)</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#v4550-2020-12-25">v4.55.0 (2020-12-25)</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#v4541-2020-12-05">v4.54.1 (2020-12-05)</a>
@@ -399,13 +401,19 @@
             <div class="section">
               
                 <h1 id="tqdmtqdm-releases"><a href="https://github.com/tqdm/tqdm">tqdm/tqdm</a> Releases<a class="headerlink" href="#tqdmtqdm-releases" title="Permanent link">#</a></h1>
+<h2 id="v4551-2021-01-02"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.55.1">v4.55.1</a> <small><small>(2021-01-02)</small></small><a class="headerlink" href="#v4551-2021-01-02" title="Permanent link">#</a></h2>
+<p><a href="https://github.com/tqdm/tqdm/releases/download/v4.55.1/tqdm-4.55.1-py2.py3-none-any.whl">whl</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.55.1/tqdm-4.55.1-py2.py3-none-any.whl.asc">asc</a></p>
+<ul>
+<li>🧯 fix <code>(Rolling|Expanding).progress_apply()</code> on <code>pandas==1.2.0</code> (<a href="https://github.com/tqdm/tqdm/issues/1106">#1106</a>)</li>
+<li>📘 minor documentation updates</li>
+</ul>
 <h2 id="v4550-2020-12-25"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.55.0">v4.55.0</a> <small><small>(2020-12-25)</small></small><a class="headerlink" href="#v4550-2020-12-25" title="Permanent link">#</a></h2>
 <p><a href="https://github.com/tqdm/tqdm/releases/download/v4.55.0/tqdm-4.55.0-py2.py3-none-any.whl">whl</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.55.0/tqdm-4.55.0-py2.py3-none-any.whl.asc">asc</a></p>
 <ul>
 <li>🧯 fix ASCII notebook export (<a href="https://github.com/tqdm/tqdm/issues/937">#937</a>, <a href="https://github.com/tqdm/tqdm/issues/1035">#1035</a>, <a href="https://github.com/tqdm/tqdm/issues/1098">#1098</a>)</li>
 <li>🧯 fix notebook gui-mode extra spaces (<a href="https://github.com/tqdm/tqdm/issues/433">#433</a>, <a href="https://github.com/tqdm/tqdm/issues/479">#479</a>, <a href="https://github.com/tqdm/tqdm/issues/550">#550</a>, <a href="https://github.com/tqdm/tqdm/issues/935">#935</a>)</li>
-<li>🔨 better ETA for early iterations (<a href="https://github.com/tqdm/tqdm/issues/1101">#1101</a>)</li>
-<li>🔨 better ETA for wildly varying iteration rates (<a href="https://github.com/tqdm/tqdm/issues/1102">#1102</a>)</li>
+<li>🎉 better ETA for early iterations (<a href="https://github.com/tqdm/tqdm/issues/1101">#1101</a>)</li>
+<li>🎉 better ETA for wildly varying iteration rates (<a href="https://github.com/tqdm/tqdm/issues/1102">#1102</a>)</li>
 <li>🔨 update submodule inheritance<ul>
 <li><code>tqdm.gui</code></li>
 <li><code>tqdm.notebook</code></li>
@@ -414,7 +422,7 @@
 </ul>
 </li>
 <li>📘 documentation updates</li>
-<li>🔨 misc code optimisations</li>
+<li>⚡ misc code optimisations</li>
 <li>🔍 add tests</li>
 <li>🛠 framework updates<ul>
 <li>build</li>
@@ -426,7 +434,7 @@
 <h2 id="v4541-2020-12-05"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.54.1">v4.54.1</a> <small><small>(2020-12-05)</small></small><a class="headerlink" href="#v4541-2020-12-05" title="Permanent link">#</a></h2>
 <p><a href="https://github.com/tqdm/tqdm/releases/download/v4.54.1/tqdm-4.54.1-py2.py3-none-any.whl">whl</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.54.1/tqdm-4.54.1-py2.py3-none-any.whl.asc">asc</a></p>
 <ul>
-<li>🔨 drop <code>py3.4</code> (no longer tested) (<a href="https://github.com/tqdm/tqdm/issues/1091">#1091</a>)</li>
+<li>⚠️ drop <code>py3.4</code> (no longer tested) (<a href="https://github.com/tqdm/tqdm/issues/1091">#1091</a>)</li>
 <li>🛠 misc CI updates (<a href="https://github.com/tqdm/tqdm/issues/1091">#1091</a>)<ul>
 <li>update <code>snap</code> build &amp; deploy method</li>
 <li>bot releases</li>
@@ -437,18 +445,18 @@
 <p><a href="https://github.com/tqdm/tqdm/releases/download/v4.54.0/tqdm-4.54.0-py2.py3-none-any.whl">whl</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.54.0/tqdm-4.54.0-py2.py3-none-any.whl.asc">asc</a></p>
 <ul>
 <li>🔨 get rid of <code>get_new</code> (<a href="https://github.com/tqdm/tqdm/issues/1085">#1085</a> &lt;- <a href="https://github.com/tqdm/tqdm/issues/1084">#1084</a>, <a href="https://github.com/tqdm/tqdm/issues/509">#509</a>)</li>
-<li>🛠 minor CI framework optimisations</li>
+<li>⚡ minor CI framework optimisations</li>
 </ul>
 <h2 id="v4530-2020-11-21"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.53.0">v4.53.0</a> <small><small>(2020-11-21)</small></small><a class="headerlink" href="#v4530-2020-11-21" title="Permanent link">#</a></h2>
 <p><a href="https://github.com/tqdm/tqdm/releases/download/v4.53.0/tqdm-4.53.0-py2.py3-none-any.whl">whl</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.53.0/tqdm-4.53.0-py2.py3-none-any.whl.asc">asc</a></p>
 <ul>
-<li>🔨 provide <code>get_new()</code> helper for mixed subclasses in nested mode (<a href="https://github.com/tqdm/tqdm/issues/509">#509</a>)</li>
+<li>🎉 provide <code>get_new()</code> helper for mixed subclasses in nested mode (<a href="https://github.com/tqdm/tqdm/issues/509">#509</a>)</li>
 <li>🧯 fix nested <code>asyncio</code> (<a href="https://github.com/tqdm/tqdm/issues/1074">#1074</a>)<ul>
 <li>document async <code>break</code> hazard</li>
 </ul>
 </li>
 <li>🔍 add tests</li>
-<li>🔨 drop py2.6/3.2/3.3 and distutils (no longer tested)<ul>
+<li>⚠️ drop py2.6/3.2/3.3 and distutils (no longer tested)<ul>
 <li>drop py2.6 (<a href="https://github.com/tqdm/tqdm/issues/502">#502</a> &lt;- <a href="https://github.com/tqdm/tqdm/issues/620">#620</a>, <a href="https://github.com/tqdm/tqdm/issues/127">#127</a>)</li>
 <li>drop <code>distutils</code> in favour of <code>setuptools</code>/<code>setup.cfg</code> (<a href="https://github.com/tqdm/tqdm/issues/723">#723</a>, <a href="https://github.com/tqdm/tqdm/issues/721">#721</a>)</li>
 </ul>
@@ -1330,7 +1338,7 @@
 <p><a href="https://github.com/tqdm/tqdm/releases/download/v4.17.1/tqdm-4.17.1-py2.py3-none-any.whl">whl</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.17.1/tqdm-4.17.1-py2.py3-none-any.whl.asc">asc</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.17.1/tqdm-4.17.1.tar.gz">gz</a>|<a href="https://github.com/tqdm/tqdm/releases/download/v4.17.1/tqdm-4.17.1.tar.gz.asc">asc</a></p>
 <ul>
 <li>🔨 initialise <code>n</code> even when disabled (<a href="https://github.com/tqdm/tqdm/issues/438">#438</a>)</li>
-<li>🔨 better unicode detection (<a href="https://github.com/tqdm/tqdm/issues/437">#437</a>)</li>
+<li>🎉 better unicode detection (<a href="https://github.com/tqdm/tqdm/issues/437">#437</a>)</li>
 <li>🧯 <code>__repr__()</code> bugfix (<a href="https://github.com/tqdm/tqdm/issues/441">#441</a>)</li>
 </ul>
 <h2 id="v4170-2017-09-20"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.17.0">v4.17.0</a> <small><small>(2017-09-20)</small></small><a class="headerlink" href="#v4170-2017-09-20" title="Permanent link">#</a></h2>
@@ -1421,7 +1429,7 @@
 <ul>
 <li>🧯 fix maxinterval to adjust miniters to mininterval <a href="https://github.com/tqdm/tqdm/issues/249">#249</a></li>
 <li>🧯 minor bugfixes (eg <a href="https://github.com/tqdm/tqdm/issues/288">#288</a>)</li>
-<li>🔍 misc optimisations, unit tests, and benchmarks (eg <a href="https://github.com/tqdm/tqdm/issues/298">#298</a>)</li>
+<li>⚡ misc optimisations, unit tests, and benchmarks (eg <a href="https://github.com/tqdm/tqdm/issues/298">#298</a>)</li>
 <li>📘 documentation updates</li>
 </ul>
 <h2 id="v490-2016-10-31"><a href="https://github.com/tqdm/tqdm/releases/tag/v4.9.0">v4.9.0</a> <small><small>(2016-10-31)</small></small><a class="headerlink" href="#v490-2016-10-31" title="Permanent link">#</a></h2>
@@ -1439,7 +1447,7 @@
 <li>🧯 misc fixes</li>
 <li>📘 documentation</li>
 <li>🔍 unit tests</li>
-<li>🧯 optimisations, style fixes</li>
+<li>⚡ optimisations, style fixes</li>
 <li>📘 codacy badge</li>
 <li>⚠️ safety and warning suppression</li>
 <li>🔨 ignore coverall failures (<a href="https://github.com/tqdm/tqdm/issues/283">#283</a>)</li>
