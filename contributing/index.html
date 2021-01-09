@@ -313,7 +313,7 @@ that each distribution has an alias to call the Python interpreter:
 <h3 id="alternative-unit-tests-with-pytest">Alternative unit tests with pytest<a class="headerlink" href="#alternative-unit-tests-with-pytest" title="Permanent link">#</a></h3>
 <p>Alternatively, use <code>pytest</code> to run the tests just for the current Python version:</p>
 <ul>
-<li>install <code>pytest</code> and <code>flake8</code></li>
+<li>install <code>pytest</code>, <code>coverage</code>, <code>pytest-cov</code> and <code>flake8</code></li>
 <li>run the following command:</li>
 </ul>
 <pre><code>[python setup.py] make alltests
@@ -325,8 +325,8 @@ how to build and upload a new release. Once again,
 Also consider <code>pip install</code>ing development utilities:
 <code>pip install tqdm[dev]</code> at a minimum, or a more thorough <code>conda env create</code>.</p>
 <h2 id="pre-commit-hook">Pre-commit Hook<a class="headerlink" href="#pre-commit-hook" title="Permanent link">#</a></h2>
-<p>It's probably a good idea to add <code>[python setup.py] make pre-commit</code> to
-<code>.git/hooks/pre-commit</code> for convenient local sanity-checking.</p>
+<p>It's probably a good idea to run <code>pre-commit install</code> for convenient local
+sanity-checking.</p>
 <h2 id="semantic-versioning">Semantic Versioning<a class="headerlink" href="#semantic-versioning" title="Permanent link">#</a></h2>
 <p>The tqdm repository managers should:</p>
 <ul>
