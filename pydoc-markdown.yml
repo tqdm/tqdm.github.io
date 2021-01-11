@@ -112,8 +112,8 @@ renderer:
         href: https://anaconda.org/conda-forge/tqdm
     - title: Tests
       children:
-      - title: Travis CI
-        href: https://travis-ci.org/tqdm/tqdm
+      - title: GitHub Actions
+        href: https://github.com/tqdm/tqdm/actions?query=workflow%3ATest
       - title: Coveralls
         href: https://coveralls.io/github/tqdm/tqdm
       - title: Codecov
@@ -147,4 +147,4 @@ renderer:
     site_description: A Fast, Extensible Progress Meter
     site_author: Casper da Costa-Luis
     copyright: |
-      &copy; Casper da Costa-Luis <a href="https://github.com/casperdcl">@casperdcl</a> 2015-2020
+      &copy; Casper da Costa-Luis <a href="https://github.com/casperdcl">@casperdcl</a> 2015-2021
