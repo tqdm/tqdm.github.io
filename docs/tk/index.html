@@ -9,7 +9,7 @@
   <meta name="author" content="Casper da Costa-Luis">
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>CLI - tqdm documentation</title>
+  <title>tqdm.tk - tqdm documentation</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../css/theme.css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "CLI";
-    var mkdocs_page_input_path = "docs/cli.md";
+    var mkdocs_page_name = "tqdm.tk";
+    var mkdocs_page_input_path = "docs/tk.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -71,13 +71,27 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../keras/">tqdm.keras</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../tk/">tqdm.tk</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">tqdm.tk</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#tqdm_tk-objects">tqdm_tk Objects</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#__init__">__init__</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cancel">cancel</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#reset">reset</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ttkrange">ttkrange</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../gui/">tqdm.gui</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../rich/">tqdm.rich</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">CLI</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../cli/">CLI</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../contrib/">tqdm.contrib</a>
                     </li>
@@ -194,10 +208,10 @@
         
       
     
-    <li>CLI</li>
+    <li>tqdm.tk</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/tqdm/tqdm.github.io/tree/src/sources/docs/cli.md"
+        <a href="https://github.com/tqdm/tqdm.github.io/tree/src/sources/docs/tk.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -208,55 +222,77 @@
           <div role="main">
             <div class="section">
               
-                <p><code>tqdm</code>'s command line interface (CLI) can be used in a script or on the terminal/console. Simply inserting <code>tqdm</code> (or <code>python -m tqdm</code>) between pipes will pass through all <code>stdin</code> to <code>stdout</code> while printing progress to <code>stderr</code>.</p>
-<p>Run <code>tqdm --help</code> for a full list of options.</p>
-<p>The example below demonstrate counting the number of lines in all Python files in the current directory, with timing information included.</p>
-<pre><code class="language-sh">$ time find . -name '*.py' -type f -exec cat \{} \; | wc -l
-857365
-
-real    0m3.458s
-user    0m0.274s
-sys     0m3.325s
-
-$ time find . -name '*.py' -type f -exec cat \{} \; | tqdm | wc -l
-857366it [00:03, 246471.31it/s]
-857365
-
-real    0m3.585s
-user    0m0.862s
-sys     0m3.358s
+                <p><a name="tqdm.tk"></a></p>
+<h1 id="tqdmtk">tqdm.tk<a class="headerlink" href="#tqdmtk" title="Permanent link">#</a></h1>
+<p><span style="float: right; font-size: 75%;">
+<a href="https://github.com/tqdm/tqdm/blob/c58fc2576419c0b12c918e981d2e966315a7baf1/tqdm/tk.py#L1">[view source]</a>
+</span></p>
+<p>Tkinter GUI progressbar decorator for iterators.</p>
+<p>Usage:</p>
+<pre><code class="language-python">&gt;&gt;&gt; from tqdm.tk import trange, tqdm
+&gt;&gt;&gt; for i in trange(10):
+...     ...
 </code></pre>
-<p>Note that the usual arguments for <a href=".."><code>tqdm</code></a> can also be specified.</p>
-<pre><code class="language-sh">$ find . -name '*.py' -type f -exec cat \{} \; \
-  | tqdm --unit loc --unit_scale --total 857366 &gt;&gt; /dev/null
-100%|█████████████████████████████████| 857K/857K [00:04&lt;00:00, 246Kloc/s]
+<p><a name="tqdm.tk.tqdm_tk"></a></p>
+<h2 id="tqdm_tk-objects">tqdm_tk Objects<a class="headerlink" href="#tqdm_tk-objects" title="Permanent link">#</a></h2>
+<p><span style="float: right; font-size: 75%;">
+<a href="https://github.com/tqdm/tqdm/blob/c58fc2576419c0b12c918e981d2e966315a7baf1/tqdm/tk.py#L30">[view source]</a>
+</span></p>
+<pre><code class="language-python">class tqdm_tk(std_tqdm)
 </code></pre>
-<p>Backing up a large directory?</p>
-<pre><code class="language-sh">$ tar -zcf - docs/ | tqdm --bytes --total `du -sb docs/ | cut -f1` \
-  &gt; backup.tgz
-44%|██████████████▊                   | 153M/352M [00:14&lt;00:18, 11.0MB/s]
+<p>Experimental Tkinter GUI version of tqdm!</p>
+<p>Note: Window interactivity suffers if <code>tqdm_tk</code> is not running within
+a Tkinter mainloop and values are generated infrequently. In this case,
+consider calling <code>tqdm_tk.refresh()</code> frequently in the Tk thread.</p>
+<p><a name="tqdm.tk.tqdm_tk.__init__"></a></p>
+<h4 id="__init__">__init__<a class="headerlink" href="#__init__" title="Permanent link">#</a></h4>
+<p><span style="float: right; font-size: 75%;">
+<a href="https://github.com/tqdm/tqdm/blob/c58fc2576419c0b12c918e981d2e966315a7baf1/tqdm/tk.py#L41">[view source]</a>
+</span></p>
+<pre><code class="language-python"> | __init__(*args, **kwargs)
 </code></pre>
-<p>This can be beautified further:</p>
-<pre><code class="language-sh">$ BYTES=&quot;$(du -sb docs/ | cut -f1)&quot;
-$ tar -cf - docs/ \
-  | tqdm --bytes --total &quot;$BYTES&quot; --desc Processing | gzip \
-  | tqdm --bytes --total &quot;$BYTES&quot; --desc Compressed --position 1 \
-  &gt; ~/backup.tgz
-Processing: 100%|██████████████████████| 352M/352M [00:14&lt;00:00, 30.2MB/s]
-Compressed:  42%|█████████▎            | 148M/352M [00:14&lt;00:19, 10.9MB/s]
+<p>This class accepts the following parameters <em>in addition</em> to
+the parameters accepted by <code>tqdm</code>.</p>
+<p><strong>Parameters</strong></p>
+<ul>
+<li><strong>grab</strong><em>: bool, optional</em><br />
+    Grab the input across all windows of the process.</li>
+<li><strong>tk_parent</strong><em>: <code>tkinter.Wm</code>, optional</em><br />
+    Parent Tk window.</li>
+<li><strong>cancel_callback</strong><em>: Callable, optional</em><br />
+    Create a cancel button and set <code>cancel_callback</code> to be called
+    when the cancel or window close button is clicked.</li>
+</ul>
+<p><a name="tqdm.tk.tqdm_tk.cancel"></a></p>
+<h4 id="cancel">cancel<a class="headerlink" href="#cancel" title="Permanent link">#</a></h4>
+<p><span style="float: right; font-size: 75%;">
+<a href="https://github.com/tqdm/tqdm/blob/c58fc2576419c0b12c918e981d2e966315a7baf1/tqdm/tk.py#L161">[view source]</a>
+</span></p>
+<pre><code class="language-python"> | cancel()
 </code></pre>
-<p>Or done on a file level using 7-zip:</p>
-<pre><code class="language-sh">$ 7z a -bd -r backup.7z docs/ | grep Compressing \
-  | tqdm --total $(find docs/ -type f | wc -l) --unit files \
-  | grep -v Compressing
-100%|██████████████████████████▉| 15327/15327 [01:00&lt;00:00, 712.96files/s]
+<p><code>cancel_callback()</code> followed by <code>close()</code>
+when close/cancel buttons clicked.</p>
+<p><a name="tqdm.tk.tqdm_tk.reset"></a></p>
+<h4 id="reset">reset<a class="headerlink" href="#reset" title="Permanent link">#</a></h4>
+<p><span style="float: right; font-size: 75%;">
+<a href="https://github.com/tqdm/tqdm/blob/c58fc2576419c0b12c918e981d2e966315a7baf1/tqdm/tk.py#L170">[view source]</a>
+</span></p>
+<pre><code class="language-python"> | reset(total=None)
 </code></pre>
-<p>Pre-existing CLI programs already outputting basic progress information will benefit from <code>tqdm</code>'s <code>--update</code> and <code>--update_to</code> flags:</p>
-<pre><code class="language-sh">$ seq 3 0.1 5 | tqdm --total 5 --update_to --null
-100%|████████████████████████████████████| 5.0/5 [00:00&lt;00:00, 9673.21it/s]
-$ seq 10 | tqdm --update --null  # 1 + 2 + ... + 10 = 55 iterations
-55it [00:00, 90006.52it/s]
+<p>Resets to 0 iterations for repeated use.</p>
+<p><strong>Parameters</strong></p>
+<ul>
+<li><strong>total</strong><em>: int or float, optional. Total to use for the new bar.</em>  </li>
+</ul>
+<p><a name="tqdm.tk.ttkrange"></a></p>
+<h4 id="ttkrange">ttkrange<a class="headerlink" href="#ttkrange" title="Permanent link">#</a></h4>
+<p><span style="float: right; font-size: 75%;">
+<a href="https://github.com/tqdm/tqdm/blob/c58fc2576419c0b12c918e981d2e966315a7baf1/tqdm/tk.py#L197">[view source]</a>
+</span></p>
+<pre><code class="language-python">ttkrange(*args, **kwargs)
 </code></pre>
+<p>A shortcut for <code>tqdm.tk.tqdm(xrange(*args), **kwargs)</code>.
+On Python3+, <code>range</code> is used instead of <code>xrange</code>.</p>
               
             </div>
           </div>
@@ -264,10 +300,10 @@ $ seq 10 | tqdm --update --null  # 1 + 2 + ... + 10 = 55 iterations
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../contrib/" class="btn btn-neutral float-right" title="tqdm.contrib">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../gui/" class="btn btn-neutral float-right" title="tqdm.gui">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../rich/" class="btn btn-neutral" title="tqdm.rich"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../keras/" class="btn btn-neutral" title="tqdm.keras"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -298,10 +334,10 @@ $ seq 10 | tqdm --update --null  # 1 + 2 + ... + 10 = 55 iterations
           <a href="https://github.com/tqdm/tqdm/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../rich/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../keras/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../contrib/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../gui/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

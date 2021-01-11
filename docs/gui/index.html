@@ -71,6 +71,8 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../keras/">tqdm.keras</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../tk/">tqdm.tk</a>
+                    </li>
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">tqdm.gui</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#tqdm_gui-objects">tqdm_gui Objects</a>
@@ -80,6 +82,8 @@
         </ul>
     </li>
     </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../rich/">tqdm.rich</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../cli/">CLI</a>
                     </li>
@@ -215,10 +219,9 @@
                 <p><a name="tqdm.gui"></a></p>
 <h1 id="tqdmgui">tqdm.gui<a class="headerlink" href="#tqdmgui" title="Permanent link">#</a></h1>
 <p><span style="float: right; font-size: 75%;">
-<a href="https://github.com/tqdm/tqdm/blob/e697193740cbc2789eeb6b485e4199cd3177d932/tqdm/gui.py#L1">[view source]</a>
+<a href="https://github.com/tqdm/tqdm/blob/c58fc2576419c0b12c918e981d2e966315a7baf1/tqdm/gui.py#L1">[view source]</a>
 </span></p>
-<p>GUI progressbar decorator for iterators.
-Includes a default <code>range</code> iterator printing to <code>stderr</code>.</p>
+<p>Matplotlib GUI progressbar decorator for iterators.</p>
 <p>Usage:</p>
 <pre><code class="language-python">&gt;&gt;&gt; from tqdm.gui import trange, tqdm
 &gt;&gt;&gt; for i in trange(10):
@@ -227,15 +230,15 @@ Includes a default <code>range</code> iterator printing to <code>stderr</code>.<
 <p><a name="tqdm.gui.tqdm_gui"></a></p>
 <h2 id="tqdm_gui-objects">tqdm_gui Objects<a class="headerlink" href="#tqdm_gui-objects" title="Permanent link">#</a></h2>
 <p><span style="float: right; font-size: 75%;">
-<a href="https://github.com/tqdm/tqdm/blob/e697193740cbc2789eeb6b485e4199cd3177d932/tqdm/gui.py#L26">[view source]</a>
+<a href="https://github.com/tqdm/tqdm/blob/c58fc2576419c0b12c918e981d2e966315a7baf1/tqdm/gui.py#L26">[view source]</a>
 </span></p>
 <pre><code class="language-python">class tqdm_gui(std_tqdm)
 </code></pre>
-<p>Experimental GUI version of tqdm!</p>
+<p>Experimental Matplotlib GUI version of tqdm!</p>
 <p><a name="tqdm.gui.tgrange"></a></p>
 <h4 id="tgrange">tgrange<a class="headerlink" href="#tgrange" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
-<a href="https://github.com/tqdm/tqdm/blob/e697193740cbc2789eeb6b485e4199cd3177d932/tqdm/gui.py#L183">[view source]</a>
+<a href="https://github.com/tqdm/tqdm/blob/c58fc2576419c0b12c918e981d2e966315a7baf1/tqdm/gui.py#L185">[view source]</a>
 </span></p>
 <pre><code class="language-python">tgrange(*args, **kwargs)
 </code></pre>
@@ -248,10 +251,10 @@ On Python3+, <code>range</code> is used instead of <code>xrange</code>.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../cli/" class="btn btn-neutral float-right" title="CLI">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../rich/" class="btn btn-neutral float-right" title="tqdm.rich">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../keras/" class="btn btn-neutral" title="tqdm.keras"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../tk/" class="btn btn-neutral" title="tqdm.tk"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -282,10 +285,10 @@ On Python3+, <code>range</code> is used instead of <code>xrange</code>.</p>
           <a href="https://github.com/tqdm/tqdm/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../keras/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../tk/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../cli/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../rich/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
