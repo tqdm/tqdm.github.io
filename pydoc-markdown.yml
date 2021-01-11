@@ -36,9 +36,15 @@ renderer:
     - title: tqdm.keras
       name: keras
       contents: [tqdm.keras*]
+    - title: tqdm.tk
+      name: tk
+      contents: [tqdm.tk.t*]
     - title: tqdm.gui
       name: gui
       contents: [tqdm.gui.t*]
+    - title: tqdm.rich
+      name: rich
+      contents: [tqdm.rich.t*]
     - title: CLI
       name: cli
       source: sources/cli.md
