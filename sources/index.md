@@ -40,9 +40,9 @@ for i in tqdm(range(10000)):
 `trange(N)` can be also used as a convenient shortcut for
 `tqdm(xrange(N))`.
 
-![Screenshot](https://raw.githubusercontent.com/tqdm/tqdm/master/images/tqdm.gif)
+![Screenshot](https://raw.githubusercontent.com/tqdm/img/master/tqdm.gif)
 
-[![Video](https://raw.githubusercontent.com/tqdm/tqdm/master/images/video.jpg)](/video) [![Slides](https://raw.githubusercontent.com/tqdm/tqdm/master/images/slides.jpg
+[![Video](https://raw.githubusercontent.com/tqdm/img/master/video.jpg)](/video) [![Slides](https://raw.githubusercontent.com/tqdm/img/master/slides.jpg
 )](/PyData2019/slides.html)
 
 It can also be executed as a module with pipes:
