@@ -142,7 +142,7 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="#">Tests</a>
     <ul>
-                <li class="toctree-l2"><a class="" href="https://travis-ci.org/tqdm/tqdm">Travis CI</a>
+                <li class="toctree-l2"><a class="" href="https://github.com/tqdm/tqdm/actions?query=workflow%3ATest">GitHub Actions</a>
                 </li>
                 <li class="toctree-l2"><a class="" href="https://coveralls.io/github/tqdm/tqdm">Coveralls</a>
                 </li>
@@ -210,38 +210,10 @@
           <div role="main">
             <div class="section">
               
-                <p><a name="tqdm.autonotebook"></a></p>
-<h1 id="tqdmautonotebook">tqdm.autonotebook<a class="headerlink" href="#tqdmautonotebook" title="Permanent link">#</a></h1>
-<p><span style="float: right; font-size: 75%;">
-<a href="https://github.com/tqdm/tqdm/blob/c58fc2576419c0b12c918e981d2e966315a7baf1/tqdm/autonotebook.py#L1">[view source]</a>
-</span></p>
-<p>Automatically choose between <code>tqdm.notebook</code> and <code>tqdm.std</code>.</p>
-<p>Usage:</p>
-<pre><code class="language-python">&gt;&gt;&gt; from tqdm.autonotebook import trange, tqdm
-&gt;&gt;&gt; for i in trange(10):
-...     ...
-</code></pre>
-<p><a name="tqdm.auto"></a></p>
-<h1 id="tqdmauto">tqdm.auto<a class="headerlink" href="#tqdmauto" title="Permanent link">#</a></h1>
-<p><span style="float: right; font-size: 75%;">
-<a href="https://github.com/tqdm/tqdm/blob/c58fc2576419c0b12c918e981d2e966315a7baf1/tqdm/auto.py#L1">[view source]</a>
-</span></p>
-<p>Enables multiple commonly used features.</p>
-<p>Method resolution order:</p>
-<ul>
-<li><code>tqdm.autonotebook</code> without import warnings</li>
-<li><code>tqdm.asyncio</code> on Python3.5+</li>
-<li><code>tqdm.std</code> base class</li>
-</ul>
-<p>Usage:</p>
-<pre><code class="language-python">&gt;&gt;&gt; from tqdm.auto import trange, tqdm
-&gt;&gt;&gt; for i in trange(10):
-...     ...
-</code></pre>
-<p><a name="tqdm.contrib.bells"></a></p>
+                <p><a name="tqdm.contrib.bells"></a></p>
 <h1 id="tqdmcontribbells">tqdm.contrib.bells<a class="headerlink" href="#tqdmcontribbells" title="Permanent link">#</a></h1>
 <p><span style="float: right; font-size: 75%;">
-<a href="https://github.com/tqdm/tqdm/blob/c58fc2576419c0b12c918e981d2e966315a7baf1/tqdm/contrib/bells.py#L1">[view source]</a>
+<a href="https://github.com/tqdm/tqdm/blob/94842e1027570867885788dc9d7fe038484f085b/tqdm/contrib/bells.py#L1">[view source]</a>
 </span></p>
 <p>Even more features than <code>tqdm.auto</code> (all the bells &amp; whistles):</p>
 <ul>
@@ -256,6 +228,34 @@
 </ul>
 </li>
 </ul>
+<p><a name="tqdm.auto"></a></p>
+<h1 id="tqdmauto">tqdm.auto<a class="headerlink" href="#tqdmauto" title="Permanent link">#</a></h1>
+<p><span style="float: right; font-size: 75%;">
+<a href="https://github.com/tqdm/tqdm/blob/94842e1027570867885788dc9d7fe038484f085b/tqdm/auto.py#L1">[view source]</a>
+</span></p>
+<p>Enables multiple commonly used features.</p>
+<p>Method resolution order:</p>
+<ul>
+<li><code>tqdm.autonotebook</code> without import warnings</li>
+<li><code>tqdm.asyncio</code> on Python3.5+</li>
+<li><code>tqdm.std</code> base class</li>
+</ul>
+<p>Usage:</p>
+<pre><code class="language-python">&gt;&gt;&gt; from tqdm.auto import trange, tqdm
+&gt;&gt;&gt; for i in trange(10):
+...     ...
+</code></pre>
+<p><a name="tqdm.autonotebook"></a></p>
+<h1 id="tqdmautonotebook">tqdm.autonotebook<a class="headerlink" href="#tqdmautonotebook" title="Permanent link">#</a></h1>
+<p><span style="float: right; font-size: 75%;">
+<a href="https://github.com/tqdm/tqdm/blob/94842e1027570867885788dc9d7fe038484f085b/tqdm/autonotebook.py#L1">[view source]</a>
+</span></p>
+<p>Automatically choose between <code>tqdm.notebook</code> and <code>tqdm.std</code>.</p>
+<p>Usage:</p>
+<pre><code class="language-python">&gt;&gt;&gt; from tqdm.autonotebook import trange, tqdm
+&gt;&gt;&gt; for i in trange(10):
+...     ...
+</code></pre>
               
             </div>
           </div>
@@ -276,7 +276,7 @@
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>&copy; Casper da Costa-Luis <a href="https://github.com/casperdcl">@casperdcl</a> 2015-2020
+      <p>&copy; Casper da Costa-Luis <a href="https://github.com/casperdcl">@casperdcl</a> 2015-2021
 </p>
     
   </div>
