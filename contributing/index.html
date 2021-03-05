@@ -71,6 +71,8 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../docs/keras/">tqdm.keras</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../docs/dask/">tqdm.dask</a>
+                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="../docs/tk/">tqdm.tk</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../docs/gui/">tqdm.gui</a>
@@ -219,10 +221,11 @@
             <div class="section">
               
                 <h1 id="how-to-contribute-to-tqdm">HOW TO CONTRIBUTE TO TQDM<a class="headerlink" href="#how-to-contribute-to-tqdm" title="Permanent link">#</a></h1>
+<p><strong>TL;DR: Skip to [QUICK DEV SUMMARY]</strong></p>
 <p>This file describes how to</p>
 <ul>
 <li>contribute changes to the project, and</li>
-<li>upload released to the pypi repository.</li>
+<li>upload released to the PyPI repository.</li>
 </ul>
 <p>Most of the management commands have been directly placed inside the
 Makefile:</p>
@@ -236,7 +239,7 @@ python setup.py make [&lt;alias&gt;]  # if make is unavailable
 typical steps would be:</p>
 <ol>
 <li>create an account on <a href="https://github.com">github</a></li>
-<li>fork <a href="https://github.com/tqdm/tqdm">tqdm</a></li>
+<li>fork <a href="https://github.com/tqdm/tqdm"><code>tqdm</code></a></li>
 <li>make a local clone: <code>git clone https://github.com/your_account/tqdm.git</code></li>
 <li>make changes on the local copy</li>
 <li>test (see below) and commit changes <code>git commit -a -m "my message"</code></li>
@@ -317,7 +320,7 @@ that each distribution has an alias to call the Python interpreter:
 <h3 id="alternative-unit-tests-with-pytest">Alternative unit tests with pytest<a class="headerlink" href="#alternative-unit-tests-with-pytest" title="Permanent link">#</a></h3>
 <p>Alternatively, use <code>pytest</code> to run the tests just for the current Python version:</p>
 <ul>
-<li>install <code>pytest</code>, <code>coverage</code>, <code>pytest-cov</code> and <code>flake8</code></li>
+<li>install test requirements: <code>[python setup.py] make install_test</code></li>
 <li>run the following command:</li>
 </ul>
 <pre><code>[python setup.py] make alltests
@@ -327,21 +330,17 @@ that each distribution has an alias to call the Python interpreter:
 how to build and upload a new release. Once again,
 <code>[python setup.py] make [&lt;alias&gt;]</code> will help.
 Also consider <code>pip install</code>ing development utilities:
-<code>pip install tqdm[dev]</code> at a minimum, or a more thorough <code>conda env create</code>.</p>
+<code>[python setup.py] make install_build</code> at a minimum, or a more thorough <code>conda env create</code>.</p>
 <h2 id="pre-commit-hook">Pre-commit Hook<a class="headerlink" href="#pre-commit-hook" title="Permanent link">#</a></h2>
-<p>It's probably a good idea to run <code>pre-commit install</code> for convenient local
-sanity-checking.</p>
+<p>It's probably a good idea to use the <code>pre-commit</code> (<code>pip install pre-commit</code>) helper.</p>
+<p>Run <code>pre-commit install</code> for convenient local sanity-checking.</p>
 <h2 id="semantic-versioning">Semantic Versioning<a class="headerlink" href="#semantic-versioning" title="Permanent link">#</a></h2>
-<p>The tqdm repository managers should:</p>
+<p>The <code>tqdm</code> repository managers should:</p>
 <ul>
-<li>follow the <a href="https://semver.org">Semantic Versioning</a> convention</li>
-<li>take care of this (instead of users) to avoid PR conflicts
-solely due to the version file bumping</li>
+<li>follow the <a href="https://semver.org">Semantic Versioning</a> convention for tagging</li>
 </ul>
-<p>Note: tools can be used to automate this process, such as
-<a href="https://github.com/rbarrois/python-semanticversion">python-semanticversion</a>.</p>
 <h2 id="checking-setuppy">Checking setup.py<a class="headerlink" href="#checking-setuppy" title="Permanent link">#</a></h2>
-<p>To check that the <code>setup.py</code>/<code>setup.cfg</code> file is compliant with PyPI
+<p>To check that the <code>setup.py</code>/<code>setup.cfg</code>/<code>pyproject.toml</code> file is compliant with PyPI
 requirements (e.g. version number; reStructuredText in <code>README.rst</code>) use:</p>
 <pre><code>[python setup.py] make testsetup
 </code></pre>
@@ -382,19 +381,14 @@ git merge --no-ff pr-branch-name
 <h2 id="building-a-release-and-uploading-to-pypi">Building a Release and Uploading to PyPI<a class="headerlink" href="#building-a-release-and-uploading-to-pypi" title="Permanent link">#</a></h2>
 <p>Formally publishing requires additional steps: testing and tagging.</p>
 <h3 id="test">Test<a class="headerlink" href="#test" title="Permanent link">#</a></h3>
-<ul>
-<li>ensure that all online CI tests have passed</li>
-<li>check <code>setup.py</code> and <code>setup.cfg</code> - which define the packaging
-process and info that will be uploaded to <a href="https://pypi.org">PyPI</a> -
-using <code>[python setup.py] make installdev</code></li>
-</ul>
+<p>Ensure that all online CI tests have passed.</p>
 <h3 id="tag">Tag<a class="headerlink" href="#tag" title="Permanent link">#</a></h3>
 <ul>
-<li>ensure the version has been bumped, committed <strong>and</strong> tagged.
+<li>ensure the version has been tagged.
 The tag format is <code>v{major}.{minor}.{patch}</code>, for example: <code>v4.4.1</code>.
 The current commit's tag is used in the version checking process.
 If the current commit is not tagged appropriately, the version will
-display as <code>v{major}.{minor}.{patch}-{commit_hash}</code>.</li>
+display as <code>v{major}.{minor}.{patch}.dev{N}+g{commit_hash}</code>.</li>
 </ul>
 <h3 id="upload">Upload<a class="headerlink" href="#upload" title="Permanent link">#</a></h3>
 <p>GitHub Actions (GHA) CI should automatically do this after pushing tags.
@@ -404,7 +398,7 @@ Manual instructions are given below in case of failure.</p>
 </code></pre>
 <p>This will generate several builds in the <code>dist/</code> folder. On non-windows
 machines the windows <code>exe</code> installer may fail to build. This is normal.</p>
-<p>Finally, upload everything to pypi. This can be done easily using the
+<p>Finally, upload everything to PyPI. This can be done easily using the
 <a href="https://github.com/pypa/twine">twine</a> module:</p>
 <pre><code>[python setup.py] make pypi
 </code></pre>
@@ -483,7 +477,7 @@ to assist with maintenance.</p>
 <p>For experienced devs, once happy with local master, follow the steps below.
 Much is automated so really it's steps 1-5, then 11(a).</p>
 <ol>
-<li>test (<code>[python setup.py] make alltests</code>)</li>
+<li>test (<code>[python setup.py] make alltests</code> or rely on <code>pre-commit</code>)</li>
 <li><code>git commit [--amend]  # -m "bump version"</code></li>
 <li><code>git push</code></li>
 <li>wait for tests to pass
