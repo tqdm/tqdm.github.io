@@ -6,7 +6,6 @@ sources/releases.md:
 	GITHUB_API_TOKEN='' python ../wiki/releases.py tqdm/tqdm -o sources/releases.md -d ext
 build: sources/releases.md
 	$(PYDOCMD) --build --site-dir _site
-	sed -ri 's/img\/favicon.ico/https:\/\/raw.githubusercontent.com\/tqdm\/tqdm\/master\/images\/logo.gif/' build/docs/_site/index.html
 	cp .README.md build/docs/_site/README.md
 deploy: build
 	git checkout master
