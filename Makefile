@@ -7,6 +7,7 @@ sources/releases.md:
 build: sources/releases.md
 	$(PYDOCMD) --build --site-dir _site
 	cp .README.md build/docs/_site/README.md
+	echo 'google.com, pub-5970675603981498, DIRECT, f08c47fec0942fa0' > build/docs/_site/ads.txt
 deploy: build
 	git checkout master
 	git ls-files | xargs git rm
