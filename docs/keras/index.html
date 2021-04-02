@@ -226,12 +226,12 @@
                 <p><a name="tqdm.keras"></a></p>
 <h1 id="tqdmkeras">tqdm.keras<a class="headerlink" href="#tqdmkeras" title="Permanent link">#</a></h1>
 <p><span style="float: right; font-size: 75%;">
-<a href="https://github.com/tqdm/tqdm/blob/bcce20f771a16cb8e4ac5cc5b2307374a2c0e535/tqdm/keras.py#L1">[view source]</a>
+<a href="https://github.com/tqdm/tqdm/blob/a162d02730fd66bbd9380ccbf2fc939d3242b466/tqdm/keras.py#L1">[view source]</a>
 </span></p>
 <p><a name="tqdm.keras.TqdmCallback"></a></p>
 <h2 id="tqdmcallback-objects">TqdmCallback Objects<a class="headerlink" href="#tqdmcallback-objects" title="Permanent link">#</a></h2>
 <p><span style="float: right; font-size: 75%;">
-<a href="https://github.com/tqdm/tqdm/blob/bcce20f771a16cb8e4ac5cc5b2307374a2c0e535/tqdm/keras.py#L19">[view source]</a>
+<a href="https://github.com/tqdm/tqdm/blob/a162d02730fd66bbd9380ccbf2fc939d3242b466/tqdm/keras.py#L19">[view source]</a>
 </span></p>
 <pre><code class="language-python">class TqdmCallback(keras.callbacks.Callback)
 </code></pre>
@@ -239,7 +239,7 @@
 <p><a name="tqdm.keras.TqdmCallback.__init__"></a></p>
 <h4 id="__init__">__init__<a class="headerlink" href="#__init__" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
-<a href="https://github.com/tqdm/tqdm/blob/bcce20f771a16cb8e4ac5cc5b2307374a2c0e535/tqdm/keras.py#L34">[view source]</a>
+<a href="https://github.com/tqdm/tqdm/blob/a162d02730fd66bbd9380ccbf2fc939d3242b466/tqdm/keras.py#L34">[view source]</a>
 </span></p>
 <pre><code class="language-python"> | __init__(epochs=None, data_size=None, batch_size=None, verbose=1, tqdm_class=tqdm_auto, **tqdm_kwargs)
 </code></pre>
@@ -253,16 +253,16 @@
 <li><strong>verbose</strong><em>: int</em><br />
     0: epoch, 1: batch (transient), 2: batch. [default: 1].
     Will be set to <code>0</code> unless both <code>data_size</code> and <code>batch_size</code>
-    are given.
-tqdm_class : optional
-    <code>tqdm</code> class to use for bars [default: <code>tqdm.auto.tqdm</code>].</li>
+    are given.</li>
+<li><strong>tqdm_class</strong><em>: optional</em><br />
+<code>tqdm</code> class to use for bars [default: <code>tqdm.auto.tqdm</code>].</li>
 <li><strong>tqdm_kwargs</strong><em>: optional</em><br />
     Any other arguments used for all bars.</li>
 </ul>
 <p><a name="tqdm.keras.TqdmCallback.display"></a></p>
 <h4 id="display">display<a class="headerlink" href="#display" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
-<a href="https://github.com/tqdm/tqdm/blob/bcce20f771a16cb8e4ac5cc5b2307374a2c0e535/tqdm/keras.py#L100">[view source]</a>
+<a href="https://github.com/tqdm/tqdm/blob/a162d02730fd66bbd9380ccbf2fc939d3242b466/tqdm/keras.py#L100">[view source]</a>
 </span></p>
 <pre><code class="language-python"> | display()
 </code></pre>
@@ -303,7 +303,6 @@ tqdm_class : optional
   </div>
 
   <div class="rst-versions" role="note" aria-label="versions">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- sadnav -->
     <ins class="adsbygoogle"
      style="display:inline-block;width:300px;height:250px"
@@ -311,6 +310,7 @@ tqdm_class : optional
      data-ad-slot="9255909819"></ins>
     <script>
       (adsbygoogle = window.adsbygoogle || []).push({});
+      $('.wy-menu-vertical')[0].style['padding-bottom'] = '300px';
     </script>
     <span class="rst-current-version" data-toggle="rst-current-version">
           <a href="https://github.com/tqdm/tqdm/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
