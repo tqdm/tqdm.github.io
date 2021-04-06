@@ -91,9 +91,11 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../contrib.itertools/">tqdm.contrib.itertools</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../contrib.discord/">tqdm.contrib.discord</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../contrib.logging/">tqdm.contrib.logging</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../contrib.telegram/">tqdm.contrib.telegram</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../contrib.discord/">tqdm.contrib.discord</a>
                     </li>
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Shortcuts</a>
     <ul class="current">
@@ -216,35 +218,7 @@
           <div role="main">
             <div class="section">
               
-                <p><a name="tqdm.autonotebook"></a></p>
-<h1 id="tqdmautonotebook">tqdm.autonotebook<a class="headerlink" href="#tqdmautonotebook" title="Permanent link">#</a></h1>
-<p><span style="float: right; font-size: 75%;">
-<a href="https://github.com/tqdm/tqdm/blob/4591083884c8ca079ccd1192c079113c7baeadc8/tqdm/autonotebook.py#L1">[view source]</a>
-</span></p>
-<p>Automatically choose between <code>tqdm.notebook</code> and <code>tqdm.std</code>.</p>
-<p>Usage:</p>
-<pre><code class="language-python">&gt;&gt;&gt; from tqdm.autonotebook import trange, tqdm
-&gt;&gt;&gt; for i in trange(10):
-...     ...
-</code></pre>
-<p><a name="tqdm.auto"></a></p>
-<h1 id="tqdmauto">tqdm.auto<a class="headerlink" href="#tqdmauto" title="Permanent link">#</a></h1>
-<p><span style="float: right; font-size: 75%;">
-<a href="https://github.com/tqdm/tqdm/blob/4591083884c8ca079ccd1192c079113c7baeadc8/tqdm/auto.py#L1">[view source]</a>
-</span></p>
-<p>Enables multiple commonly used features.</p>
-<p>Method resolution order:</p>
-<ul>
-<li><code>tqdm.autonotebook</code> without import warnings</li>
-<li><code>tqdm.asyncio</code> on Python3.6+</li>
-<li><code>tqdm.std</code> base class</li>
-</ul>
-<p>Usage:</p>
-<pre><code class="language-python">&gt;&gt;&gt; from tqdm.auto import trange, tqdm
-&gt;&gt;&gt; for i in trange(10):
-...     ...
-</code></pre>
-<p><a name="tqdm.contrib.bells"></a></p>
+                <p><a name="tqdm.contrib.bells"></a></p>
 <h1 id="tqdmcontribbells">tqdm.contrib.bells<a class="headerlink" href="#tqdmcontribbells" title="Permanent link">#</a></h1>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/4591083884c8ca079ccd1192c079113c7baeadc8/tqdm/contrib/bells.py#L1">[view source]</a>
@@ -262,6 +236,34 @@
 </ul>
 </li>
 </ul>
+<p><a name="tqdm.auto"></a></p>
+<h1 id="tqdmauto">tqdm.auto<a class="headerlink" href="#tqdmauto" title="Permanent link">#</a></h1>
+<p><span style="float: right; font-size: 75%;">
+<a href="https://github.com/tqdm/tqdm/blob/4591083884c8ca079ccd1192c079113c7baeadc8/tqdm/auto.py#L1">[view source]</a>
+</span></p>
+<p>Enables multiple commonly used features.</p>
+<p>Method resolution order:</p>
+<ul>
+<li><code>tqdm.autonotebook</code> without import warnings</li>
+<li><code>tqdm.asyncio</code> on Python3.6+</li>
+<li><code>tqdm.std</code> base class</li>
+</ul>
+<p>Usage:</p>
+<pre><code class="language-python">&gt;&gt;&gt; from tqdm.auto import trange, tqdm
+&gt;&gt;&gt; for i in trange(10):
+...     ...
+</code></pre>
+<p><a name="tqdm.autonotebook"></a></p>
+<h1 id="tqdmautonotebook">tqdm.autonotebook<a class="headerlink" href="#tqdmautonotebook" title="Permanent link">#</a></h1>
+<p><span style="float: right; font-size: 75%;">
+<a href="https://github.com/tqdm/tqdm/blob/4591083884c8ca079ccd1192c079113c7baeadc8/tqdm/autonotebook.py#L1">[view source]</a>
+</span></p>
+<p>Automatically choose between <code>tqdm.notebook</code> and <code>tqdm.std</code>.</p>
+<p>Usage:</p>
+<pre><code class="language-python">&gt;&gt;&gt; from tqdm.autonotebook import trange, tqdm
+&gt;&gt;&gt; for i in trange(10):
+...     ...
+</code></pre>
               
             </div>
           </div>
@@ -272,7 +274,7 @@
         <a href="../../dev/warnings/" class="btn btn-neutral float-right" title="Warnings and Exceptions">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../contrib.telegram/" class="btn btn-neutral" title="tqdm.contrib.telegram"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../contrib.discord/" class="btn btn-neutral" title="tqdm.contrib.discord"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -307,7 +309,7 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
           <a href="https://github.com/tqdm/tqdm/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
-        <span><a href="../contrib.telegram/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../contrib.discord/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../../dev/warnings/" style="color: #fcfcfc">Next &raquo;</a></span>

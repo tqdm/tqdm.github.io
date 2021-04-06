@@ -10,7 +10,7 @@
   
   <link rel="shortcut icon" href="https://raw.githubusercontent.com/tqdm/tqdm/master/images/logo.gif">
   
-  <title>tqdm.notebook - tqdm documentation</title>
+  <title>tqdm.contrib.logging - tqdm documentation</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../css/theme.css" />
@@ -19,8 +19,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "tqdm.notebook";
-    var mkdocs_page_input_path = "docs/notebook.md";
+    var mkdocs_page_name = "tqdm.contrib.logging";
+    var mkdocs_page_input_path = "docs/contrib.logging.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -69,21 +69,7 @@
                 <ul class="current">
                     <li class="toctree-l1"><a class="reference internal" href="../tqdm/">tqdm.tqdm</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">tqdm.notebook</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#tqdm_notebook-objects">tqdm_notebook Objects</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#status_printer">status_printer</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#__init__">__init__</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#reset">reset</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#tnrange">tnrange</a>
-    </li>
-        </ul>
-    </li>
-    </ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../notebook/">tqdm.notebook</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../asyncio/">tqdm.asyncio</a>
                     </li>
@@ -105,7 +91,13 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../contrib.itertools/">tqdm.contrib.itertools</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../contrib.logging/">tqdm.contrib.logging</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">tqdm.contrib.logging</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#logging_redirect_tqdm">logging_redirect_tqdm</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tqdm_logging_redirect">tqdm_logging_redirect</a>
+    </li>
+    </ul>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../contrib.telegram/">tqdm.contrib.telegram</a>
                     </li>
@@ -216,10 +208,10 @@
         
       
     
-    <li>tqdm.notebook</li>
+    <li>tqdm.contrib.logging</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/tqdm/tqdm.github.io/tree/src/sources/docs/notebook.md"
+        <a href="https://github.com/tqdm/tqdm.github.io/tree/src/sources/docs/contrib.logging.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -230,70 +222,62 @@
           <div role="main">
             <div class="section">
               
-                <p><a name="tqdm.notebook"></a></p>
-<h1 id="tqdmnotebook">tqdm.notebook<a class="headerlink" href="#tqdmnotebook" title="Permanent link">#</a></h1>
+                <p><a name="tqdm.contrib.logging"></a></p>
+<h1 id="tqdmcontriblogging">tqdm.contrib.logging<a class="headerlink" href="#tqdmcontriblogging" title="Permanent link">#</a></h1>
 <p><span style="float: right; font-size: 75%;">
-<a href="https://github.com/tqdm/tqdm/blob/4591083884c8ca079ccd1192c079113c7baeadc8/tqdm/notebook.py#L1">[view source]</a>
+<a href="https://github.com/tqdm/tqdm/blob/4591083884c8ca079ccd1192c079113c7baeadc8/tqdm/contrib/logging.py#L1">[view source]</a>
 </span></p>
-<p>IPython/Jupyter Notebook progressbar decorator for iterators.
-Includes a default <code>range</code> iterator printing to <code>stderr</code>.</p>
-<p>Usage:</p>
-<pre><code class="language-python">&gt;&gt;&gt; from tqdm.notebook import trange, tqdm
-&gt;&gt;&gt; for i in trange(10):
-...     ...
-</code></pre>
-<p><a name="tqdm.notebook.tqdm_notebook"></a></p>
-<h2 id="tqdm_notebook-objects">tqdm_notebook Objects<a class="headerlink" href="#tqdm_notebook-objects" title="Permanent link">#</a></h2>
+<p>Helper functionality for interoperability with stdlib <code>logging</code>.</p>
+<p><a name="tqdm.contrib.logging.logging_redirect_tqdm"></a></p>
+<h4 id="logging_redirect_tqdm">logging_redirect_tqdm<a class="headerlink" href="#logging_redirect_tqdm" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
-<a href="https://github.com/tqdm/tqdm/blob/4591083884c8ca079ccd1192c079113c7baeadc8/tqdm/notebook.py#L94">[view source]</a>
+<a href="https://github.com/tqdm/tqdm/blob/4591083884c8ca079ccd1192c079113c7baeadc8/tqdm/contrib/logging.py#L49">[view source]</a>
 </span></p>
-<pre><code class="language-python">class tqdm_notebook(std_tqdm)
+<pre><code class="language-python">@contextmanager
+logging_redirect_tqdm(loggers=None, tqdm_class=std_tqdm)
 </code></pre>
-<p>Experimental IPython/Jupyter Notebook widget using tqdm!</p>
-<p><a name="tqdm.notebook.tqdm_notebook.status_printer"></a></p>
-<h4 id="status_printer">status_printer<a class="headerlink" href="#status_printer" title="Permanent link">#</a></h4>
-<p><span style="float: right; font-size: 75%;">
-<a href="https://github.com/tqdm/tqdm/blob/4591083884c8ca079ccd1192c079113c7baeadc8/tqdm/notebook.py#L99">[view source]</a>
-</span></p>
-<pre><code class="language-python"> | @staticmethod
- | status_printer(_, total=None, desc=None, ncols=None)
-</code></pre>
-<p>Manage the printing of an IPython/Jupyter Notebook progress bar widget.</p>
-<p><a name="tqdm.notebook.tqdm_notebook.__init__"></a></p>
-<h4 id="__init__">__init__<a class="headerlink" href="#__init__" title="Permanent link">#</a></h4>
-<p><span style="float: right; font-size: 75%;">
-<a href="https://github.com/tqdm/tqdm/blob/4591083884c8ca079ccd1192c079113c7baeadc8/tqdm/notebook.py#L207">[view source]</a>
-</span></p>
-<pre><code class="language-python"> | __init__(*args, **kwargs)
-</code></pre>
-<p>Supports the usual <code>tqdm.tqdm</code> parameters as well as those listed below.</p>
+<p>Context manager redirecting console logging to <code>tqdm.write()</code>, leaving
+other logging handlers (e.g. log files) unaffected.</p>
 <p><strong>Parameters</strong></p>
 <ul>
-<li><strong>display</strong><em>: Whether to call <code>display(self.container)</code> immediately</em><br />
-    [default: True].</li>
+<li><strong>loggers</strong><em>: list, optional</em><br />
+  Which handlers to redirect (default: [logging.root]).</li>
+<li><strong>tqdm_class</strong><em>: optional</em>  </li>
 </ul>
-<p><a name="tqdm.notebook.tqdm_notebook.reset"></a></p>
-<h4 id="reset">reset<a class="headerlink" href="#reset" title="Permanent link">#</a></h4>
-<p><span style="float: right; font-size: 75%;">
-<a href="https://github.com/tqdm/tqdm/blob/4591083884c8ca079ccd1192c079113c7baeadc8/tqdm/notebook.py#L293">[view source]</a>
-</span></p>
-<pre><code class="language-python"> | reset(total=None)
+<p><strong>Example</strong></p>
+<pre><code class="language-python">import logging
+from tqdm import trange
+from tqdm.contrib.logging import logging_redirect_tqdm
+
+LOG = logging.getLogger(__name__)
+
+if __name__ == '__main__':
+    logging.basicConfig(level=logging.INFO)
+    with logging_redirect_tqdm():
+        for i in trange(9):
+            if i == 4:
+                LOG.info(&quot;console logging redirected to `tqdm.write()`&quot;)
+    # logging restored
 </code></pre>
-<p>Resets to 0 iterations for repeated use.</p>
-<p>Consider combining with <code>leave=True</code>.</p>
+<p><a name="tqdm.contrib.logging.tqdm_logging_redirect"></a></p>
+<h4 id="tqdm_logging_redirect">tqdm_logging_redirect<a class="headerlink" href="#tqdm_logging_redirect" title="Permanent link">#</a></h4>
+<p><span style="float: right; font-size: 75%;">
+<a href="https://github.com/tqdm/tqdm/blob/4591083884c8ca079ccd1192c079113c7baeadc8/tqdm/contrib/logging.py#L100">[view source]</a>
+</span></p>
+<pre><code class="language-python">@contextmanager
+tqdm_logging_redirect(*args, **kwargs)
+</code></pre>
+<p>Convenience shortcut for:</p>
+<pre><code class="language-python">with tqdm_class(*args, **tqdm_kwargs) as pbar:
+    with logging_redirect_tqdm(loggers=loggers, tqdm_class=tqdm_class):
+        yield pbar
+</code></pre>
 <p><strong>Parameters</strong></p>
 <ul>
-<li><strong>total</strong><em>: int or float, optional. Total to use for the new bar.</em>  </li>
+<li><strong>tqdm_class</strong><em>: optional, (default: tqdm.std.tqdm).</em>  </li>
+<li><strong>loggers</strong><em>: optional, list.</em><br />
+**tqdm_kwargs  : passed to <code>tqdm_class</code>.</li>
 </ul>
-<p><a name="tqdm.notebook.tnrange"></a></p>
-<h4 id="tnrange">tnrange<a class="headerlink" href="#tnrange" title="Permanent link">#</a></h4>
-<p><span style="float: right; font-size: 75%;">
-<a href="https://github.com/tqdm/tqdm/blob/4591083884c8ca079ccd1192c079113c7baeadc8/tqdm/notebook.py#L314">[view source]</a>
-</span></p>
-<pre><code class="language-python">tnrange(*args, **kwargs)
-</code></pre>
-<p>A shortcut for <code>tqdm.notebook.tqdm(xrange(*args), **kwargs)</code>.
-On Python3+, <code>range</code> is used instead of <code>xrange</code>.</p>
               
             </div>
           </div>
@@ -301,10 +285,10 @@ On Python3+, <code>range</code> is used instead of <code>xrange</code>.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../asyncio/" class="btn btn-neutral float-right" title="tqdm.asyncio">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../contrib.telegram/" class="btn btn-neutral float-right" title="tqdm.contrib.telegram">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../tqdm/" class="btn btn-neutral" title="tqdm.tqdm"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../contrib.itertools/" class="btn btn-neutral" title="tqdm.contrib.itertools"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -339,10 +323,10 @@ On Python3+, <code>range</code> is used instead of <code>xrange</code>.</p>
     <span class="rst-current-version" data-toggle="rst-current-version">
           <a href="https://github.com/tqdm/tqdm/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
-        <span><a href="../tqdm/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../contrib.itertools/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../asyncio/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../contrib.telegram/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
