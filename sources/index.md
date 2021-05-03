@@ -1,4 +1,4 @@
-<img align="right" src="https://raw.githubusercontent.com/tqdm/tqdm/master/images/logo.gif" />
+<img align="right" src="https://img.tqdm.ml/logo.gif" />
 
 tqdm
 ====
@@ -20,7 +20,7 @@ tqdm
 [![Libraries-Rank](https://img.shields.io/librariesio/sourcerank/pypi/tqdm.svg?logo=koding&logoColor=white)](https://libraries.io/pypi/tqdm)
 [![Repology](https://repology.org/badge/tiny-repos/python:tqdm.svg)](https://repology.org/project/python:tqdm/versions)
 [![awesome-python](https://awesome.re/mentioned-badge.svg)](https://github.com/vinta/awesome-python)
-[![README-Hits](https://caspersci.uk.to/cgi-bin/hits.cgi?q=tqdm&style=social&r=https://github.com/tqdm/tqdm&l=https://caspersci.uk.to/images/tqdm.png&f=https://raw.githubusercontent.com/tqdm/tqdm/master/images/logo.gif)](https://caspersci.uk.to/cgi-bin/hits.cgi?q=tqdm&a=plot&r=https://github.com/tqdm/tqdm&l=https://caspersci.uk.to/images/tqdm.png&f=https://raw.githubusercontent.com/tqdm/tqdm/master/images/logo.gif&style=social)
+[![README-Hits](https://caspersci.uk.to/cgi-bin/hits.cgi?q=tqdm&style=social&r=https://github.com/tqdm/tqdm&l=https://img.tqdm.ml/favicon.png&f=https://img.tqdm.ml/logo.gif)](https://caspersci.uk.to/cgi-bin/hits.cgi?q=tqdm&a=plot&r=https://github.com/tqdm/tqdm&l=https://img.tqdm.ml/favicon.png&f=https://img.tqdm.ml/logo.gif&style=social)
 ---
 
 `tqdm` means "progress" in Arabic (*taqadum*, تقدّم) and is an
@@ -40,9 +40,9 @@ for i in tqdm(range(10000)):
 `trange(N)` can be also used as a convenient shortcut for
 `tqdm(xrange(N))`.
 
-![Screenshot](https://raw.githubusercontent.com/tqdm/img/master/tqdm.gif)
+![Screenshot](https://img.tqdm.ml/tqdm.gif)
 
-[![Video](https://raw.githubusercontent.com/tqdm/img/master/video.jpg)](/video) [![Slides](https://raw.githubusercontent.com/tqdm/img/master/slides.jpg
+[![Video](https://img.tqdm.ml/video.jpg)](/video) [![Slides](https://img.tqdm.ml/slides.jpg
 )](/PyData2019/slides.html)
 
 It can also be executed as a module with pipes:

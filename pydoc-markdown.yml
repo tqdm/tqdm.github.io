@@ -154,6 +154,6 @@ renderer:
     remote_branch: master
     site_description: A Fast, Extensible Progress Meter
     site_author: Casper da Costa-Luis
-    site_favicon: https://raw.githubusercontent.com/tqdm/tqdm/master/images/logo.gif
+    site_favicon: https://img.tqdm.ml/logo.gif
     copyright: |
       &copy; Casper da Costa-Luis <a href="https://github.com/casperdcl">@casperdcl</a> 2015-2021
