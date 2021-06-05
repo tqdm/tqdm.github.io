@@ -21,6 +21,9 @@ renderer:
   - title: Home
     name: index
     source: sources/index.md
+  - title: Merch Store!
+    name: merch
+    source: sources/merch.md
   - title: Documentation
     name: docs
     children:
