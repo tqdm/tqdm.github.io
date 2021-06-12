@@ -21,9 +21,6 @@ renderer:
   - title: Home
     name: index
     source: sources/index.md
-  - title: Merch Store!
-    name: merch
-    source: sources/merch.md
   - title: Documentation
     name: docs
     children:
@@ -90,6 +87,9 @@ renderer:
   - title: Contributing
     name: contributing
     source: ../CONTRIBUTING.md
+  - title: Merch Store!
+    name: merch
+    source: sources/merch.md
   - title: Ports to Other Languages
     name: ports
     source: ../wiki/tqdm-ports.md

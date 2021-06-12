@@ -43,7 +43,7 @@ for i in tqdm(range(10000)):
 ![Screenshot](https://img.tqdm.ml/tqdm.gif)
 
 [![Video](https://img.tqdm.ml/video.jpg)](/video) [![Slides](https://img.tqdm.ml/slides.jpg
-)](/PyData2019/slides.html)
+)](/PyData2019/slides.html) [![Merch](https://img.tqdm.ml/merch.jpg)](/merch)
 
 It can also be executed as a module with pipes:
 
