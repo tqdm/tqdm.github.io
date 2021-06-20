@@ -1,7 +1,9 @@
 # Shop
 
 Did `tqdm` save you time? Did it make your life easier? Did it save your skin?
-Show your support; get some swag! We now have branded merch for you.
+Show your support; get some swag! We now have branded merch for you for under $20 including worldwide shipping.
+
+All profits (only about $2/item after manufacturing, shipping & taxes) help keep your favourite progress bar running.
 
 ## Snapback Hat
 
