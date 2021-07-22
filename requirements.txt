@@ -1,4 +1,4 @@
 argopt
 tqdm
 mkdocs
-pydoc-markdown>=3.3.0,<4
+pydoc-markdown>=3.3.0,<5
