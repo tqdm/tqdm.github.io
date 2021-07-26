@@ -1,1 +1,23 @@
 .wy-menu-vertical { padding-bottom: 300px; }
+
+details {
+  padding-bottom: 20px;
+}
+
+ul.thumbs img {
+  width: 150px;
+}
+@media screen and (min-width: 800px) {
+  ul.thumbs {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+}
+@media screen and (max-width: 800px) {
+  ul.thumbs {
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+  }
+}
