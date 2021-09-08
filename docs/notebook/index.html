@@ -15,7 +15,7 @@
 
   <link rel="stylesheet" href="../../css/theme.css" />
   <link rel="stylesheet" href="../../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
   
   <script>
     // Current page data
@@ -26,11 +26,12 @@
   
   <script src="../../js/jquery-2.1.1.min.js" defer></script>
   <script src="../../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
   <link rel="stylesheet" href="../../css/extra.css">
   <script data-ad-client="ca-pub-5970675603981498" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
+  
   <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -54,7 +55,7 @@
         <a href="../.." class="icon icon-home"> tqdm documentation</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -222,7 +223,7 @@
     <li>tqdm.notebook</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/tqdm/tqdm.github.io/tree/src/sources/docs/notebook.md"
+        <a href="https://github.com/tqdm/tqdm.github.io/tree/main/sources/docs/notebook.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -230,11 +231,10 @@
   
   <hr/>
 </div>
-
           <div role="main">
             <div class="section">
               
-                <p><a id="tqdm.notebook"></a></p>
+                <p><a name="tqdm.notebook"></a></p>
 <h1 id="tqdmnotebook">tqdm.notebook<a class="headerlink" href="#tqdmnotebook" title="Permanent link">#</a></h1>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/notebook.py#L1">[view source]</a>
@@ -246,7 +246,7 @@ Includes a default <code>range</code> iterator printing to <code>stderr</code>.<
 &gt;&gt;&gt; for i in trange(10):
 ...     ...
 </code></pre>
-<p><a id="tqdm.notebook.tqdm_notebook"></a></p>
+<p><a name="tqdm.notebook.tqdm_notebook"></a></p>
 <h2 id="tqdm_notebook-objects">tqdm_notebook Objects<a class="headerlink" href="#tqdm_notebook-objects" title="Permanent link">#</a></h2>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/notebook.py#L97">[view source]</a>
@@ -254,7 +254,7 @@ Includes a default <code>range</code> iterator printing to <code>stderr</code>.<
 <pre><code class="language-python">class tqdm_notebook(std_tqdm)
 </code></pre>
 <p>Experimental IPython/Jupyter Notebook widget using tqdm!</p>
-<p><a id="tqdm.notebook.tqdm_notebook.status_printer"></a></p>
+<p><a name="tqdm.notebook.tqdm_notebook.status_printer"></a></p>
 <h4 id="status_printer">status_printer<a class="headerlink" href="#status_printer" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/notebook.py#L102">[view source]</a>
@@ -263,7 +263,7 @@ Includes a default <code>range</code> iterator printing to <code>stderr</code>.<
  | status_printer(_, total=None, desc=None, ncols=None)
 </code></pre>
 <p>Manage the printing of an IPython/Jupyter Notebook progress bar widget.</p>
-<p><a id="tqdm.notebook.tqdm_notebook.__init__"></a></p>
+<p><a name="tqdm.notebook.tqdm_notebook.__init__"></a></p>
 <h4 id="__init__">__init__<a class="headerlink" href="#__init__" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/notebook.py#L210">[view source]</a>
@@ -276,7 +276,7 @@ Includes a default <code>range</code> iterator printing to <code>stderr</code>.<
 <li><strong>display</strong><em>: Whether to call <code>display(self.container)</code> immediately</em><br />
     [default: True].</li>
 </ul>
-<p><a id="tqdm.notebook.tqdm_notebook.reset"></a></p>
+<p><a name="tqdm.notebook.tqdm_notebook.reset"></a></p>
 <h4 id="reset">reset<a class="headerlink" href="#reset" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/notebook.py#L296">[view source]</a>
@@ -289,7 +289,7 @@ Includes a default <code>range</code> iterator printing to <code>stderr</code>.<
 <ul>
 <li><strong>total</strong><em>: int or float, optional. Total to use for the new bar.</em>  </li>
 </ul>
-<p><a id="tqdm.notebook.tnrange"></a></p>
+<p><a name="tqdm.notebook.tnrange"></a></p>
 <h4 id="tnrange">tnrange<a class="headerlink" href="#tnrange" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/notebook.py#L317">[view source]</a>
@@ -351,7 +351,6 @@ On Python3+, <code>range</code> is used instead of <code>xrange</code>.</p>
     </span>
 </div>
     <script>var base_url = '../..';</script>
-    <script src="../../js/theme_extra.js" defer></script>
     <script src="../../js/theme.js" defer></script>
       <script src="../../search/main.js" defer></script>
     <script defer>
