@@ -228,27 +228,27 @@
           <div role="main">
             <div class="section">
               
-                <p><a name="tqdm.contrib.concurrent"></a></p>
+                <p><a id="tqdm.contrib.concurrent"></a></p>
 <h1 id="tqdmcontribconcurrent">tqdm.contrib.concurrent<a class="headerlink" href="#tqdmcontribconcurrent" title="Permanent link">#</a></h1>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/contrib/concurrent.py#L1">[view source]</a>
 </span></p>
 <p>Thin wrappers around <code>concurrent.futures</code>.</p>
-<p><a name="tqdm.contrib.concurrent.ensure_lock"></a></p>
+<p><a id="tqdm.contrib.concurrent.ensure_lock"></a></p>
 <h4 id="ensure_lock">ensure_lock<a class="headerlink" href="#ensure_lock" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/contrib/concurrent.py#L35">[view source]</a>
 </span></p>
 <pre><code class="language-python">@contextmanager
-ensure_lock(tqdm_class, lock_name=&quot;&quot;)
+def ensure_lock(tqdm_class, lock_name=&quot;&quot;)
 </code></pre>
 <p>get (create if necessary) and then restore <code>tqdm_class</code>'s lock</p>
-<p><a name="tqdm.contrib.concurrent.thread_map"></a></p>
+<p><a id="tqdm.contrib.concurrent.thread_map"></a></p>
 <h4 id="thread_map">thread_map<a class="headerlink" href="#thread_map" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/contrib/concurrent.py#L79">[view source]</a>
 </span></p>
-<pre><code class="language-python">thread_map(fn, *iterables, **tqdm_kwargs)
+<pre><code class="language-python">def thread_map(fn, *iterables, **tqdm_kwargs)
 </code></pre>
 <p>Equivalent of <code>list(map(fn, *iterables))</code>
 driven by <code>concurrent.futures.ThreadPoolExecutor</code>.</p>
@@ -261,12 +261,12 @@ driven by <code>concurrent.futures.ThreadPoolExecutor</code>.</p>
     <code>concurrent.futures.ThreadPoolExecutor.__init__</code>.
     [default: max(32, cpu_count() + 4)].</li>
 </ul>
-<p><a name="tqdm.contrib.concurrent.process_map"></a></p>
+<p><a id="tqdm.contrib.concurrent.process_map"></a></p>
 <h4 id="process_map">process_map<a class="headerlink" href="#process_map" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/contrib/concurrent.py#L97">[view source]</a>
 </span></p>
-<pre><code class="language-python">process_map(fn, *iterables, **tqdm_kwargs)
+<pre><code class="language-python">def process_map(fn, *iterables, **tqdm_kwargs)
 </code></pre>
 <p>Equivalent of <code>list(map(fn, *iterables))</code>
 driven by <code>concurrent.futures.ProcessPoolExecutor</code>.</p>

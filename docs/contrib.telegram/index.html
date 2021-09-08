@@ -230,7 +230,7 @@
           <div role="main">
             <div class="section">
               
-                <p><a name="tqdm.contrib.telegram"></a></p>
+                <p><a id="tqdm.contrib.telegram"></a></p>
 <h1 id="tqdmcontribtelegram">tqdm.contrib.telegram<a class="headerlink" href="#tqdmcontribtelegram" title="Permanent link">#</a></h1>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/contrib/telegram.py#L1">[view source]</a>
@@ -242,7 +242,7 @@
 ...     ...
 </code></pre>
 <p><img alt="screenshot" src="https://img.tqdm.ml/screenshot-telegram.gif" /></p>
-<p><a name="tqdm.contrib.telegram.tqdm_telegram"></a></p>
+<p><a id="tqdm.contrib.telegram.tqdm_telegram"></a></p>
 <h2 id="tqdm_telegram-objects">tqdm_telegram Objects<a class="headerlink" href="#tqdm_telegram-objects" title="Permanent link">#</a></h2>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/contrib/telegram.py#L92">[view source]</a>
@@ -263,12 +263,12 @@ May take a few seconds to create (<code>__init__</code>).</p>
 &gt;&gt;&gt; for i in tqdm(iterable, token='{token}', chat_id='{chat_id}'):
 ...     ...
 </code></pre>
-<p><a name="tqdm.contrib.telegram.tqdm_telegram.__init__"></a></p>
+<p><a id="tqdm.contrib.telegram.tqdm_telegram.__init__"></a></p>
 <h4 id="__init__">__init__<a class="headerlink" href="#__init__" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/contrib/telegram.py#L108">[view source]</a>
 </span></p>
-<pre><code class="language-python"> | __init__(*args, **kwargs)
+<pre><code class="language-python">def __init__(*args, **kwargs)
 </code></pre>
 <p><strong>Parameters</strong></p>
 <ul>
@@ -278,12 +278,12 @@ May take a few seconds to create (<code>__init__</code>).</p>
     [default: ${TQDM_TELEGRAM_CHAT_ID}].</li>
 </ul>
 <p>See <code>tqdm.auto.tqdm.__init__</code> for other parameters.</p>
-<p><a name="tqdm.contrib.telegram.ttgrange"></a></p>
+<p><a id="tqdm.contrib.telegram.ttgrange"></a></p>
 <h4 id="ttgrange">ttgrange<a class="headerlink" href="#ttgrange" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/contrib/telegram.py#L149">[view source]</a>
 </span></p>
-<pre><code class="language-python">ttgrange(*args, **kwargs)
+<pre><code class="language-python">def ttgrange(*args, **kwargs)
 </code></pre>
 <p>A shortcut for <code>tqdm.contrib.telegram.tqdm(xrange(*args), **kwargs)</code>.
 On Python3+, <code>range</code> is used instead of <code>xrange</code>.</p>

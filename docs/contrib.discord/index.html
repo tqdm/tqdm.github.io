@@ -230,7 +230,7 @@
           <div role="main">
             <div class="section">
               
-                <p><a name="tqdm.contrib.discord"></a></p>
+                <p><a id="tqdm.contrib.discord"></a></p>
 <h1 id="tqdmcontribdiscord">tqdm.contrib.discord<a class="headerlink" href="#tqdmcontribdiscord" title="Permanent link">#</a></h1>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/contrib/discord.py#L1">[view source]</a>
@@ -242,7 +242,7 @@
 ...     ...
 </code></pre>
 <p><img alt="screenshot" src="https://img.tqdm.ml/screenshot-discord.png" /></p>
-<p><a name="tqdm.contrib.discord.tqdm_discord"></a></p>
+<p><a id="tqdm.contrib.discord.tqdm_discord"></a></p>
 <h2 id="tqdm_discord-objects">tqdm_discord Objects<a class="headerlink" href="#tqdm_discord-objects" title="Permanent link">#</a></h2>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/contrib/discord.py#L59">[view source]</a>
@@ -261,12 +261,12 @@ May take a few seconds to create (<code>__init__</code>).</p>
 &gt;&gt;&gt; for i in tqdm(iterable, token='{token}', channel_id='{channel_id}'):
 ...     ...
 </code></pre>
-<p><a name="tqdm.contrib.discord.tqdm_discord.__init__"></a></p>
+<p><a id="tqdm.contrib.discord.tqdm_discord.__init__"></a></p>
 <h4 id="__init__">__init__<a class="headerlink" href="#__init__" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/contrib/discord.py#L73">[view source]</a>
 </span></p>
-<pre><code class="language-python"> | __init__(*args, **kwargs)
+<pre><code class="language-python">def __init__(*args, **kwargs)
 </code></pre>
 <p><strong>Parameters</strong></p>
 <ul>
@@ -278,12 +278,12 @@ May take a few seconds to create (<code>__init__</code>).</p>
   Minimum of [default: 1.5] to avoid rate limit.</li>
 </ul>
 <p>See <code>tqdm.auto.tqdm.__init__</code> for other parameters.</p>
-<p><a name="tqdm.contrib.discord.tdrange"></a></p>
+<p><a id="tqdm.contrib.discord.tdrange"></a></p>
 <h4 id="tdrange">tdrange<a class="headerlink" href="#tdrange" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/contrib/discord.py#L111">[view source]</a>
 </span></p>
-<pre><code class="language-python">tdrange(*args, **kwargs)
+<pre><code class="language-python">def tdrange(*args, **kwargs)
 </code></pre>
 <p>A shortcut for <code>tqdm.contrib.discord.tqdm(xrange(*args), **kwargs)</code>.
 On Python3+, <code>range</code> is used instead of <code>xrange</code>.</p>

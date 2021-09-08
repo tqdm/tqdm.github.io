@@ -278,7 +278,7 @@
           <div role="main">
             <div class="section">
               
-                <p><a name="tqdm.std"></a></p>
+                <p><a id="tqdm.std"></a></p>
 <h1 id="tqdmstd">tqdm.std<a class="headerlink" href="#tqdmstd" title="Permanent link">#</a></h1>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/std.py#L1">[view source]</a>
@@ -290,7 +290,7 @@ Includes a default <code>range</code> iterator printing to <code>stderr</code>.<
 &gt;&gt;&gt; for i in trange(10):
 ...     ...
 </code></pre>
-<p><a name="tqdm.std.tqdm"></a></p>
+<p><a id="tqdm.std.tqdm"></a></p>
 <h2 id="tqdm-objects">tqdm Objects<a class="headerlink" href="#tqdm-objects" title="Permanent link">#</a></h2>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/std.py#L248">[view source]</a>
@@ -300,13 +300,13 @@ Includes a default <code>range</code> iterator printing to <code>stderr</code>.<
 <p>Decorate an iterable object, returning an iterator which acts exactly
 like the original iterable, but prints a dynamically updating
 progressbar every time a value is requested.</p>
-<p><a name="tqdm.std.tqdm.format_sizeof"></a></p>
+<p><a id="tqdm.std.tqdm.format_sizeof"></a></p>
 <h4 id="format_sizeof">format_sizeof<a class="headerlink" href="#format_sizeof" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/std.py#L260">[view source]</a>
 </span></p>
-<pre><code class="language-python"> | @staticmethod
- | format_sizeof(num, suffix='', divisor=1000)
+<pre><code class="language-python">@staticmethod
+def format_sizeof(num, suffix='', divisor=1000)
 </code></pre>
 <p>Formats a number (greater than unity) with SI Order of Magnitude
 prefixes.</p>
@@ -324,13 +324,13 @@ prefixes.</p>
 <li><strong>out</strong><em>: str</em><br />
     Number with Order of Magnitude SI unit postfix.</li>
 </ul>
-<p><a name="tqdm.std.tqdm.format_interval"></a></p>
+<p><a id="tqdm.std.tqdm.format_interval"></a></p>
 <h4 id="format_interval">format_interval<a class="headerlink" href="#format_interval" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/std.py#L290">[view source]</a>
 </span></p>
-<pre><code class="language-python"> | @staticmethod
- | format_interval(t)
+<pre><code class="language-python">@staticmethod
+def format_interval(t)
 </code></pre>
 <p>Formats a number of seconds as a clock time, [H:]MM:SS</p>
 <p><strong>Parameters</strong></p>
@@ -343,13 +343,13 @@ prefixes.</p>
 <li><strong>out</strong><em>: str</em><br />
     [H:]MM:SS</li>
 </ul>
-<p><a name="tqdm.std.tqdm.format_num"></a></p>
+<p><a id="tqdm.std.tqdm.format_num"></a></p>
 <h4 id="format_num">format_num<a class="headerlink" href="#format_num" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/std.py#L312">[view source]</a>
 </span></p>
-<pre><code class="language-python"> | @staticmethod
- | format_num(n)
+<pre><code class="language-python">@staticmethod
+def format_num(n)
 </code></pre>
 <p>Intelligent scientific notation (.3g).</p>
 <p><strong>Parameters</strong></p>
@@ -362,24 +362,24 @@ prefixes.</p>
 <li><strong>out</strong><em>: str</em><br />
     Formatted number.</li>
 </ul>
-<p><a name="tqdm.std.tqdm.status_printer"></a></p>
+<p><a id="tqdm.std.tqdm.status_printer"></a></p>
 <h4 id="status_printer">status_printer<a class="headerlink" href="#status_printer" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/std.py#L331">[view source]</a>
 </span></p>
-<pre><code class="language-python"> | @staticmethod
- | status_printer(file)
+<pre><code class="language-python">@staticmethod
+def status_printer(file)
 </code></pre>
 <p>Manage the printing and in-place updating of a line of characters.
 Note that if the string is longer than a line, then in-place
 updating may not work (it will print a new line at each refresh).</p>
-<p><a name="tqdm.std.tqdm.format_meter"></a></p>
+<p><a id="tqdm.std.tqdm.format_meter"></a></p>
 <h4 id="format_meter">format_meter<a class="headerlink" href="#format_meter" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/std.py#L357">[view source]</a>
 </span></p>
-<pre><code class="language-python"> | @staticmethod
- | format_meter(n, total, elapsed, ncols=None, prefix='', ascii=False, unit='it', unit_scale=False, rate=None, bar_format=None, postfix=None, unit_divisor=1000, initial=0, colour=None, **extra_kwargs)
+<pre><code class="language-python">@staticmethod
+def format_meter(n, total, elapsed, ncols=None, prefix='', ascii=False, unit='it', unit_scale=False, rate=None, bar_format=None, postfix=None, unit_divisor=1000, initial=0, colour=None, **extra_kwargs)
 </code></pre>
 <p>Return a string-based progress bar given some parameters</p>
 <p><strong>Parameters</strong></p>
@@ -443,51 +443,51 @@ updating may not work (it will print a new line at each refresh).</p>
 <ul>
 <li><strong>out</strong><em>: Formatted meter and stats, ready to display.</em>  </li>
 </ul>
-<p><a name="tqdm.std.tqdm.write"></a></p>
+<p><a id="tqdm.std.tqdm.write"></a></p>
 <h4 id="write">write<a class="headerlink" href="#write" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/std.py#L617">[view source]</a>
 </span></p>
-<pre><code class="language-python"> | @classmethod
- | write(cls, s, file=None, end=&quot;\n&quot;, nolock=False)
+<pre><code class="language-python">@classmethod
+def write(cls, s, file=None, end=&quot;\n&quot;, nolock=False)
 </code></pre>
 <p>Print a message via tqdm (without overlap with bars).</p>
-<p><a name="tqdm.std.tqdm.external_write_mode"></a></p>
+<p><a id="tqdm.std.tqdm.external_write_mode"></a></p>
 <h4 id="external_write_mode">external_write_mode<a class="headerlink" href="#external_write_mode" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/std.py#L627">[view source]</a>
 </span></p>
-<pre><code class="language-python"> | @classmethod
- | @contextmanager
- | external_write_mode(cls, file=None, nolock=False)
+<pre><code class="language-python">@classmethod
+@contextmanager
+def external_write_mode(cls, file=None, nolock=False)
 </code></pre>
 <p>Disable tqdm within context and refresh tqdm when exits.
 Useful when writing to standard output stream</p>
-<p><a name="tqdm.std.tqdm.set_lock"></a></p>
+<p><a id="tqdm.std.tqdm.set_lock"></a></p>
 <h4 id="set_lock">set_lock<a class="headerlink" href="#set_lock" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/std.py#L656">[view source]</a>
 </span></p>
-<pre><code class="language-python"> | @classmethod
- | set_lock(cls, lock)
+<pre><code class="language-python">@classmethod
+def set_lock(cls, lock)
 </code></pre>
 <p>Set the global lock.</p>
-<p><a name="tqdm.std.tqdm.get_lock"></a></p>
+<p><a id="tqdm.std.tqdm.get_lock"></a></p>
 <h4 id="get_lock">get_lock<a class="headerlink" href="#get_lock" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/std.py#L661">[view source]</a>
 </span></p>
-<pre><code class="language-python"> | @classmethod
- | get_lock(cls)
+<pre><code class="language-python">@classmethod
+def get_lock(cls)
 </code></pre>
 <p>Get the global lock. Construct it if it does not exist.</p>
-<p><a name="tqdm.std.tqdm.pandas"></a></p>
+<p><a id="tqdm.std.tqdm.pandas"></a></p>
 <h4 id="pandas">pandas<a class="headerlink" href="#pandas" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/std.py#L668">[view source]</a>
 </span></p>
-<pre><code class="language-python"> | @classmethod
- | pandas(cls, **tqdm_kwargs)
+<pre><code class="language-python">@classmethod
+def pandas(cls, **tqdm_kwargs)
 </code></pre>
 <p>Registers the current <code>tqdm</code> class with
     pandas.core.
@@ -515,12 +515,12 @@ and each instance will automatically <code>close()</code> upon completion.</p>
 </code></pre>
 <p><strong>References</strong></p>
 <p><a href="https://stackoverflow.com/questions/18603270/progress-indicator-during-pandas-operations-python">https://stackoverflow.com/questions/18603270/progress-indicator-during-pandas-operations-python</a></p>
-<p><a name="tqdm.std.tqdm.__init__"></a></p>
+<p><a id="tqdm.std.tqdm.__init__"></a></p>
 <h4 id="__init__">__init__<a class="headerlink" href="#__init__" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/std.py#L849">[view source]</a>
 </span></p>
-<pre><code class="language-python"> | __init__(iterable=None, desc=None, total=None, leave=True, file=None, ncols=None, mininterval=0.1, maxinterval=10.0, miniters=None, ascii=None, disable=False, unit='it', unit_scale=False, dynamic_ncols=False, smoothing=0.3, bar_format=None, initial=0, position=None, postfix=None, unit_divisor=1000, write_bytes=None, lock_args=None, nrows=None, colour=None, delay=0, gui=False, **kwargs)
+<pre><code class="language-python">def __init__(iterable=None, desc=None, total=None, leave=True, file=None, ncols=None, mininterval=0.1, maxinterval=10.0, miniters=None, ascii=None, disable=False, unit='it', unit_scale=False, dynamic_ncols=False, smoothing=0.3, bar_format=None, initial=0, position=None, postfix=None, unit_divisor=1000, write_bytes=None, lock_args=None, nrows=None, colour=None, delay=0, gui=False, **kwargs)
 </code></pre>
 <p><strong>Parameters</strong></p>
 <ul>
@@ -638,20 +638,20 @@ and each instance will automatically <code>close()</code> upon completion.</p>
 <ul>
 <li><strong>out</strong><em>: decorated iterator.</em>  </li>
 </ul>
-<p><a name="tqdm.std.tqdm.__iter__"></a></p>
+<p><a id="tqdm.std.tqdm.__iter__"></a></p>
 <h4 id="__iter__">__iter__<a class="headerlink" href="#__iter__" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/std.py#L1164">[view source]</a>
 </span></p>
-<pre><code class="language-python"> | __iter__()
+<pre><code class="language-python">def __iter__()
 </code></pre>
 <p>Backward-compatibility to use: for x in tqdm(iterable)</p>
-<p><a name="tqdm.std.tqdm.update"></a></p>
+<p><a id="tqdm.std.tqdm.update"></a></p>
 <h4 id="update">update<a class="headerlink" href="#update" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/std.py#L1202">[view source]</a>
 </span></p>
-<pre><code class="language-python"> | update(n=1)
+<pre><code class="language-python">def update(n=1)
 </code></pre>
 <p>Manually update the progress bar, useful for streams
 such as reading files.
@@ -677,28 +677,28 @@ exactly reached and printed.</p>
 <li><strong>out</strong><em>: bool or None</em><br />
     True if a <code>display()</code> was triggered.</li>
 </ul>
-<p><a name="tqdm.std.tqdm.close"></a></p>
+<p><a id="tqdm.std.tqdm.close"></a></p>
 <h4 id="close">close<a class="headerlink" href="#close" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/std.py#L1269">[view source]</a>
 </span></p>
-<pre><code class="language-python"> | close()
+<pre><code class="language-python">def close()
 </code></pre>
 <p>Cleanup and (if leave=False) close the progressbar.</p>
-<p><a name="tqdm.std.tqdm.clear"></a></p>
+<p><a id="tqdm.std.tqdm.clear"></a></p>
 <h4 id="clear">clear<a class="headerlink" href="#clear" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/std.py#L1313">[view source]</a>
 </span></p>
-<pre><code class="language-python"> | clear(nolock=False)
+<pre><code class="language-python">def clear(nolock=False)
 </code></pre>
 <p>Clear current bar display.</p>
-<p><a name="tqdm.std.tqdm.refresh"></a></p>
+<p><a id="tqdm.std.tqdm.refresh"></a></p>
 <h4 id="refresh">refresh<a class="headerlink" href="#refresh" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/std.py#L1329">[view source]</a>
 </span></p>
-<pre><code class="language-python"> | refresh(nolock=False, lock_args=None)
+<pre><code class="language-python">def refresh(nolock=False, lock_args=None)
 </code></pre>
 <p>Force refresh the display of this bar.</p>
 <p><strong>Parameters</strong></p>
@@ -710,20 +710,20 @@ exactly reached and printed.</p>
     Passed to internal lock's <code>acquire()</code>.
     If specified, will only <code>display()</code> if <code>acquire()</code> returns <code>True</code>.</li>
 </ul>
-<p><a name="tqdm.std.tqdm.unpause"></a></p>
+<p><a id="tqdm.std.tqdm.unpause"></a></p>
 <h4 id="unpause">unpause<a class="headerlink" href="#unpause" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/std.py#L1356">[view source]</a>
 </span></p>
-<pre><code class="language-python"> | unpause()
+<pre><code class="language-python">def unpause()
 </code></pre>
 <p>Restart tqdm timer from last print time.</p>
-<p><a name="tqdm.std.tqdm.reset"></a></p>
+<p><a id="tqdm.std.tqdm.reset"></a></p>
 <h4 id="reset">reset<a class="headerlink" href="#reset" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/std.py#L1364">[view source]</a>
 </span></p>
-<pre><code class="language-python"> | reset(total=None)
+<pre><code class="language-python">def reset(total=None)
 </code></pre>
 <p>Resets to 0 iterations for repeated use.</p>
 <p>Consider combining with <code>leave=True</code>.</p>
@@ -731,12 +731,12 @@ exactly reached and printed.</p>
 <ul>
 <li><strong>total</strong><em>: int or float, optional. Total to use for the new bar.</em>  </li>
 </ul>
-<p><a name="tqdm.std.tqdm.set_description"></a></p>
+<p><a id="tqdm.std.tqdm.set_description"></a></p>
 <h4 id="set_description">set_description<a class="headerlink" href="#set_description" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/std.py#L1386">[view source]</a>
 </span></p>
-<pre><code class="language-python"> | set_description(desc=None, refresh=True)
+<pre><code class="language-python">def set_description(desc=None, refresh=True)
 </code></pre>
 <p>Set/modify description of the progress bar.</p>
 <p><strong>Parameters</strong></p>
@@ -745,20 +745,20 @@ exactly reached and printed.</p>
 <li><strong>refresh</strong><em>: bool, optional</em><br />
     Forces refresh [default: True].</li>
 </ul>
-<p><a name="tqdm.std.tqdm.set_description_str"></a></p>
+<p><a id="tqdm.std.tqdm.set_description_str"></a></p>
 <h4 id="set_description_str">set_description_str<a class="headerlink" href="#set_description_str" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/std.py#L1400">[view source]</a>
 </span></p>
-<pre><code class="language-python"> | set_description_str(desc=None, refresh=True)
+<pre><code class="language-python">def set_description_str(desc=None, refresh=True)
 </code></pre>
 <p>Set/modify description without ': ' appended.</p>
-<p><a name="tqdm.std.tqdm.set_postfix"></a></p>
+<p><a id="tqdm.std.tqdm.set_postfix"></a></p>
 <h4 id="set_postfix">set_postfix<a class="headerlink" href="#set_postfix" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/std.py#L1406">[view source]</a>
 </span></p>
-<pre><code class="language-python"> | set_postfix(ordered_dict=None, refresh=True, **kwargs)
+<pre><code class="language-python">def set_postfix(ordered_dict=None, refresh=True, **kwargs)
 </code></pre>
 <p>Set/modify postfix (additional stats)
 with automatic formatting based on datatype.</p>
@@ -769,29 +769,29 @@ with automatic formatting based on datatype.</p>
     Forces refresh [default: True].</li>
 <li><strong>kwargs</strong><em>: dict, optional</em>  </li>
 </ul>
-<p><a name="tqdm.std.tqdm.set_postfix_str"></a></p>
+<p><a id="tqdm.std.tqdm.set_postfix_str"></a></p>
 <h4 id="set_postfix_str">set_postfix_str<a class="headerlink" href="#set_postfix_str" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/std.py#L1437">[view source]</a>
 </span></p>
-<pre><code class="language-python"> | set_postfix_str(s='', refresh=True)
+<pre><code class="language-python">def set_postfix_str(s='', refresh=True)
 </code></pre>
 <p>Postfix without dictionary expansion, similar to prefix handling.</p>
-<p><a name="tqdm.std.tqdm.format_dict"></a></p>
+<p><a id="tqdm.std.tqdm.format_dict"></a></p>
 <h4 id="format_dict">format_dict<a class="headerlink" href="#format_dict" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/std.py#L1451">[view source]</a>
 </span></p>
-<pre><code class="language-python"> | @property
- | format_dict()
+<pre><code class="language-python">@property
+def format_dict()
 </code></pre>
 <p>Public API for read-only member access.</p>
-<p><a name="tqdm.std.tqdm.display"></a></p>
+<p><a id="tqdm.std.tqdm.display"></a></p>
 <h4 id="display">display<a class="headerlink" href="#display" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/std.py#L1468">[view source]</a>
 </span></p>
-<pre><code class="language-python"> | display(msg=None, pos=None)
+<pre><code class="language-python">def display(msg=None, pos=None)
 </code></pre>
 <p>Use <code>self.sp</code> to display <code>msg</code> in the specified <code>pos</code>.</p>
 <p>Consider overloading this function when inheriting to use e.g.:
@@ -802,14 +802,14 @@ with automatic formatting based on datatype.</p>
 <li><strong>pos</strong><em>: int, optional. Position to <code>moveto</code></em><br />
   (default: <code>abs(self.pos)</code>).</li>
 </ul>
-<p><a name="tqdm.std.tqdm.wrapattr"></a></p>
+<p><a id="tqdm.std.tqdm.wrapattr"></a></p>
 <h4 id="wrapattr">wrapattr<a class="headerlink" href="#wrapattr" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/std.py#L1506">[view source]</a>
 </span></p>
-<pre><code class="language-python"> | @classmethod
- | @contextmanager
- | wrapattr(cls, stream, method, total=None, bytes=True, **tqdm_kwargs)
+<pre><code class="language-python">@classmethod
+@contextmanager
+def wrapattr(cls, stream, method, total=None, bytes=True, **tqdm_kwargs)
 </code></pre>
 <ul>
 <li><strong>stream</strong><em>: file-like object.</em>  </li>
@@ -822,12 +822,12 @@ with automatic formatting based on datatype.</p>
 ...         if not chunk:
 ...             break
 </code></pre>
-<p><a name="tqdm.std.trange"></a></p>
+<p><a id="tqdm.std.trange"></a></p>
 <h4 id="trange">trange<a class="headerlink" href="#trange" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/std.py#L1526">[view source]</a>
 </span></p>
-<pre><code class="language-python">trange(*args, **kwargs)
+<pre><code class="language-python">def trange(*args, **kwargs)
 </code></pre>
 <p>A shortcut for tqdm(xrange(<em>args), </em>*kwargs).
 On Python3+ range is used instead of xrange.</p>

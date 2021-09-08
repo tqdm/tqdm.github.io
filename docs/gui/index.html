@@ -228,7 +228,7 @@
           <div role="main">
             <div class="section">
               
-                <p><a name="tqdm.gui"></a></p>
+                <p><a id="tqdm.gui"></a></p>
 <h1 id="tqdmgui">tqdm.gui<a class="headerlink" href="#tqdmgui" title="Permanent link">#</a></h1>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/gui.py#L1">[view source]</a>
@@ -239,7 +239,7 @@
 &gt;&gt;&gt; for i in trange(10):
 ...     ...
 </code></pre>
-<p><a name="tqdm.gui.tqdm_gui"></a></p>
+<p><a id="tqdm.gui.tqdm_gui"></a></p>
 <h2 id="tqdm_gui-objects">tqdm_gui Objects<a class="headerlink" href="#tqdm_gui-objects" title="Permanent link">#</a></h2>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/gui.py#L26">[view source]</a>
@@ -247,12 +247,12 @@
 <pre><code class="language-python">class tqdm_gui(std_tqdm)
 </code></pre>
 <p>Experimental Matplotlib GUI version of tqdm!</p>
-<p><a name="tqdm.gui.tgrange"></a></p>
+<p><a id="tqdm.gui.tgrange"></a></p>
 <h4 id="tgrange">tgrange<a class="headerlink" href="#tgrange" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/gui.py#L181">[view source]</a>
 </span></p>
-<pre><code class="language-python">tgrange(*args, **kwargs)
+<pre><code class="language-python">def tgrange(*args, **kwargs)
 </code></pre>
 <p>A shortcut for <code>tqdm.gui.tqdm(xrange(*args), **kwargs)</code>.
 On Python3+, <code>range</code> is used instead of <code>xrange</code>.</p>

@@ -232,7 +232,7 @@
           <div role="main">
             <div class="section">
               
-                <p><a name="tqdm.asyncio"></a></p>
+                <p><a id="tqdm.asyncio"></a></p>
 <h1 id="tqdmasyncio">tqdm.asyncio<a class="headerlink" href="#tqdmasyncio" title="Permanent link">#</a></h1>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/asyncio.py#L1">[view source]</a>
@@ -244,7 +244,7 @@ Includes a default <code>range</code> iterator printing to <code>stderr</code>.<
 &gt;&gt;&gt; async for i in trange(10):
 ...     ...
 </code></pre>
-<p><a name="tqdm.asyncio.tqdm_asyncio"></a></p>
+<p><a id="tqdm.asyncio.tqdm_asyncio"></a></p>
 <h2 id="tqdm_asyncio-objects">tqdm_asyncio Objects<a class="headerlink" href="#tqdm_asyncio-objects" title="Permanent link">#</a></h2>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/asyncio.py#L19">[view source]</a>
@@ -252,30 +252,30 @@ Includes a default <code>range</code> iterator printing to <code>stderr</code>.<
 <pre><code class="language-python">class tqdm_asyncio(std_tqdm)
 </code></pre>
 <p>Asynchronous-friendly version of tqdm (Python 3.6+).</p>
-<p><a name="tqdm.asyncio.tqdm_asyncio.as_completed"></a></p>
+<p><a id="tqdm.asyncio.tqdm_asyncio.as_completed"></a></p>
 <h4 id="as_completed">as_completed<a class="headerlink" href="#as_completed" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/asyncio.py#L58">[view source]</a>
 </span></p>
-<pre><code class="language-python"> | @classmethod
- | as_completed(cls, fs, *, loop=None, timeout=None, total=None, **tqdm_kwargs)
+<pre><code class="language-python">@classmethod
+def as_completed(cls, fs, *, loop=None, timeout=None, total=None, **tqdm_kwargs)
 </code></pre>
 <p>Wrapper for <code>asyncio.as_completed</code>.</p>
-<p><a name="tqdm.asyncio.tqdm_asyncio.gather"></a></p>
+<p><a id="tqdm.asyncio.tqdm_asyncio.gather"></a></p>
 <h4 id="gather">gather<a class="headerlink" href="#gather" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/asyncio.py#L71">[view source]</a>
 </span></p>
-<pre><code class="language-python"> | @classmethod
- | async gather(cls, *fs, *, loop=None, timeout=None, total=None, **tqdm_kwargs)
+<pre><code class="language-python">@classmethod
+async def gather(cls, *fs, *, loop=None, timeout=None, total=None, **tqdm_kwargs)
 </code></pre>
 <p>Wrapper for <code>asyncio.gather</code>.</p>
-<p><a name="tqdm.asyncio.tarange"></a></p>
+<p><a id="tqdm.asyncio.tarange"></a></p>
 <h4 id="tarange">tarange<a class="headerlink" href="#tarange" title="Permanent link">#</a></h4>
 <p><span style="float: right; font-size: 75%;">
 <a href="https://github.com/tqdm/tqdm/blob/140c94855bf98e7e0fda55b040a7a2c8ac76e786/tqdm/asyncio.py#L84">[view source]</a>
 </span></p>
-<pre><code class="language-python">tarange(*args, **kwargs)
+<pre><code class="language-python">def tarange(*args, **kwargs)
 </code></pre>
 <p>A shortcut for <code>tqdm.asyncio.tqdm(range(*args), **kwargs)</code>.</p>
               
