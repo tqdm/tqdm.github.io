@@ -9,7 +9,7 @@ build: sources/releases.md
 	cp .README.md build/docs/_site/README.md
 	echo 'google.com, pub-5970675603981498, DIRECT, f08c47fec0942fa0' > build/docs/_site/ads.txt
 deploy: build
-	git checkout master
+	git checkout gh-pages
 	git ls-files | xargs git rm
 	cp -a build/docs/_site/* .
 	echo '/build/' > .gitignore
@@ -18,7 +18,7 @@ deploy: build
 	git add --all
 	git commit -m "update static site"
 	git push
-	git checkout src
-	git branch -d master
+	git checkout main
+	git branch -d gh-pages
 clean:
 	rm -rf *.pyc sources/releases.md build/

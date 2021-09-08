@@ -146,7 +146,7 @@ renderer:
   mkdocs_config:
     site_name: "tqdm documentation"
     repo_url: https://github.com/tqdm/tqdm
-    edit_uri: ../tqdm.github.io/tree/src/sources
+    edit_uri: ../tqdm.github.io/tree/main/sources
     theme:
       name: readthedocs
       custom_dir: ../../custom_theme/
@@ -154,7 +154,7 @@ renderer:
     - toc:
         permalink: '#'
     google_analytics: ['UA-56320088-7', 'auto']
-    remote_branch: master
+    remote_branch: gh-pages
     site_description: A Fast, Extensible Progress Meter
     site_author: Casper da Costa-Luis
     site_favicon: https://img.tqdm.ml/logo.gif
