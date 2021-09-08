@@ -10,7 +10,7 @@ build: sources/releases.md
 	echo 'google.com, pub-5970675603981498, DIRECT, f08c47fec0942fa0' > build/docs/_site/ads.txt
 deploy: build
 	git checkout gh-pages
-	git ls-files | xargs git rm
+	git ls-files -z | xargs -0 git rm
 	cp -a build/docs/_site/* .
 	echo '/build/' > .gitignore
 	echo '/sources/' >> .gitignore
