@@ -1,7 +1,6 @@
-<img align="right" src="https://img.tqdm.ml/logo.gif" />
+<img align="right" src="https://img.tqdm.ml/logo-trans.gif" />
 
-tqdm
-====
+# tqdm
 
 [![PyPI-Versions](https://img.shields.io/pypi/pyversions/tqdm.svg?logo=python&logoColor=white)](https://pypi.org/project/tqdm)
 [![PyPI-Status](https://img.shields.io/pypi/v/tqdm.svg?logo=PyPI&logoColor=white)](https://tqdm.github.io/releases)
@@ -47,7 +46,7 @@ for i in tqdm(range(10000)):
 
 It can also be executed as a module with pipes:
 
-```sh
+```{.sh hl_lines="2 3 6"}
 $ seq 9999999 | tqdm --bytes | wc -l
 75.2MB [00:00, 217MB/s]
 9999999

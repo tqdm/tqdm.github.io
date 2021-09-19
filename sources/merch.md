@@ -3,15 +3,16 @@
 Did `tqdm` save you time? Did it make your life easier? Did it save your skin?
 Show your support; get some swag! We now have branded merch for you for under $20 including worldwide shipping.
 
-All profits (only about $2/item after manufacturing, shipping & taxes) help keep your favourite progress bar running.
+!!! tip
+    All profits (only about $2/item after manufacturing, shipping & taxes) help keep your favourite progress bar running.
 
-## Snapback Hat
+### Snapback Hat
 
 Progress begins in the mind.
 
 ![Snapback Hat](https://img.tqdm.ml/snapback-hat.jpg)
 
-<details><summary>Details</summary>
+<details><summary>Snapback Hat details</summary>
 
 Classic Snapback with a traditional structured fit and flat visor made from a premium wool blend.
 
@@ -43,13 +44,13 @@ Classic Snapback with a traditional structured fit and flat visor made from a pr
 
 </details>
 
-## Mugs
+### Mugs
 
 My brain will finish loading just as soon as I finish this cup.
 
 ![Mugs](https://img.tqdm.ml/mug.jpg)
 
-<details><summary>Details</summary>
+<details><summary>Mug details</summary>
 
 <ul class="thumbs">
 <li>Ceramic</li>
@@ -65,13 +66,13 @@ My brain will finish loading just as soon as I finish this cup.
 
 </details>
 
-## T-Shirts
+### T-Shirts
 
 I waited patiently and all I got was this stupid T-Shirt.
 
 ![T-Shirts](https://img.tqdm.ml/t-shirt.jpg)
 
-<details><summary>Details</summary>
+<details><summary>T-Shirt details</summary>
 
 Gildan softstyle t-shirt made of durable cotton fabric with double-stitched bottom hem and sleeves.
 
@@ -111,7 +112,7 @@ If you need something larger than XL, please email us in advance to ask about av
 
 </details>
 
-# Order
+## Order
 
 The steps are simple.
 
@@ -124,4 +125,5 @@ The steps are simple.
 - your phone number
 - any item specifics (colour/size)
 
-We aim to send you a postal tracking number within 2 working days. Items take 5-25 days to arrive depending on where in the world you are.
+!!! info
+    We aim to send you a postal tracking number within 2 working days. Items take 5-25 days to arrive depending on where in the world you are.

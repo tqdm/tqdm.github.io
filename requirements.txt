@@ -1,4 +1,10 @@
+# wiki
 argopt
 tqdm
-mkdocs
+# mkdocs
+git+git://github.com/iterative/jsmin@python3-only#egg=jsmin
+mkdocs-material
+mkdocs-minify-plugin
 pydoc-markdown>=3.3.0,<5
+pygments
+pymdown-extensions

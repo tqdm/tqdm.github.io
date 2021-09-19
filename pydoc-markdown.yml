@@ -144,19 +144,55 @@ renderer:
     name: video
     source: sources/video.md
   mkdocs_config:
-    site_name: "tqdm documentation"
-    repo_url: https://github.com/tqdm/tqdm
-    edit_uri: ../tqdm.github.io/tree/main/sources
-    theme:
-      name: readthedocs
-      custom_dir: ../../custom_theme/
-    markdown_extensions:
-    - toc:
-        permalink: '#'
-    google_analytics: ['UA-56320088-7', 'auto']
-    remote_branch: gh-pages
+    site_name: tqdm documentation
     site_description: A Fast, Extensible Progress Meter
+    site_url: https://tqdm.github.io
     site_author: Casper da Costa-Luis
-    site_favicon: https://img.tqdm.ml/logo.gif
     copyright: |
       &copy; Casper da Costa-Luis <a href="https://github.com/casperdcl">@casperdcl</a> 2015-2021
+    repo_url: https://github.com/tqdm/tqdm
+    edit_uri: ../tqdm.github.io/tree/main/sources
+    extra_css: [css/extra.css]
+    extra:
+      analytics:
+        provider: google
+        property: UA-56320088-7
+      social:
+      - icon: fontawesome/brands/github
+        link: https://github.com/tqdm/tqdm
+      - icon: fontawesome/brands/wikipedia-w
+        link: https://github.com/tqdm/tqdm/wiki
+      - icon: fontawesome/solid/question-circle
+        link: https://github.com/tqdm/tqdm#faq-and-known-issues
+      - icon: fontawesome/solid/clipboard-list
+        link: /releases/
+      - icon: fontawesome/brands/orcid
+        link: https://doi.org/10.5281/zenodo.595120
+      - icon: fontawesome/brands/youtube
+        link: /video/
+    theme:
+      name: material
+      logo: https://img.tqdm.ml/logo-trans.gif
+      favicon: https://img.tqdm.ml/logo-trans.gif
+      custom_dir: ../../custom_theme/
+      palette:
+      - scheme: default
+        primary: indigo
+        toggle:
+          icon: material/toggle-switch-off-outline
+          name: Switch to dark mode
+      - scheme: slate
+        primary: orange
+        toggle:
+          icon: material/toggle-switch
+          name: Switch to light mode
+    plugins:
+    - search
+    - minify:
+        minify_js: true
+        minify_html: true
+    markdown_extensions:
+    - admonition
+    - toc:
+        permalink: '#'
+    - pymdownx.superfences
