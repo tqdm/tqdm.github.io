@@ -9,5 +9,5 @@ Assumes the following directory structure:
 
 ```bash
 tqdm/docs$ make serve
-tqdm/docs$ make build  # generates static site in _build/site
+tqdm/docs$ make build  # generates static site in build/docs/_site
 ```

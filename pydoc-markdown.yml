@@ -5,6 +5,12 @@ processors:
 - type: filter
 - type: pydoc_markdown_tqdm.TqdmProcessor
 - type: crossref
+hooks:
+  pre-render:
+  - test -d ../wiki || git clone https://github.com/tqdm/tqdm.wiki.git ../wiki
+  - GITHUB_API_TOKEN='' python ../wiki/releases.py tqdm/tqdm -o sources/releases.md -d ext
+  post-render:
+  - cp sources/ads.txt build/docs/content/
 renderer:
   type: mkdocs
   markdown:
@@ -148,15 +154,18 @@ renderer:
     site_description: A Fast, Extensible Progress Meter
     site_url: https://tqdm.github.io
     site_author: Casper da Costa-Luis
+    repo_name: tqdm/tqdm
+    repo_url: https://github.com/tqdm/tqdm
     copyright: |
       &copy; Casper da Costa-Luis <a href="https://github.com/casperdcl">@casperdcl</a> 2015-2021
-    repo_url: https://github.com/tqdm/tqdm
     edit_uri: ../tqdm.github.io/tree/main/sources
     extra_css: [css/extra.css]
+
     extra:
       analytics:
         provider: google
         property: UA-56320088-7
+      generator: false
       social:
       - icon: fontawesome/brands/github
         link: https://github.com/tqdm/tqdm

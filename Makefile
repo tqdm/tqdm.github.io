@@ -2,11 +2,8 @@
 PYDOCMD=PYTHONPATH=. pydoc-markdown
 serve:
 	$(PYDOCMD) -s -o
-sources/releases.md:
-	GITHUB_API_TOKEN='' python ../wiki/releases.py tqdm/tqdm -o sources/releases.md -d ext
-build: sources/releases.md
+build:
 	$(PYDOCMD) --build --site-dir _site
-	echo 'google.com, pub-5970675603981498, DIRECT, f08c47fec0942fa0' > build/docs/_site/ads.txt
 deploy: build
 	git checkout gh-pages
 	git ls-files -z | xargs -0 git rm
