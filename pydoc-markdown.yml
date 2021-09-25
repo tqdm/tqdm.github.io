@@ -164,7 +164,7 @@ renderer:
     extra:
       analytics:
         provider: google
-        property: UA-56320088-7
+        property: G-XWQHSY53XB
       generator: false
       social:
       - icon: fontawesome/brands/github
