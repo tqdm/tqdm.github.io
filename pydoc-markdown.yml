@@ -27,7 +27,7 @@ renderer:
   - title: Home
     name: index
     source: sources/index.md
-  - title: Documentation
+  - title: Library Reference
     name: docs
     children:
     - title: tqdm.tqdm
@@ -78,7 +78,7 @@ renderer:
     - title: Shortcuts
       # tqdm.trange tqdm.gui.tgrange, tqdm.notebook.tnrange, tqdm.contrib.telegram.ttgrange
       contents: [tqdm.autonotebook, tqdm.auto, tqdm.contrib.bells]
-  - title: Developer Documentation
+  - title: Developer Reference
     name: dev
     children:
     - title: Warnings and Exceptions
@@ -157,7 +157,7 @@ renderer:
     repo_name: tqdm/tqdm
     repo_url: https://github.com/tqdm/tqdm
     copyright: |
-      &copy; Casper da Costa-Luis <a href="https://github.com/casperdcl">@casperdcl</a> 2015-2021
+      &copy; Casper da Costa-Luis <a href="https://github.com/casperdcl">@casperdcl</a> 2015-2022
     edit_uri: ../tqdm.github.io/tree/main/sources
     extra_css: [css/extra.css]
 
