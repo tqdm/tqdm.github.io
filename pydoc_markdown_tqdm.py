@@ -11,17 +11,17 @@ class TqdmProcessor(PydocmdProcessor):
             return
 
         # join long lines ending in escape (\)
-        node.docstring = sub(r"\\\n\s*", "", node.docstring)
+        c = sub(r"\\\n\s*", "", node.docstring.content)
         # escape literal `*`
-        node.docstring = sub(r"^(\w+\s{2,}:.*?)\*(.*?)$", r"\1\\*\2", node.docstring)
+        c = sub(r"^(\w+\s{2,}:.*?)\*(.*?)$", r"\1\\*\2", c)
         # convert parameter lists to markdown list
-        node.docstring = sub(r"^(\w+)\s{2,}(:.*?)$", r"* __\1__*\2*  ", node.docstring)
+        c = sub(r"^(\w+)\s{2,}(:.*?)$", r"* __\1__*\2*  ", c)
         # convert REPL code blocks to code
-        node.docstring = sub(r"^(>>>|\.\.\.)(.*?)$", r"```\n\1\2\n```", node.docstring)
-        node.docstring = sub(r"^(>>>|\.\.\.)(.*?)\n```\n```\n(>>>|\.\.\.)", r"\1\2\n\3", node.docstring)
-        node.docstring = sub(r"^(>>>|\.\.\.)(.*?)\n```\n```\n(>>>|\.\.\.)", r"\1\2\n\3", node.docstring)
-        node.docstring = sub(r"^(```)(\n>>>)", r"\1python\2", node.docstring)
+        c = sub(r"^(>>>|\.\.\.)(.*?)$", r"```\n\1\2\n```", c)
+        c = sub(r"^(>>>|\.\.\.)(.*?)\n```\n```\n(>>>|\.\.\.)", r"\1\2\n\3", c)
+        c = sub(r"^(>>>|\.\.\.)(.*?)\n```\n```\n(>>>|\.\.\.)", r"\1\2\n\3", c)
+        c = sub(r"^(```)(\n>>>)", r"\1python\2", c)
         # hide <h2> from `nav`
-        node.docstring = sub(r"^(.+?)\n[-]{4,}$", r"__\1__\n", node.docstring)
+        node.docstring.content = sub(r"^(.+?)\n[-]{4,}$", r"__\1__\n", c)
 
         return super()._process(node)
