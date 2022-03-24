@@ -23,7 +23,6 @@ renderer:
       <span style="float: right; font-size: 75%;">
       [[view source]]({url})
       </span>
-    format_code: false
   pages:
   - title: Home
     name: index
