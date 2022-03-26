@@ -103,7 +103,6 @@ renderer:
     children:
     - title: Video
       name: video
-      directory: '..'
       source: sources/video.md
     - title: Slides
       href: PyData2019/slides.html
