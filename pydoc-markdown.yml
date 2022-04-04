@@ -69,12 +69,15 @@ renderer:
     - title: tqdm.contrib.logging
       name: contrib.logging
       contents: [tqdm.contrib.logging*]
-    - title: tqdm.contrib.telegram
-      name: contrib.telegram
-      contents: [tqdm.contrib.telegram.t*]
+    - title: tqdm.contrib.slack
+      name: contrib.slack
+      contents: [tqdm.contrib.slack.t*]
     - title: tqdm.contrib.discord
       name: contrib.discord
       contents: [tqdm.contrib.discord.t*]
+    - title: tqdm.contrib.telegram
+      name: contrib.telegram
+      contents: [tqdm.contrib.telegram.t*]
     - title: Shortcuts
       # tqdm.trange tqdm.gui.tgrange, tqdm.notebook.tnrange, tqdm.contrib.telegram.ttgrange
       contents: [tqdm.autonotebook, tqdm.auto, tqdm.contrib.bells]
