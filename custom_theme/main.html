@@ -3,4 +3,32 @@
 {% block extrahead %}
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5970675603981498"
    crossorigin="anonymous"></script>
+  <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block footer %}
+  {% include "partials/footer.html" %}
+  <div class="adaptive flat" data-ea-publisher="tqdmgithubio" data-ea-type="text" data-ea-style="fixedfooter" id="foot"></div>
+  <script>
+    function docReady(fn) {
+      if (document.readyState === "complete" || document.readyState === "interactive") {
+        setTimeout(fn, 1);  // call on next available tick
+      } else {
+        document.addEventListener("DOMContentLoaded", fn);
+      }
+    }
+
+    docReady(function() {
+      ethicalads.wait.then((placements) => {
+        if (!placements.length) {
+          console.debug('EthicalAds disabled');
+          (adsbygoogle = window.adsbygoogle || []).push({});
+          div = document.querySelector('[data-ea-publisher]#manual')
+          div.innerHTML = '<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5970675603981498" data-ad-slot="6206662262" data-ad-format="auto" data-full-width-responsive="true"></ins>'
+        } else {
+          console.debug('EthicalAds loaded');
+        }
+      });
+    });
+    </script>
 {% endblock %}
