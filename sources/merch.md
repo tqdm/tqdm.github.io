@@ -117,7 +117,9 @@ If you need something larger than XL, please email us in advance to ask about av
 The steps are simple.
 
 1. Pay using [tqdm's GitHub Sponsors](https://github.com/sponsors/tqdm?frequency=one-time). You can type in a custom amount to order more than one item.
-2. Send us your address & any item specifics (colour/size) [using this form](https://docs.google.com/forms/d/e/1FAIpQLSfRNj0Qra4gpjNSw8F3zJ18OA6L6RowwjSvecCDbK2YXhbDiw/viewform?usp=sf_link) so we can send you your merch. We do not retain any of this info – it's purely used for shipping.
+2. Send us your address & any item specifics (colour/size) using the form below so we can send you your merch.
 
 !!! info
-    We aim to send you a postal tracking number within 2 working days. Items take 5-25 days to arrive depending on where in the world you are.
+    We aim to email you a postal tracking number (from `devs@tqdm.ml`) within 2 working days. Items take 5-25 days to arrive depending on where in the world you are.
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfRNj0Qra4gpjNSw8F3zJ18OA6L6RowwjSvecCDbK2YXhbDiw/viewform?embedded=true" width="640" height="1820" frameborder="0" marginheight="0" marginwidth="0">Click <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRNj0Qra4gpjNSw8F3zJ18OA6L6RowwjSvecCDbK2YXhbDiw/viewform?usp=sf_link">here</a> if the form isn't loading.</iframe>
