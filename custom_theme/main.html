@@ -22,9 +22,10 @@
       ethicalads.wait.then((placements) => {
         if (!placements.length) {
           console.debug('EthicalAds disabled');
-          (adsbygoogle = window.adsbygoogle || []).push({});
           div = document.querySelector('[data-ea-publisher]#manual')
           div.innerHTML = '<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5970675603981498" data-ad-slot="6206662262" data-ad-format="auto" data-full-width-responsive="true"></ins>'
+          (adsbygoogle = window.adsbygoogle || []).push({});
+          console.debug('GoogleAds loaded');
         } else {
           console.debug('EthicalAds loaded');
         }
