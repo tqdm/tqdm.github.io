@@ -10,7 +10,7 @@
 [![Snapcraft](https://img.shields.io/badge/snap-install-82BEA0.svg?logo=snapcraft)](https://snapcraft.io/tqdm)
 [![binder-demo](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tqdm/tqdm/master?filepath=DEMO.ipynb)
 
-[![Build-Status](https://img.shields.io/github/workflow/status/tqdm/tqdm/Test/master?logo=GitHub)](https://github.com/tqdm/tqdm/actions?query=workflow%3ATest)
+[![Build-Status](https://img.shields.io/github/actions/workflow/status/tqdm/tqdm/test.yml?branch=master&label=tqdm&logo=GitHub)](https://github.com/tqdm/tqdm/actions/workflows/test.yml)
 [![Coverage-Status](https://img.shields.io/coveralls/github/tqdm/tqdm/master?logo=coveralls)](https://coveralls.io/github/tqdm/tqdm)
 [![Branch-Coverage-Status](https://codecov.io/gh/tqdm/tqdm/branch/master/graph/badge.svg)](https://codecov.io/gh/tqdm/tqdm)
 [![Codacy-Grade](https://api.codacy.com/project/badge/Grade/3f965571598f44549c7818f29cdcf177)](https://www.codacy.com/app/tqdm/tqdm/dashboard)
@@ -36,8 +36,7 @@ for i in tqdm(range(10000)):
 
 `76%|████████████████████████████         | 7568/10000 [00:33<00:10, 229.00it/s]`
 
-`trange(N)` can be also used as a convenient shortcut for
-`tqdm(xrange(N))`.
+`trange(N)` can be also used as a convenient shortcut for `tqdm(range(N))`.
 
 ![Screenshot](https://img.tqdm.ml/tqdm.gif)
 
