@@ -10,7 +10,7 @@ Show your support; get some swag! We now have branded merch for you for under $2
 
 Progress begins in the mind.
 
-![Snapback Hat](https://img.tqdm.ml/snapback-hat.jpg)
+![Snapback Hat](https://tqdm.github.io/img/snapback-hat.jpg)
 
 <details><summary>Snapback Hat details</summary>
 
@@ -30,16 +30,16 @@ Classic Snapback with a traditional structured fit and flat visor made from a pr
 <h3 id="snapback-hat-colours">Colours</h3>
 
 <ul class="thumbs">
-<li><img src="https://img.tqdm.ml/snapback-black.jpg"/>Black</li>
-<li><img src="https://img.tqdm.ml/snapback-black-neon-pink.jpg"/>Black/Neon pink</li>
-<li><img src="https://img.tqdm.ml/snapback-black-red.jpg"/>Black/Red</li>
-<li><img src="https://img.tqdm.ml/snapback-black-silver.jpg"/>Black/Silver</li>
-<li><img src="https://img.tqdm.ml/snapback-black-teal.jpg"/>Black/Teal</li>
-<li><img src="https://img.tqdm.ml/snapback-dark-grey.jpg"/>Dark Grey</li>
-<li><img src="https://img.tqdm.ml/snapback-green-camo.jpg"/>Green Camo</li>
-<li><img src="https://img.tqdm.ml/snapback-heather-grey-navy.jpg"/>Heather Grey/Navy</li>
-<li><img src="https://img.tqdm.ml/snapback-heather-grey-red.jpg"/>Heather Grey/Red</li>
-<li><img src="https://img.tqdm.ml/snapback-natural-black.jpg"/>Natural/Black</li>
+<li><img src="https://tqdm.github.io/img/snapback-black.jpg"/>Black</li>
+<li><img src="https://tqdm.github.io/img/snapback-black-neon-pink.jpg"/>Black/Neon pink</li>
+<li><img src="https://tqdm.github.io/img/snapback-black-red.jpg"/>Black/Red</li>
+<li><img src="https://tqdm.github.io/img/snapback-black-silver.jpg"/>Black/Silver</li>
+<li><img src="https://tqdm.github.io/img/snapback-black-teal.jpg"/>Black/Teal</li>
+<li><img src="https://tqdm.github.io/img/snapback-dark-grey.jpg"/>Dark Grey</li>
+<li><img src="https://tqdm.github.io/img/snapback-green-camo.jpg"/>Green Camo</li>
+<li><img src="https://tqdm.github.io/img/snapback-heather-grey-navy.jpg"/>Heather Grey/Navy</li>
+<li><img src="https://tqdm.github.io/img/snapback-heather-grey-red.jpg"/>Heather Grey/Red</li>
+<li><img src="https://tqdm.github.io/img/snapback-natural-black.jpg"/>Natural/Black</li>
 </ul>
 
 </details>
@@ -48,7 +48,7 @@ Classic Snapback with a traditional structured fit and flat visor made from a pr
 
 My brain will finish loading just as soon as I finish this cup.
 
-![Mugs](https://img.tqdm.ml/mug.jpg)
+![Mugs](https://tqdm.github.io/img/mug.jpg)
 
 <details><summary>Mug details</summary>
 
@@ -60,8 +60,8 @@ My brain will finish loading just as soon as I finish this cup.
 <h3 id="mugs-sizes">Sizes</h3>
 
 <ul class="thumbs">
-<li><img src="https://img.tqdm.ml/mug-11oz-left.jpg"/> <img src="https://img.tqdm.ml/mug-11oz-right.jpg"/> 11oz (315ml) mug dimensions: 3.85" (9.8cm) in height, 3.35" (8.5cm) in diameter</li>
-<li><img src="https://img.tqdm.ml/mug-15oz-left.jpg"/> <img src="https://img.tqdm.ml/mug-15oz-right.jpg"/> 15oz (425ml) mug dimensions: 4.7" (12cm) in height, 3.35" (8.5cm) in diameter</li>
+<li><img src="https://tqdm.github.io/img/mug-11oz-left.jpg"/> <img src="https://tqdm.github.io/img/mug-11oz-right.jpg"/> 11oz (315ml) mug dimensions: 3.85" (9.8cm) in height, 3.35" (8.5cm) in diameter</li>
+<li><img src="https://tqdm.github.io/img/mug-15oz-left.jpg"/> <img src="https://tqdm.github.io/img/mug-15oz-right.jpg"/> 15oz (425ml) mug dimensions: 4.7" (12cm) in height, 3.35" (8.5cm) in diameter</li>
 </ul>
 
 </details>
@@ -70,7 +70,7 @@ My brain will finish loading just as soon as I finish this cup.
 
 I waited patiently and all I got was this stupid T-Shirt.
 
-![T-Shirts](https://img.tqdm.ml/t-shirt.jpg)
+![T-Shirts](https://tqdm.github.io/img/t-shirt.jpg)
 
 <details><summary>T-Shirt details</summary>
 
@@ -91,11 +91,11 @@ Gildan softstyle t-shirt made of durable cotton fabric with double-stitched bott
 <h3 id="t-shirts-colours">Colours</h3>
 
 <ul class="thumbs">
-<li><img src="https://img.tqdm.ml/t-shirt-black.jpg"/>Black</li>
-<li><img src="https://img.tqdm.ml/t-shirt-dark-heather.jpg"/>Dark Heather</li>
-<li><img src="https://img.tqdm.ml/t-shirt-navy.jpg"/>Navy</li>
-<li><img src="https://img.tqdm.ml/t-shirt-sport-grey.jpg"/>Sport Grey</li>
-<li><img src="https://img.tqdm.ml/t-shirt-white.jpg"/>White</li>
+<li><img src="https://tqdm.github.io/img/t-shirt-black.jpg"/>Black</li>
+<li><img src="https://tqdm.github.io/img/t-shirt-dark-heather.jpg"/>Dark Heather</li>
+<li><img src="https://tqdm.github.io/img/t-shirt-navy.jpg"/>Navy</li>
+<li><img src="https://tqdm.github.io/img/t-shirt-sport-grey.jpg"/>Sport Grey</li>
+<li><img src="https://tqdm.github.io/img/t-shirt-white.jpg"/>White</li>
 </ul>
 
 <h3 id="t-shirts-sizes">Sizes</h3>
