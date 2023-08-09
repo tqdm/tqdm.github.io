@@ -78,6 +78,9 @@ renderer:
     - title: tqdm.contrib.telegram
       name: contrib.telegram
       contents: [tqdm.contrib.telegram.t*]
+    - title: tqdm.utils
+      name: tqdm.utils
+      contents: [tqdm.utils.CallbackIOWrapper, tqdm.utils.envwrap, tqdm.utils.disp_*]
     - title: Shortcuts
       # tqdm.trange tqdm.gui.tgrange, tqdm.notebook.tnrange, tqdm.contrib.telegram.ttgrange
       contents: [tqdm.autonotebook, tqdm.auto, tqdm.contrib.bells]
