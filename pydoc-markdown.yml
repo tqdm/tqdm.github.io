@@ -167,9 +167,6 @@ renderer:
     extra_css: [css/extra.css]
 
     extra:
-      analytics:
-        provider: google
-        property: G-XWQHSY53XB
       generator: false
       social:
       - icon: fontawesome/brands/github
