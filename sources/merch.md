@@ -102,10 +102,9 @@ Gildan softstyle t-shirt made of durable cotton fabric with double-stitched bott
 
 <table>
 <tr><td></td><th>S</th><th>M</th><th>L</th><th>XL</th><th>XXL</th><th>XXXL</th></tr>
-<tr><td>Length (Worldwide) (inches)</td><td>28</td><td>29 ¼</td><td>30 ¼</td><td>31 ¼</td><td>32 ½</td><td>33 ½</td></tr>
-<tr><td>Width (Worldwide) (inches)</td><td>18</td><td>20</td><td>22</td><td>24</td><td>26</td><td>28</td></tr>
-<tr><td>Length (East Asia) (inches)</td><td>26 ⅜</td><td>27 ½</td><td>28 ¾</td><td>29 ½</td><td>30 ¼</td></tr>
-<tr><td>Width (East Asia) (inches)</td><td>18 ½</td><td>19 ¾</td><td>20 ⅞</td><td>22</td><td>23 ¼</td></tr>
+<tr><td>Length (inches)</td><td>28</td><td>29</td><td>30</td><td>31</td><td>32</td><td>33</td></tr>
+<tr><td>Width (inches)</td><td>18</td><td>20</td><td>22</td><td>24</td><td>26</td><td>28</td></tr>
+<tr><td>Sleeve length (inches)</td><td>16 ¾</td><td>17 ⅞</td><td>19 ⅛</td><td>20 ⅜</td><td>21 ⅝</td><td>22 ¾</td></tr>
 </table>
 
 If you need something larger than XL, please email us in advance to ask about availability!
