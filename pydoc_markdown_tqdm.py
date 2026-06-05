@@ -1,6 +1,7 @@
-from pydoc_markdown.contrib.processors.pydocmd import PydocmdProcessor
 import re
 from functools import partial
+
+from pydoc_markdown.contrib.processors.pydocmd import PydocmdProcessor
 
 sub = partial(re.sub, flags=re.M)
 
@@ -16,6 +17,10 @@ class TqdmProcessor(PydocmdProcessor):
         c = sub(r"^(\w+\s{2,}:.*?)\*(.*?)$", r"\1\\*\2", c)
         # convert parameter lists to markdown list
         c = sub(r"^(\w+)\s{2,}(:.*?)$", r"* __\1__*\2*  ", c)
+        # convert #issues to links
+        c = sub(r"#(\d+)\b", r"[##\1](https://github.com/tqdm/tqdm/issues/\1)", c)
+        # leave hex colours alone
+        c = sub(r"#([0-9a-fA-F]{6})\b", r"##\1", c)
         # convert REPL code blocks to code
         c = sub(r"^(>>>|\.\.\.)(.*?)$", r"```\n\1\2\n```", c)
         c = sub(r"^(>>>|\.\.\.)(.*?)\n```\n```\n(>>>|\.\.\.)", r"\1\2\n\3", c)

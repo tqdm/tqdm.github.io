@@ -2,24 +2,25 @@
 
 # tqdm
 
-[![PyPI-Versions](https://img.shields.io/pypi/pyversions/tqdm.svg?logo=python&logoColor=white)](https://pypi.org/project/tqdm)
-[![PyPI-Status](https://img.shields.io/pypi/v/tqdm.svg?logo=PyPI&logoColor=white)](https://tqdm.github.io/releases)
+[![Py-Versions](https://img.shields.io/pypi/pyversions/tqdm.svg?logo=python&logoColor=white)](https://pypi.org/project/tqdm)
+[![Versions](https://img.shields.io/pypi/v/tqdm.svg)](https://tqdm.github.io/releases)
 [![Conda-Forge-Status](https://img.shields.io/conda/v/conda-forge/tqdm.svg?label=conda-forge&logo=conda-forge)](https://anaconda.org/conda-forge/tqdm)
 <br/>
 [![Docker](https://img.shields.io/badge/docker-pull-blue.svg?logo=docker&logoColor=white)](https://hub.docker.com/r/tqdm/tqdm)
 [![Snapcraft](https://img.shields.io/badge/snap-install-82BEA0.svg?logo=snapcraft)](https://snapcraft.io/tqdm)
+[![colab-demo](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tqdm/tqdm/blob/master/DEMO.ipynb)
 [![binder-demo](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tqdm/tqdm/master?filepath=DEMO.ipynb)
 
 [![Build-Status](https://img.shields.io/github/actions/workflow/status/tqdm/tqdm/test.yml?branch=master&label=tqdm&logo=GitHub)](https://github.com/tqdm/tqdm/actions/workflows/test.yml)
 [![Coverage-Status](https://img.shields.io/coveralls/github/tqdm/tqdm/master?logo=coveralls)](https://coveralls.io/github/tqdm/tqdm)
 [![Branch-Coverage-Status](https://codecov.io/gh/tqdm/tqdm/branch/master/graph/badge.svg)](https://codecov.io/gh/tqdm/tqdm)
-[![Codacy-Grade](https://api.codacy.com/project/badge/Grade/3f965571598f44549c7818f29cdcf177)](https://www.codacy.com/app/tqdm/tqdm/dashboard)
+[![Codacy-Grade](https://app.codacy.com/project/badge/Grade/3f965571598f44549c7818f29cdcf177)](https://app.codacy.com/gh/tqdm/tqdm/dashboard)
 <br/>
-[![PyPI-Downloads](https://img.shields.io/pypi/dm/tqdm.svg?label=pypi%20downloads&logo=python&logoColor=white)](https://pepy.tech/project/tqdm)
 [![Libraries-Rank](https://img.shields.io/librariesio/sourcerank/pypi/tqdm.svg?logo=koding&logoColor=white)](https://libraries.io/pypi/tqdm)
+[![PyPI-Downloads](https://img.shields.io/pypi/dm/tqdm.svg?label=pypi%20downloads&logo=python&logoColor=white)](https://pepy.tech/project/tqdm)
 [![Repology](https://repology.org/badge/tiny-repos/python:tqdm.svg)](https://repology.org/project/python:tqdm/versions)
 [![awesome-python](https://awesome.re/mentioned-badge.svg)](https://github.com/vinta/awesome-python)
-[![README-Hits](https://caspersci.uk.to/cgi-bin/hits.cgi?q=tqdm&style=social&r=https://github.com/tqdm/tqdm&l=https://tqdm.github.io/img/favicon.png&f=https://tqdm.github.io/img/logo.gif)](https://caspersci.uk.to/cgi-bin/hits.cgi?q=tqdm&a=plot&r=https://github.com/tqdm/tqdm&l=https://tqdm.github.io/img/favicon.png&f=https://tqdm.github.io/img/logo.gif&style=social)
+[![README-Hits](https://cgi.cdcl.ml/hits?q=tqdm&style=social&r=https://github.com/tqdm/tqdm&l=https://tqdm.github.io/img/favicon.png&f=https://tqdm.github.io/img/logo.gif)](https://cgi.cdcl.ml/hits?q=tqdm&a=plot&r=https://github.com/tqdm/tqdm&l=https://tqdm.github.io/img/favicon.png&f=https://tqdm.github.io/img/logo.gif&style=social)
 ---
 
 `tqdm` means "progress" in Arabic (*taqadum*, تقدّم) and is an
