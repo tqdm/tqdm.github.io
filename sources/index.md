@@ -73,6 +73,10 @@ IPython/Jupyter notebooks.
 Python and an environment supporting `carriage return \r` and
 `line feed \n` control characters.
 
+[![OpenAI](https://avatars.githubusercontent.com/u/14957082?s=96)](https://openai.com) | Your Logo Here
+:--:|:--:
+OpenAI | [Sponsoring `tqdm`](https://github.com/sponsors/tqdm)
+
 [![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.595120-blue.svg)](https://doi.org/10.5281/zenodo.595120)
 [![LICENCE](https://img.shields.io/pypi/l/tqdm.svg)](https://raw.githubusercontent.com/tqdm/tqdm/master/LICENCE)
 [![OpenHub-Status](https://www.openhub.net/p/tqdm/widgets/project_thin_badge?format=gif)](https://www.openhub.net/p/tqdm?ref=Thin+badge)
